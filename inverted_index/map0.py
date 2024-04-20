@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Map 0: Read input and mark file count."""
+"""Map 0: <"doc", 1>"""
 
 import sys
 import re
 
+INCREMENT = 1
 
 # Pattern to find the <!DOCTYPE html> tag
 doc_type_pattern = re.compile(r"<!DOCTYPE html>", re.IGNORECASE)
@@ -13,4 +14,4 @@ for line in sys.stdin:
     # Check if the <!DOCTYPE html> tag is in the line
     if doc_type_pattern.search(line):
         # Emit a count of 1 for each document found
-        print("doc", 1)
+        print(f"doc\t{INCREMENT}")

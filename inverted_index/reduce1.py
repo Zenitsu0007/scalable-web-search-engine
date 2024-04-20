@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reduce 1: Pass through the data from map1."""
+"""Reduce 1: <di, content>"""
 
 import sys
 

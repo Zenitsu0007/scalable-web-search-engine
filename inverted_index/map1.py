@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Map 1: Extract text from HTML and compute a unique document ID."""
+"""Map 1: <di, content>"""
 
 import sys
 import hashlib

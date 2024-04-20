@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reduce 0: Aggregate file count."""
+"""Reduce 0: total_docs"""
 
 import sys
 
