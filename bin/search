@@ -1,0 +1,59 @@
+#!/bin/bash
+
+set -Eeuo pipefail
+
+# Define variables
+APP_NAME="search"
+APP_MODULE="search"
+HOST="0.0.0.0"
+PORT="8000"
+LOG_DIR="var/log"
+LOG_FILE="$LOG_DIR/search.log"
+DB_FILE="var/search.sqlite3"
+FLASK_CMD="flask --app $APP_MODULE run --host $HOST --port $PORT"
+PGREP_PATTERN="flask --app $APP_MODULE run --host $HOST --port $PORT"
+
+# Helper functions
+server_is_running() {
+    pgrep -f "$PGREP_PATTERN" > /dev/null 2>&1
+}
+
+# Commands
+case "$1" in
+    start)
+        echo "starting $APP_NAME server ..."
+        if server_is_running; then
+            echo "Error: $APP_NAME server is already running"
+            exit 1
+        fi
+        if [ ! -f "$DB_FILE" ]; then
+            echo "Error: can't find $APP_NAME database $DB_FILE"
+            echo "Try: ./bin/searchdb create"
+            exit 1
+        fi
+        mkdir -p $LOG_DIR
+        rm -f $LOG_FILE
+        $FLASK_CMD &> $LOG_FILE &
+        ;;
+    stop)
+        echo "stopping $APP_NAME server ..."
+        pkill -f "$FLASK_CMD" || true
+        ;;
+    restart)
+        $0 stop
+        sleep 1
+        $0 start
+        ;;
+    status)
+        if server_is_running; then
+            echo "$APP_NAME server running"
+        else
+            echo "$APP_NAME server stopped"
+            exit 1
+        fi
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart|status}"
+        exit 1
+        ;;
+esac
