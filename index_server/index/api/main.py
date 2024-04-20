@@ -2,7 +2,7 @@
 import hashlib
 import flask
 import index
-
+from load_index import stopwords, pagerank, inverted_index
 
 @index.app.route('/api/v1/')
 def get_index():
