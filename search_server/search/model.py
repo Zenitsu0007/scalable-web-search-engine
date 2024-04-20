@@ -54,7 +54,7 @@ def query_db(query, args=(), one=False):
     return (rv[0] if rv else None) if one else rv
 
 
-@flask.current_app.teardown_appcontext
+@search.app.teardown_appcontext
 def teardown_db(exception):
     """
     Ensures that the database connection is closed when the app context is destroyed.

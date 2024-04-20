@@ -43,7 +43,7 @@ class Search:
         return [heapq.heappop(self.hits)[-1] for _ in 
                 range(min(len(self.hits), num_results))]
 
-@current_app.route('/', methods=['GET'])
+@search.app.route('/', methods=['GET'])
 def show_index():
     query = request.args.get('q', '')
     weight = request.args.get('w', 0.5)
