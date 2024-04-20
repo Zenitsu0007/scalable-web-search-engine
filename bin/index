@@ -1,0 +1,49 @@
+#!/bin/bash
+
+LOG_DIR="var/log"
+LOG_FILE="${LOG_DIR}/index.log"
+mkdir -p $LOG_DIR
+
+case $1 in
+    start)
+        echo "starting index server ..."
+
+        if pgrep -f "flask --app index run --host 0.0.0.0"; then
+            echo "Error: index server is already running"
+            exit 1
+        else
+            rm -f $LOG_FILE
+            INDEX_PATH="inverted_index_0.txt" flask --app index run --host 0.0.0.0 --port 9000 >> $LOG_FILE 2>&1 &
+            INDEX_PATH="inverted_index_1.txt" flask --app index run --host 0.0.0.0 --port 9001 >> $LOG_FILE 2>&1 &
+            INDEX_PATH="inverted_index_2.txt" flask --app index run --host 0.0.0.0 --port 9002 >> $LOG_FILE 2>&1 &
+        fi
+        ;;
+    stop)
+        echo "stopping index servers..."
+        pkill -f "flask --app index run --host 0.0.0.0"
+        ;;
+    restart)
+        echo "Restarting index servers..."
+        ./bin/index stop
+        ./bin/index start
+        ;;
+    status)
+        set +o pipefail
+        NPROCS=$(pgrep -f "flask --app index run --host 0.0.0.0 --port 900[0-2]" | wc -l)
+        set -o pipefail
+        if [ "$NPROCS" -eq 3 ]; then
+            echo "index server running"
+            exit
+        elif [ "$NPROCS" -eq 0 ]; then
+            echo "index server stopped"
+            exit 1
+        else
+            echo "index server error: found ${NPROCS} processes, expected 3"
+            exit 2
+        fi
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart|status}"
+        exit 1
+        ;;
+esac
