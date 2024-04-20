@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Turing completeness - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d35da462-9912-46ba-906a-177e5c1c84e4","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Turing_completeness","wgTitle":"Turing completeness","wgCurRevisionId":1182161933,"wgRevisionId":1182161933,"wgArticleId":30621,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 German-language sources (de)","Articles with short description","Short description matches Wikidata","Use dmy dates from November 2017","All articles with unsourced statements","Articles with unsourced statements from June 2022","Articles with unsourced statements from March 2021","Articles with unsourced statements from December 2021","Articles containing German-language text","Articles with unsourced statements from December 2010",
+"Theory of computation","Turing machine","Programming language theory"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Turing_completeness","wgRelevantArticleId":30621,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Turing_complete","wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":30000,"wgULSCurrentAutonym":"English","wgInternalRedirectTargetUrl":"/wiki/Turing_completeness","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":
+"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q197970","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=[
+"mediawiki.action.view.redirect","ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Turing completeness - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Turing_completeness">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Turing_completeness&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Turing_completeness">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Turing_completeness rootpage-Turing_completeness skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Turing+completeness" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Turing+completeness" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Turing+completeness" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Turing+completeness" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Non-mathematical_usage"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Non-mathematical_usage">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Non-mathematical usage</div>
+		</a>
+		
+		<ul id="toc-Non-mathematical_usage-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Formal_definitions"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Formal_definitions">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Formal definitions</div>
+		</a>
+		
+		<ul id="toc-Formal_definitions-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-History"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#History">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>History</div>
+		</a>
+		
+		<ul id="toc-History-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Computability_theory"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Computability_theory">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Computability theory</div>
+		</a>
+		
+		<ul id="toc-Computability_theory-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Turing_oracles"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Turing_oracles">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>Turing oracles</div>
+		</a>
+		
+		<ul id="toc-Turing_oracles-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Digital_physics"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Digital_physics">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">6</span>Digital physics</div>
+		</a>
+		
+		<ul id="toc-Digital_physics-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Examples"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Examples">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">7</span>Examples</div>
+		</a>
+		
+			<button aria-controls="toc-Examples-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Examples subsection</span>
+			</button>
+		
+		<ul id="toc-Examples-sublist" class="vector-toc-list">
+			<li id="toc-Unintentional_Turing_completeness"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Unintentional_Turing_completeness">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">7.1</span>Unintentional Turing completeness</div>
+			</a>
+			
+			<ul id="toc-Unintentional_Turing_completeness-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Non-Turing-complete_languages"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Non-Turing-complete_languages">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">8</span>Non-Turing-complete languages</div>
+		</a>
+		
+		<ul id="toc-Non-Turing-complete_languages-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">9</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Notes"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Notes">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">10</span>Notes</div>
+		</a>
+		
+		<ul id="toc-Notes-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">11</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Further_reading"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Further_reading">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">12</span>Further reading</div>
+		</a>
+		
+		<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">13</span>External links</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Turing completeness</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 28 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-28" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">28 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D9%83%D9%85%D8%A7%D9%84_%D8%AA%D9%88%D8%B1%D9%86%D8%BA" title="كمال تورنغ – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%A6%D1%8F%D0%BB%D0%BE%D1%81%D1%82%D0%BD%D0%BE%D1%81%D1%82_%D0%BF%D0%BE_%D0%A2%D1%8E%D1%80%D0%B8%D0%BD%D0%B3" title="Цялостност по Тюринг – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Turing_complet" title="Turing complet – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Turingovsk%C3%A1_%C3%BAplnost" title="Turingovská úplnost – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a href="https://da.wikipedia.org/wiki/Turing-komplet" title="Turing-komplet – Danish" lang="da" hreflang="da" class="interlanguage-link-target"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Turing-Vollst%C3%A4ndigkeit" title="Turing-Vollständigkeit – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%A0%CE%BB%CE%B7%CF%81%CF%8C%CF%84%CE%B7%CF%84%CE%B1_%CE%A4%CE%BF%CF%8D%CF%81%CE%B9%CE%BD%CE%B3%CE%BA" title="Πληρότητα Τούρινγκ – Greek" lang="el" hreflang="el" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Turing_completo" title="Turing completo – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a href="https://eo.wikipedia.org/wiki/Turing_kompleteco" title="Turing kompleteco – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%DA%A9%D8%A7%D9%85%D9%84_%D8%A8%D9%88%D8%AF%D9%86_%D8%AA%D9%88%D8%B1%DB%8C%D9%86%DA%AF" title="کامل بودن تورینگ – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Turing-complet" title="Turing-complet – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%ED%8A%9C%EB%A7%81_%EC%99%84%EC%A0%84" title="튜링 완전 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-ia mw-list-item"><a href="https://ia.wikipedia.org/wiki/Turing_complete" title="Turing complete – Interlingua" lang="ia" hreflang="ia" class="interlanguage-link-target"><span>Interlingua</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Turing_equivalenza" title="Turing equivalenza – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Turingvolledigheid" title="Turingvolledigheid – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E5%AE%8C%E5%85%A8" title="チューリング完全 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Turingkomplett" title="Turingkomplett – Norwegian Bokmål" lang="nb" hreflang="nb" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-nn mw-list-item"><a href="https://nn.wikipedia.org/wiki/Turingkomplett" title="Turingkomplett – Norwegian Nynorsk" lang="nn" hreflang="nn" class="interlanguage-link-target"><span>Norsk nynorsk</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Kompletno%C5%9B%C4%87_Turinga" title="Kompletność Turinga – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Turing_completude" title="Turing completude – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D0%BD%D0%BE%D1%82%D0%B0_%D0%BF%D0%BE_%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D1%83" title="Полнота по Тьюрингу – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-simple mw-list-item"><a href="https://simple.wikipedia.org/wiki/Turing_complete" title="Turing complete – Simple English" lang="en-simple" hreflang="en-simple" class="interlanguage-link-target"><span>Simple English</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%A2%D1%98%D1%83%D1%80%D0%B8%D0%BD%D0%B3%D0%BE%D0%B2%D0%B0_%D0%BF%D0%BE%D1%82%D0%BF%D1%83%D0%BD%D0%BE%D1%81%D1%82" title="Тјурингова потпуност – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Turing-vahva" title="Turing-vahva – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Turingkomplett" title="Turingkomplett – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B2%D0%BD%D0%BE%D1%82%D0%B0_%D0%B7%D0%B0_%D0%A2%D1%8E%D1%80%D1%96%D0%BD%D0%B3%D0%BE%D0%BC" title="Повнота за Тюрінгом – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E5%9C%96%E9%9D%88%E5%AE%8C%E6%95%B4%E6%80%A7" title="圖靈完整性 – Cantonese" lang="yue" hreflang="yue" class="interlanguage-link-target"><span>粵語</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%9C%96%E9%9D%88%E5%AE%8C%E5%82%99%E6%80%A7" title="圖靈完備性 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q197970#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Turing_completeness" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Turing_completeness" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Turing_completeness"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Turing_completeness&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Turing_completeness&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Turing_completeness"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Turing_completeness&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Turing_completeness&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Turing_completeness" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Turing_completeness" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Turing_completeness&amp;oldid=1182161933" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Turing_completeness&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Turing_completeness&amp;id=1182161933&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTuring_completeness"><span>Get shortened URL</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q197970" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Turing_completeness&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Turing_completeness&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"><span class="mw-redirectedfrom">(Redirected from <a href="/w/index.php?title=Turing_complete&amp;redirect=no" class="mw-redirect" title="Turing complete">Turing complete</a>)</span></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Ability of a computing system to simulate Turing machines</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">For the usage of this term in the theory of relative computability by oracle machines, see <a href="/wiki/Turing_reduction" title="Turing reduction">Turing reduction</a>.</div>
+<p class="mw-empty-elt">
+</p><p>In <a href="/wiki/Computability_theory" title="Computability theory">computability theory</a>, a system of data-manipulation rules (such as a <a href="/wiki/Model_of_computation" title="Model of computation">model of computation</a>, a computer's <a href="/wiki/Instruction_set" class="mw-redirect" title="Instruction set">instruction set</a>, a <a href="/wiki/Programming_language" title="Programming language">programming language</a>, or a <a href="/wiki/Cellular_automaton" title="Cellular automaton">cellular automaton</a>) is said to be <b>Turing-complete</b> or <b>computationally universal</b> if it can be used to simulate any <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a> (devised by English mathematician and computer scientist <a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a>). This means that this system is able to recognize or decide other data-manipulation rule sets. Turing completeness is used as a way to express the power of such a data-manipulation rule set. Virtually all programming languages today are Turing-complete. 
+</p><p>A related concept is that of <b>Turing equivalence</b>&#160;&#8211;&#32; two computers P and Q are called equivalent if P can simulate Q and Q can simulate P. The <a href="/wiki/Church%E2%80%93Turing_thesis" title="Church–Turing thesis">Church–Turing thesis</a> conjectures that any function whose values can be computed by an <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> can be computed by a Turing machine, and therefore that if any real-world computer can simulate a Turing machine, it is Turing equivalent to a Turing machine. A <a href="/wiki/Universal_Turing_machine" title="Universal Turing machine">universal Turing machine</a> can be used to simulate any Turing machine and by extension the computational aspects of any possible real-world computer.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;NB 1&#93;</a></sup>
+</p><p>To show that something is Turing-complete, it is enough to show that it can be used to simulate some Turing-complete system. No physical system can have infinite memory, but if the limitation of finite memory is ignored, most programming languages are otherwise Turing-complete.
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Non-mathematical_usage">Non-mathematical usage</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=1" title="Edit section: Non-mathematical usage"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In <a href="/wiki/Colloquial" class="mw-redirect" title="Colloquial">colloquial</a> usage, the terms "Turing-complete" and "Turing-equivalent" are used to mean that any real-world general-purpose computer or computer language can approximately simulate the computational aspects of any other real-world general-purpose computer or computer language. In real life, this leads to the practical concepts of computing <a href="/wiki/Virtualization" title="Virtualization">virtualization</a> and <a href="/wiki/Emulator" title="Emulator">emulation</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (June 2022)">citation needed</span></a></i>&#93;</sup>
+</p><p>Real computers constructed so far can be functionally analyzed like a single-tape Turing machine (the "tape" corresponding to their memory); thus the associated mathematics can apply by abstracting their operation far enough. However, real computers have limited physical resources, so they are only <a href="/wiki/Linear_bounded_automaton" title="Linear bounded automaton">linear bounded automaton</a> complete.  In contrast, a <a href="/wiki/Universal_computer" class="mw-redirect" title="Universal computer">universal computer</a> is defined as a device with a Turing-complete instruction set, infinite memory, and infinite available time.
+</p>
+<h2><span class="mw-headline" id="Formal_definitions">Formal definitions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=2" title="Edit section: Formal definitions"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In <a href="/wiki/Computability_theory" title="Computability theory">computability theory</a>, several closely related terms are used to describe the computational power of a computational system (such as an <a href="/wiki/Abstract_machine" title="Abstract machine">abstract machine</a> or <a href="/wiki/Programming_language" title="Programming language">programming language</a>):
+</p>
+<dl><dt>Turing completeness</dt>
+<dd>A computational system that can compute every Turing-<a href="/wiki/Computable_function" title="Computable function">computable function</a> is called Turing-complete (or Turing-powerful). Alternatively, such a system is one that can simulate a <a href="/wiki/Universal_Turing_machine" title="Universal Turing machine">universal Turing machine</a>.</dd>
+<dt>Turing equivalence</dt>
+<dd>A Turing-complete system is called Turing-equivalent if every function it can compute is also Turing-computable; i.e., it computes precisely the same class of functions as do <a href="/wiki/Turing_machine" title="Turing machine">Turing machines</a>. Alternatively, a Turing-equivalent system is one that can simulate, and be simulated by, a universal Turing machine. (All known physically-implementable Turing-complete systems are Turing-equivalent, which adds support to the <a href="/wiki/Church%E2%80%93Turing_thesis" title="Church–Turing thesis">Church–Turing thesis</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (March 2021)">citation needed</span></a></i>&#93;</sup>)</dd>
+<dt>(Computational) universality</dt>
+<dd>A system is called universal with respect to a class of systems if it can compute every function computable by systems in that class (or can simulate each of those systems). Typically, the term 'universality' is tacitly used with respect to a Turing-complete class of systems. The term "weakly universal" is sometimes used to distinguish a system (e.g. a <a href="/wiki/Cellular_automaton" title="Cellular automaton">cellular automaton</a>) whose universality is achieved only by modifying the standard definition of <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a> so as to include input streams with infinitely many 1s.</dd></dl>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=3" title="Edit section: History"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Turing completeness is significant in that every real-world design for a computing device can be simulated by a <a href="/wiki/Universal_Turing_machine" title="Universal Turing machine">universal Turing machine</a>. The <a href="/wiki/Church%E2%80%93Turing_thesis" title="Church–Turing thesis">Church–Turing thesis</a> states that this is a law of mathematics&#160;&#8211;&#32; that a universal Turing machine can, in principle, perform any calculation that any other programmable <a href="/wiki/Computer" title="Computer">computer</a> can. This says nothing about the effort needed to write the <a href="/wiki/Computer_program" title="Computer program">program</a>, or the time it may take for the machine to perform the calculation, or any abilities the machine may possess that have nothing to do with computation.
+</p><p><a href="/wiki/Charles_Babbage" title="Charles Babbage">Charles Babbage</a>'s <a href="/wiki/Analytical_engine" title="Analytical engine">analytical engine</a> (1830s) would have been the first Turing-complete machine if it had been built at the time it was designed. Babbage appreciated that the machine was capable of great feats of calculation, including primitive logical reasoning, but he did not appreciate that no other machine could do better.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (December 2021)">citation needed</span></a></i>&#93;</sup> From the 1830s until the 1940s, mechanical calculating machines such as adders and multipliers were built and improved, but they could not perform a conditional branch and therefore were not Turing-complete.
+</p><p>In the late 19th century, <a href="/wiki/Leopold_Kronecker" title="Leopold Kronecker">Leopold Kronecker</a> formulated notions of computability, defining <a href="/wiki/Primitive_recursive_function" title="Primitive recursive function">primitive recursive functions</a>. These functions can be calculated by rote computation, but they are not enough to make a universal computer, because the instructions that compute them do not allow for an infinite loop. In the early 20th century, <a href="/wiki/David_Hilbert" title="David Hilbert">David Hilbert</a> led a program to axiomatize all of mathematics with precise axioms and precise logical rules of deduction that could be performed by a machine. Soon it became clear that a small set of deduction rules are enough to produce the consequences of any set of axioms. These rules were proved by <a href="/wiki/Kurt_G%C3%B6del" title="Kurt Gödel">Kurt Gödel</a> in 1930 to be enough to produce every theorem.
+</p><p>The actual notion of computation was isolated soon after, starting with <a href="/wiki/G%C3%B6del%27s_incompleteness_theorem" class="mw-redirect" title="Gödel&#39;s incompleteness theorem">Gödel's incompleteness theorem</a>. This theorem showed that axiom systems were limited when reasoning about the computation that deduces their theorems. Church and Turing independently demonstrated that Hilbert's <span title="German-language text"><i lang="de"><a href="/wiki/Entscheidungsproblem" title="Entscheidungsproblem">Entscheidungsproblem</a></i></span> (decision problem) was unsolvable,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;1&#93;</a></sup> thus identifying the computational core of the incompleteness theorem. This work, along with Gödel's work on <a href="/wiki/General_recursive_function" title="General recursive function">general recursive functions</a>, established that there are sets of simple instructions, which, when put together, are able to produce any computation. The work of Gödel showed that the notion of computation is essentially unique.
+</p><p>In 1941 <a href="/wiki/Konrad_Zuse" title="Konrad Zuse">Konrad Zuse</a> completed the <a href="/wiki/Z3_(computer)" title="Z3 (computer)">Z3</a> computer. Zuse was not familiar with Turing's work on computability at the time. In particular, the Z3 lacked dedicated facilities for a conditional jump, thereby precluding it from being Turing complete. However, in 1998, it was shown by Rojas that the Z3 is capable of simulating conditional jumps, and therefore Turing complete in theory. To do this, its tape program would have to be long enough to execute every possible path through both sides of every branch.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;2&#93;</a></sup>
+</p><p>The first computer capable of conditional branching in practice, and therefore Turing complete in practice, was the <a href="/wiki/ENIAC" title="ENIAC">ENIAC</a> in 1946. Zuse's <a href="/wiki/Z4_(computer)" title="Z4 (computer)">Z4</a> computer was operational in 1945, but it did not support conditional branching until 1950.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;3&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Computability_theory">Computability theory</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=4" title="Edit section: Computability theory"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Computability_theory" title="Computability theory">Computability theory</a> uses <a href="/wiki/Model_of_computation" title="Model of computation">models of computation</a> to analyze problems and determine whether they are <a href="/wiki/Computability" title="Computability">computable</a> and under what circumstances. The first result of computability theory is that there exist problems for which it is impossible to predict what a (Turing-complete) system will do over an arbitrarily long time.
+</p><p>The classic example is the <a href="/wiki/Halting_problem" title="Halting problem">halting problem</a>: create an algorithm that takes as input a program in some Turing-complete language and some data to be fed to <i>that</i> program, and determines whether the program, operating on the input, will eventually stop or will continue forever. It is trivial to create an algorithm that can do this for <i>some</i> inputs, but impossible to do this in general. For any characteristic of the program's eventual output, it is impossible to determine whether this characteristic will hold.
+</p><p>This impossibility poses problems when analyzing real-world computer programs. For example, one cannot write a tool that entirely protects programmers from writing infinite loops or protects users from supplying input that would cause infinite loops.
+</p><p>One can instead limit a program to executing only for a fixed period of time (<a href="/wiki/Timeout_(computing)" title="Timeout (computing)">timeout</a>) or limit the power of flow-control instructions (for example, providing only loops that iterate over the items of an existing array). However, another theorem shows that there are problems solvable by Turing-complete languages that cannot be solved by any language with only finite looping abilities (i.e., any language guaranteeing that every program will eventually finish to a halt). So any such language is not Turing-complete. For example, a language in which programs are guaranteed to complete and halt cannot compute the computable function produced by <a href="/wiki/Cantor%27s_diagonal_argument" title="Cantor&#39;s diagonal argument">Cantor's diagonal argument</a> on all computable functions in that language.
+</p>
+<h2><span class="mw-headline" id="Turing_oracles">Turing oracles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=5" title="Edit section: Turing oracles"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Oracle_machine" title="Oracle machine">Oracle machine</a></div>
+<p>A computer with access to an infinite tape of data may be more powerful than a Turing machine: for instance, the tape might contain the solution to the <a href="/wiki/Halting_problem" title="Halting problem">halting problem</a> or some other Turing-undecidable problem. Such an infinite tape of data is called a <a href="/wiki/Turing_oracle" class="mw-redirect" title="Turing oracle">Turing oracle</a>. Even a Turing oracle with random data is not computable (<a href="/wiki/Almost_surely" title="Almost surely">with probability 1</a>), since there are only countably many computations but uncountably many oracles. So a computer with a random Turing oracle can compute things that a Turing machine cannot.
+</p>
+<h2><span class="mw-headline" id="Digital_physics">Digital physics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=6" title="Edit section: Digital physics"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Church%E2%80%93Turing_thesis#Philosophical_implications" title="Church–Turing thesis">Church–Turing thesis §&#160;Philosophical implications</a></div>
+<p>All known laws of physics have consequences that are computable by a series of approximations on a digital computer. A hypothesis called <a href="/wiki/Digital_physics" title="Digital physics">digital physics</a> states that this is no accident because the <a href="/wiki/Universe" title="Universe">universe</a> itself is computable on a universal Turing machine. This would imply that no computer more powerful than a universal Turing machine can be built physically.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;4&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=7" title="Edit section: Examples"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The computational systems (algebras, calculi) that are discussed as Turing-complete systems are those intended for studying <a href="/wiki/Theoretical_computer_science" title="Theoretical computer science">theoretical computer science</a>. They are intended to be as simple as possible, so that it would be easier to understand the limits of computation. Here are a few:
+</p>
+<ul><li><a href="/wiki/Automata_theory" title="Automata theory">Automata theory</a></li>
+<li><a href="/wiki/Formal_grammar" title="Formal grammar">Formal grammar</a> (language generators)</li>
+<li><a href="/wiki/Formal_language" title="Formal language">Formal language</a> (language recognizers)</li>
+<li><a href="/wiki/Lambda_calculus" title="Lambda calculus">Lambda calculus</a></li>
+<li><a href="/wiki/Post%E2%80%93Turing_machine" title="Post–Turing machine">Post–Turing machines</a></li>
+<li><a href="/wiki/Process_calculus" title="Process calculus">Process calculus</a></li></ul>
+<p>Most <a href="/wiki/Programming_language" title="Programming language">programming languages</a> (their abstract models, maybe with some particular constructs that assume finite memory omitted), conventional and unconventional, are Turing-complete. This includes:
+</p>
+<ul><li>All general-purpose languages in wide use.
+<ul><li><a href="/wiki/Procedural_programming" title="Procedural programming">Procedural programming</a> languages such as <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>.</li>
+<li><a href="/wiki/Object-oriented_programming_language" class="mw-redirect" title="Object-oriented programming language">Object-oriented</a> languages such as <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a> or <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>.</li>
+<li><a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">Multi-paradigm</a> languages such as <a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="/wiki/C%2B%2B" title="C++">C++</a>, <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, <a href="/wiki/Fortran" title="Fortran">Fortran</a>, <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, <a href="/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>, <a href="/wiki/Perl" title="Perl">Perl</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/R_(programming_language)" title="R (programming language)">R</a>.</li></ul></li>
+<li>Most languages using less common paradigms:
+<ul><li><a href="/wiki/Functional_programming" title="Functional programming">Functional</a> languages such as <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> and <a href="/wiki/Haskell_(programming_language)" class="mw-redirect" title="Haskell (programming language)">Haskell</a>.</li>
+<li><a href="/wiki/Logic_programming" title="Logic programming">Logic programming</a> languages such as <a href="/wiki/Prolog" title="Prolog">Prolog</a>.</li>
+<li><a href="/wiki/General-purpose_macro_processor" title="General-purpose macro processor">General-purpose macro processor</a> such as <a href="/wiki/M4_(computer_language)" title="M4 (computer language)">m4</a>.</li>
+<li><a href="/wiki/Declarative_programming" title="Declarative programming">Declarative</a> languages such as <a href="/wiki/XSLT" title="XSLT">XSLT</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;5&#93;</a></sup></li>
+<li><a href="/wiki/VHDL" title="VHDL">VHDL</a> and other hardware description languages.</li>
+<li><a href="/wiki/TeX" title="TeX">TeX</a>, a typesetting system.</li>
+<li><a href="/wiki/Esoteric_programming_language" title="Esoteric programming language">Esoteric programming languages</a>, a form of <a href="/wiki/Mathematical_recreation" class="mw-redirect" title="Mathematical recreation">mathematical recreation</a> in which programmers work out how to achieve basic programming constructs in an extremely difficult but mathematically Turing-equivalent language.</li></ul></li></ul>
+<p>Some <a href="/wiki/Rewrite_system" class="mw-redirect" title="Rewrite system">rewrite systems</a> are Turing-complete.
+</p><p>Turing completeness is an abstract statement of ability, rather than a prescription of specific language features used to implement that ability. The features used to achieve Turing completeness can be quite different; <a href="/wiki/Fortran" title="Fortran">Fortran</a> systems would use loop constructs or possibly even <a href="/wiki/Goto" title="Goto">goto</a> statements to achieve repetition; Haskell and Prolog, lacking looping almost entirely, would use <a href="/wiki/Recursion" title="Recursion">recursion</a>. Most programming languages are describing computations on <a href="/wiki/Von_Neumann_architecture" title="Von Neumann architecture">von Neumann architectures</a>, which have memory (RAM and register) and a control unit. These two elements make this architecture Turing-complete. Even pure <a href="/wiki/Functional_language" class="mw-redirect" title="Functional language">functional languages</a> are Turing-complete.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;6&#93;</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;NB 2&#93;</a></sup>
+</p><p>Turing completeness in declarative <a href="/wiki/SQL" title="SQL">SQL</a> is implemented through <a href="/wiki/Hierarchical_and_recursive_queries_in_SQL" title="Hierarchical and recursive queries in SQL">recursive common table expressions</a>.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;7&#93;</a></sup>  Unsurprisingly, procedural extensions to SQL (<a href="/wiki/PLSQL" class="mw-redirect" title="PLSQL">PLSQL</a>, etc.) are also Turing-complete. This illustrates one reason why relatively powerful non-Turing-complete languages are rare: the more powerful the language is initially, the more complex are the tasks to which it is applied and the sooner its lack of completeness becomes perceived as a drawback, encouraging its extension until it is Turing-complete.
+</p><p>The untyped <a href="/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a> is Turing-complete, but many typed lambda calculi, including <a href="/wiki/System_F" title="System F">System F</a>, are not. The value of typed systems is based in their ability to represent most typical computer programs while detecting more errors.
+</p><p><a href="/wiki/Rule_110" title="Rule 110">Rule 110</a> and <a href="/wiki/Conway%27s_Game_of_Life" title="Conway&#39;s Game of Life">Conway's Game of Life</a>, both <a href="/wiki/Cellular_automaton" title="Cellular automaton">cellular automata</a>, are Turing-complete.
+</p>
+<h3><span class="mw-headline" id="Unintentional_Turing_completeness">Unintentional Turing completeness</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=8" title="Edit section: Unintentional Turing completeness"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Some games and other software are Turing-complete by accident, i.e. not by design.
+</p><p>Software:
+</p>
+<ul><li><a href="/wiki/Microsoft_Excel" title="Microsoft Excel">Microsoft Excel</a><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;8&#93;</a></sup></li></ul>
+<p>Games:
+</p>
+<ul><li><i><a href="/wiki/Dwarf_Fortress" title="Dwarf Fortress">Dwarf Fortress</a></i><sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;9&#93;</a></sup></li>
+<li><i><a href="/wiki/Cities:_Skylines" title="Cities: Skylines">Cities: Skylines</a></i><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;10&#93;</a></sup></li>
+<li><i><a href="/wiki/Opus_Magnum_(video_game)" class="mw-redirect" title="Opus Magnum (video game)">Opus Magnum</a></i><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;11&#93;</a></sup></li>
+<li><i><a href="/wiki/Minecraft" title="Minecraft">Minecraft</a></i><sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;12&#93;</a></sup></li>
+<li><i><a href="/wiki/Magic:_The_Gathering" title="Magic: The Gathering">Magic: The Gathering</a><sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;13&#93;</a></sup></i></li></ul>
+<p>Social media:
+</p>
+<ul><li><i><a href="/wiki/Habbo_Hotel" class="mw-redirect" title="Habbo Hotel">Habbo Hotel</a></i><sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;14&#93;</a></sup></li></ul>
+<p>Computational languages:
+</p>
+<ul><li><a href="/wiki/Template_(C%2B%2B)" title="Template (C++)">C++ templates</a><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;15&#93;</a></sup></li>
+<li><a href="/wiki/Printf_format_string" class="mw-redirect" title="Printf format string">printf format string</a><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;16&#93;</a></sup></li>
+<li><a href="/wiki/TypeScript" title="TypeScript">TypeScript's type system</a><sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;17&#93;</a></sup></li>
+<li><a href="/wiki/X86_assembly_language" title="X86 assembly language">x86 assembly</a>'s MOV instruction<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;18&#93;</a></sup><sup id="cite_ref-21" class="reference"><a href="#cite_note-21">&#91;19&#93;</a></sup><sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;20&#93;</a></sup></li></ul>
+<p>Biology:
+</p>
+<ul><li><a href="/wiki/Chemical_computer" title="Chemical computer">Chemical reaction networks</a><sup id="cite_ref-:0_23-0" class="reference"><a href="#cite_note-:0-23">&#91;21&#93;</a></sup><sup id="cite_ref-:1_24-0" class="reference"><a href="#cite_note-:1-24">&#91;22&#93;</a></sup><sup id="cite_ref-:2_25-0" class="reference"><a href="#cite_note-:2-25">&#91;23&#93;</a></sup><sup id="cite_ref-:3_26-0" class="reference"><a href="#cite_note-:3-26">&#91;24&#93;</a></sup> and <a href="/wiki/DNA_computing" title="DNA computing">enzyme-based DNA computers</a><sup id="cite_ref-27" class="reference"><a href="#cite_note-27">&#91;25&#93;</a></sup> have been shown to be Turing-equivalent</li></ul>
+<h2><span class="mw-headline" id="Non-Turing-complete_languages">Non-Turing-complete languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=9" title="Edit section: Non-Turing-complete languages"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Many computational languages exist that are not Turing-complete. One such example is the set of <a href="/wiki/Regular_language" title="Regular language">regular languages</a>, which are generated by <a href="/wiki/Regular_expression" title="Regular expression">regular expressions</a> and which are recognized by <a href="/wiki/Finite-state_machine" title="Finite-state machine">finite automata</a>. A more powerful but still not Turing-complete extension of finite automata is the category of <a href="/wiki/Pushdown_automaton" title="Pushdown automaton">pushdown automata</a> and <a href="/wiki/Context-free_grammar" title="Context-free grammar">context-free grammars</a>, which are commonly used to generate parse trees in an initial stage of program <a href="/wiki/Compiler" title="Compiler">compiling</a>. Further examples include some of the early versions of the pixel shader languages embedded in <a href="/wiki/Direct3D" title="Direct3D">Direct3D</a> and <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a> extensions.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (December 2010)">citation needed</span></a></i>&#93;</sup>
+</p><p>In <a href="/wiki/Total_functional_programming" title="Total functional programming">total functional programming</a> languages, such as <a href="/w/index.php?title=Charity_(programming_language)&amp;action=edit&amp;redlink=1" class="new" title="Charity (programming language) (page does not exist)">Charity</a> and <a href="/wiki/Epigram_(programming_language)" title="Epigram (programming language)">Epigram</a>, all functions are total and must terminate. Charity uses a type system and <a href="/wiki/Control_flow" title="Control flow">control constructs</a> based on <a href="/wiki/Category_theory" title="Category theory">category theory</a>, whereas Epigram uses <a href="/wiki/Dependent_type" title="Dependent type">dependent types</a>. The <a href="/wiki/LOOP_(programming_language)" title="LOOP (programming language)">LOOP</a> language is designed so that it computes only the functions that are <a href="/wiki/Primitive_recursive_function" title="Primitive recursive function">primitive recursive</a>. All of these compute proper subsets of the total computable functions, since the full set of total computable functions is not <a href="/wiki/Recursively_enumerable_set" class="mw-redirect" title="Recursively enumerable set">computably enumerable</a>. Also, since all functions in these languages are total, algorithms for <a href="/wiki/Recursively_enumerable_set" class="mw-redirect" title="Recursively enumerable set">recursively enumerable sets</a> cannot be written in these languages, in contrast with Turing machines.
+</p><p>Although (untyped) <a href="/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a> is Turing-complete, <a href="/wiki/Simply_typed_lambda_calculus" title="Simply typed lambda calculus">simply typed lambda calculus</a> is not.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=10" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1147244281">.mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style><div class="div-col" style="column-width: 20em;">
+<ul><li><a href="/wiki/AI-completeness" class="mw-redirect" title="AI-completeness">AI-completeness</a></li>
+<li><a href="/wiki/Algorithmic_information_theory" title="Algorithmic information theory">Algorithmic information theory</a></li>
+<li><a href="/wiki/Chomsky_hierarchy" title="Chomsky hierarchy">Chomsky hierarchy</a></li>
+<li><a href="/wiki/Church%E2%80%93Turing_thesis" title="Church–Turing thesis">Church–Turing thesis</a></li>
+<li><a href="/wiki/Computability_theory" title="Computability theory">Computability theory</a></li>
+<li><a href="/wiki/Inner_loop" title="Inner loop">Inner loop</a></li>
+<li><a href="/wiki/Loop_(computing)" class="mw-redirect" title="Loop (computing)">Loop (computing)</a></li>
+<li><a href="/wiki/Machine_that_always_halts" class="mw-redirect" title="Machine that always halts">Machine that always halts</a></li>
+<li><a href="/wiki/Rice%27s_theorem" title="Rice&#39;s theorem">Rice's theorem</a></li>
+<li><a href="/wiki/Smn_theorem" title="Smn theorem"><i>s<sub>mn</sub></i> theorem</a></li>
+<li><a href="/wiki/Structured_program_theorem" title="Structured program theorem">Structured program theorem</a></li>
+<li><a href="/wiki/Turing_tarpit" title="Turing tarpit">Turing tarpit</a></li>
+<li><a href="/wiki/Virtualization" title="Virtualization">Virtualization</a></li>
+<li><a href="/wiki/Emulation_(computing)" class="mw-redirect" title="Emulation (computing)">Emulation (computing)</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=11" title="Edit section: Notes"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">A UTM cannot simulate non-computational aspects such as <a href="/wiki/Input/output" title="Input/output">I/O</a>.</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">The following book provides an introduction for computation models: <style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFRauberRünger2013" class="citation book cs1">Rauber, Thomas; Rünger, Gudula (2013). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=UbpAAAAAQBAJ"><i>Parallel programming: for multicore and cluster systems</i></a> (2nd&#160;ed.). Springer. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9783642378010" title="Special:BookSources/9783642378010"><bdi>9783642378010</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Parallel+programming%3A+for+multicore+and+cluster+systems&amp;rft.edition=2nd&amp;rft.pub=Springer&amp;rft.date=2013&amp;rft.isbn=9783642378010&amp;rft.aulast=Rauber&amp;rft.aufirst=Thomas&amp;rft.au=R%C3%BCnger%2C+Gudula&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DUbpAAAAAQBAJ&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=12" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1011085734"><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFHodges1992" class="citation cs2"><a href="/wiki/Andrew_Hodges" title="Andrew Hodges">Hodges, Andrew</a> (1992) [1983], <a href="/wiki/Alan_Turing:_The_Enigma" title="Alan Turing: The Enigma"><i>Alan Turing: The Enigma</i></a>, London: Burnett Books, p.&#160;111, <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-04-510060-8" title="Special:BookSources/0-04-510060-8"><bdi>0-04-510060-8</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Alan+Turing%3A+The+Enigma&amp;rft.place=London&amp;rft.pages=111&amp;rft.pub=Burnett+Books&amp;rft.date=1992&amp;rft.isbn=0-04-510060-8&amp;rft.aulast=Hodges&amp;rft.aufirst=Andrew&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFRojas1998" class="citation journal cs1">Rojas, Raul (1998). <a rel="nofollow" class="external text" href="https://www.researchgate.net/publication/3330654">"How to make Zuse's Z3 a universal computer"</a>. <i>Annals of the History of Computing</i>. <b>20</b> (3): 51–54. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2F85.707574">10.1109/85.707574</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Annals+of+the+History+of+Computing&amp;rft.atitle=How+to+make+Zuse%27s+Z3+a+universal+computer&amp;rft.volume=20&amp;rft.issue=3&amp;rft.pages=51-54&amp;rft.date=1998&amp;rft_id=info%3Adoi%2F10.1109%2F85.707574&amp;rft.aulast=Rojas&amp;rft.aufirst=Raul&amp;rft_id=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F3330654&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFRojas2014" class="citation journal cs1 cs1-prop-foreign-lang-source">Rojas, Raúl (1 February 2014). "Konrad Zuse und der bedingte Sprung" &#91;Konrad Zuse and the conditional jump&#93;. <i>Informatik-Spektrum</i> (in German). <b>37</b> (1): 50–53. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2Fs00287-013-0717-9">10.1007/s00287-013-0717-9</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0170-6012">0170-6012</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:1086397">1086397</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Informatik-Spektrum&amp;rft.atitle=Konrad+Zuse+und+der+bedingte+Sprung&amp;rft.volume=37&amp;rft.issue=1&amp;rft.pages=50-53&amp;rft.date=2014-02-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A1086397%23id-name%3DS2CID&amp;rft.issn=0170-6012&amp;rft_id=info%3Adoi%2F10.1007%2Fs00287-013-0717-9&amp;rft.aulast=Rojas&amp;rft.aufirst=Ra%C3%BAl&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFSchmidhuber1997" class="citation cs2">Schmidhuber, Jürgen (1997), Freksa, Christian; Jantzen, Matthias; Valk, Rüdiger (eds.), <a rel="nofollow" class="external text" href="https://doi.org/10.1007/BFb0052088">"A computer scientist's view of life, the universe, and everything"</a>, <i>Foundations of Computer Science: Potential — Theory — Cognition</i>, Lecture Notes in Computer Science, Berlin, Heidelberg: Springer, vol.&#160;1337, pp.&#160;201–208, <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2Fbfb0052088">10.1007/bfb0052088</a>, <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-69640-7" title="Special:BookSources/978-3-540-69640-7"><bdi>978-3-540-69640-7</bdi></a>, <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:17830241">17830241</a><span class="reference-accessdate">, retrieved <span class="nowrap">23 May</span> 2022</span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Foundations+of+Computer+Science%3A+Potential+%E2%80%94+Theory+%E2%80%94+Cognition&amp;rft.atitle=A+computer+scientist%27s+view+of+life%2C+the+universe%2C+and+everything&amp;rft.volume=1337&amp;rft.pages=201-208&amp;rft.date=1997&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A17830241%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2Fbfb0052088&amp;rft.isbn=978-3-540-69640-7&amp;rft.aulast=Schmidhuber&amp;rft.aufirst=J%C3%BCrgen&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2FBFb0052088&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFLyons2001" class="citation web cs1">Lyons, Bob (30 March 2001). <a rel="nofollow" class="external text" href="http://www.unidex.com/turing/utm.htm">"Universal Turing Machine in XSLT"</a>. <i>B2B Integration Solutions from Unidex</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20110717162708/http://www.unidex.com/turing/utm.htm">Archived</a> from the original on 17 July 2011<span class="reference-accessdate">. Retrieved <span class="nowrap">5 July</span> 2010</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=B2B+Integration+Solutions+from+Unidex&amp;rft.atitle=Universal+Turing+Machine+in+XSLT&amp;rft.date=2001-03-30&amp;rft.aulast=Lyons&amp;rft.aufirst=Bob&amp;rft_id=http%3A%2F%2Fwww.unidex.com%2Fturing%2Futm.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBoyerMoore1983" class="citation techreport cs1">Boyer, Robert S.; Moore, J. Strother (May 1983). <a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/boyer/ftp/ics-reports/cmp37.pdf"><i>A Mechanical Proof of the Turing Completeness of Pure Lisp</i></a> <span class="cs1-format">(PDF)</span> (Technical report). Institute for Computing Science, University of Texas at Austin. 37. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20170922044624/http://www.cs.utexas.edu/users/boyer/ftp/ics-reports/cmp37.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on 22 September 2017.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=A+Mechanical+Proof+of+the+Turing+Completeness+of+Pure+Lisp&amp;rft.pub=Institute+for+Computing+Science%2C+University+of+Texas+at+Austin&amp;rft.date=1983-05&amp;rft.aulast=Boyer&amp;rft.aufirst=Robert+S.&amp;rft.au=Moore%2C+J.+Strother&amp;rft_id=http%3A%2F%2Fwww.cs.utexas.edu%2Fusers%2Fboyer%2Fftp%2Fics-reports%2Fcmp37.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDfetterBreinbaas2011" class="citation web cs1">Dfetter; Breinbaas (8 August 2011). <a rel="nofollow" class="external text" href="https://wiki.postgresql.org/index.php?title=Cyclic_Tag_System&amp;oldid=15106">"Cyclic Tag System"</a>. <i>PostgreSQL wiki</i><span class="reference-accessdate">. Retrieved <span class="nowrap">10 September</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=PostgreSQL+wiki&amp;rft.atitle=Cyclic+Tag+System&amp;rft.date=2011-08-08&amp;rft.au=Dfetter&amp;rft.au=Breinbaas&amp;rft_id=https%3A%2F%2Fwiki.postgresql.org%2Findex.php%3Ftitle%3DCyclic_Tag_System%26oldid%3D15106&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://techcommunity.microsoft.com/t5/excel-blog/announcing-lambda-turn-excel-formulas-into-custom-functions/ba-p/1925546">"Announcing LAMBDA: Turn Excel formulas into custom functions"</a>. <i>TECHCOMMUNITY.MICROSOFT.COM</i>. 3 December 2020<span class="reference-accessdate">. Retrieved <span class="nowrap">8 December</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=TECHCOMMUNITY.MICROSOFT.COM&amp;rft.atitle=Announcing+LAMBDA%3A+Turn+Excel+formulas+into+custom+functions&amp;rft.date=2020-12-03&amp;rft_id=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2Fexcel-blog%2Fannouncing-lambda-turn-excel-formulas-into-custom-functions%2Fba-p%2F1925546&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFCedotal2010" class="citation web cs1">Cedotal, Andrew (16 April 2010). <a rel="nofollow" class="external text" href="http://www.themarysue.com/dwarf-fortress-turing-machine-computer/">"Man Uses World's Most Difficult Computer Game to Create … A Working Turing Machine"</a>. <i>The Mary Sue</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20150627102458/http://www.themarysue.com/dwarf-fortress-turing-machine-computer/">Archived</a> from the original on 27 June 2015<span class="reference-accessdate">. Retrieved <span class="nowrap">2 June</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=The+Mary+Sue&amp;rft.atitle=Man+Uses+World%27s+Most+Difficult+Computer+Game+to+Create+%E2%80%A6+A+Working+Turing+Machine&amp;rft.date=2010-04-16&amp;rft.aulast=Cedotal&amp;rft.aufirst=Andrew&amp;rft_id=http%3A%2F%2Fwww.themarysue.com%2Fdwarf-fortress-turing-machine-computer%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFPlunkett2019" class="citation web cs1">Plunkett, Luke (16 July 2019). <a rel="nofollow" class="external text" href="https://kotaku.com/cities-skylines-map-becomes-a-poop-powered-calculator-1836398063">"Cities: Skylines Map Becomes A Poop-Powered Computer"</a>. <i><a href="/wiki/Kotaku" title="Kotaku">Kotaku</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">16 July</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Kotaku&amp;rft.atitle=Cities%3A+Skylines+Map+Becomes+A+Poop-Powered+Computer&amp;rft.date=2019-07-16&amp;rft.aulast=Plunkett&amp;rft.aufirst=Luke&amp;rft_id=https%3A%2F%2Fkotaku.com%2Fcities-skylines-map-becomes-a-poop-powered-calculator-1836398063&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFCaldwell2017" class="citation web cs1">Caldwell, Brendan (20 November 2017). <a rel="nofollow" class="external text" href="https://www.rockpapershotgun.com/2017/11/20/opus-magnum-player-makes-computer/">"Opus Magnum player makes an alchemical computer"</a>. <i><a href="/wiki/Rock_Paper_Shotgun" title="Rock Paper Shotgun">Rock Paper Shotgun</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">23 September</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Rock+Paper+Shotgun&amp;rft.atitle=Opus+Magnum+player+makes+an+alchemical+computer&amp;rft.date=2017-11-20&amp;rft.aulast=Caldwell&amp;rft.aufirst=Brendan&amp;rft_id=https%3A%2F%2Fwww.rockpapershotgun.com%2F2017%2F11%2F20%2Fopus-magnum-player-makes-computer%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFCrider" class="citation web cs1">Crider, Michael. <a rel="nofollow" class="external text" href="https://www.pcworld.com/article/559794/8-bit-computer-processor-built-in-minecraft-can-run-its-own-games.html">"This 8-bit processor built in Minecraft can run its own games"</a>. <i>PCWorld</i><span class="reference-accessdate">. Retrieved <span class="nowrap">21 July</span> 2022</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=PCWorld&amp;rft.atitle=This+8-bit+processor+built+in+Minecraft+can+run+its+own+games&amp;rft.aulast=Crider&amp;rft.aufirst=Michael&amp;rft_id=https%3A%2F%2Fwww.pcworld.com%2Farticle%2F559794%2F8-bit-computer-processor-built-in-minecraft-can-run-its-own-games.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFOuellette2019" class="citation web cs1">Ouellette, Jennifer (23 June 2019). <a rel="nofollow" class="external text" href="https://arstechnica.com/science/2019/06/its-possible-to-build-a-turing-machine-within-magic-the-gathering/">"It's possible to build a Turing machine within Magic: The Gathering"</a>. <i><a href="/wiki/Ars_Technica" title="Ars Technica">Ars Technica</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">12 March</span> 2023</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Ars+Technica&amp;rft.atitle=It%27s+possible+to+build+a+Turing+machine+within+Magic%3A+The+Gathering&amp;rft.date=2019-06-23&amp;rft.aulast=Ouellette&amp;rft.aufirst=Jennifer&amp;rft_id=https%3A%2F%2Farstechnica.com%2Fscience%2F2019%2F06%2Fits-possible-to-build-a-turing-machine-within-magic-the-gathering%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://twitter.com/Habbo/status/1325785673304043522">"Habbo's Twitter thread on the implementation of a Turing machine inside the game"</a>. 9 November 2020<span class="reference-accessdate">. Retrieved <span class="nowrap">11 November</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Habbo%27s+Twitter+thread+on+the+implementation+of+a+Turing+machine+inside+the+game.&amp;rft.date=2020-11-09&amp;rft_id=https%3A%2F%2Ftwitter.com%2FHabbo%2Fstatus%2F1325785673304043522&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFMeyers,_Scott_(Scott_Douglas)2005" class="citation book cs1">Meyers, Scott (Scott Douglas) (2005). <span class="cs1-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/effectivec55spec00meye"><i>Effective C++&#160;: 55 specific ways to improve your programs and designs</i></a></span> (3rd&#160;ed.). Upper Saddle River, NJ: Addison-Wesley. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0321334876" title="Special:BookSources/0321334876"><bdi>0321334876</bdi></a>. <a href="/wiki/OCLC_(identifier)" class="mw-redirect" title="OCLC (identifier)">OCLC</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/oclc/60425273">60425273</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Effective+C%2B%2B+%3A+55+specific+ways+to+improve+your+programs+and+designs&amp;rft.place=Upper+Saddle+River%2C+NJ&amp;rft.edition=3rd&amp;rft.pub=Addison-Wesley&amp;rft.date=2005&amp;rft_id=info%3Aoclcnum%2F60425273&amp;rft.isbn=0321334876&amp;rft.au=Meyers%2C+Scott+%28Scott+Douglas%29&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Feffectivec55spec00meye&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.ioccc.org/2020/carlini/index.html">A 27th IOCCC Winner</a><br /><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFCarliniBarresiPayerWagner2015" class="citation conference cs1">Carlini, Nicolas; Barresi, Antonio; Payer, Mathias; Wagner, David; Gross, Thomas R. (August 2015). <a rel="nofollow" class="external text" href="https://dl.acm.org/doi/10.5555/2831143.2831154">"Control-flow bending: on the effectiveness of control-flow integrity"</a>. <i>Proceedings of the 24th USENIX Conference on Security Symposium</i>. pp.&#160;161–176. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781931971232" title="Special:BookSources/9781931971232"><bdi>9781931971232</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Control-flow+bending%3A+on+the+effectiveness+of+control-flow+integrity&amp;rft.btitle=Proceedings+of+the+24th+USENIX+Conference+on+Security+Symposium&amp;rft.pages=161-176&amp;rft.date=2015-08&amp;rft.isbn=9781931971232&amp;rft.aulast=Carlini&amp;rft.aufirst=Nicolas&amp;rft.au=Barresi%2C+Antonio&amp;rft.au=Payer%2C+Mathias&amp;rft.au=Wagner%2C+David&amp;rft.au=Gross%2C+Thomas+R.&amp;rft_id=https%3A%2F%2Fdl.acm.org%2Fdoi%2F10.5555%2F2831143.2831154&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDabler2021" class="citation web cs1">Dabler, Ryan (23 September 2021). <a rel="nofollow" class="external text" href="https://itnext.io/typescript-and-turing-completeness-ba8ded8f3de3">"TypeScript and Turing Completeness"</a>. <i>ITNEXT</i>. LINKIT<span class="reference-accessdate">. Retrieved <span class="nowrap">12 November</span> 2022</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ITNEXT&amp;rft.atitle=TypeScript+and+Turing+Completeness&amp;rft.date=2021-09-23&amp;rft.aulast=Dabler&amp;rft.aufirst=Ryan&amp;rft_id=https%3A%2F%2Fitnext.io%2Ftypescript-and-turing-completeness-ba8ded8f3de3&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDolan" class="citation web cs1">Dolan, Stephen. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20210214020524/https://stedolan.net/research/mov.pdf">"mov is Turing-complete"</a> <span class="cs1-format">(PDF)</span>. <i>stedolan.net</i>. Archived from <a rel="nofollow" class="external text" href="http://stedolan.net/research/mov.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 14 February 2021<span class="reference-accessdate">. Retrieved <span class="nowrap">9 May</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=stedolan.net&amp;rft.atitle=mov+is+Turing-complete&amp;rft.aulast=Dolan&amp;rft.aufirst=Stephen&amp;rft_id=http%3A%2F%2Fstedolan.net%2Fresearch%2Fmov.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWilliams2021" class="citation web cs1">Williams, Al (21 March 2021). <a rel="nofollow" class="external text" href="https://hackaday.com/2021/05/21/one-instruction-to-rule-them-all-c-compiler-emits-only-mov/">"One Instruction To Rule Them All: C Compiler Emits Only MOV"</a>. <a href="/wiki/Hackaday" title="Hackaday">Hackaday</a><span class="reference-accessdate">. Retrieved <span class="nowrap">23 October</span> 2023</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=One+Instruction+To+Rule+Them+All%3A+C+Compiler+Emits+Only+MOV&amp;rft.pub=Hackaday&amp;rft.date=2021-03-21&amp;rft.aulast=Williams&amp;rft.aufirst=Al&amp;rft_id=https%3A%2F%2Fhackaday.com%2F2021%2F05%2F21%2Fone-instruction-to-rule-them-all-c-compiler-emits-only-mov%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation cs2"><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=R7EEoWg6Ekk"><i>Break Me00 The MoVfuscator Turning mov into a soul crushing RE nightmare Christopher Domas</i></a><span class="reference-accessdate">, retrieved <span class="nowrap">5 November</span> 2022</span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Break+Me00+The+MoVfuscator+Turning+mov+into+a+soul+crushing+RE+nightmare+Christopher+Domas&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DR7EEoWg6Ekk&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:0-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-:0_23-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFShahWeeSongCeze2020" class="citation journal cs1">Shah, Shalin; Wee, Jasmine; Song, Tianqi; Ceze, Luis; Strauss, Karin; Chen, Yuan-Jyue; Reif, John (4 May 2020). "Using Strand Displacing Polymerase To Program Chemical Reaction Networks". <i>Journal of the American Chemical Society</i>. <b>142</b> (21): 9587–9593. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1021%2Fjacs.0c02240">10.1021/jacs.0c02240</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0002-7863">0002-7863</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="https://pubmed.ncbi.nlm.nih.gov/32364723">32364723</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:218504535">218504535</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+American+Chemical+Society&amp;rft.atitle=Using+Strand+Displacing+Polymerase+To+Program+Chemical+Reaction+Networks&amp;rft.volume=142&amp;rft.issue=21&amp;rft.pages=9587-9593&amp;rft.date=2020-05-04&amp;rft.issn=0002-7863&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A218504535%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F32364723&amp;rft_id=info%3Adoi%2F10.1021%2Fjacs.0c02240&amp;rft.aulast=Shah&amp;rft.aufirst=Shalin&amp;rft.au=Wee%2C+Jasmine&amp;rft.au=Song%2C+Tianqi&amp;rft.au=Ceze%2C+Luis&amp;rft.au=Strauss%2C+Karin&amp;rft.au=Chen%2C+Yuan-Jyue&amp;rft.au=Reif%2C+John&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:1-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-:1_24-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFChenDalchauSrinivasPhillips2013" class="citation journal cs1">Chen, Yuan-Jyue; Dalchau, Neil; Srinivas, Niranjan; Phillips, Andrew; Cardelli, Luca; Soloveichik, David; Seelig, Georg (October 2013). <a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4150546">"Programmable chemical controllers made from DNA"</a>. <i>Nature Nanotechnology</i>. <b>8</b> (10): 755–762. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2013NatNa...8..755C">2013NatNa...8..755C</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1038%2Fnnano.2013.189">10.1038/nnano.2013.189</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/1748-3395">1748-3395</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4150546">4150546</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="https://pubmed.ncbi.nlm.nih.gov/24077029">24077029</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Nature+Nanotechnology&amp;rft.atitle=Programmable+chemical+controllers+made+from+DNA&amp;rft.volume=8&amp;rft.issue=10&amp;rft.pages=755-762&amp;rft.date=2013-10&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC4150546%23id-name%3DPMC&amp;rft_id=info%3Abibcode%2F2013NatNa...8..755C&amp;rft_id=info%3Apmid%2F24077029&amp;rft_id=info%3Adoi%2F10.1038%2Fnnano.2013.189&amp;rft.issn=1748-3395&amp;rft.aulast=Chen&amp;rft.aufirst=Yuan-Jyue&amp;rft.au=Dalchau%2C+Neil&amp;rft.au=Srinivas%2C+Niranjan&amp;rft.au=Phillips%2C+Andrew&amp;rft.au=Cardelli%2C+Luca&amp;rft.au=Soloveichik%2C+David&amp;rft.au=Seelig%2C+Georg&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC4150546&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:2-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-:2_25-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFSrinivasParkinSeeligWinfree2017" class="citation journal cs1">Srinivas, Niranjan; Parkin, James; Seelig, Georg; Winfree, Erik; Soloveichik, David (15 December 2017). <a rel="nofollow" class="external text" href="https://doi.org/10.1126%2Fscience.aal2052">"Enzyme-free nucleic acid dynamical systems"</a>. <i>Science</i>. <b>358</b> (6369): eaal2052. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1126%2Fscience.aal2052">10.1126/science.aal2052</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0036-8075">0036-8075</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="https://pubmed.ncbi.nlm.nih.gov/29242317">29242317</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Science&amp;rft.atitle=Enzyme-free+nucleic+acid+dynamical+systems&amp;rft.volume=358&amp;rft.issue=6369&amp;rft.pages=eaal2052&amp;rft.date=2017-12-15&amp;rft.issn=0036-8075&amp;rft_id=info%3Apmid%2F29242317&amp;rft_id=info%3Adoi%2F10.1126%2Fscience.aal2052&amp;rft.aulast=Srinivas&amp;rft.aufirst=Niranjan&amp;rft.au=Parkin%2C+James&amp;rft.au=Seelig%2C+Georg&amp;rft.au=Winfree%2C+Erik&amp;rft.au=Soloveichik%2C+David&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1126%252Fscience.aal2052&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:3-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-:3_26-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFSoloveichikSeeligWinfree2010" class="citation journal cs1">Soloveichik, David; Seelig, Georg; Winfree, Erik (23 March 2010). <a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851759">"DNA as a universal substrate for chemical kinetics"</a>. <i>Proceedings of the National Academy of Sciences</i>. <b>107</b> (12): 5393–5398. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2010PNAS..107.5393S">2010PNAS..107.5393S</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1073%2Fpnas.0909380107">10.1073/pnas.0909380107</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0027-8424">0027-8424</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851759">2851759</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="https://pubmed.ncbi.nlm.nih.gov/20203007">20203007</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+National+Academy+of+Sciences&amp;rft.atitle=DNA+as+a+universal+substrate+for+chemical+kinetics&amp;rft.volume=107&amp;rft.issue=12&amp;rft.pages=5393-5398&amp;rft.date=2010-03-23&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC2851759%23id-name%3DPMC&amp;rft_id=info%3Abibcode%2F2010PNAS..107.5393S&amp;rft_id=info%3Apmid%2F20203007&amp;rft_id=info%3Adoi%2F10.1073%2Fpnas.0909380107&amp;rft.issn=0027-8424&amp;rft.aulast=Soloveichik&amp;rft.aufirst=David&amp;rft.au=Seelig%2C+Georg&amp;rft.au=Winfree%2C+Erik&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC2851759&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFShapiro1999" class="citation journal cs1"><a href="/wiki/Ehud_Shapiro" title="Ehud Shapiro">Shapiro, Ehud</a> (7 December 1999). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20090103224150/http://www.wisdom.weizmann.ac.il/~udi/DNA5/scripps_short/index.htm">"A Mechanical Turing Machine: Blueprint for a Biomolecular Computer"</a>. <i>Interface Focus</i>. <a href="/wiki/Weizmann_Institute_of_Science" title="Weizmann Institute of Science">Weizmann Institute of Science</a>. <b>2</b> (4): 497–503. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1098%2Frsfs.2011.0118">10.1098/rsfs.2011.0118</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3363030">3363030</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="https://pubmed.ncbi.nlm.nih.gov/22649583">22649583</a>. Archived from <a rel="nofollow" class="external text" href="http://www.wisdom.weizmann.ac.il/~udi/DNA5/scripps_short/index.htm">the original</a> on 3 January 2009<span class="reference-accessdate">. Retrieved <span class="nowrap">13 August</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Interface+Focus&amp;rft.atitle=A+Mechanical+Turing+Machine%3A+Blueprint+for+a+Biomolecular+Computer&amp;rft.volume=2&amp;rft.issue=4&amp;rft.pages=497-503&amp;rft.date=1999-12-07&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC3363030%23id-name%3DPMC&amp;rft_id=info%3Apmid%2F22649583&amp;rft_id=info%3Adoi%2F10.1098%2Frsfs.2011.0118&amp;rft.aulast=Shapiro&amp;rft.aufirst=Ehud&amp;rft_id=http%3A%2F%2Fwww.wisdom.weizmann.ac.il%2F~udi%2FDNA5%2Fscripps_short%2Findex.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=13" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1054258005">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}</style><div class="refbegin" style="">
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBrainerdLandweber1974" class="citation book cs1">Brainerd, W. S.; <a href="/wiki/Lawrence_Landweber" title="Lawrence Landweber">Landweber, L. H.</a> (1974). <span class="cs1-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/theoryofcomputat00brai"><i>Theory of Computation</i></a></span>. Wiley. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-09585-0" title="Special:BookSources/0-471-09585-0"><bdi>0-471-09585-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Theory+of+Computation&amp;rft.pub=Wiley&amp;rft.date=1974&amp;rft.isbn=0-471-09585-0&amp;rft.aulast=Brainerd&amp;rft.aufirst=W.+S.&amp;rft.au=Landweber%2C+L.+H.&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Ftheoryofcomputat00brai&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFGiles2007" class="citation magazine cs1">Giles, Jim (24 October 2007). <a rel="nofollow" class="external text" href="https://www.newscientist.com/article/dn12826-simplest-universal-computer-wins-student-25000.html">"Simplest 'universal computer' wins student $25,000"</a>. <i><a href="/wiki/New_Scientist" title="New Scientist">New Scientist</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=New+Scientist&amp;rft.atitle=Simplest+%27universal+computer%27+wins+student+%2425%2C000&amp;rft.date=2007-10-24&amp;rft.aulast=Giles&amp;rft.aufirst=Jim&amp;rft_id=https%3A%2F%2Fwww.newscientist.com%2Farticle%2Fdn12826-simplest-universal-computer-wins-student-25000.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFHerken1995" class="citation book cs1">Herken, Rolf, ed. (1995). <i>The Universal Turing Machine: A Half-Century Survey</i>. Springer Verlag. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/3-211-82637-8" title="Special:BookSources/3-211-82637-8"><bdi>3-211-82637-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Universal+Turing+Machine%3A+A+Half-Century+Survey&amp;rft.pub=Springer+Verlag&amp;rft.date=1995&amp;rft.isbn=3-211-82637-8&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFTuring1936" class="citation journal cs1">Turing, A. M. (1936). <a rel="nofollow" class="external text" href="https://www.cs.ox.ac.uk/activities/ieg/e-library/sources/tp2-ie.pdf">"On Computable Numbers, with an Application to the Entscheidungsproblem"</a> <span class="cs1-format">(PDF)</span>. <i>Proceedings of the London Mathematical Society</i>. 2. <b>42</b>: 230–265. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1112%2Fplms%2Fs2-42.1.230">10.1112/plms/s2-42.1.230</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:73712">73712</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+London+Mathematical+Society&amp;rft.atitle=On+Computable+Numbers%2C+with+an+Application+to+the+Entscheidungsproblem&amp;rft.volume=42&amp;rft.pages=230-265&amp;rft.date=1936&amp;rft_id=info%3Adoi%2F10.1112%2Fplms%2Fs2-42.1.230&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A73712%23id-name%3DS2CID&amp;rft.aulast=Turing&amp;rft.aufirst=A.+M.&amp;rft_id=https%3A%2F%2Fwww.cs.ox.ac.uk%2Factivities%2Fieg%2Fe-library%2Fsources%2Ftp2-ie.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFTuring1938" class="citation journal cs1">Turing, A. M. (1938). "On Computable Numbers, with an Application to the Entscheidungsproblem: A correction". <i>Proceedings of the London Mathematical Society</i>. 2. <b>43</b>: 544–546. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1112%2Fplms%2Fs2-43.6.544">10.1112/plms/s2-43.6.544</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+London+Mathematical+Society&amp;rft.atitle=On+Computable+Numbers%2C+with+an+Application+to+the+Entscheidungsproblem%3A+A+correction&amp;rft.volume=43&amp;rft.pages=544-546&amp;rft.date=1938&amp;rft_id=info%3Adoi%2F10.1112%2Fplms%2Fs2-43.6.544&amp;rft.aulast=Turing&amp;rft.aufirst=A.+M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></li></ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Turing_completeness&amp;action=edit&amp;section=14" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://c2.com/cgi/wiki?TuringComplete">"Turing Complete"</a>. <i>wiki.c2.com</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=wiki.c2.com&amp;rft.atitle=Turing+Complete&amp;rft_id=https%3A%2F%2Fc2.com%2Fcgi%2Fwiki%3FTuringComplete&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATuring+completeness" class="Z3988"></span></li></ul>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Alan_Turing" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Alan_Turing" title="Template:Alan Turing"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Alan_Turing" title="Template talk:Alan Turing"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Alan_Turing" title="Special:EditPage/Template:Alan Turing"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Alan_Turing" style="font-size:114%;margin:0 4em"><a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a></li>
+<li><a href="/wiki/Turing_test" title="Turing test">Turing test</a></li>
+<li><a class="mw-selflink selflink">Turing completeness</a></li>
+<li><a href="/wiki/Turing%27s_proof" title="Turing&#39;s proof">Turing's proof</a></li>
+<li><a href="/wiki/Turing_(microarchitecture)" title="Turing (microarchitecture)">Turing (microarchitecture)</a></li>
+<li><a href="/wiki/Turing_degree" title="Turing degree">Turing degree</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1367
+Cached time: 20231031011935
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.632 seconds
+Real time usage: 0.748 seconds
+Preprocessor visited node count: 2848/1000000
+Post‐expand include size: 80644/2097152 bytes
+Template argument size: 3435/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 8/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 101496/5000000 bytes
+Lua time usage: 0.438/10.000 seconds
+Lua memory usage: 16837376/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  692.641      1 -total
+ 32.90%  227.869      2 Template:Reflist
+ 17.47%  121.020      1 Template:Lang
+ 12.73%   88.192      4 Template:Cite_book
+ 11.10%   76.883      1 Template:Alan_Turing
+ 10.80%   74.785      1 Template:Navbox
+  8.52%   59.020     13 Template:Cite_web
+  8.21%   56.857      4 Template:Fix
+  7.70%   53.367      9 Template:Cite_journal
+  7.51%   52.012      1 Template:Short_description
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:30621-0!canonical and timestamp 20231031011935 and revision id 1182161933. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Turing_completeness&amp;oldid=1182161933">https://en.wikipedia.org/w/index.php?title=Turing_completeness&amp;oldid=1182161933</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Theory_of_computation" title="Category:Theory of computation">Theory of computation</a></li><li><a href="/wiki/Category:Turing_machine" title="Category:Turing machine">Turing machine</a></li><li><a href="/wiki/Category:Programming_language_theory" title="Category:Programming language theory">Programming language theory</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_German-language_sources_(de)" title="Category:CS1 German-language sources (de)">CS1 German-language sources (de)</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li><li><a href="/wiki/Category:Use_dmy_dates_from_November_2017" title="Category:Use dmy dates from November 2017">Use dmy dates from November 2017</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_June_2022" title="Category:Articles with unsourced statements from June 2022">Articles with unsourced statements from June 2022</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_March_2021" title="Category:Articles with unsourced statements from March 2021">Articles with unsourced statements from March 2021</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_December_2021" title="Category:Articles with unsourced statements from December 2021">Articles with unsourced statements from December 2021</a></li><li><a href="/wiki/Category:Articles_containing_German-language_text" title="Category:Articles containing German-language text">Articles containing German-language text</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_December_2010" title="Category:Articles with unsourced statements from December 2010">Articles with unsourced statements from December 2010</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 27 October 2023, at 14:42<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Turing_completeness&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw1419","wgBackendResponseTime":143,"wgPageParseReport":{"limitreport":{"cputime":"0.632","walltime":"0.748","ppvisitednodes":{"value":2848,"limit":1000000},"postexpandincludesize":{"value":80644,"limit":2097152},"templateargumentsize":{"value":3435,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":8,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":101496,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  692.641      1 -total"," 32.90%  227.869      2 Template:Reflist"," 17.47%  121.020      1 Template:Lang"," 12.73%   88.192      4 Template:Cite_book"," 11.10%   76.883      1 Template:Alan_Turing"," 10.80%   74.785      1 Template:Navbox","  8.52%   59.020     13 Template:Cite_web","  8.21%   56.857      4 Template:Fix","  7.70%   53.367      9 Template:Cite_journal","  7.51%   52.012      1 Template:Short_description"]},"scribunto":{"limitreport-timeusage":{"value":"0.438","limit":"10.000"},"limitreport-memusage":{"value":16837376,"limit":52428800}},"cachereport":{"origin":"mw1367","timestamp":"20231031011935","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Turing completeness","url":"https:\/\/en.wikipedia.org\/wiki\/Turing_completeness","sameAs":"http:\/\/www.wikidata.org\/entity\/Q197970","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q197970","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-09-08T04:01:55Z","dateModified":"2023-10-27T14:42:14Z","headline":"ability of a computing system to simulate Turing machines"}</script>
+</body>
+</html>

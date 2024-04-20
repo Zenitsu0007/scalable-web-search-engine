@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Clustered file system - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"9babc1af-fe56-4708-af62-c422d55e4878","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Clustered_file_system","wgTitle":"Clustered file system","wgCurRevisionId":1181074019,"wgRevisionId":1181074019,"wgArticleId":10459749,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Articles needing additional references from December 2015","All articles needing additional references","Articles needing cleanup from December 2013","All pages needing cleanup","Cleanup tagged articles with a reason field from December 2013","Wikipedia pages needing cleanup from December 2013","Articles with multiple maintenance issues","Computer file systems",
+"Data management","Distributed data storage","Distributed file systems","Network file systems","Shared disk file systems","Storage area networks"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Clustered_file_system","wgRelevantArticleId":10459749,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage",
+"wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1103464","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site",
+"mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Clustered file system - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Clustered_file_system">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Clustered_file_system&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Clustered_file_system">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Clustered_file_system rootpage-Clustered_file_system skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Clustered+file+system" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Clustered+file+system" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Clustered+file+system" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Clustered+file+system" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Shared-disk_file_system"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Shared-disk_file_system">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Shared-disk file system</div>
+		</a>
+		
+			<button aria-controls="toc-Shared-disk_file_system-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Shared-disk file system subsection</span>
+			</button>
+		
+		<ul id="toc-Shared-disk_file_system-sublist" class="vector-toc-list">
+			<li id="toc-Examples"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Examples">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.1</span>Examples</div>
+			</a>
+			
+			<ul id="toc-Examples-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Distributed_file_systems"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Distributed_file_systems">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Distributed file systems</div>
+		</a>
+		
+			<button aria-controls="toc-Distributed_file_systems-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Distributed file systems subsection</span>
+			</button>
+		
+		<ul id="toc-Distributed_file_systems-sublist" class="vector-toc-list">
+			<li id="toc-Design_goals"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Design_goals">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1</span>Design goals</div>
+			</a>
+			
+			<ul id="toc-Design_goals-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-History"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#History">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.2</span>History</div>
+			</a>
+			
+			<ul id="toc-History-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Examples_2"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Examples_2">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.3</span>Examples</div>
+			</a>
+			
+			<ul id="toc-Examples_2-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Network-attached_storage"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Network-attached_storage">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>Network-attached storage</div>
+		</a>
+		
+		<ul id="toc-Network-attached_storage-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Design_considerations"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Design_considerations">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Design considerations</div>
+		</a>
+		
+			<button aria-controls="toc-Design_considerations-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Design considerations subsection</span>
+			</button>
+		
+		<ul id="toc-Design_considerations-sublist" class="vector-toc-list">
+			<li id="toc-Avoiding_single_point_of_failure"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Avoiding_single_point_of_failure">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.1</span>Avoiding single point of failure</div>
+			</a>
+			
+			<ul id="toc-Avoiding_single_point_of_failure-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Performance"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Performance">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.2</span>Performance</div>
+			</a>
+			
+			<ul id="toc-Performance-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Concurrency"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Concurrency">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.3</span>Concurrency</div>
+			</a>
+			
+			<ul id="toc-Concurrency-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-History_2"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#History_2">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>History</div>
+		</a>
+		
+		<ul id="toc-History_2-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">6</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">7</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Further_reading"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Further_reading">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">8</span>Further reading</div>
+		</a>
+		
+		<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Clustered file system</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 5 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-5" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">5 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Cluster-Dateisystem" title="Cluster-Dateisystem – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Clustered_file_system" title="Clustered file system – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Regneklyngefilsystem" title="Regneklyngefilsystem – Norwegian Bokmål" lang="nb" hreflang="nb" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Clustered_file_system" title="Clustered file system – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E9%9B%86%E7%BE%A4%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F" title="集群文件系统 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1103464#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Clustered_file_system" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Clustered_file_system" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Clustered_file_system"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Clustered_file_system&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Clustered_file_system&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Clustered_file_system"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Clustered_file_system&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Clustered_file_system&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Clustered_file_system" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Clustered_file_system" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Clustered_file_system&amp;oldid=1181074019" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Clustered_file_system&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Clustered_file_system&amp;id=1181074019&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FClustered_file_system"><span>Get shortened URL</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1103464" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Clustered_file_system&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Clustered_file_system&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Decentralized filesystem</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <a href="/wiki/Data_cluster" class="mw-redirect" title="Data cluster">Data cluster</a>.</div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">"Network filesystem" and "Parallel file system" redirect here. For the Sun NFS protocol, see <a href="/wiki/Network_File_System" title="Network File System">Network File System</a>.</div>
+<style data-mw-deduplicate="TemplateStyles:r1097763485">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><style data-mw-deduplicate="TemplateStyles:r1086701767">.mw-parser-output .multiple-issues-text{width:95%;margin:0.2em 0}.mw-parser-output .multiple-issues-text>.mw-collapsible-content{margin-top:0.3em}.mw-parser-output .compact-ambox .ambox{border:none;border-collapse:collapse;background-color:transparent;margin:0 0 0 1.6em!important;padding:0!important;width:auto;display:block}body.mediawiki .mw-parser-output .compact-ambox .ambox.mbox-small-left{font-size:100%;width:auto;margin:0}.mw-parser-output .compact-ambox .ambox .mbox-text{padding:0!important;margin:0!important}.mw-parser-output .compact-ambox .ambox .mbox-text-span{display:list-item;line-height:1.5em;list-style-type:disc}.mw-parser-output .compact-ambox .ambox .mbox-image,.mw-parser-output .compact-ambox .ambox .mbox-imageright,.mw-parser-output .compact-ambox .ambox .mbox-empty-cell,.mw-parser-output .compact-ambox .hide-when-compact{display:none}</style><table class="box-Multiple_issues plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></span></span></div></td><td class="mbox-text"><div class="mbox-text-span"><div class="multiple-issues-text mw-collapsible"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Clustered_file_system&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:Clustered_file_system" title="Talk:Clustered file system">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small>
+<div class="mw-collapsible-content">
+      <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1097763485"><table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><a href="/wiki/File:Question_book-new.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" decoding="async" width="50" height="39" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>.<span class="hide-when-compact"> Please help <a href="/wiki/Special:EditPage/Clustered_file_system" title="Special:EditPage/Clustered file system">improve this article</a> by <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.<br /><small><span class="plainlinks"><i>Find sources:</i>&#160;<a rel="nofollow" class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Clustered+file+system%22">"Clustered file system"</a>&#160;–&#160;<a rel="nofollow" class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Clustered+file+system%22+-wikipedia&amp;tbs=ar:1">news</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.google.com/search?&amp;q=%22Clustered+file+system%22&amp;tbs=bkt:s&amp;tbm=bks">newspapers</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Clustered+file+system%22+-wikipedia">books</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://scholar.google.com/scholar?q=%22Clustered+file+system%22">scholar</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Clustered+file+system%22&amp;acc=on&amp;wc=on">JSTOR</a></span></small></span>  <span class="date-container"><i>(<span class="date">December 2015</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1097763485"><table class="box-Cleanup plainlinks metadata ambox ambox-style ambox-Cleanup" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></span></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article may <b>require <a href="/wiki/Wikipedia:Cleanup" title="Wikipedia:Cleanup">cleanup</a></b> to meet Wikipedia's <a href="/wiki/Wikipedia:Manual_of_Style" title="Wikipedia:Manual of Style">quality standards</a>. The specific problem is: <b>Merges need to be smoothed over.</b><span class="hide-when-compact"> Please help <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Clustered_file_system&amp;action=edit">improve this article</a> if you can.</span>  <span class="date-container"><i>(<span class="date">December 2013</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+    </div>
+</div><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+<p>A <b>clustered file system</b> (<b>CFS</b>) is a <a href="/wiki/File_system" title="File system">file system</a> which is shared by being simultaneously <a href="/wiki/Mount_(computing)" title="Mount (computing)">mounted</a> on multiple <a href="/wiki/Server_(computing)" title="Server (computing)">servers</a>.  There are several approaches to <a href="/wiki/Computer_cluster" title="Computer cluster">clustering</a>, most of which do not employ a clustered file system (only <a href="/wiki/Direct_attached_storage" class="mw-redirect" title="Direct attached storage">direct attached storage</a> for each node).  Clustered file systems can provide features like location-independent addressing and redundancy which improve reliability or reduce the complexity of the other parts of the cluster.  <b>Parallel file systems</b> are a type of clustered file system that spread data across multiple storage nodes, usually for redundancy or performance.<sup id="cite_ref-DellClustersWithParallelFileSystems_1-0" class="reference"><a href="#cite_note-DellClustersWithParallelFileSystems-1">&#91;1&#93;</a></sup>
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Shared-disk_file_system"><span class="anchor" id="SHARED-DISK"></span>Shared-disk file system</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=1" title="Edit section: Shared-disk file system"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A <b>shared-disk file system</b> uses a <a href="/wiki/Storage_area_network" title="Storage area network">storage area network</a> (SAN) to allow multiple computers to gain direct disk access at the <a href="/wiki/Block_(data_storage)" title="Block (data storage)">block level</a>.  Access control and translation from file-level operations that applications use to block-level operations used by the SAN must take place on the client node.  The most common type of clustered file system, the shared-disk file system &#8212;by adding mechanisms for <a href="/wiki/Concurrency_control" title="Concurrency control">concurrency control</a>&#8212;provides a consistent and <a href="/wiki/Serialization" title="Serialization">serializable</a> view of the file system, avoiding corruption and unintended <a href="/wiki/Data_loss" title="Data loss">data loss</a> even when multiple clients try to access the same files at the same time. Shared-disk file-systems commonly employ some sort of <a href="/wiki/Fencing_(computing)" title="Fencing (computing)">fencing</a> mechanism to prevent data corruption in case of node failures, because an unfenced device can cause data corruption if it loses communication with its sister nodes and tries to access the same information other nodes are accessing.
+</p><p>The underlying storage area network may use any of a number of block-level protocols, including <a href="/wiki/SCSI" title="SCSI">SCSI</a>, <a href="/wiki/ISCSI" title="ISCSI">iSCSI</a>, <a href="/wiki/HyperSCSI" title="HyperSCSI">HyperSCSI</a>, <a href="/wiki/ATA_over_Ethernet" title="ATA over Ethernet">ATA over Ethernet</a> (AoE), <a href="/wiki/Fibre_Channel" title="Fibre Channel">Fibre Channel</a>, <a href="/wiki/Network_block_device" title="Network block device">network block device</a>, and <a href="/wiki/InfiniBand" title="InfiniBand">InfiniBand</a>.
+</p><p>There are different architectural approaches to a shared-disk filesystem. Some distribute file information across all the servers in a cluster (fully distributed).<sup id="cite_ref-SDDS_2002_Disk_Backup_Through_Algebraic_Signatures_in_Scalable_Distributed_Data_Structures_2-0" class="reference"><a href="#cite_note-SDDS_2002_Disk_Backup_Through_Algebraic_Signatures_in_Scalable_Distributed_Data_Structures-2">&#91;2&#93;</a></sup> 
+</p>
+<h3><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=2" title="Edit section: Examples"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<style data-mw-deduplicate="TemplateStyles:r1147244281">.mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style><div class="div-col" style="column-width: 25em;">
+<ul><li><a href="/wiki/Blue_Whale_Clustered_file_system" title="Blue Whale Clustered file system">Blue Whale Clustered file system</a> (BWFS)</li>
+<li><a href="/wiki/Silicon_Graphics" title="Silicon Graphics">Silicon Graphics</a> (SGI) clustered file system (<a href="/wiki/CXFS" title="CXFS">CXFS</a>)</li>
+<li><a href="/wiki/Veritas_Cluster_File_System" title="Veritas Cluster File System">Veritas Cluster File System</a></li>
+<li>Microsoft <a href="/wiki/Cluster_Shared_Volumes" title="Cluster Shared Volumes">Cluster Shared Volumes</a> (CSV)</li>
+<li>DataPlow <a href="/wiki/Nasan" title="Nasan">Nasan</a> File System</li>
+<li><a href="/wiki/IBM_General_Parallel_File_System" class="mw-redirect" title="IBM General Parallel File System">IBM General Parallel File System</a> (GPFS)</li>
+<li><a href="/wiki/OCFS" class="mw-redirect" title="OCFS">Oracle Cluster File System</a> (OCFS)</li>
+<li><a href="/wiki/OpenVMS" title="OpenVMS">OpenVMS</a> <a href="/wiki/Files-11" title="Files-11">Files-11</a> File System</li>
+<li>PolyServe storage solutions</li>
+<li><a href="/wiki/Quantum_Corporation" title="Quantum Corporation">Quantum</a> <a href="/wiki/StorNext_File_System" title="StorNext File System">StorNext</a> File System (SNFS), ex ADIC, ex CentraVision File System (CVFS)</li>
+<li>Red Hat <a href="/wiki/Global_File_System" class="mw-redirect" title="Global File System">Global File System</a> (GFS2)</li>
+<li>Sun <a href="/wiki/QFS" title="QFS">QFS</a></li>
+<li>TerraScale Technologies TerraFS</li>
+<li>Veritas CFS (Cluster FS: Clustered VxFS)</li>
+<li>Versity VSM (SAM-QFS ported to Linux), ScoutFS</li>
+<li><a href="/wiki/VMware_VMFS" title="VMware VMFS">VMware VMFS</a></li>
+<li>WekaFS</li>
+<li>Apple <a href="/wiki/Xsan" title="Xsan">Xsan</a></li>
+<li><a href="/wiki/DragonFly_BSD" title="DragonFly BSD">DragonFly BSD</a> <a href="/wiki/HAMMER2" title="HAMMER2">HAMMER2</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="Distributed_file_systems"><span class="anchor" id="DISTRIBUTED-FS"></span>Distributed file systems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=3" title="Edit section: Distributed file systems"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><i>Distributed file systems</i> do not share <a href="/wiki/Block-level_storage" title="Block-level storage">block level access</a> to the same storage but use a network <a href="/wiki/Protocol_(computing)" class="mw-redirect" title="Protocol (computing)">protocol</a>.<sup id="cite_ref-SilberschatzOperatingSystemConcepts_3-0" class="reference"><a href="#cite_note-SilberschatzOperatingSystemConcepts-3">&#91;3&#93;</a></sup><sup id="cite_ref-ostep-1_4-0" class="reference"><a href="#cite_note-ostep-1-4">&#91;4&#93;</a></sup>  These are commonly known as <a href="/wiki/Distributed_file_system" class="mw-redirect" title="Distributed file system">network file systems</a>, even though they are not the only file systems that use the network to send data.<sup id="cite_ref-SunNetworkFileSystem_5-0" class="reference"><a href="#cite_note-SunNetworkFileSystem-5">&#91;5&#93;</a></sup>  Distributed file systems can restrict access to the file system depending on <a href="/wiki/Access_list" class="mw-redirect" title="Access list">access lists</a> or <a href="/wiki/Capability-based_security" title="Capability-based security">capabilities</a> on both the servers and the clients, depending on how the protocol is designed.
+</p><p>The difference between a distributed file system and a <a href="/wiki/Distributed_data_store" title="Distributed data store">distributed data store</a> is that a distributed file system allows files to be accessed using the same interfaces and semantics as local files&#160;&#8211;&#32; for example, mounting/unmounting, listing directories, read/write at byte boundaries, system's native permission model.  Distributed data stores, by contrast, require using a different API or library and have different semantics (most often those of a database).<sup id="cite_ref-Sobh_6-0" class="reference"><a href="#cite_note-Sobh-6">&#91;6&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Design_goals">Design goals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=4" title="Edit section: Design goals"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Distributed file systems may aim for "transparency" in a number of aspects.  That is, they aim to be "invisible" to client programs, which "see" a system which is similar to a local file system.  Behind the scenes, the distributed file system handles locating files, transporting data, and potentially providing other features listed below.
+</p>
+<ul><li><i>Access transparency</i>: clients are unaware that files are distributed and can access them in the same way as local files are accessed.</li>
+<li><i>Location transparency</i>: a consistent namespace exists encompassing local as well as remote files. The name of a file does not give its location.</li>
+<li><i>Concurrency transparency</i>: all clients have the same view of the state of the file system. This means that if one process is modifying a file, any other processes on the same system or remote systems that are accessing the files will see the modifications in a coherent manner.</li>
+<li><i>Failure transparency</i>: the client and client programs should operate correctly after a server failure.</li>
+<li><i>Heterogeneity</i>: file service should be provided across different hardware and operating system platforms.</li>
+<li><i>Scalability</i>: the file system should work well in small environments (1 machine, a dozen machines) and also scale gracefully to bigger ones (hundreds through tens of thousands of systems).</li>
+<li><i>Replication transparency</i>: Clients should not have to be aware of the file replication performed across multiple servers to support scalability.</li>
+<li><i>Migration transparency</i>: files should be able to move between different servers without the client's knowledge.</li></ul>
+<h3><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=5" title="Edit section: History"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/Incompatible_Timesharing_System" title="Incompatible Timesharing System">Incompatible Timesharing System</a> used virtual devices for transparent inter-machine file system access in the 1960s.  More file servers were developed in the 1970s. In 1976 <a href="/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">Digital Equipment Corporation</a> created the <a href="/wiki/File_Access_Listener" class="mw-redirect" title="File Access Listener">File Access Listener</a> (FAL), an implementation of the <a href="/w/index.php?title=Data_Access_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Data Access Protocol (page does not exist)">Data Access Protocol</a> as part of <a href="/wiki/DECnet" title="DECnet">DECnet</a> Phase II which became the first widely used network file system. In 1985 <a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> created the file system called "<a href="/wiki/Network_File_System_(protocol)" class="mw-redirect" title="Network File System (protocol)">Network File System</a>" (NFS) which became the first widely used <a href="/wiki/Internet_Protocol" title="Internet Protocol">Internet Protocol</a> based network file system.<sup id="cite_ref-ostep-1_4-1" class="reference"><a href="#cite_note-ostep-1-4">&#91;4&#93;</a></sup>  Other notable network file systems are <a href="/wiki/Andrew_File_System" title="Andrew File System">Andrew File System</a> (AFS), <a href="/wiki/Apple_Filing_Protocol" title="Apple Filing Protocol">Apple Filing Protocol</a> (AFP), <a href="/wiki/NetWare_Core_Protocol" title="NetWare Core Protocol">NetWare Core Protocol</a> (NCP), and <a href="/wiki/Server_Message_Block" title="Server Message Block">Server Message Block</a> (SMB) which is also known as Common Internet File System (CIFS).
+</p><p>In 1986, <a href="/wiki/IBM" title="IBM">IBM</a> announced client and server support for Distributed Data Management Architecture (DDM) for the <a href="/wiki/System/36" class="mw-redirect" title="System/36">System/36</a>, <a href="/wiki/System/38" class="mw-redirect" title="System/38">System/38</a>, and IBM mainframe computers running <a href="/wiki/CICS" title="CICS">CICS</a>.  This was followed by the support for <a href="/wiki/IBM_Personal_Computer" title="IBM Personal Computer">IBM Personal Computer</a>, <a href="/wiki/AS/400" class="mw-redirect" title="AS/400">AS/400</a>, IBM mainframe computers under the <a href="/wiki/MVS" title="MVS">MVS</a> and <a href="/wiki/VSE_(operating_system)" title="VSE (operating system)">VSE</a> operating systems, and <a href="/wiki/FlexOS" title="FlexOS">FlexOS</a>. DDM also became the foundation for <a href="/wiki/DRDA" title="DRDA">Distributed Relational Database Architecture</a>, also known as DRDA.
+</p><p>There are many <a href="/wiki/Peer-to-peer" title="Peer-to-peer">peer-to-peer</a> <a href="/wiki/Network_protocol" class="mw-redirect" title="Network protocol">network protocols</a> for open-source <a href="/wiki/Distributed_file_systems_for_cloud" class="mw-redirect" title="Distributed file systems for cloud">distributed file systems for cloud</a> or closed-source clustered file systems, e. g.: <a href="/wiki/9P_(protocol)" title="9P (protocol)">9P</a>, <a href="/wiki/Andrew_File_System" title="Andrew File System">AFS</a>, <a href="/wiki/Coda_(file_system)" title="Coda (file system)">Coda</a>, <a href="/wiki/Server_Message_Block" title="Server Message Block">CIFS/SMB</a>, <a href="/wiki/DCE_Distributed_File_System" title="DCE Distributed File System">DCE/DFS</a>,  WekaFS,<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> <a href="/wiki/Lustre_(file_system)" title="Lustre (file system)">Lustre</a>, PanFS,<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> <a href="/wiki/Google_File_System" title="Google File System">Google File System</a>, <a href="/w/index.php?title=Mnet_(peer-to-peer_network)&amp;action=edit&amp;redlink=1" class="new" title="Mnet (peer-to-peer network) (page does not exist)">Mnet</a>, <a href="/wiki/Chord_(peer-to-peer)" title="Chord (peer-to-peer)">Chord Project</a>.
+</p>
+<h3><span class="mw-headline" id="Examples_2">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=6" title="Edit section: Examples"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/List_of_file_systems#Distributed_file_systems" title="List of file systems">List of distributed file systems</a></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1147244281"><div class="div-col" style="column-width: 25em;">
+<ul><li><a href="/wiki/Alluxio" title="Alluxio">Alluxio</a></li>
+<li><a href="/wiki/BeeGFS" title="BeeGFS">BeeGFS</a> (Fraunhofer)</li>
+<li><a href="/wiki/Ceph_(software)#File_system" title="Ceph (software)">CephFS</a> (Inktank, Red Hat, SUSE)</li>
+<li><a href="/wiki/Distributed_File_System_(Microsoft)" title="Distributed File System (Microsoft)">Windows Distributed File System (DFS)</a> (Microsoft)</li>
+<li><a href="/w/index.php?title=Infinit_(file_system)&amp;action=edit&amp;redlink=1" class="new" title="Infinit (file system) (page does not exist)">Infinit</a> (acquired by Docker)</li>
+<li><a href="/wiki/Gfarm_file_system" title="Gfarm file system">GfarmFS</a></li>
+<li><a href="/wiki/GlusterFS" class="mw-redirect" title="GlusterFS">GlusterFS</a> (Red Hat)</li>
+<li><a href="/wiki/Google_file_system" class="mw-redirect" title="Google file system">GFS</a> (Google Inc.)</li>
+<li><a href="/wiki/GPFS" title="GPFS">GPFS</a> (IBM)</li>
+<li><a href="/wiki/Hadoop_distributed_file_system" class="mw-redirect" title="Hadoop distributed file system">HDFS</a> (Apache Software Foundation)</li>
+<li><a href="/wiki/InterPlanetary_File_System" title="InterPlanetary File System">IPFS</a> (Inter Planetary File System)</li>
+<li>iRODS</li>
+<li><a href="/wiki/LizardFS" title="LizardFS">LizardFS</a> (Skytechnology)</li>
+<li><a href="/wiki/Lustre_(file_system)" title="Lustre (file system)">Lustre</a></li>
+<li><a href="/wiki/MapR_FS" title="MapR FS">MapR FS</a></li>
+<li><a href="/wiki/Moose_File_System" title="Moose File System">MooseFS</a> (Core Technology / Gemius)</li>
+<li><a href="/wiki/ObjectiveFS" title="ObjectiveFS">ObjectiveFS</a></li>
+<li><a href="/wiki/OneFS" class="mw-redirect" title="OneFS">OneFS</a> (EMC Isilon)</li>
+<li><a href="/wiki/OrangeFS" title="OrangeFS">OrangeFS</a> (Clemson University, Omnibond Systems), formerly <a href="/wiki/Parallel_Virtual_File_System" title="Parallel Virtual File System">Parallel Virtual File System</a></li>
+<li><a href="/wiki/Panasas" title="Panasas">PanFS</a> (Panasas)</li>
+<li><a href="/wiki/Parallel_Virtual_File_System" title="Parallel Virtual File System">Parallel Virtual File System</a> (Clemson University, Argonne National Laboratory, Ohio Supercomputer Center)</li>
+<li><a href="/wiki/RozoFS" title="RozoFS">RozoFS</a> (Rozo Systems)</li>
+<li><a href="/wiki/Server_Message_Block" title="Server Message Block">SMB/CIFS</a></li>
+<li>Torus (CoreOS)</li>
+<li><a href="/w/index.php?title=WekaFS&amp;action=edit&amp;redlink=1" class="new" title="WekaFS (page does not exist)">WekaFS</a> (WekaIO)</li>
+<li><a href="/wiki/XtreemFS" title="XtreemFS">XtreemFS</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="Network-attached_storage">Network-attached storage</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=7" title="Edit section: Network-attached storage"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Network-attached_storage" title="Network-attached storage">Network-attached storage</a></div>
+<p>Network-attached storage (NAS) provides both storage and a file system, like a shared disk file system on top of a storage area network (SAN).  NAS typically uses file-based protocols (as opposed to block-based protocols a SAN would use) such as <a href="/wiki/Network_File_System_(protocol)" class="mw-redirect" title="Network File System (protocol)">NFS</a> (popular on <a href="/wiki/UNIX" class="mw-redirect" title="UNIX">UNIX</a> systems), SMB/CIFS (<a href="/wiki/Server_Message_Block" title="Server Message Block">Server Message Block/Common Internet File System</a>) (used with MS Windows systems), <a href="/wiki/Apple_Filing_Protocol" title="Apple Filing Protocol">AFP</a> (used with <a href="/wiki/Macintosh" class="mw-redirect" title="Macintosh">Apple Macintosh</a> computers), or NCP (used with <a href="/wiki/Novell_Open_Enterprise_Server" class="mw-redirect" title="Novell Open Enterprise Server">OES</a> and <a href="/wiki/NetWare" title="NetWare">Novell NetWare</a>).
+</p>
+<h2><span class="mw-headline" id="Design_considerations">Design considerations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=8" title="Edit section: Design considerations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Avoiding_single_point_of_failure">Avoiding single point of failure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=9" title="Edit section: Avoiding single point of failure"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The failure of disk hardware or a given storage node in a cluster can create a <a href="/wiki/Single_point_of_failure" title="Single point of failure">single point of failure</a> that can result in <a href="/wiki/Data_loss" title="Data loss">data loss</a> or unavailability. <a href="/wiki/Fault_tolerance" title="Fault tolerance">Fault tolerance</a> and high availability can be provided through <a href="/wiki/Replication_(computing)" title="Replication (computing)">data replication</a> of one sort or another, so that data remains intact and available despite the failure of any single piece of equipment.  For examples, see the lists of <a href="/wiki/List_of_file_systems#Distributed_fault-tolerant_file_systems" title="List of file systems">distributed fault-tolerant file systems</a> and <a href="/wiki/List_of_file_systems#Distributed_parallel_fault-tolerant_file_systems" title="List of file systems">distributed parallel fault-tolerant file systems</a>.
+</p>
+<h3><span class="mw-headline" id="Performance">Performance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=10" title="Edit section: Performance"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A common <a href="/wiki/Performance" title="Performance">performance</a> <a href="/wiki/Measurement" title="Measurement">measurement</a> of a clustered file system is the amount of time needed to satisfy service requests.  In conventional systems, this time consists of a disk-access time and a small amount of <a href="/wiki/Central_processing_unit" title="Central processing unit">CPU</a>-processing time.  But in a clustered file system, a remote access has additional overhead due to the distributed structure.  This includes the time to deliver the request to a server, the time to deliver the response to the client, and for each direction, a CPU overhead of running the <a href="/wiki/Communication_protocol" title="Communication protocol">communication protocol</a> <a href="/wiki/Software" title="Software">software</a>.
+</p>
+<h3><span class="mw-headline" id="Concurrency">Concurrency</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=11" title="Edit section: Concurrency"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Concurrency control becomes an issue when more than one person or client is accessing the same file or block and want to update it.  Hence updates to the file from one client should not interfere with access and updates from other clients. This problem is more complex with file systems due to concurrent overlapping writes, where different writers write to overlapping regions of the file concurrently.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> This problem is usually handled by <a href="/wiki/Concurrency_control" title="Concurrency control">concurrency control</a> or <a href="/wiki/Lock_(computer_science)" title="Lock (computer science)">locking</a> which may either be built into the file system or provided by an add-on protocol.
+</p>
+<h2><span class="mw-headline" id="History_2">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=12" title="Edit section: History"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>IBM mainframes in the 1970s could share physical disks and file systems if each machine had its own channel connection to the drives' control units. In the 1980s, <a href="/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">Digital Equipment Corporation</a>'s <a href="/wiki/TOPS-20" title="TOPS-20">TOPS-20</a> and <a href="/wiki/OpenVMS" title="OpenVMS">OpenVMS</a> clusters (VAX/ALPHA/IA64) included shared disk file systems.<sup id="cite_ref-TenexOrigins&amp;Development_10-0" class="reference"><a href="#cite_note-TenexOrigins&amp;Development-10">&#91;10&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=13" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1147244281"><div class="div-col" style="column-width: 25em;">
+<ul><li><a href="/wiki/Distributed_file_system" class="mw-redirect" title="Distributed file system">Distributed file system</a></li>
+<li><a href="/wiki/Clustered_NAS" class="mw-redirect" title="Clustered NAS">Clustered NAS</a></li>
+<li><a href="/wiki/Storage_area_network" title="Storage area network">Storage area network</a></li>
+<li><a href="/wiki/Shared_resource" title="Shared resource">Shared resource</a></li>
+<li><a href="/wiki/Direct-attached_storage" title="Direct-attached storage">Direct-attached storage</a></li>
+<li><a href="/wiki/Peer-to-peer_file_sharing" title="Peer-to-peer file sharing">Peer-to-peer file sharing</a></li>
+<li><a href="/wiki/Disk_sharing" class="mw-redirect" title="Disk sharing">Disk sharing</a></li>
+<li><a href="/wiki/Distributed_data_store" title="Distributed data store">Distributed data store</a></li>
+<li><a href="/wiki/Distributed_file_system_for_cloud" title="Distributed file system for cloud">Distributed file system for cloud</a></li>
+<li><a href="/wiki/Global_file_system" title="Global file system">Global file system</a></li>
+<li><a href="/wiki/Gopher_(protocol)" title="Gopher (protocol)">Gopher (protocol)</a></li>
+<li><a href="/wiki/List_of_file_systems#Distributed_file_systems" title="List of file systems">List of distributed file systems</a></li>
+<li><a href="/wiki/CacheFS" title="CacheFS">CacheFS</a></li>
+<li><a href="/wiki/RAID" title="RAID">RAID</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=14" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-DellClustersWithParallelFileSystems-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-DellClustersWithParallelFileSystems_1-0">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFSaifyKochharHsiehCelebioglu2005" class="citation web cs1">Saify, Amina; Kochhar, Garima; Hsieh, Jenwei; Celebioglu, Onur (May 2005). <a rel="nofollow" class="external text" href="http://i.dell.com/sites/doccontent/business/solutions/power/de/Documents/ps2q05-20040179-Saify-OE_de.pdf">"Enhancing High-Performance Computing Clusters with Parallel File Systems"</a> <span class="cs1-format">(PDF)</span>. <i>Dell Power Solutions</i>. Dell Inc<span class="reference-accessdate">. Retrieved <span class="nowrap">6 March</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Dell+Power+Solutions&amp;rft.atitle=Enhancing+High-Performance+Computing+Clusters+with+Parallel+File+Systems&amp;rft.date=2005-05&amp;rft.aulast=Saify&amp;rft.aufirst=Amina&amp;rft.au=Kochhar%2C+Garima&amp;rft.au=Hsieh%2C+Jenwei&amp;rft.au=Celebioglu%2C+Onur&amp;rft_id=http%3A%2F%2Fi.dell.com%2Fsites%2Fdoccontent%2Fbusiness%2Fsolutions%2Fpower%2Fde%2FDocuments%2Fps2q05-20040179-Saify-OE_de.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClustered+file+system" class="Z3988"></span></span>
+</li>
+<li id="cite_note-SDDS_2002_Disk_Backup_Through_Algebraic_Signatures_in_Scalable_Distributed_Data_Structures-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-SDDS_2002_Disk_Backup_Through_Algebraic_Signatures_in_Scalable_Distributed_Data_Structures_2-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFMokademLitwinSchwarz2006" class="citation web cs1">Mokadem, Riad; Litwin, Witold; Schwarz, Thomas (2006). <a rel="nofollow" class="external text" href="https://www.lamsade.dauphine.fr/~litwin/cours98/Doc-cours-clouds/BackupAlgSign2006.pdf">"Disk Backup Through Algebraic Signatures in Scalable Distributed Data Structures"</a> <span class="cs1-format">(PDF)</span>. DEXA 2006 Springer<span class="reference-accessdate">. Retrieved <span class="nowrap">8 June</span> 2006</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Disk+Backup+Through+Algebraic+Signatures+in+Scalable+Distributed+Data+Structures&amp;rft.pub=DEXA+2006+Springer&amp;rft.date=2006&amp;rft.aulast=Mokadem&amp;rft.aufirst=Riad&amp;rft.au=Litwin%2C+Witold&amp;rft.au=Schwarz%2C+Thomas&amp;rft_id=https%3A%2F%2Fwww.lamsade.dauphine.fr%2F~litwin%2Fcours98%2FDoc-cours-clouds%2FBackupAlgSign2006.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClustered+file+system" class="Z3988"></span></span>
+</li>
+<li id="cite_note-SilberschatzOperatingSystemConcepts-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-SilberschatzOperatingSystemConcepts_3-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFSilberschatzGalvinGagne2009" class="citation web cs1">Silberschatz, Abraham; Galvin, Peter; Gagne, Greg (2009). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20190306042834/http://www.uobabylon.edu.iq/download/M.S%202013-2014/Operating_System_Concepts,_8th_Edition%5BA4%5D.pdf">"Operating System Concepts, 8th Edition"</a> <span class="cs1-format">(PDF)</span>. <i>University of Babylon</i>. John Wiley &amp; Sons, Inc. pp.&#160;705–725. Archived from <a rel="nofollow" class="external text" href="http://www.uobabylon.edu.iq/download/M.S%202013-2014/Operating_System_Concepts,_8th_Edition%5BA4%5D.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 6 March 2019<span class="reference-accessdate">. Retrieved <span class="nowrap">4 March</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=University+of+Babylon&amp;rft.atitle=Operating+System+Concepts%2C+8th+Edition&amp;rft.pages=705-725&amp;rft.date=2009&amp;rft.aulast=Silberschatz&amp;rft.aufirst=Abraham&amp;rft.au=Galvin%2C+Peter&amp;rft.au=Gagne%2C+Greg&amp;rft_id=http%3A%2F%2Fwww.uobabylon.edu.iq%2Fdownload%2FM.S%25202013-2014%2FOperating_System_Concepts%2C_8th_Edition%255BA4%255D.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClustered+file+system" class="Z3988"></span></span>
+</li>
+<li id="cite_note-ostep-1-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-ostep-1_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ostep-1_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFArpaci-DusseauArpaci-Dusseau2014" class="citation cs2">Arpaci-Dusseau, Remzi H.; Arpaci-Dusseau, Andrea C. (2014), <a rel="nofollow" class="external text" href="http://pages.cs.wisc.edu/~remzi/OSTEP/dist-nfs.pdf"><i>Sun's Network File System</i></a> <span class="cs1-format">(PDF)</span>, Arpaci-Dusseau Books</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Sun%27s+Network+File+System&amp;rft.pub=Arpaci-Dusseau+Books&amp;rft.date=2014&amp;rft.aulast=Arpaci-Dusseau&amp;rft.aufirst=Remzi+H.&amp;rft.au=Arpaci-Dusseau%2C+Andrea+C.&amp;rft_id=http%3A%2F%2Fpages.cs.wisc.edu%2F~remzi%2FOSTEP%2Fdist-nfs.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClustered+file+system" class="Z3988"></span></span>
+</li>
+<li id="cite_note-SunNetworkFileSystem-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-SunNetworkFileSystem_5-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFSandberg1986" class="citation web cs1">Sandberg, Russel (1986). <a rel="nofollow" class="external text" href="https://cse.buffalo.edu/faculty/tkosar/cse710_spring13/papers/nfs.pdf">"The Sun Network Filesystem: Design, Implementation and Experience"</a> <span class="cs1-format">(PDF)</span>. <i>Proceedings of the Summer 1986 USENIX Technical Conference and Exhibition</i>. Sun Microsystems, Inc<span class="reference-accessdate">. Retrieved <span class="nowrap">6 March</span> 2019</span>. <q>NFS was designed to simplify the sharing of filesystem resources in a  network of non-homogeneousmachines.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Proceedings+of+the+Summer+1986+USENIX+Technical+Conference+and+Exhibition&amp;rft.atitle=The+Sun+Network+Filesystem%3A+Design%2C+Implementation+and+Experience&amp;rft.date=1986&amp;rft.aulast=Sandberg&amp;rft.aufirst=Russel&amp;rft_id=https%3A%2F%2Fcse.buffalo.edu%2Ffaculty%2Ftkosar%2Fcse710_spring13%2Fpapers%2Fnfs.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClustered+file+system" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Sobh-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-Sobh_6-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFSobh2008" class="citation book cs1">Sobh, Tarek (2008). <i>Advances in Computer and Information Sciences and Engineering</i>. Springer Science &amp; Business Media. pp.&#160;423–440. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2008acis.book.....S">2008acis.book.....S</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Advances+in+Computer+and+Information+Sciences+and+Engineering&amp;rft.pages=423-440&amp;rft.pub=Springer+Science+%26+Business+Media&amp;rft.date=2008&amp;rft_id=info%3Abibcode%2F2008acis.book.....S&amp;rft.aulast=Sobh&amp;rft.aufirst=Tarek&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClustered+file+system" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.weka.io/learn/distributed-file-systems/distributed-file-system/">"Weka Distributed File Systems (DFS)"</a>. <i>weka.io</i>. 2021-04-27<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-10-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=weka.io&amp;rft.atitle=Weka+Distributed+File+Systems+%28DFS%29&amp;rft.date=2021-04-27&amp;rft_id=https%3A%2F%2Fwww.weka.io%2Flearn%2Fdistributed-file-systems%2Fdistributed-file-system%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClustered+file+system" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.weka.io/learn/distributed-file-systems/distributed-file-system/">"PanFS Parallel File System"</a>. <i>panasas.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-10-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=panasas.com&amp;rft.atitle=PanFS+Parallel+File+System&amp;rft_id=https%3A%2F%2Fwww.weka.io%2Flearn%2Fdistributed-file-systems%2Fdistributed-file-system%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClustered+file+system" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Pessach, Yaniv (2013). <i>Distributed Storage: Concepts, Algorithms, and Implementations</i>. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1482561043" title="Special:BookSources/978-1482561043">978-1482561043</a>.</span>
+</li>
+<li id="cite_note-TenexOrigins&amp;Development-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-TenexOrigins&amp;Development_10-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFMurphy1996" class="citation web cs1">Murphy, Dan (1996). <a rel="nofollow" class="external text" href="http://tenex.opost.com/hbook.html">"Origins and Development of TOPS-20"</a>. Dan Murphy. Ambitious Plans for Jupiter<span class="reference-accessdate">. Retrieved <span class="nowrap">6 March</span> 2019</span>. <q>Ultimately, both VMS and TOPS-20 shipped this kind of capability.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Origins+and+Development+of+TOPS-20&amp;rft.pages=Ambitious+Plans+for+Jupiter&amp;rft.pub=Dan+Murphy&amp;rft.date=1996&amp;rft.aulast=Murphy&amp;rft.aufirst=Dan&amp;rft_id=http%3A%2F%2Ftenex.opost.com%2Fhbook.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AClustered+file+system" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Clustered_file_system&amp;action=edit&amp;section=15" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://www.cloudbus.org/reports/DistributedStorageTaxonomy.pdf">A Taxonomy of Distributed Storage Systems</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20131224120756/http://trac.nchc.org.tw/grid/raw-attachment/wiki/jazz/09-05-22/A_Taxonomy_and_Survey_on_Distributed_File_Systems.pdf">A Taxonomy and Survey on Distributed File Systems</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cis.upenn.edu/~bcpierce/courses/dd/papers/satya89survey.ps">A survey of distributed file systems</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20131224101831/http://www.snia-europe.org/objects_store/Christian_Bandulet_SNIATutorial%20Basics_EvolutionFileSystems.pdf">The Evolution of File Systems</a></li></ul>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="File_systems" style="padding:3px"><table class="nowraplinks hlist mw-collapsible mw-collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:File_systems" title="Template:File systems"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:File_systems" title="Template talk:File systems"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:File_systems" title="Special:EditPage/Template:File systems"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="File_systems" style="font-size:114%;margin:0 4em"><a href="/wiki/File_system" title="File system">File systems</a></div></th></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><a href="/wiki/Comparison_of_file_systems" title="Comparison of file systems">Comparison of file systems</a>
+<ul><li><a href="/wiki/Comparison_of_distributed_file_systems" title="Comparison of distributed file systems">distributed</a></li></ul></li>
+<li><a href="/wiki/Unix_filesystem" title="Unix filesystem">Unix filesystem</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Disk and<br />non-rotating</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Advanced_Disc_Filing_System" title="Advanced Disc Filing System">ADFS</a></li>
+<li><a href="/wiki/AdvFS" title="AdvFS">AdvFS</a></li>
+<li><a href="/wiki/Amiga_Fast_File_System" title="Amiga Fast File System">Amiga FFS</a></li>
+<li><a href="/wiki/Amiga_Old_File_System" title="Amiga Old File System">Amiga OFS</a></li>
+<li><a href="/wiki/Apple_File_System" title="Apple File System">APFS</a></li>
+<li><a href="/wiki/AtheOS_File_System" title="AtheOS File System">AthFS</a></li>
+<li><a href="/wiki/Bcachefs" title="Bcachefs">bcachefs</a></li>
+<li>BFS
+<ul><li><a href="/wiki/Be_File_System" title="Be File System">Be File System</a></li>
+<li><a href="/wiki/Boot_File_System" title="Boot File System">Boot File System</a></li>
+<li>Byte File System (<a href="/wiki/Z/VM" title="Z/VM">z/VM</a>)</li></ul></li>
+<li><a href="/wiki/Btrfs" title="Btrfs">Btrfs</a></li>
+<li><a href="/wiki/StorNext_File_System" title="StorNext File System">CVFS</a></li>
+<li><a href="/wiki/CXFS" title="CXFS">CXFS</a></li>
+<li><a href="/wiki/Disc_Filing_System" title="Disc Filing System">DFS</a></li>
+<li>EFS
+<ul><li><a href="/wiki/Encrypting_File_System" title="Encrypting File System">Encrypting File System</a></li>
+<li><a href="/wiki/Extent_File_System" title="Extent File System">Extent File System</a></li></ul></li>
+<li><a href="/wiki/Episode_filesystem" title="Episode filesystem">Episode</a></li>
+<li><a href="/wiki/Extended_file_system" title="Extended file system">ext</a>
+<ul><li><a href="/wiki/Ext2" title="Ext2">ext2</a></li>
+<li><a href="/wiki/Ext3" title="Ext3">ext3</a></li>
+<li><a href="/wiki/Ext3cow" title="Ext3cow">ext3cow</a></li>
+<li><a href="/wiki/Ext4" title="Ext4">ext4</a></li></ul></li>
+<li><a href="/wiki/File_Allocation_Table" title="File Allocation Table">FAT</a>
+<ul><li><a href="/wiki/ExFAT" title="ExFAT">exFAT</a></li></ul></li>
+<li><a href="/wiki/Files-11" title="Files-11">Files-11</a></li>
+<li><a href="/wiki/Fossil_(file_system)" title="Fossil (file system)">Fossil</a></li>
+<li><a href="/wiki/GPFS" title="GPFS">GPFS</a></li>
+<li><a href="/wiki/HAMMER_(file_system)" title="HAMMER (file system)">HAMMER</a>
+<ul><li><a href="/wiki/HAMMER2" title="HAMMER2">HAMMER2</a></li></ul></li>
+<li><a href="/wiki/Hierarchical_File_System_(Apple)" title="Hierarchical File System (Apple)">HFS</a> (<a href="/wiki/Classic_Mac_OS" title="Classic Mac OS">Classic Mac OS</a>)</li>
+<li><a href="/wiki/Hierarchical_File_System_(IBM_MVS)" title="Hierarchical File System (IBM MVS)">HFS</a> (<a href="/wiki/MVS" title="MVS">MVS</a>)</li>
+<li><a href="/wiki/HFS_Plus" title="HFS Plus">HFS+</a></li>
+<li><a href="/wiki/High_Performance_File_System" title="High Performance File System">HPFS</a></li>
+<li><a href="/wiki/High_Throughput_File_System" title="High Throughput File System">HTFS</a></li>
+<li><a href="/wiki/JFS_(file_system)" title="JFS (file system)">JFS</a></li>
+<li><a href="/wiki/Log-structured_File_System_(BSD)" title="Log-structured File System (BSD)">LFS</a></li>
+<li>MFS
+<ul><li><a href="/wiki/Macintosh_File_System" title="Macintosh File System">Macintosh File System</a></li>
+<li><a href="/wiki/TiVo_Media_File_System" title="TiVo Media File System">TiVo Media File System</a></li></ul></li>
+<li><a href="/wiki/MINIX_file_system" title="MINIX file system">MINIX</a></li>
+<li><a href="/wiki/NetWare_File_System" title="NetWare File System">NetWare File System</a></li>
+<li><a href="/wiki/Next3" title="Next3">Next3</a></li>
+<li><a href="/wiki/NILFS" title="NILFS">NILFS</a>
+<ul><li><a href="/wiki/NILFS" title="NILFS">NILFS2</a></li></ul></li>
+<li><a href="/wiki/Novell_Storage_Services" title="Novell Storage Services">NSS</a></li>
+<li><a href="/wiki/NTFS" title="NTFS">NTFS</a></li>
+<li><a href="/wiki/OneFS_distributed_file_system" title="OneFS distributed file system">OneFS</a></li>
+<li><a href="/wiki/OpenZFS" title="OpenZFS">OpenZFS</a></li>
+<li><a href="/wiki/Professional_File_System" title="Professional File System">PFS</a></li>
+<li><a href="/wiki/QFS" title="QFS">QFS</a></li>
+<li><a href="/wiki/QNX4FS" title="QNX4FS">QNX4FS</a></li>
+<li><a href="/wiki/ReFS" title="ReFS">ReFS</a></li>
+<li><a href="/wiki/ReiserFS" title="ReiserFS">ReiserFS</a>
+<ul><li><a href="/wiki/Reiser4" title="Reiser4">Reiser4</a></li></ul></li>
+<li><a href="/wiki/Datalight#Reliance_family" title="Datalight">Reliance</a></li>
+<li><a href="/wiki/Datalight#Reliance_Nitro" title="Datalight">Reliance Nitro</a></li>
+<li><a href="/wiki/Remote_File_Sharing" title="Remote File Sharing">RFS</a></li>
+<li>SFS
+<ul><li>Shared File System (<a href="/wiki/VM_(operating_system)" title="VM (operating system)">VM</a>)</li>
+<li><a href="/wiki/Smart_File_System" title="Smart File System">Smart File System</a></li></ul></li>
+<li><a href="/wiki/StorNext_File_System" title="StorNext File System">SNFS</a></li>
+<li><a href="/wiki/Soup_(Apple)" title="Soup (Apple)">Soup (Apple)</a></li>
+<li><a href="/wiki/Tux3" title="Tux3">Tux3</a></li>
+<li><a href="/wiki/UBIFS" title="UBIFS">UBIFS</a></li>
+<li><a href="/wiki/Unix_File_System" title="Unix File System">UFS/UFS2</a>
+<ul><li><a href="/wiki/Soft_updates" title="Soft updates">soft updates</a></li>
+<li><a href="/wiki/Write_Ahead_Physical_Block_Logging" title="Write Ahead Physical Block Logging">WAPBL</a></li></ul></li>
+<li><a href="/wiki/Veritas_File_System" title="Veritas File System">VxFS</a></li>
+<li><a href="/wiki/Write_Anywhere_File_Layout" title="Write Anywhere File Layout">WAFL</a></li>
+<li><a href="/wiki/Xiafs" title="Xiafs">Xiafs</a></li>
+<li><a href="/wiki/XFS" title="XFS">XFS</a></li>
+<li><a href="/wiki/Xsan" title="Xsan">Xsan</a></li>
+<li><a href="/wiki/ZFS_(z/OS_file_system)" title="ZFS (z/OS file system)">zFS</a> (<a href="/wiki/Z/OS" title="Z/OS">z/OS</a>)</li>
+<li><a href="/wiki/ZFS" title="ZFS">ZFS</a> (<a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun</a>)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Optical_disc" title="Optical disc">Optical disc</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/High_Sierra_Format" class="mw-redirect" title="High Sierra Format">HSF</a></li>
+<li><a href="/wiki/ISO_9660" title="ISO 9660">ISO 9660</a></li>
+<li><a href="/wiki/ISO_13490" title="ISO 13490">ISO 13490</a></li>
+<li><a href="/wiki/Universal_Disk_Format" title="Universal Disk Format">UDF</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Flash_memory" title="Flash memory">Flash memory</a> and <a href="/wiki/Solid-state_drive" title="Solid-state drive">SSD</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Apple_File_System" title="Apple File System">APFS</a></li>
+<li><a href="/wiki/File_Allocation_Table" title="File Allocation Table">FAT</a></li>
+<li><a href="/wiki/ExFAT" title="ExFAT">exFAT</a></li>
+<li><a href="/wiki/Transaction-Safe_FAT_File_System" title="Transaction-Safe FAT File System">TFAT</a></li>
+<li><a href="/wiki/EROFS" title="EROFS">EROFS</a></li>
+<li><a href="/wiki/F2FS" title="F2FS">F2FS</a></li>
+<li><a href="/wiki/JFS_(file_system)" title="JFS (file system)">JFS</a></li>
+<li><a href="/wiki/Non-Volatile_File_System" title="Non-Volatile File System">NVFS</a></li></ul>
+  </div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th id="host-side_wear_leveling" scope="row" class="navbox-group" style="width:1%">host-side <a href="/wiki/Wear_leveling" title="Wear leveling">wear leveling</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/CHFS" title="CHFS">CHFS</a></li>
+<li><a href="/wiki/JFFS" title="JFFS">JFFS</a></li>
+<li><a href="/wiki/JFFS2" title="JFFS2">JFFS2</a></li>
+<li><a href="/wiki/LogFS" title="LogFS">LogFS</a></li>
+<li><a href="/wiki/NILFS" title="NILFS">NILFS</a>
+<ul><li><a href="/wiki/NILFS" title="NILFS">NILFS2</a></li></ul></li>
+<li><a href="/wiki/YAFFS" title="YAFFS">YAFFS</a></li>
+<li><a href="/wiki/UBIFS" title="UBIFS">UBIFS</a></li></ul>
+</div></td></tr></tbody></table><div>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a class="mw-selflink-fragment" href="#Distributed_file_systems">Distributed parallel</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/BeeGFS" title="BeeGFS">BeeGFS</a></li>
+<li><a href="/wiki/Ceph_(software)" title="Ceph (software)">Ceph</a></li>
+<li><a href="/wiki/CXFS" title="CXFS">CXFS</a></li>
+<li><a href="/wiki/GFS2" title="GFS2">GFS2</a></li>
+<li><a href="/wiki/Google_File_System" title="Google File System">Google File System</a></li>
+<li><a href="/wiki/OCFS2" title="OCFS2">OCFS2</a></li>
+<li><a href="/wiki/OrangeFS" title="OrangeFS">OrangeFS</a></li>
+<li><a href="/wiki/Parallel_Virtual_File_System" title="Parallel Virtual File System">PVFS</a></li>
+<li><a href="/wiki/Quantcast_File_System" title="Quantcast File System">QFS</a></li>
+<li><a href="/wiki/Xsan" title="Xsan">Xsan</a></li>
+<li><i><a href="/wiki/List_of_file_systems#Distributed_parallel_file_systems" title="List of file systems">more...</a></i></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Network-attached_storage" title="Network-attached storage">NAS</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/9P_(protocol)" title="9P (protocol)">9P</a></li>
+<li><a href="/wiki/Andrew_File_System" title="Andrew File System">AFS</a> (<a href="/wiki/OpenAFS" title="OpenAFS">OpenAFS</a>)</li>
+<li><a href="/wiki/Apple_Filing_Protocol" title="Apple Filing Protocol">AFP</a></li>
+<li><a href="/wiki/Coda_(file_system)" title="Coda (file system)">Coda</a></li>
+<li><a href="/wiki/Distributed_File_System_(Microsoft)" title="Distributed File System (Microsoft)">DFS</a></li>
+<li><a href="/wiki/Google_File_System" title="Google File System">Google File System</a></li>
+<li><a href="/wiki/GPFS" title="GPFS">GPFS</a></li>
+<li><a href="/wiki/Lustre_(file_system)" title="Lustre (file system)">Lustre</a></li>
+<li><a href="/wiki/NetWare_Core_Protocol" title="NetWare Core Protocol">NCP</a></li>
+<li><a href="/wiki/Network_File_System" title="Network File System">NFS</a></li>
+<li><a href="/wiki/Elliptics" title="Elliptics">POHMELFS</a></li>
+<li><a href="/wiki/Apache_Hadoop" title="Apache Hadoop">Hadoop</a></li>
+<li><a href="/wiki/Server_Message_Block" title="Server Message Block">SMB (CIFS)</a></li>
+<li><a href="/wiki/SSHFS" title="SSHFS">SSHFS</a></li>
+<li><i><a href="/wiki/List_of_file_systems#Distributed_file_systems" title="List of file systems">more...</a></i></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Specialized</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Aufs" title="Aufs">Aufs</a></li>
+<li><a href="/wiki/AXFS" title="AXFS">AXFS</a></li>
+<li><a href="/wiki/Boot_File_System" title="Boot File System">Boot File System</a></li>
+<li><a href="/wiki/CDfs" title="CDfs">CDfs</a></li>
+<li><a href="/wiki/Compact_Disc_File_System" title="Compact Disc File System">Compact Disc File System</a></li>
+<li><a href="/wiki/Cramfs" title="Cramfs">cramfs</a></li>
+<li><a href="/wiki/Davfs2" title="Davfs2">Davfs2</a></li>
+<li><a href="/wiki/EROFS" title="EROFS">EROFS</a></li>
+<li><a href="/wiki/FTPFS" title="FTPFS">FTPFS</a></li>
+<li><a href="/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace">FUSE</a></li>
+<li><a href="/wiki/Lnfs" title="Lnfs">Lnfs</a></li>
+<li><a href="/wiki/Linear_Tape_File_System" title="Linear Tape File System">LTFS</a></li>
+<li><a href="/wiki/NOVA_(filesystem)" title="NOVA (filesystem)">NOVA</a></li>
+<li><a href="/wiki/Rational_MultiVersion_File_System" class="mw-redirect" title="Rational MultiVersion File System">MVFS</a></li>
+<li><a href="/wiki/SquashFS" title="SquashFS">SquashFS</a></li>
+<li><a href="/wiki/FAT_filesystem_and_Linux" title="FAT filesystem and Linux">UMSDOS</a></li>
+<li><a href="/wiki/OverlayFS" title="OverlayFS">OverlayFS</a></li>
+<li><a href="/wiki/UnionFS" title="UnionFS">UnionFS</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Pseudo</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Configfs" title="Configfs">configfs</a></li>
+<li><a href="/wiki/Device_file" title="Device file">devfs</a></li>
+<li><a href="/wiki/Debugfs" title="Debugfs">debugfs</a></li>
+<li><a href="/wiki/Kernfs_(BSD)" title="Kernfs (BSD)">kernfs</a></li>
+<li><a href="/wiki/Procfs" title="Procfs">procfs</a></li>
+<li>specfs</li>
+<li><a href="/wiki/Sysfs" title="Sysfs">sysfs</a></li>
+<li><a href="/wiki/Tmpfs" title="Tmpfs">tmpfs</a></li>
+<li><a href="/wiki/WinFS" title="WinFS">WinFS</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Filesystem-level_encryption" title="Filesystem-level encryption">Encrypted</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/ECryptfs" title="ECryptfs">eCryptfs</a></li>
+<li><a href="/wiki/EncFS" title="EncFS">EncFS</a></li>
+<li><a href="/wiki/Encrypting_File_System" title="Encrypting File System">EFS</a></li>
+<li><a href="/wiki/Rubberhose_(file_system)" title="Rubberhose (file system)">Rubberhose</a></li>
+<li><a href="/wiki/SSHFS" title="SSHFS">SSHFS</a></li>
+<li><a href="/wiki/Oracle_ZFS" title="Oracle ZFS">ZFS</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Types</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a class="mw-selflink selflink">Clustered</a>
+<ul><li><a href="/wiki/Global_file_system" title="Global file system">Global</a></li>
+<li><a href="/wiki/Grid_file_system" title="Grid file system">Grid</a></li>
+<li><a href="/wiki/Self-certifying_File_System" title="Self-certifying File System">Self-certifying</a></li></ul></li>
+<li><a href="/wiki/Flash_file_system" title="Flash file system">Flash</a></li>
+<li><a href="/wiki/Journaling_file_system" title="Journaling file system">Journaling</a></li>
+<li><a href="/wiki/Log-structured_file_system" title="Log-structured file system">Log-structured</a></li>
+<li><a href="/wiki/Object_storage" title="Object storage">Object</a></li>
+<li><a href="/wiki/Record-oriented_filesystem" title="Record-oriented filesystem">Record-oriented</a></li>
+<li><a href="/wiki/Semantic_file_system" title="Semantic file system">Semantic</a></li>
+<li><a href="/wiki/Steganographic_file_system" title="Steganographic file system">Steganographic</a></li>
+<li><a href="/wiki/Synthetic_file_system" title="Synthetic file system">Synthetic</a></li>
+<li><a href="/wiki/Versioning_file_system" title="Versioning file system">Versioning</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Features</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Case_preservation" title="Case preservation">Case preservation</a></li>
+<li><a href="/wiki/Copy-on-write" title="Copy-on-write">Copy-on-write</a></li>
+<li><a href="/wiki/Data_deduplication" title="Data deduplication">Data deduplication</a></li>
+<li><a href="/wiki/Data_scrubbing" title="Data scrubbing">Data scrubbing</a></li>
+<li><a href="/wiki/Execute_in_place" title="Execute in place">Execute in place</a></li>
+<li><a href="/wiki/Extent_(file_systems)" title="Extent (file systems)">Extent</a></li>
+<li><a href="/wiki/File_attribute" title="File attribute">File attribute</a>
+<ul><li><a href="/wiki/Extended_file_attributes" title="Extended file attributes">Extended file attributes</a></li></ul></li>
+<li><a href="/wiki/File_change_log" title="File change log">File change log</a></li>
+<li><a href="/wiki/Fork_(file_system)" title="Fork (file system)">Fork</a></li>
+<li>Links
+<ul><li><a href="/wiki/Hard_link" title="Hard link">Hard</a></li>
+<li><a href="/wiki/Symbolic_link" title="Symbolic link">Symbolic</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Computer_access_control" title="Computer access control">Access control</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Access-control_list" title="Access-control list">Access-control list</a></li>
+<li><a href="/wiki/Filesystem-level_encryption" title="Filesystem-level encryption">Filesystem-level encryption</a></li>
+<li><a href="/wiki/File-system_permissions" title="File-system permissions">Permissions</a>
+<ul><li><a href="/wiki/Chmod" title="Chmod">Modes</a></li>
+<li><a href="/wiki/Sticky_bit" title="Sticky bit">Sticky bit</a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Interface_(computing)" title="Interface (computing)">Interfaces</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/File_manager" title="File manager">File manager</a></li>
+<li><a href="/wiki/File_system_API" title="File system API">File system API</a>
+<ul><li><a href="/wiki/Installable_File_System" title="Installable File System">Installable File System</a></li></ul></li>
+<li><a href="/wiki/Virtual_file_system" title="Virtual file system">Virtual file system</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/List_of_file_systems" title="List of file systems">Lists</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/List_of_cryptographic_file_systems" title="List of cryptographic file systems">Cryptographic</a></li>
+<li><a href="/wiki/List_of_default_file_systems" title="List of default file systems">Default</a></li>
+<li><a href="/wiki/List_of_log-structured_file_systems" title="List of log-structured file systems">Log-structured</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Layouts</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Master_Boot_Record" class="mw-redirect" title="Master Boot Record">Master Boot Record</a></li>
+<li><a href="/wiki/GUID_Partition_Table" title="GUID Partition Table">GUID Partition Table</a></li>
+<li><a href="/wiki/Apple_Partition_Map" title="Apple Partition Map">Apple Partition Map</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1456
+Cached time: 20231031013309
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.403 seconds
+Real time usage: 0.536 seconds
+Preprocessor visited node count: 1919/1000000
+Post‐expand include size: 106945/2097152 bytes
+Template argument size: 11293/2097152 bytes
+Highest expansion depth: 21/100
+Expensive parser function count: 11/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 46905/5000000 bytes
+Lua time usage: 0.245/10.000 seconds
+Lua memory usage: 7949122/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  451.651      1 -total
+ 34.47%  155.695      1 Template:Reflist
+ 33.05%  149.252      3 Template:Ambox
+ 25.26%  114.091      7 Template:Cite_web
+ 22.52%  101.722      1 Template:Multiple
+ 17.93%   80.997      5 Template:Navbox
+ 16.78%   75.773      1 Template:File_systems
+ 11.12%   50.211      1 Template:Short_description
+ 10.55%   47.639      1 Template:Refimprove
+  6.54%   29.554      1 Template:Cleanup
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:10459749-0!canonical and timestamp 20231031013309 and revision id 1181074019. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Clustered_file_system&amp;oldid=1181074019">https://en.wikipedia.org/w/index.php?title=Clustered_file_system&amp;oldid=1181074019</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Computer_file_systems" title="Category:Computer file systems">Computer file systems</a></li><li><a href="/wiki/Category:Data_management" title="Category:Data management">Data management</a></li><li><a href="/wiki/Category:Distributed_data_storage" title="Category:Distributed data storage">Distributed data storage</a></li><li><a href="/wiki/Category:Distributed_file_systems" title="Category:Distributed file systems">Distributed file systems</a></li><li><a href="/wiki/Category:Network_file_systems" title="Category:Network file systems">Network file systems</a></li><li><a href="/wiki/Category:Shared_disk_file_systems" title="Category:Shared disk file systems">Shared disk file systems</a></li><li><a href="/wiki/Category:Storage_area_networks" title="Category:Storage area networks">Storage area networks</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_December_2015" title="Category:Articles needing additional references from December 2015">Articles needing additional references from December 2015</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Articles_needing_cleanup_from_December_2013" title="Category:Articles needing cleanup from December 2013">Articles needing cleanup from December 2013</a></li><li><a href="/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">All pages needing cleanup</a></li><li><a href="/wiki/Category:Cleanup_tagged_articles_with_a_reason_field_from_December_2013" title="Category:Cleanup tagged articles with a reason field from December 2013">Cleanup tagged articles with a reason field from December 2013</a></li><li><a href="/wiki/Category:Wikipedia_pages_needing_cleanup_from_December_2013" title="Category:Wikipedia pages needing cleanup from December 2013">Wikipedia pages needing cleanup from December 2013</a></li><li><a href="/wiki/Category:Articles_with_multiple_maintenance_issues" title="Category:Articles with multiple maintenance issues">Articles with multiple maintenance issues</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 20 October 2023, at 17:43<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Clustered_file_system&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw1418","wgBackendResponseTime":128,"wgPageParseReport":{"limitreport":{"cputime":"0.403","walltime":"0.536","ppvisitednodes":{"value":1919,"limit":1000000},"postexpandincludesize":{"value":106945,"limit":2097152},"templateargumentsize":{"value":11293,"limit":2097152},"expansiondepth":{"value":21,"limit":100},"expensivefunctioncount":{"value":11,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":46905,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  451.651      1 -total"," 34.47%  155.695      1 Template:Reflist"," 33.05%  149.252      3 Template:Ambox"," 25.26%  114.091      7 Template:Cite_web"," 22.52%  101.722      1 Template:Multiple"," 17.93%   80.997      5 Template:Navbox"," 16.78%   75.773      1 Template:File_systems"," 11.12%   50.211      1 Template:Short_description"," 10.55%   47.639      1 Template:Refimprove","  6.54%   29.554      1 Template:Cleanup"]},"scribunto":{"limitreport-timeusage":{"value":"0.245","limit":"10.000"},"limitreport-memusage":{"value":7949122,"limit":52428800}},"cachereport":{"origin":"mw1456","timestamp":"20231031013309","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Clustered file system","url":"https:\/\/en.wikipedia.org\/wiki\/Clustered_file_system","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1103464","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1103464","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2007-04-04T17:14:37Z","dateModified":"2023-10-20T17:43:29Z","headline":"decentralized filesystem"}</script>
+</body>
+</html>

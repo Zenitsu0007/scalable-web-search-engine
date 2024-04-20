@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Database model - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a27a19fb-33f7-4c93-97e2-25d3e7ff0d5d","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Database_model","wgTitle":"Database model","wgCurRevisionId":1172698127,"wgRevisionId":1172698127,"wgArticleId":10973690,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking in-text citations from June 2017","All articles lacking in-text citations","Articles to be merged from June 2023","All articles to be merged","Articles with short description","Short description is different from Wikidata","Articles with specifically marked weasel-worded phrases from October 2009","All articles with specifically marked weasel-worded phrases","Articles with specifically marked weasel-worded phrases from June 2012",
+"Articles with specifically marked weasel-worded phrases from November 2009","Commons category link is on Wikidata","Database management systems","Database models"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Database_model","wgRelevantArticleId":10973690,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage"
+,"wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q267136","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements",
+"mediawiki.page.media","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/MediaWiki_1.28.0_database_schema.svg/1200px-MediaWiki_1.28.0_database_schema.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="986">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/MediaWiki_1.28.0_database_schema.svg/800px-MediaWiki_1.28.0_database_schema.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="657">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/MediaWiki_1.28.0_database_schema.svg/640px-MediaWiki_1.28.0_database_schema.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="526">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Database model - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Database_model">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Database_model&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Database_model">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Database_model rootpage-Database_model skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Database+model" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Database+model" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Database+model" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Database+model" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Types"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Types">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Types</div>
+		</a>
+		
+		<ul id="toc-Types-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Relationships_and_functions"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Relationships_and_functions">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Relationships and functions</div>
+		</a>
+		
+		<ul id="toc-Relationships_and_functions-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Flat_model"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Flat_model">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>Flat model</div>
+		</a>
+		
+		<ul id="toc-Flat_model-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Early_data_models"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Early_data_models">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Early data models</div>
+		</a>
+		
+			<button aria-controls="toc-Early_data_models-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Early data models subsection</span>
+			</button>
+		
+		<ul id="toc-Early_data_models-sublist" class="vector-toc-list">
+			<li id="toc-Hierarchical_model"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Hierarchical_model">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.1</span>Hierarchical model</div>
+			</a>
+			
+			<ul id="toc-Hierarchical_model-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Network_model"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Network_model">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.2</span>Network model</div>
+			</a>
+			
+			<ul id="toc-Network_model-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Inverted_file_model"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Inverted_file_model">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.3</span>Inverted file model</div>
+			</a>
+			
+			<ul id="toc-Inverted_file_model-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Relational_model"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Relational_model">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>Relational model</div>
+		</a>
+		
+			<button aria-controls="toc-Relational_model-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Relational model subsection</span>
+			</button>
+		
+		<ul id="toc-Relational_model-sublist" class="vector-toc-list">
+			<li id="toc-Dimensional_model"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Dimensional_model">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.1</span>Dimensional model</div>
+			</a>
+			
+			<ul id="toc-Dimensional_model-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Post-relational_database_models"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Post-relational_database_models">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">6</span>Post-relational database models</div>
+		</a>
+		
+			<button aria-controls="toc-Post-relational_database_models-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Post-relational database models subsection</span>
+			</button>
+		
+		<ul id="toc-Post-relational_database_models-sublist" class="vector-toc-list">
+			<li id="toc-Graph_model"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Graph_model">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">6.1</span>Graph model</div>
+			</a>
+			
+			<ul id="toc-Graph_model-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Multivalue_model"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Multivalue_model">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">6.2</span>Multivalue model</div>
+			</a>
+			
+			<ul id="toc-Multivalue_model-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Object-oriented_database_models"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Object-oriented_database_models">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">6.3</span>Object-oriented database models</div>
+			</a>
+			
+			<ul id="toc-Object-oriented_database_models-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">7</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">8</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Database model</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 16 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-16" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">16 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D9%85%D9%81%D9%87%D9%88%D9%85_%D9%82%D9%88%D8%A7%D8%B9%D8%AF_%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA" title="مفهوم قواعد البيانات – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Datenbankmodell" title="Datenbankmodell – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Modelo_de_base_de_datos" title="Modelo de base de datos – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%AF%D9%84%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%A7%D9%86%D8%AA%D8%B2%D8%A7%D8%B9%DB%8C_%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%87_%D8%AF%D8%A7%D8%AF%D9%87%E2%80%8C%D9%87%D8%A7" title="مدل‌های انتزاعی پایگاه داده‌ها – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EB%AA%A8%EB%8D%B8" title="데이터베이스 모델 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-hr mw-list-item"><a href="https://hr.wikipedia.org/wiki/Modeli_baza_podataka" title="Modeli baza podataka – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target"><span>Hrvatski</span></a></li><li class="interlanguage-link interwiki-kk mw-list-item"><a href="https://kk.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%BA%D2%9B%D0%BE%D1%80_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%96" title="Дерекқор моделі – Kazakh" lang="kk" hreflang="kk" class="interlanguage-link-target"><span>Қазақша</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Adatmodell" title="Adatmodell – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-mn mw-list-item"><a href="https://mn.wikipedia.org/wiki/%D3%A8%D0%B3%D3%A9%D0%B3%D0%B4%D0%BB%D0%B8%D0%B9%D0%BD_%D1%81%D0%B0%D0%BD%D0%B3%D0%B8%D0%B9%D0%BD_%D0%B7%D0%B0%D0%B3%D0%B2%D0%B0%D1%80" title="Өгөгдлийн сангийн загвар – Mongolian" lang="mn" hreflang="mn" class="interlanguage-link-target"><span>Монгол</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Databasemodel" title="Databasemodel – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Model_bazy_danych" title="Model bazy danych – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_%D0%B1%D0%B0%D0%B7%D1%8B_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" title="Модель базы данных – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sq mw-list-item"><a href="https://sq.wikipedia.org/wiki/Modelet_e_databazave" title="Modelet e databazave – Albanian" lang="sq" hreflang="sq" class="interlanguage-link-target"><span>Shqip</span></a></li><li class="interlanguage-link interwiki-ta mw-list-item"><a href="https://ta.wikipedia.org/wiki/%E0%AE%A4%E0%AE%B0%E0%AE%B5%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%B3_%E0%AE%AE%E0%AE%BE%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AE%BF" title="தரவுத்தள மாதிரி – Tamil" lang="ta" hreflang="ta" class="interlanguage-link-target"><span>தமிழ்</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%96_%D0%B1%D0%B0%D0%B7_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85" title="Моделі баз даних – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_c%C6%A1_s%E1%BB%9F_d%E1%BB%AF_li%E1%BB%87u" title="Mô hình cơ sở dữ liệu – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q267136#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Database_model" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Database_model" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Database_model"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Database_model&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Database_model&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Database_model"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Database_model&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Database_model&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Database_model" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Database_model" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Database_model&amp;oldid=1172698127" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Database_model&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Database_model&amp;id=1172698127&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDatabase_model"><span>Get shortened URL</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q267136" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Database_model&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Database_model&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Database_models" hreflang="en"><span>Wikimedia Commons</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1097763485">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><table class="box-More_footnotes plainlinks metadata ambox ambox-style ambox-More_footnotes" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></span></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article includes a list of general <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">references</a>, but <b>it lacks sufficient corresponding <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>.<span class="hide-when-compact"> Please help to <a href="/wiki/Wikipedia:WikiProject_Reliability" title="Wikipedia:WikiProject Reliability">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span>  <span class="date-container"><i>(<span class="date">June 2017</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1097763485"><table class="box-Merge_to plainlinks metadata ambox ambox-move" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span class="mw-default-size" typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Merge-arrow.svg/50px-Merge-arrow.svg.png" decoding="async" width="50" height="20" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Merge-arrow.svg/75px-Merge-arrow.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Merge-arrow.svg/100px-Merge-arrow.svg.png 2x" data-file-width="50" data-file-height="20" /></span></span></div></td><td class="mbox-text"><div class="mbox-text-span">It has been suggested that this article be <a href="/wiki/Wikipedia:Merging" title="Wikipedia:Merging">merged</a> into <i><a href="/wiki/Database_schema" title="Database schema">Database schema</a></i>. (<a href="/wiki/Talk:Database_schema#Merger_proposal:_merge_with_Database_model" title="Talk:Database schema">Discuss</a>)<small><i> Proposed since June 2023.</i></small></div></td></tr></tbody></table>
+<div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Type of data model</div>
+<figure class="mw-default-size mw-halign-right" typeof="mw:File/Thumb"><a href="/wiki/File:MediaWiki_1.28.0_database_schema.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/9/94/MediaWiki_1.28.0_database_schema.svg/220px-MediaWiki_1.28.0_database_schema.svg.png" decoding="async" width="220" height="181" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/94/MediaWiki_1.28.0_database_schema.svg/330px-MediaWiki_1.28.0_database_schema.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/94/MediaWiki_1.28.0_database_schema.svg/440px-MediaWiki_1.28.0_database_schema.svg.png 2x" data-file-width="1750" data-file-height="1438" /></a><figcaption>Database model for MediaWiki 1.28.0 (2017)</figcaption></figure>
+<figure class="mw-default-size mw-halign-right" typeof="mw:File/Thumb"><a href="/wiki/File:Database_models.jpg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Database_models.jpg/220px-Database_models.jpg" decoding="async" width="220" height="158" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Database_models.jpg/330px-Database_models.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Database_models.jpg/440px-Database_models.jpg 2x" data-file-width="1341" data-file-height="965" /></a><figcaption>Different types of database models</figcaption></figure>
+<p>A <b>database model</b> is a type of <a href="/wiki/Data_model" title="Data model">data model</a> that determines the logical structure of a <a href="/wiki/Database" title="Database">database</a>. It fundamentally determines in which manner <a href="/wiki/Data" title="Data">data</a> can be stored, organized and manipulated. The most popular example of a database model is the <a href="/wiki/Relational_model" title="Relational model">relational model</a>, which uses a table-based format.
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Types">Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=1" title="Edit section: Types"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Common <a href="/wiki/Logical_data_model" class="mw-redirect" title="Logical data model">logical data models</a> for databases include:
+</p>
+<ul><li><a href="/wiki/Hierarchical_database_model" title="Hierarchical database model">Hierarchical database model</a></li></ul>
+<dl><dd>This is the oldest form of database model. It was developed by IBM for IMS (information Management System), and is a set of organized data in tree structure. DB record is a tree consisting of many groups called segments. It uses <a href="/wiki/One-to-many_(data_model)" title="One-to-many (data model)">one-to-many relationships</a>, and the data access is also predictable.</dd></dl>
+<ul><li><a href="/wiki/Network_model" title="Network model">Network model</a></li>
+<li><a href="/wiki/Relational_model" title="Relational model">Relational model</a></li>
+<li><a href="/wiki/Entity%E2%80%93relationship_model" title="Entity–relationship model">Entity–relationship model</a>
+<ul><li><a href="/wiki/Enhanced_entity%E2%80%93relationship_model" title="Enhanced entity–relationship model">Enhanced entity–relationship model</a></li></ul></li>
+<li><a href="/wiki/Object_database" title="Object database">Object model</a></li>
+<li><a href="/wiki/Document-oriented_database" title="Document-oriented database">Document model</a></li>
+<li><a href="/wiki/Entity%E2%80%93attribute%E2%80%93value_model" title="Entity–attribute–value model">Entity–attribute–value model</a></li>
+<li><a href="/wiki/Star_schema" title="Star schema">Star schema</a></li></ul>
+<p>An <a href="/wiki/Object%E2%80%93relational_database" title="Object–relational database">object–relational database</a> combines the two related structures.
+</p><p><a href="/wiki/Physical_data_model" class="mw-redirect" title="Physical data model">Physical data models</a> include:
+</p>
+<ul><li><a href="/wiki/Inverted_index" title="Inverted index">Inverted index</a></li>
+<li><a href="/wiki/Flat_file_database" class="mw-redirect" title="Flat file database">Flat file</a></li></ul>
+<p>Other models include:
+</p>
+<ul><li><a href="/w/index.php?title=Correlation_database&amp;action=edit&amp;redlink=1" class="new" title="Correlation database (page does not exist)">Correlational model</a></li>
+<li><a href="/wiki/Multidimensional_database" class="mw-redirect" title="Multidimensional database">Multidimensional model</a></li>
+<li><a href="/wiki/Multivalue_model" class="mw-redirect" title="Multivalue model">Multivalue model</a></li>
+<li><a href="/wiki/Semantic_data_model" title="Semantic data model">Semantic model</a></li>
+<li><a href="/wiki/XML_database" title="XML database">XML database</a></li>
+<li><a href="/wiki/Named_graph" title="Named graph">Named graph</a></li>
+<li><a href="/wiki/Triplestore" title="Triplestore">Triplestore</a></li></ul>
+<h2><span class="mw-headline" id="Relationships_and_functions">Relationships and functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=2" title="Edit section: Relationships and functions"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A given database management system may provide one or more models. The optimal structure depends on the natural organization of the application's data, and on the application's requirements, which include transaction rate (speed), reliability, maintainability, scalability, and cost.  Most <a href="/wiki/Database_management_system" class="mw-redirect" title="Database management system">database management systems</a> are built around one particular data model, although it is possible for products to offer support for more than one model.
+</p><p>Various <a href="/wiki/Physical_data_model" class="mw-redirect" title="Physical data model">physical data models</a> can implement any given logical model. Most database software will offer the user some level of control in tuning the physical implementation, since the choices that are made have a significant effect on performance.
+</p><p>A model is not just a way of structuring data: it also defines a set of operations that can be performed on the data.<sup id="cite_ref-Elmasri_1-0" class="reference"><a href="#cite_note-Elmasri-1">&#91;1&#93;</a></sup> The relational model, for example, defines operations such as <a href="/wiki/Select_(SQL)" title="Select (SQL)">select</a> (<a href="/wiki/Projection_(relational_algebra)" title="Projection (relational algebra)">project</a>) and <a href="/wiki/Join_(SQL)" title="Join (SQL)">join</a>. Although these operations may not be explicit in a particular <a href="/wiki/Query_language" title="Query language">query language</a>, they provide the foundation on which a query language is built.
+</p>
+<h2><span class="mw-headline" id="Flat_model">Flat model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=3" title="Edit section: Flat model"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Flat_File_Model.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flat_File_Model.svg/350px-Flat_File_Model.svg.png" decoding="async" width="350" height="175" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flat_File_Model.svg/525px-Flat_File_Model.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flat_File_Model.svg/700px-Flat_File_Model.svg.png 2x" data-file-width="540" data-file-height="270" /></a><figcaption>Example of a flat file model</figcaption></figure>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Main articles: <a href="/wiki/Flat_file_database" class="mw-redirect" title="Flat file database">Flat file database</a> and <a href="/wiki/Spreadsheet" title="Spreadsheet">Spreadsheet</a></div>
+<p>The <a href="/wiki/Flat_file_database" class="mw-redirect" title="Flat file database">flat (or table) model</a> consists of a single, two-dimensional array of <a href="/wiki/Data" title="Data">data</a> elements, where all members of a given column are assumed to be similar values, and all members of a row are assumed to be related to one another. For instance, columns for name and password that might be used as a part of a system security database. Each row would have the specific password associated with an individual user. Columns of the table often have a type associated with them, defining them as character data, date or time information, integers, or floating point numbers.  This tabular format is a precursor to the relational model.
+</p>
+<h2><span class="mw-headline" id="Early_data_models">Early data models</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=4" title="Edit section: Early data models"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>These models were popular in the 1960s, 1970s, but nowadays can be found primarily in old <a href="/wiki/Legacy_system" title="Legacy system">legacy systems</a>. They are characterized primarily by being <a href="/wiki/Navigational_database" title="Navigational database">navigational</a> with strong connections between their logical and physical representations, and deficiencies in <a href="/wiki/Data_independence" title="Data independence">data independence</a>.
+</p>
+<h3><span class="mw-headline" id="Hierarchical_model">Hierarchical model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=5" title="Edit section: Hierarchical model"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<figure class="mw-halign-left" typeof="mw:File/Thumb"><a href="/wiki/File:Hierarchical_Model.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Hierarchical_Model.svg/350px-Hierarchical_Model.svg.png" decoding="async" width="350" height="200" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Hierarchical_Model.svg/525px-Hierarchical_Model.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Hierarchical_Model.svg/700px-Hierarchical_Model.svg.png 2x" data-file-width="548" data-file-height="313" /></a><figcaption>Example of a hierarchical model</figcaption></figure>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Hierarchical_model" class="mw-redirect" title="Hierarchical model">Hierarchical model</a></div>
+<p>In a <a href="/wiki/Hierarchical_database" class="mw-redirect" title="Hierarchical database">hierarchical model</a>, data is organized into a <a href="/wiki/Tree_(data_structure)" title="Tree (data structure)">tree-like structure</a>, implying a single parent for each record. A sort field keeps sibling records in a particular order. Hierarchical structures were widely used in the early mainframe database management systems, such as the <a href="/wiki/Information_Management_System" class="mw-redirect" title="Information Management System">Information Management System</a> (IMS) by <a href="/wiki/IBM" title="IBM">IBM</a>, and now describe the structure of <a href="/wiki/XML" title="XML">XML</a> documents. This structure allows one-to-many relationship between two types of data. This structure is very efficient to describe many relationships in the real world; recipes, table of contents, ordering of paragraphs/verses, any nested and sorted information.
+</p><p>This hierarchy is used as the physical order of records in storage. Record access is done by navigating downward through the data structure using <a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a> combined with sequential accessing.  Because of this, the hierarchical structure is inefficient for certain database operations when a full path (as opposed to upward link and sort field) is not also included for each record.  Such limitations have been compensated for in later IMS versions by additional logical hierarchies imposed on the base physical hierarchy.
+</p>
+<h3><span class="mw-headline" id="Network_model">Network model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=6" title="Edit section: Network model"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Network_Model.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Network_Model.svg/350px-Network_Model.svg.png" decoding="async" width="350" height="277" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Network_Model.svg/525px-Network_Model.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Network_Model.svg/700px-Network_Model.svg.png 2x" data-file-width="542" data-file-height="429" /></a><figcaption>Example of a network model</figcaption></figure>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Network_model" title="Network model">Network model</a></div>
+<p>The <a href="/wiki/Network_database" class="mw-redirect" title="Network database">network model</a> expands upon the hierarchical structure, allowing many-to-many relationships in a tree-like structure that allows multiple parents.  It was most popular before being replaced by the relational model, and is defined by the <a href="/wiki/CODASYL" title="CODASYL">CODASYL</a> specification.
+</p><p>The network model organizes data using two fundamental concepts, called <i>records</i> and <i>sets</i>. Records contain fields (which may be organized hierarchically, as in the programming language <a href="/wiki/COBOL" title="COBOL">COBOL</a>). Sets (not to be confused with mathematical sets) define <a href="/wiki/One-to-many_(data_model)" title="One-to-many (data model)">one-to-many</a> relationships between records: one owner, many members. A record may be an owner in any number of sets, and a member in any number of sets.
+</p><p>A set consists of circular <a href="/wiki/Linked_list" title="Linked list">linked lists</a> where one record type, the set owner or parent, appears once in each circle, and a second record type, the subordinate or child, may appear multiple times in each circle. In this way a hierarchy may be established between any two record types, e.g., type A is the owner of B. At the same time another set may be defined where B is the owner of A. Thus all the sets comprise a general <a href="/wiki/Directed_graph" title="Directed graph">directed graph</a> (ownership defines a direction), or <i>network</i> construct. Access to records is either sequential (usually in each record type) or by navigation in the circular linked lists.
+</p><p>The network model is able to represent redundancy in data more efficiently than in the hierarchical model, and there can be more than one path from an ancestor node to a descendant.  The operations of the network model are navigational in style: a program maintains a current position, and navigates from one record to another by following the relationships in which the record participates. Records can also be located by supplying key values.
+</p><p>Although it is not an essential feature of the model, network databases generally implement the set relationships by means of <a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a> that directly address the location of a record on disk. This gives excellent retrieval performance, at the expense of operations such as database loading and reorganization.
+</p><p>Popular DBMS products that utilized it were <a href="/wiki/Cincom_Systems" title="Cincom Systems">Cincom Systems</a>' Total and <a href="/wiki/Cullinet" title="Cullinet">Cullinet</a>'s <a href="/wiki/IDMS" title="IDMS">IDMS</a>. IDMS gained a considerable customer base; in the 1980s, it adopted the relational model and SQL in addition to its original tools and languages.
+</p><p>Most <a href="/wiki/Object_database" title="Object database">object databases</a> (invented in the 1990s) use the navigational concept to provide fast navigation across networks of objects, generally using object identifiers as "smart" pointers to related objects. <a href="/wiki/Objectivity/DB" title="Objectivity/DB">Objectivity/DB</a>, for instance, implements named one-to-one, one-to-many, many-to-one, and many-to-many named relationships that can cross databases. Many object databases also support <a href="/wiki/SQL" title="SQL">SQL</a>, combining the strengths of both models.
+</p>
+<h3><span class="mw-headline" id="Inverted_file_model">Inverted file model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=7" title="Edit section: Inverted file model"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Inverted_index" title="Inverted index">Inverted index</a></div>
+<p>In an <i>inverted file</i> or <i><a href="/wiki/Inverted_index" title="Inverted index">inverted index</a></i>, the  contents of the data are used as keys in a lookup table, and the values in the table are pointers to the location of each instance of a given content item.  This is also the logical structure of contemporary <a href="/wiki/Index_(database)" class="mw-redirect" title="Index (database)">database indexes</a>, which might only use the contents from a particular columns in the lookup table.  The <i>inverted file data model</i> can put indexes in a set of files next to existing flat database files, in order to efficiently directly access needed records in these files.
+</p><p>Notable for using this data model is the <a href="/wiki/ADABAS" title="ADABAS">ADABAS</a> DBMS of <a href="/wiki/Software_AG" title="Software AG">Software AG</a>, introduced in 1970. ADABAS has gained considerable customer base and exists and supported until today. In the 1980s it has adopted the relational model and SQL in addition to its original tools and languages.
+</p><p><a href="/wiki/Document-oriented_database" title="Document-oriented database">Document-oriented database</a> <a href="/wiki/Clusterpoint" title="Clusterpoint">Clusterpoint</a> uses inverted indexing model to provide fast <a href="/wiki/Full-text_search" title="Full-text search">full-text search</a> for <a href="/wiki/XML" title="XML">XML</a> or <a href="/wiki/JSON" title="JSON">JSON</a> data objects for example.
+</p>
+<h2><span class="mw-headline" id="Relational_model">Relational model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=8" title="Edit section: Relational model"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<figure class="mw-halign-right" typeof="mw:File/Thumb"><a href="/wiki/File:Emp_Tables_(Database).PNG" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/8/87/Emp_Tables_%28Database%29.PNG" decoding="async" width="383" height="129" class="mw-file-element" data-file-width="383" data-file-height="129" /></a><figcaption>Two tables with a relationship</figcaption></figure>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Relational_model" title="Relational model">Relational model</a></div>
+<p>The <a href="/wiki/Relational_model" title="Relational model">relational model</a> was introduced by <a href="/wiki/E.F._Codd" class="mw-redirect" title="E.F. Codd">E.F. Codd</a> in 1970<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> as a way to make database management systems more independent of any particular application. It is a mathematical model defined in terms of <a href="/wiki/Predicate_logic" class="mw-redirect" title="Predicate logic">predicate logic</a> and <a href="/wiki/Set_theory" title="Set theory">set theory</a>, and implementations of it have been used by mainframe, midrange and microcomputer systems.
+</p><p>The products that are generally referred to as <a href="/wiki/Relational_database" title="Relational database">relational databases</a> in fact implement a model that is only an approximation to the mathematical model defined by Codd. Three key terms are used extensively in relational database models: <i><a href="/wiki/Relation_(database)" title="Relation (database)">relations</a></i>, <i>attributes</i>, and <i><a href="/wiki/Data_domain" title="Data domain">domains</a></i>. A relation is a table with columns and rows. The named columns of the relation are called attributes, and the domain is the set of values the attributes are allowed to take.
+</p><p>The basic data structure of the relational model is the table, where information about a particular entity (say, an employee) is represented in rows (also called <a href="/wiki/Tuple" title="Tuple">tuples</a>) and columns. Thus, the "<a href="/wiki/Relation_(database)" title="Relation (database)">relation</a>" in "relational database" refers to the various tables in the database; a relation is a set of tuples. The columns enumerate the various attributes of the entity (the employee's name, address or phone number, for example), and a row is an actual instance of the entity (a specific employee) that is represented by the relation. As a result, each tuple of the employee table represents various attributes of a single employee.
+</p><p>All relations (and, thus, tables) in a relational database have to adhere to some basic rules to qualify as relations. First, the ordering of columns is immaterial in a table. Second, there can not be identical tuples or rows in a table. And third, each tuple will contain a single value for each of its attributes.
+</p><p>A relational database contains multiple tables, each similar to the one in the "flat" database model. One of the strengths of the relational model is that, in principle, any value occurring in two different records (belonging to the same table or to different tables), implies a relationship among those two records.  Yet, in order to enforce explicit <a href="/wiki/Integrity_constraints" class="mw-redirect" title="Integrity constraints">integrity constraints</a>,  relationships between records in tables can also be defined explicitly, by identifying or non-identifying parent-child relationships characterized by assigning cardinality (1:1, (0)1:M, M:M). Tables can also have a designated single attribute or a set of attributes that can act as a "key", which can be used to uniquely identify each tuple in the table.
+</p><p>A key that can be used to uniquely identify a row in a table is called a primary key. Keys are commonly used to join or combine data from two or more tables. For example, an <i>Employee</i> table may contain a column named <i>Location</i> which contains a value that matches the key of a <i>Location</i> table. Keys are also critical in the creation of indexes, which facilitate fast retrieval of data from large tables. Any column can be a key, or multiple columns can be grouped together into a compound key. It is not necessary to define all the keys in advance; a column can be used as a key even if it was not originally intended to be one.
+</p><p>A key that has an external, real-world meaning (such as a person's name, a book's <a href="/wiki/ISBN" title="ISBN">ISBN</a>, or a car's serial number) is sometimes called a "natural" key. If no natural key is suitable (think of the many people named <i>Brown</i>), an arbitrary or surrogate key can be assigned (such as by giving employees ID numbers). In practice, most databases have both generated and natural keys, because generated keys can be used internally to create links between rows that cannot break, while natural keys can be used, less reliably, for searches and for integration with other databases. (For example, records in two independently developed databases could be matched up by <a href="/wiki/Social_security_number" class="mw-redirect" title="Social security number">social security number</a>, except when the social security numbers are incorrect, missing, or have changed.)
+</p><p>The most common query language used with the relational model is the Structured Query Language (<a href="/wiki/SQL" title="SQL">SQL</a>).
+</p>
+<h3><span class="mw-headline" id="Dimensional_model">Dimensional model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=9" title="Edit section: Dimensional model"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/Dimensional_database" class="mw-redirect" title="Dimensional database">dimensional model</a> is a specialized adaptation of the relational model used to represent data in <a href="/wiki/Data_warehouse" title="Data warehouse">data warehouses</a> in a way that data can be easily summarized using online analytical processing, or <a href="/wiki/OLAP" class="mw-redirect" title="OLAP">OLAP</a> queries. In the dimensional model, a database schema consists of a single large table of facts that are described using dimensions and measures. A dimension provides the context of a fact (such as who participated, when and where it happened, and its type) and is used in queries to group related facts together. Dimensions tend to be discrete and are often hierarchical; for example, the location might include the building, state, and country. A measure is a quantity describing the fact, such as revenue. It is important that measures can be meaningfully aggregated—for example, the revenue from different locations can be added together.
+</p><p>In an OLAP query, dimensions are chosen and the facts are grouped and aggregated together to create a summary.
+</p><p>The dimensional model is often implemented on top of the relational model using a <a href="/wiki/Star_schema" title="Star schema">star schema</a>, consisting of one highly normalized table containing the facts, and surrounding denormalized tables containing each dimension. An alternative physical implementation, called a <a href="/wiki/Snowflake_schema" title="Snowflake schema">snowflake schema</a>, normalizes multi-level hierarchies within a dimension into multiple tables.
+</p><p>A data warehouse can contain multiple dimensional schemas that share dimension tables, allowing them to be used together. Coming up with a standard set of dimensions is an important part of <a href="/wiki/Dimensional_modeling" title="Dimensional modeling">dimensional modeling</a>.
+</p><p>Its high performance has made the dimensional model the most popular database structure for OLAP.
+</p>
+<h2><span class="mw-headline" id="Post-relational_database_models">Post-relational database models</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=10" title="Edit section: Post-relational database models"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Products offering a more general data model than the relational model are sometimes classified as <i>post-relational</i>.<sup id="cite_ref-CONR_3-0" class="reference"><a href="#cite_note-CONR-3">&#91;3&#93;</a></sup> Alternate terms include "hybrid database", "Object-enhanced RDBMS" and others. The data model in such products incorporates <a href="/wiki/Relation_(database)" title="Relation (database)">relations</a> but is not constrained by <a href="/wiki/E.F._Codd" class="mw-redirect" title="E.F. Codd">E.F. Codd</a>'s Information Principle, which requires that
+</p>
+<style data-mw-deduplicate="TemplateStyles:r996844942">.mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 40px}.mw-parser-output .templatequote .templatequotecite{line-height:1.5em;text-align:left;padding-left:1.6em;margin-top:0}</style><blockquote class="templatequote"><p>all information in the database must be cast explicitly in terms of values in relations and in no other way</p><div class="templatequotecite">—&#8202;<cite><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup></cite></div></blockquote>
+<p>Some of these extensions to the relational model integrate concepts from technologies that pre-date the relational model. For example, they allow representation of a directed graph with <a href="/wiki/Tree_data_structure" class="mw-redirect" title="Tree data structure">trees</a> on the nodes. The German company <i>sones</i> implements this concept in its <a href="/wiki/GraphDB" class="mw-redirect" title="GraphDB">GraphDB</a>.
+</p><p>Some post-relational products extend relational systems with non-relational features. Others arrived in much the same place by adding relational features to pre-relational systems. Paradoxically, this allows products that are historically pre-relational, such as <a href="/wiki/Pick_operating_system" title="Pick operating system">PICK</a> and <a href="/wiki/MUMPS" title="MUMPS">MUMPS</a>, to make a plausible claim to be post-relational.
+</p><p>The resource space model (RSM) is a non-relational data model based on multi-dimensional classification.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Graph_model">Graph model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=11" title="Edit section: Graph model"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Graph_database" title="Graph database">Graph database</a></div>
+<p>Graph databases allow even more general structure than a network database; any node may be connected to any other node.
+</p>
+<h3><span class="mw-headline" id="Multivalue_model">Multivalue model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=12" title="Edit section: Multivalue model"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/MultiValue" class="mw-redirect" title="MultiValue">MultiValue</a></div>
+<p>Multivalue databases are "lumpy" data, in that they can store exactly the same way as relational databases, but they also permit a level of depth which the relational model can only approximate using sub-tables. This is nearly identical to the way XML expresses data, where a given field/attribute can have multiple right answers at the same time. Multivalue can be thought of as a compressed form of XML.
+</p><p>An example is an invoice, which in either multivalue or relational data could be seen as (A) Invoice Header Table - one entry per invoice, and (B) Invoice Detail Table - one entry per line item. In the multivalue model, we have the option of storing the data as on table, with an embedded table to represent the detail: (A) Invoice Table - one entry per invoice, no other tables needed.
+</p><p>The advantage is that the atomicity of the Invoice (conceptual) and the Invoice (data representation) are one-to-one. This also results in fewer reads, less referential integrity issues, and a dramatic decrease in the hardware needed to support a given transaction volume.
+</p>
+<h3><span class="mw-headline" id="Object-oriented_database_models">Object-oriented database models</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=13" title="Edit section: Object-oriented database models"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Object-Oriented_Model.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Object-Oriented_Model.svg/350px-Object-Oriented_Model.svg.png" decoding="async" width="350" height="259" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Object-Oriented_Model.svg/525px-Object-Oriented_Model.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Object-Oriented_Model.svg/700px-Object-Oriented_Model.svg.png 2x" data-file-width="598" data-file-height="442" /></a><figcaption>Example of an object-oriented model</figcaption></figure>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main articles: <a href="/wiki/Object%E2%80%93relational_model" class="mw-redirect" title="Object–relational model">Object–relational model</a> and <a href="/wiki/Object_model" title="Object model">Object model</a></div>
+<p>In the 1990s, the <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> paradigm was applied to database technology, creating a new database model known as <a href="/wiki/Object_database" title="Object database">object databases</a>.  This aims to avoid the <a href="/wiki/Object%E2%80%93relational_impedance_mismatch" title="Object–relational impedance mismatch">object–relational impedance mismatch</a> – the overhead of converting information between its representation in the database (for example as rows in tables) and its representation in the application program (typically as objects).  Even further, the <a href="/wiki/Type_system" title="Type system">type system</a> used in a particular application can be defined directly in the database, allowing the database to enforce the same data integrity invariants.  Object databases also introduce the key ideas of object programming, such as <a href="/wiki/Encapsulation_(computer_science)" class="mw-redirect" title="Encapsulation (computer science)">encapsulation</a> and <a href="/wiki/Polymorphism_(computer_science)" title="Polymorphism (computer science)">polymorphism</a>, into the world of databases.
+</p><p>A variety of these ways have been tried<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions" title="Wikipedia:Manual of Style/Words to watch"><span title="The material near this tag may use weasel words or too-vague attribution. (October 2009)">by whom?</span></a></i>&#93;</sup>for storing objects in a database. Some<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Avoid_weasel_words" class="mw-redirect" title="Wikipedia:Avoid weasel words"><span title="The material near this tag possibly uses too vague attribution or weasel words. (June 2012)">which?</span></a></i>&#93;</sup> products have approached the problem from the application programming end, by making the objects manipulated by the program <a href="/wiki/Persistence_(computer_science)" title="Persistence (computer science)">persistent</a>. This typically requires the addition of some kind of query language, since conventional programming languages do not have the ability to find objects based on their information content. Others<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Avoid_weasel_words" class="mw-redirect" title="Wikipedia:Avoid weasel words"><span title="The material near this tag possibly uses too vague attribution or weasel words. (November 2009)">which?</span></a></i>&#93;</sup> have attacked the problem from the database end, by defining an object-oriented data model for the database, and defining a database programming language that allows full programming capabilities as well as traditional query facilities.
+</p><p>Object databases suffered because of a lack of standardization: although standards were defined by <a href="/wiki/Object_Database_Management_Group" class="mw-redirect" title="Object Database Management Group">ODMG</a>, they were never implemented well enough to ensure interoperability between products. Nevertheless, object databases have been used successfully in many applications: usually specialized applications such as engineering databases or molecular biology databases rather than mainstream commercial data processing. However, object database ideas were picked up by the relational vendors and influenced extensions made to these products and indeed to the <a href="/wiki/SQL" title="SQL">SQL</a> language.
+</p><p>An alternative to translating between objects and relational databases is to use an <a href="/wiki/Object%E2%80%93relational_mapping" title="Object–relational mapping">object–relational mapping</a> (ORM) library.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=14" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Database_design" title="Database design">Database design</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Database_model&amp;action=edit&amp;section=15" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1134653256">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:#f9f9f9;display:flow-root}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><div class="side-box side-box-right plainlinks sistersitebox"><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style>
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></span></span></div>
+<div class="side-box-text plainlist">Wikimedia Commons has media related to <span style="font-weight: bold; font-style: italic;"><a href="https://commons.wikimedia.org/wiki/Category:Database_models" class="extiw" title="commons:Category:Database models">Database models</a></span>.</div></div>
+</div>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-Elmasri-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-Elmasri_1-0">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFElmasriNavathe2016" class="citation book cs1">Elmasri, Ramez; Navathe, Shamkant (2016). <i>Fundamentals of database systems</i> (Seventh&#160;ed.). p.&#160;33. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780133970777" title="Special:BookSources/9780133970777"><bdi>9780133970777</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fundamentals+of+database+systems&amp;rft.pages=33&amp;rft.edition=Seventh&amp;rft.date=2016&amp;rft.isbn=9780133970777&amp;rft.aulast=Elmasri&amp;rft.aufirst=Ramez&amp;rft.au=Navathe%2C+Shamkant&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADatabase+model" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">E.F. Codd (1970). "A relational model of data for large shared data banks". In: <i>Communications of the ACM archive</i>. Vol 13. Issue 6(June 1970). pp.377-387.</span>
+</li>
+<li id="cite_note-CONR-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-CONR_3-0">^</a></b></span> <span class="reference-text"><i>Introducing databases</i> by Stephen Chu, in Conrick, M. (2006)  <i>Health informatics: transforming healthcare with technology</i>, Thomson, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-17-012731-1" title="Special:BookSources/0-17-012731-1">0-17-012731-1</a>, p. 69.</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDate1999" class="citation journal cs1"><a href="/wiki/Christopher_J._Date" title="Christopher J. Date">Date, C. J.</a> (June 1, 1999). <a rel="nofollow" class="external text" href="http://intelligent-enterprise.informationweek.com/db_area/archives/1999/990106/online1.jhtml;jsessionid=Y2UNK1QFKXMBTQE1GHRSKH4ATMY32JVN">"When's an extension not an extension?"</a>. <i>Intelligent Enterprise</i>. <b>2</b> (8).</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Intelligent+Enterprise&amp;rft.atitle=When%27s+an+extension+not+an+extension%3F&amp;rft.volume=2&amp;rft.issue=8&amp;rft.date=1999-06-01&amp;rft.aulast=Date&amp;rft.aufirst=C.+J.&amp;rft_id=http%3A%2F%2Fintelligent-enterprise.informationweek.com%2Fdb_area%2Farchives%2F1999%2F990106%2Fonline1.jhtml%3Bjsessionid%3DY2UNK1QFKXMBTQE1GHRSKH4ATMY32JVN&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADatabase+model" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFZhuge2008" class="citation book cs1">Zhuge, H. (2008). <i>The Web Resource Space Model</i>. Web Information Systems Engineering and Internet Technologies Book Series. Vol.&#160;4. Springer. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-387-72771-4" title="Special:BookSources/978-0-387-72771-4"><bdi>978-0-387-72771-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Web+Resource+Space+Model&amp;rft.series=Web+Information+Systems+Engineering+and+Internet+Technologies+Book+Series&amp;rft.pub=Springer&amp;rft.date=2008&amp;rft.isbn=978-0-387-72771-4&amp;rft.aulast=Zhuge&amp;rft.aufirst=H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADatabase+model" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Database_models" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Database_models" title="Template:Database models"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Database_models" title="Template talk:Database models"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Database_models" title="Special:EditPage/Template:Database models"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Database_models" style="font-size:114%;margin:0 4em"><a class="mw-selflink selflink">Database models</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Common models</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Flat-file_database" title="Flat-file database">Flat</a></li>
+<li><a href="/wiki/Hierarchical_database_model" title="Hierarchical database model">Hierarchical</a></li>
+<li><a href="/wiki/Dimensional_modeling" title="Dimensional modeling">Dimensional</a></li>
+<li><a href="/wiki/Network_model" title="Network model">Network</a></li>
+<li><a href="/wiki/Relational_model" title="Relational model">Relational</a></li>
+<li><a href="/wiki/Entity%E2%80%93relationship_model" title="Entity–relationship model">Entity–relationship</a>
+<ul><li><a href="/wiki/Enhanced_entity%E2%80%93relationship_model" title="Enhanced entity–relationship model">Enhanced</a></li></ul></li>
+<li><a href="/wiki/Graph_database" title="Graph database">Graph</a></li>
+<li><a href="/wiki/Object_database" title="Object database">Object-oriented</a></li>
+<li><a href="/wiki/Entity%E2%80%93attribute%E2%80%93value_model" title="Entity–attribute–value model">Entity–attribute–value</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other models</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/w/index.php?title=Correlation_database&amp;action=edit&amp;redlink=1" class="new" title="Correlation database (page does not exist)">Correlational</a></li>
+<li><a href="/wiki/Online_analytical_processing#Multidimensional_databases" title="Online analytical processing">Multi-dimensional</a></li>
+<li><a href="/wiki/Array_DBMS" title="Array DBMS">Array</a></li>
+<li><a href="/wiki/Semantic_data_model" title="Semantic data model">Semantic</a></li>
+<li><a href="/wiki/Star_schema" title="Star schema">Star schema</a></li>
+<li><a href="/wiki/XML_database" title="XML database">XML database</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Implementations</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Flat-file_database" title="Flat-file database">Flat file</a></li>
+<li><a href="/wiki/Column-oriented_DBMS" title="Column-oriented DBMS">Column-oriented</a></li>
+<li><a href="/wiki/Document-oriented_database" title="Document-oriented database">Document-oriented</a></li>
+<li><a href="/wiki/Object%E2%80%93relational_database" title="Object–relational database">Object–relational</a></li>
+<li><a href="/wiki/Deductive_database" title="Deductive database">Deductive</a></li>
+<li><a href="/wiki/Temporal_database" title="Temporal database">Temporal</a></li>
+<li><a href="/wiki/XML_database" title="XML database">XML data store</a></li>
+<li><a href="/wiki/Key%E2%80%93value_database" title="Key–value database">Key–value store</a></li>
+<li><a href="/wiki/Ordered_Key-Value_Store" title="Ordered Key-Value Store">Ordered Key-Value Store</a></li>
+<li><a href="/wiki/Triplestore" title="Triplestore">Triplestore</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"></div><div role="navigation" class="navbox" aria-labelledby="Data_model" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Data_model" title="Template:Data model"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Data_model" title="Template talk:Data model"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Data_model" title="Special:EditPage/Template:Data model"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Data_model" style="font-size:114%;margin:0 4em"><a href="/wiki/Data_model" title="Data model">Data model</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Main</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Data_architecture" title="Data architecture">Architecture</a></li>
+<li><a href="/wiki/Data_modeling" title="Data modeling">Modeling</a></li>
+<li><a href="/wiki/Data_structure" title="Data structure">Structure</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Schemas</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Conceptual_schema" title="Conceptual schema">Conceptual </a></li>
+<li><a href="/wiki/Logical_data_model" class="mw-redirect" title="Logical data model">Logical</a></li>
+<li><a href="/wiki/Physical_schema" title="Physical schema">Physical</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Types</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a class="mw-selflink selflink">Database</a></li>
+<li><a href="/wiki/Data_structure_diagram" title="Data structure diagram">Data structure diagram</a></li>
+<li><a href="/wiki/Entity%E2%80%93relationship_model" title="Entity–relationship model">Entity–relationship model</a> (<a href="/wiki/Enhanced_entity%E2%80%93relationship_model" title="Enhanced entity–relationship model">enhanced</a>)</li>
+<li><a href="/wiki/Data_model_(GIS)" title="Data model (GIS)">Geographic</a></li>
+<li><a href="/wiki/Generic_data_model" title="Generic data model">Generic</a></li>
+<li><a href="/wiki/Semantic_data_model" title="Semantic data model">Semantic</a></li>
+<li><a href="/wiki/Common_data_model" title="Common data model">Common</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related models</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Data-flow_diagram" title="Data-flow diagram">Data-flow diagram</a></li>
+<li><a href="/wiki/Information_model" title="Information model">Information model</a></li>
+<li><a href="/wiki/Object_model" title="Object model">Object model</a></li>
+<li><a href="/wiki/Object%E2%80%93role_modeling" title="Object–role modeling">Object–role modeling</a></li>
+<li><a href="/wiki/Unified_Modeling_Language" title="Unified Modeling Language">Unified Modeling Language</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">See also</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Database_design" title="Database design">Database design</a></li>
+<li><a href="/wiki/Business_process_modeling" title="Business process modeling">Business process modeling</a></li>
+<li><a href="/wiki/Core_architecture_data_model" title="Core architecture data model">Core architecture data model</a></li>
+<li><a href="/wiki/Enterprise_modelling" title="Enterprise modelling">Enterprise modelling</a></li>
+<li><a href="/wiki/Function_model" title="Function model">Function model</a></li>
+<li><a href="/wiki/Process_modeling" title="Process modeling">Process modeling</a></li>
+<li><a href="/wiki/XML_schema" title="XML schema">XML schema</a></li>
+<li><a href="/wiki/Data_Format_Description_Language" title="Data Format Description Language">Data Format Description Language</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"></div><div role="navigation" class="navbox" aria-labelledby="Database" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Database" title="Template:Database"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Database" title="Template talk:Database"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Database" title="Special:EditPage/Template:Database"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Database" style="font-size:114%;margin:0 4em"><a href="/wiki/Database" title="Database">Database</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Main</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Database#Major_database_usage_requirements" title="Database">Requirements</a></li>
+<li><a href="/wiki/Database_theory" title="Database theory">Theory</a></li>
+<li><a class="mw-selflink selflink">Models</a></li>
+<li><a href="/wiki/Database_management_system" class="mw-redirect" title="Database management system">Database management system</a></li>
+<li><a href="/wiki/Database_machine" title="Database machine">Machine</a></li>
+<li><a href="/wiki/Database_server" title="Database server">Server</a></li>
+<li><a href="/wiki/Database_application" title="Database application">Application</a></li>
+<li><a href="/wiki/Database_connection" title="Database connection">Connection</a>
+<ul><li><a href="/wiki/Datasource" title="Datasource">datasource</a></li>
+<li><a href="/wiki/Data_Source_Name" class="mw-redirect" title="Data Source Name">DSN</a></li></ul></li>
+<li><a href="/wiki/Database_administrator" title="Database administrator">Administrator</a></li>
+<li><a href="/wiki/Lock_(database)" class="mw-redirect" title="Lock (database)">Lock</a></li>
+<li><a href="/wiki/Category:Types_of_databases" title="Category:Types of databases">Types</a></li>
+<li><a href="/wiki/Comparison_of_database_tools" class="mw-redirect" title="Comparison of database tools">Tools</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Database#Database_languages" title="Database">Languages</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Data_definition_language" title="Data definition language">Data definition</a></li>
+<li><a href="/wiki/Data_manipulation_language" title="Data manipulation language">Data manipulation</a></li>
+<li><a href="/wiki/Query_language" title="Query language">Query</a>
+<ul><li><a href="/wiki/Information_retrieval_query_language" class="mw-redirect" title="Information retrieval query language">information retrieval</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Database_security" title="Database security">Security</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Database_activity_monitoring" title="Database activity monitoring">Activity monitoring</a></li>
+<li><a href="/wiki/Database_audit" title="Database audit">Audit</a></li>
+<li><a href="/wiki/Database_forensics" title="Database forensics">Forensics</a></li>
+<li><a href="/wiki/Negative_database" title="Negative database">Negative database</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Database_design" title="Database design">Design</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Entity%E2%80%93relationship_model" title="Entity–relationship model">Entities and relationships</a> (and <a href="/wiki/Enhanced_entity%E2%80%93relationship_model" title="Enhanced entity–relationship model">Enhanced</a> notation)</li>
+<li><a href="/wiki/Database_normalization" title="Database normalization">Normalization</a></li>
+<li><a href="/wiki/Database_schema" title="Database schema">Schema</a></li>
+<li><a href="/wiki/Database_refactoring" title="Database refactoring">Refactoring</a></li>
+<li><a href="/wiki/Cardinality_(data_modeling)" title="Cardinality (data modeling)">Cardinality</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Programming</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Database_abstraction_layer" title="Database abstraction layer">Abstraction layer</a></li>
+<li><a href="/wiki/Object%E2%80%93relational_mapping" title="Object–relational mapping">Object–relational mapping</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Management</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Database_virtualization" title="Database virtualization">Virtualization</a></li>
+<li><a href="/wiki/Database_tuning" title="Database tuning">Tuning</a>
+<ul><li><a href="/wiki/Database_caching" title="Database caching">caching</a></li></ul></li>
+<li><a href="/wiki/Data_migration#Database_migration" title="Data migration">Migration</a></li>
+<li><a href="/wiki/Database_preservation" title="Database preservation">Preservation</a></li>
+<li><a href="/wiki/Database_integrity" class="mw-redirect" title="Database integrity">Integrity</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Lists_of_databases" title="Lists of databases">Lists</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/List_of_academic_databases_and_search_engines" title="List of academic databases and search engines">Academic databases</a></li>
+<li><a href="/wiki/List_of_biological_databases" title="List of biological databases">Biological databases</a></li>
+<li><a href="/wiki/List_of_biodiversity_databases" title="List of biodiversity databases">Biodiversity databases</a></li>
+<li><a href="/wiki/List_of_facial_expression_databases" title="List of facial expression databases">Facial expression databases</a></li>
+<li><a href="/wiki/List_of_online_databases" title="List of online databases">Online databases</a></li>
+<li><a href="/wiki/List_of_online_music_databases" title="List of online music databases">Online music databases</a></li>
+<li><a href="/wiki/List_of_online_real_estate_databases" title="List of online real estate databases">Online real estate databases</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">See also</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Database-centric_architecture" title="Database-centric architecture">Database-centric architecture</a></li>
+<li><a href="/wiki/Intelligent_database" title="Intelligent database">Intelligent database</a></li>
+<li><a href="/wiki/Two-phase_locking" title="Two-phase locking">Two-phase locking</a></li>
+<li><a href="/wiki/Locks_with_ordered_sharing" title="Locks with ordered sharing">Locks with ordered sharing</a></li>
+<li><a href="/wiki/Load_file" title="Load file">Load file</a></li>
+<li><a href="/wiki/Database_publishing" title="Database publishing">Publishing</a></li>
+<li><a href="/wiki/Halloween_Problem" title="Halloween Problem">Halloween Problem</a></li>
+<li><a href="/wiki/Log_shipping" title="Log shipping">Log shipping</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow hlist" colspan="2"><div>
+<ul><li><b><span class="noviewer" typeof="mw:File"><span title="Category"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" decoding="async" width="16" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" data-file-width="180" data-file-height="185" /></span></span> <a href="/wiki/Category:Databases" title="Category:Databases">Category</a></b></li>
+<li><b><span class="noviewer" typeof="mw:File"><span title="WikiProject"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/16px-People_icon.svg.png" decoding="async" width="16" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/24px-People_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/32px-People_icon.svg.png 2x" data-file-width="100" data-file-height="100" /></span></span> <a href="/wiki/Wikipedia:WikiProject_Databases" title="Wikipedia:WikiProject Databases">WikiProject</a></b></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"></div><div role="navigation" class="navbox" aria-labelledby="Database_management_systems" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Databases" title="Template:Databases"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Databases" title="Template talk:Databases"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Databases" title="Special:EditPage/Template:Databases"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Database_management_systems" style="font-size:114%;margin:0 4em"><a href="/wiki/Database" title="Database">Database management systems</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Types</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Object_database" title="Object database">Object-oriented</a>
+<ul><li><a href="/wiki/Comparison_of_object_database_management_systems" title="Comparison of object database management systems">comparison</a></li></ul></li>
+<li><a href="/wiki/Relational_database" title="Relational database">Relational</a>
+<ul><li><a href="/wiki/List_of_relational_database_management_systems" title="List of relational database management systems">list</a></li>
+<li><a href="/wiki/Comparison_of_relational_database_management_systems" title="Comparison of relational database management systems">comparison</a></li></ul></li>
+<li><a href="/wiki/Key%E2%80%93value_database" title="Key–value database">Key–value</a></li>
+<li><a href="/wiki/Column-oriented_DBMS" title="Column-oriented DBMS">Column-oriented</a>
+<ul><li><a href="/wiki/List_of_column-oriented_DBMSes" title="List of column-oriented DBMSes">list</a></li></ul></li>
+<li><a href="/wiki/Document-oriented_database" title="Document-oriented database">Document-oriented</a></li>
+<li><a href="/wiki/Wide-column_store" title="Wide-column store">Wide-column store</a></li>
+<li><a href="/wiki/Graph_database" title="Graph database">Graph</a></li>
+<li><a href="/wiki/NoSQL" title="NoSQL">NoSQL</a></li>
+<li><a href="/wiki/NewSQL" title="NewSQL">NewSQL</a></li>
+<li><a href="/wiki/In-memory_database" title="In-memory database">In-memory</a>
+<ul><li><a href="/wiki/List_of_in-memory_databases" title="List of in-memory databases">list</a></li></ul></li>
+<li><a href="/wiki/Multi-model_database" title="Multi-model database">Multi-model</a>
+<ul><li><a href="/wiki/Comparison_of_multi-model_databases" title="Comparison of multi-model databases">comparison</a></li></ul></li>
+<li><a href="/wiki/Cloud_database" title="Cloud database">Cloud</a></li>
+<li><a href="/wiki/Blockchain-based_database" title="Blockchain-based database">Blockchain-based database</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Concepts</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Database" title="Database">Database</a></li>
+<li><a href="/wiki/ACID" title="ACID">ACID</a></li>
+<li><a href="/wiki/Armstrong%27s_axioms" title="Armstrong&#39;s axioms">Armstrong's axioms</a></li>
+<li><a href="/wiki/Codd%27s_12_rules" title="Codd&#39;s 12 rules">Codd's 12 rules</a></li>
+<li><a href="/wiki/CAP_theorem" title="CAP theorem">CAP theorem</a></li>
+<li><a href="/wiki/Create,_read,_update_and_delete" title="Create, read, update and delete">CRUD</a></li>
+<li><a href="/wiki/Null_(SQL)" title="Null (SQL)">Null</a></li>
+<li><a href="/wiki/Candidate_key" title="Candidate key">Candidate key</a></li>
+<li><a href="/wiki/Foreign_key" title="Foreign key">Foreign key</a></li>
+<li><a href="/wiki/Superkey" title="Superkey">Superkey</a></li>
+<li><a href="/wiki/Surrogate_key" title="Surrogate key">Surrogate key</a></li>
+<li><a href="/wiki/Unique_key" title="Unique key">Unique key</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Objects</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Relation_(database)" title="Relation (database)">Relation</a>
+<ul><li><a href="/wiki/Table_(database)" title="Table (database)">table</a></li>
+<li><a href="/wiki/Column_(database)" title="Column (database)">column</a></li>
+<li><a href="/wiki/Row_(database)" title="Row (database)">row</a></li></ul></li>
+<li><a href="/wiki/View_(SQL)" title="View (SQL)">View</a></li>
+<li><a href="/wiki/Database_transaction" title="Database transaction">Transaction</a></li>
+<li><a href="/wiki/Transaction_log" title="Transaction log">Transaction log</a></li>
+<li><a href="/wiki/Database_trigger" title="Database trigger">Trigger</a></li>
+<li><a href="/wiki/Database_index" title="Database index">Index</a></li>
+<li><a href="/wiki/Stored_procedure" title="Stored procedure">Stored procedure</a></li>
+<li><a href="/wiki/Cursor_(databases)" title="Cursor (databases)">Cursor</a></li>
+<li><a href="/wiki/Partition_(database)" title="Partition (database)">Partition</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Components</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Concurrency_control" title="Concurrency control">Concurrency control</a></li>
+<li><a href="/wiki/Data_dictionary" title="Data dictionary">Data dictionary</a></li>
+<li><a href="/wiki/Java_Database_Connectivity" title="Java Database Connectivity">JDBC</a></li>
+<li><a href="/wiki/XQuery_API_for_Java" title="XQuery API for Java">XQJ</a></li>
+<li><a href="/wiki/Open_Database_Connectivity" title="Open Database Connectivity">ODBC</a></li>
+<li><a href="/wiki/Query_language" title="Query language">Query language</a></li>
+<li><a href="/wiki/Query_optimization" title="Query optimization">Query optimizer</a></li>
+<li><a href="/wiki/Query_Rewriting" class="mw-redirect" title="Query Rewriting">Query rewriting system</a></li>
+<li><a href="/wiki/Query_plan" title="Query plan">Query plan</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Functions</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Database_administration" title="Database administration">Administration</a></li>
+<li><a href="/wiki/Query_optimization" title="Query optimization">Query optimization</a></li>
+<li><a href="/wiki/Replication_(computing)#DATABASE" title="Replication (computing)">Replication</a></li>
+<li><a href="/wiki/Shard_(database_architecture)" title="Shard (database architecture)">Sharding</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related topics</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a class="mw-selflink selflink">Database models</a></li>
+<li><a href="/wiki/Database_normalization" title="Database normalization">Database normalization</a></li>
+<li><a href="/wiki/Database_storage_structures" title="Database storage structures">Database storage</a></li>
+<li><a href="/wiki/Distributed_database" title="Distributed database">Distributed database</a></li>
+<li><a href="/wiki/Federated_database_system" title="Federated database system">Federated database system</a></li>
+<li><a href="/wiki/Referential_integrity" title="Referential integrity">Referential integrity</a></li>
+<li><a href="/wiki/Relational_algebra" title="Relational algebra">Relational algebra</a></li>
+<li><a href="/wiki/Relational_calculus" title="Relational calculus">Relational calculus</a></li>
+<li><a href="/wiki/Relational_model" title="Relational model">Relational model</a></li>
+<li><a href="/wiki/Object%E2%80%93relational_database" title="Object–relational database">Object–relational database</a></li>
+<li><a href="/wiki/Transaction_processing" title="Transaction processing">Transaction processing</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><span class="noviewer" typeof="mw:File"><span title="Category"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" decoding="async" width="16" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" data-file-width="180" data-file-height="185" /></span></span> <a href="/wiki/Category:Database_management_systems" title="Category:Database management systems">Category</a></li>
+<li><span class="noviewer" typeof="mw:File"><span title="Outline"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Global_thinking.svg/10px-Global_thinking.svg.png" decoding="async" width="10" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Global_thinking.svg/15px-Global_thinking.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/41/Global_thinking.svg/21px-Global_thinking.svg.png 2x" data-file-width="130" data-file-height="200" /></span></span> <a href="/wiki/Outline_of_databases" title="Outline of databases">Outline</a></li>
+<li><span class="noviewer" typeof="mw:File"><span title="WikiProject"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/16px-People_icon.svg.png" decoding="async" width="16" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/24px-People_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/32px-People_icon.svg.png 2x" data-file-width="100" data-file-height="100" /></span></span> <a href="/wiki/Wikipedia:WikiProject_Databases" title="Wikipedia:WikiProject Databases">WikiProject</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"></div><div role="navigation" class="navbox" aria-labelledby="Software_engineering" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Software_engineering" title="Template:Software engineering"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Software_engineering" title="Template talk:Software engineering"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Software_engineering" title="Special:EditPage/Template:Software engineering"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Software_engineering" style="font-size:114%;margin:0 4em"><a href="/wiki/Software_engineering" title="Software engineering">Software engineering</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Fields</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Computer_programming" title="Computer programming">Computer programming</a></li>
+<li><a href="/wiki/DevOps" title="DevOps">DevOps</a></li>
+<li><a href="/wiki/Formal_methods" title="Formal methods">Formal methods</a></li>
+<li><a href="/wiki/Requirements_engineering" title="Requirements engineering">Requirements engineering</a></li>
+<li><a href="/wiki/Site_reliability_engineering" title="Site reliability engineering">Site reliability engineering</a></li>
+<li><a href="/wiki/Software_deployment" title="Software deployment">Software deployment</a></li>
+<li><a href="/wiki/Software_design" title="Software design">Software design</a></li>
+<li><a href="/wiki/Software_maintenance" title="Software maintenance">Software maintenance</a></li>
+<li><a href="/wiki/Software_testing" title="Software testing">Software testing</a></li>
+<li><a href="/wiki/Systems_analysis" title="Systems analysis">Systems analysis</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Concepts</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Data_modeling" title="Data modeling">Data modeling</a></li>
+<li><a href="/wiki/Enterprise_architecture" title="Enterprise architecture">Enterprise architecture</a></li>
+<li><a href="/wiki/Functional_specification" title="Functional specification">Functional specification</a></li>
+<li><a href="/wiki/Modeling_language" title="Modeling language">Modeling language</a></li>
+<li><a href="/wiki/Programming_paradigm" title="Programming paradigm">Programming paradigm</a></li>
+<li><a href="/wiki/Software" title="Software">Software</a></li>
+<li><a href="/wiki/Software_archaeology" title="Software archaeology">Software archaeology</a></li>
+<li><a href="/wiki/Software_architecture" title="Software architecture">Software architecture</a></li>
+<li><a href="/wiki/Software_configuration_management" title="Software configuration management">Software configuration management</a></li>
+<li><a href="/wiki/Software_development_process" title="Software development process">Software development process/methodology</a></li>
+<li><a href="/wiki/Software_quality" title="Software quality">Software quality</a></li>
+<li><a href="/wiki/Software_quality_assurance" title="Software quality assurance">Software quality assurance</a></li>
+<li><a href="/wiki/Software_verification_and_validation" title="Software verification and validation">Software verification and validation</a></li>
+<li><a href="/wiki/Structured_analysis" title="Structured analysis">Structured analysis</a>
+<ul><li><a href="/wiki/Essential_systems_analysis" title="Essential systems analysis">Essential analysis</a></li></ul></li>
+<li><a href="/wiki/CI/CD" title="CI/CD">CI/CD</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Orientations</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Agile_software_development" title="Agile software development">Agile</a></li>
+<li><a href="/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object orientation</a></li>
+<li><a href="/wiki/Ontology_(computer_science)" class="mw-redirect" title="Ontology (computer science)">Ontology</a></li>
+<li><a href="/wiki/Service-oriented_architecture" title="Service-oriented architecture">Service orientation</a></li>
+<li><a href="/wiki/Systems_development_life_cycle" title="Systems development life cycle">SDLC</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Models</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">Developmental</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Agile_software_development" title="Agile software development">Agile</a></li>
+<li><a href="/wiki/Enterprise_Unified_Process" class="mw-redirect" title="Enterprise Unified Process">EUP</a></li>
+<li><a href="/wiki/Executable_UML" title="Executable UML">Executable UML</a></li>
+<li><a href="/wiki/Incremental_build_model" title="Incremental build model">Incremental model</a></li>
+<li><a href="/wiki/Iterative_and_incremental_development" title="Iterative and incremental development">Iterative model</a></li>
+<li><a href="/wiki/Software_prototyping" title="Software prototyping">Prototype model</a></li>
+<li><a href="/wiki/Rapid_application_development" title="Rapid application development">RAD</a></li>
+<li><a href="/wiki/Unified_Process" title="Unified Process">UP</a></li>
+<li><a href="/wiki/Scrum_(software_development)" title="Scrum (software development)">Scrum</a></li>
+<li><a href="/wiki/Spiral_model" title="Spiral model">Spiral model</a></li>
+<li><a href="/wiki/V-Model_(software_development)" class="mw-redirect" title="V-Model (software development)">V-Model</a></li>
+<li><a href="/wiki/Waterfall_model" title="Waterfall model">Waterfall model</a></li>
+<li><a href="/wiki/Extreme_programming" title="Extreme programming">XP</a></li>
+<li><a href="/wiki/Model-driven_engineering" title="Model-driven engineering">Model-driven engineering</a></li>
+<li><a href="/wiki/Round-trip_engineering" title="Round-trip engineering">Round-trip engineering</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">Other</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/ISO/IEC_15504" title="ISO/IEC 15504">SPICE</a></li>
+<li><a href="/wiki/Capability_Maturity_Model_Integration" title="Capability Maturity Model Integration">CMMI</a></li>
+<li><a href="/wiki/Data_model" title="Data model">Data model</a></li>
+<li><a href="/wiki/Entity%E2%80%93relationship_model" title="Entity–relationship model">ER model</a></li>
+<li><a href="/wiki/Function_model" title="Function model">Function model</a></li>
+<li><a href="/wiki/Information_model" title="Information model">Information model</a></li>
+<li><a href="/wiki/Metamodeling" title="Metamodeling">Metamodeling</a></li>
+<li><a href="/wiki/Object_model" title="Object model">Object model</a></li>
+<li><a href="/wiki/Systems_modeling" title="Systems modeling">Systems model</a></li>
+<li><a href="/wiki/View_model" title="View model">View model</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">Languages</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/IDEF" title="IDEF">IDEF</a></li>
+<li><a href="/wiki/Unified_Modeling_Language" title="Unified Modeling Language">UML</a></li>
+<li><a href="/wiki/Universal_Systems_Language" class="mw-redirect" title="Universal Systems Language">USL</a></li>
+<li><a href="/wiki/Systems_Modeling_Language" class="mw-redirect" title="Systems Modeling Language">SysML</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related fields</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Computer_science" title="Computer science">Computer science</a></li>
+<li><a href="/wiki/Computer_engineering" title="Computer engineering">Computer engineering</a></li>
+<li><a href="/wiki/Information_science" title="Information science">Information science</a></li>
+<li><a href="/wiki/Project_management" title="Project management">Project management</a></li>
+<li><a href="/wiki/Risk_management" title="Risk management">Risk management</a></li>
+<li><a href="/wiki/Systems_engineering" title="Systems engineering">Systems engineering</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2" style="font-weight:bold;"><div>
+<ul><li><span class="noviewer" typeof="mw:File"><span title="Commons page"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" decoding="async" width="12" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></span></span> <a href="https://commons.wikimedia.org/wiki/Category:Software_engineering" class="extiw" title="commons:Category:Software engineering">Commons</a></li>
+<li><span class="noviewer" typeof="mw:File"><span title="Category"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" decoding="async" width="16" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" data-file-width="180" data-file-height="185" /></span></span> <a href="/wiki/Category:Software_engineering" title="Category:Software engineering">Category</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1387
+Cached time: 20231031012923
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.421 seconds
+Real time usage: 0.605 seconds
+Preprocessor visited node count: 2287/1000000
+Post‐expand include size: 96030/2097152 bytes
+Template argument size: 3346/2097152 bytes
+Highest expansion depth: 16/100
+Expensive parser function count: 15/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 58045/5000000 bytes
+Lua time usage: 0.237/10.000 seconds
+Lua memory usage: 6202206/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  487.584      1 -total
+ 21.15%  103.138      1 Template:Reflist
+ 19.69%   96.018      6 Template:Navbox
+ 14.98%   73.050      1 Template:More_footnotes
+ 14.54%   70.895      2 Template:Cite_book
+ 13.96%   68.060      1 Template:Database_models
+ 11.05%   53.884      1 Template:Ambox
+  8.67%   42.298      1 Template:Commons_category
+  8.17%   39.857      8 Template:Main_article
+  8.17%   39.847      1 Template:Sister_project
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:10973690-0!canonical and timestamp 20231031012923 and revision id 1172698127. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Database_model&amp;oldid=1172698127">https://en.wikipedia.org/w/index.php?title=Database_model&amp;oldid=1172698127</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Database_management_systems" title="Category:Database management systems">Database management systems</a></li><li><a href="/wiki/Category:Database_models" title="Category:Database models">Database models</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_June_2017" title="Category:Articles lacking in-text citations from June 2017">Articles lacking in-text citations from June 2017</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Articles_to_be_merged_from_June_2023" title="Category:Articles to be merged from June 2023">Articles to be merged from June 2023</a></li><li><a href="/wiki/Category:All_articles_to_be_merged" title="Category:All articles to be merged">All articles to be merged</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_October_2009" title="Category:Articles with specifically marked weasel-worded phrases from October 2009">Articles with specifically marked weasel-worded phrases from October 2009</a></li><li><a href="/wiki/Category:All_articles_with_specifically_marked_weasel-worded_phrases" title="Category:All articles with specifically marked weasel-worded phrases">All articles with specifically marked weasel-worded phrases</a></li><li><a href="/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_June_2012" title="Category:Articles with specifically marked weasel-worded phrases from June 2012">Articles with specifically marked weasel-worded phrases from June 2012</a></li><li><a href="/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_November_2009" title="Category:Articles with specifically marked weasel-worded phrases from November 2009">Articles with specifically marked weasel-worded phrases from November 2009</a></li><li><a href="/wiki/Category:Commons_category_link_is_on_Wikidata" title="Category:Commons category link is on Wikidata">Commons category link is on Wikidata</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 28 August 2023, at 18:48<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Database_model&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw1387","wgBackendResponseTime":757,"wgPageParseReport":{"limitreport":{"cputime":"0.421","walltime":"0.605","ppvisitednodes":{"value":2287,"limit":1000000},"postexpandincludesize":{"value":96030,"limit":2097152},"templateargumentsize":{"value":3346,"limit":2097152},"expansiondepth":{"value":16,"limit":100},"expensivefunctioncount":{"value":15,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":58045,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  487.584      1 -total"," 21.15%  103.138      1 Template:Reflist"," 19.69%   96.018      6 Template:Navbox"," 14.98%   73.050      1 Template:More_footnotes"," 14.54%   70.895      2 Template:Cite_book"," 13.96%   68.060      1 Template:Database_models"," 11.05%   53.884      1 Template:Ambox","  8.67%   42.298      1 Template:Commons_category","  8.17%   39.857      8 Template:Main_article","  8.17%   39.847      1 Template:Sister_project"]},"scribunto":{"limitreport-timeusage":{"value":"0.237","limit":"10.000"},"limitreport-memusage":{"value":6202206,"limit":52428800}},"cachereport":{"origin":"mw1387","timestamp":"20231031012923","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Database model","url":"https:\/\/en.wikipedia.org\/wiki\/Database_model","sameAs":"http:\/\/www.wikidata.org\/entity\/Q267136","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q267136","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2007-04-29T23:43:17Z","dateModified":"2023-08-28T18:48:45Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/94\/MediaWiki_1.28.0_database_schema.svg","headline":"generic structure of a database type, for instance relational"}</script>
+</body>
+</html>

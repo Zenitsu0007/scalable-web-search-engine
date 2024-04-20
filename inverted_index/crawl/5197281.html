@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Profiling (computer programming) - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"f863790d-9328-4db7-b82f-8dcb41271ad8","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Profiling_(computer_programming)","wgTitle":"Profiling (computer programming)","wgCurRevisionId":1154740224,"wgRevisionId":1154740224,"wgArticleId":2310080,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","Articles with short description","Short description is different from Wikidata","Articles needing additional references from January 2009","All articles needing additional references","All articles with unsourced statements","Articles with unsourced statements from February 2014","Pages using div col with small parameter","Software optimization","Profilers"],"wgPageViewLanguage":"en"
+,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Profiling_(computer_programming)","wgRelevantArticleId":2310080,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1138496","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands"
+,"fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp",
+"ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Profiling (computer programming) - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Profiling_(computer_programming)">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Profiling_(computer_programming)">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Profiling_computer_programming rootpage-Profiling_computer_programming skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Profiling+%28computer+programming%29" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Profiling+%28computer+programming%29" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Profiling+%28computer+programming%29" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Profiling+%28computer+programming%29" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Gathering_program_events"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Gathering_program_events">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Gathering program events</div>
+		</a>
+		
+		<ul id="toc-Gathering_program_events-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Use_of_profilers"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Use_of_profilers">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Use of profilers</div>
+		</a>
+		
+		<ul id="toc-Use_of_profilers-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-History"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#History">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>History</div>
+		</a>
+		
+		<ul id="toc-History-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Profiler_types_based_on_output"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Profiler_types_based_on_output">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Profiler types based on output</div>
+		</a>
+		
+			<button aria-controls="toc-Profiler_types_based_on_output-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Profiler types based on output subsection</span>
+			</button>
+		
+		<ul id="toc-Profiler_types_based_on_output-sublist" class="vector-toc-list">
+			<li id="toc-Flat_profiler"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Flat_profiler">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.1</span>Flat profiler</div>
+			</a>
+			
+			<ul id="toc-Flat_profiler-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Call-graph_profiler"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Call-graph_profiler">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.2</span>Call-graph profiler</div>
+			</a>
+			
+			<ul id="toc-Call-graph_profiler-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Input-sensitive_profiler"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Input-sensitive_profiler">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.3</span>Input-sensitive profiler</div>
+			</a>
+			
+			<ul id="toc-Input-sensitive_profiler-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Data_granularity_in_profiler_types"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Data_granularity_in_profiler_types">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>Data granularity in profiler types</div>
+		</a>
+		
+			<button aria-controls="toc-Data_granularity_in_profiler_types-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Data granularity in profiler types subsection</span>
+			</button>
+		
+		<ul id="toc-Data_granularity_in_profiler_types-sublist" class="vector-toc-list">
+			<li id="toc-Event-based_profilers"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Event-based_profilers">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.1</span>Event-based profilers</div>
+			</a>
+			
+			<ul id="toc-Event-based_profilers-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Statistical_profilers"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Statistical_profilers">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.2</span>Statistical profilers</div>
+			</a>
+			
+			<ul id="toc-Statistical_profilers-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Instrumentation"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Instrumentation">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.3</span>Instrumentation</div>
+			</a>
+			
+			<ul id="toc-Instrumentation-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Interpreter_instrumentation"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Interpreter_instrumentation">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.4</span>Interpreter instrumentation</div>
+			</a>
+			
+			<ul id="toc-Interpreter_instrumentation-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Hypervisor/Simulator"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Hypervisor/Simulator">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.5</span>Hypervisor/Simulator</div>
+			</a>
+			
+			<ul id="toc-Hypervisor/Simulator-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">6</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">7</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">8</span>External links</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Profiling (computer programming)</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 16 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-16" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">16 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Profilov%C3%A1n%C3%AD_(programov%C3%A1n%C3%AD)" title="Profilování (programování) – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a href="https://da.wikipedia.org/wiki/Profiler" title="Profiler – Danish" lang="da" hreflang="da" class="interlanguage-link-target"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Profiler_(Programmierung)" title="Profiler (Programmierung) – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/An%C3%A1lisis_de_rendimiento_de_software" title="Análisis de rendimiento de software – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%B1%D8%AE%E2%80%8C%D9%86%D9%85%D8%A7%D9%86%DA%AF%D8%A7%D8%B1%DB%8C_(%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C)" title="رخ‌نمانگاری (برنامه‌نویسی) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Profilage_de_code" title="Profilage de code – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC%EB%A7%81_(%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)" title="프로파일링 (컴퓨터 프로그래밍) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Profiloz%C3%A1s" title="Profilozás – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Profiler" title="Profiler – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E6%80%A7%E8%83%BD%E8%A7%A3%E6%9E%90" title="性能解析 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Profilowanie_(in%C5%BCynieria_oprogramowania)" title="Profilowanie (inżynieria oprogramowania) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_(%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)" title="Профилирование (информатика) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Profilointi_(ohjelmointi)" title="Profilointi (ohjelmointi) – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%84%D1%96%D0%BB%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)" title="Профілювання (програмування) – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E7%A8%8B%E5%BC%8F%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90" title="程式性能分析 – Cantonese" lang="yue" hreflang="yue" class="interlanguage-link-target"><span>粵語</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90" title="性能分析 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1138496#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Profiling_(computer_programming)" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Profiling_(computer_programming)" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Profiling_(computer_programming)"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Profiling_(computer_programming)"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Profiling_(computer_programming)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Profiling_(computer_programming)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Profiling_(computer_programming)&amp;oldid=1154740224" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Profiling_%28computer_programming%29&amp;id=1154740224&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FProfiling_%28computer_programming%29"><span>Get shortened URL</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1138496" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Profiling_%28computer_programming%29&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Profiling_(computer_programming)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Measuring the time or resources used by a section of a computer program</div>
+<style data-mw-deduplicate="TemplateStyles:r1097763485">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><a href="/wiki/File:Question_book-new.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" decoding="async" width="50" height="39" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>.<span class="hide-when-compact"> Please help <a href="/wiki/Special:EditPage/Profiling_(computer_programming)" title="Special:EditPage/Profiling (computer programming)">improve this article</a> by <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.<br /><small><span class="plainlinks"><i>Find sources:</i>&#160;<a rel="nofollow" class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Profiling%22+computer+programming">"Profiling"&#160;computer programming</a>&#160;–&#160;<a rel="nofollow" class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Profiling%22+computer+programming+-wikipedia&amp;tbs=ar:1">news</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.google.com/search?&amp;q=%22Profiling%22+computer+programming&amp;tbs=bkt:s&amp;tbm=bks">newspapers</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Profiling%22+computer+programming+-wikipedia">books</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://scholar.google.com/scholar?q=%22Profiling%22+computer+programming">scholar</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Profiling%22+computer+programming&amp;acc=on&amp;wc=on">JSTOR</a></span></small></span>  <span class="date-container"><i>(<span class="date">January 2009</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+<style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar sidebar-collapse nomobile"><tbody><tr><td class="sidebar-pretitle">Part of a series on</td></tr><tr><th class="sidebar-title-with-pretitle" style="background:#5137e2;padding:0.25em;border-bottom:5px solid whitesmoke;"><a href="/wiki/Software_development" title="Software development"><span style="color:white">Software development<br /></span></a></th></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Core activities</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Data_modeling" title="Data modeling">Data modeling</a></li>
+<li><a href="/wiki/Software_development_process" title="Software development process">Processes</a></li>
+<li><a href="/wiki/Requirements_analysis" title="Requirements analysis">Requirements</a></li>
+<li><a href="/wiki/Software_design" title="Software design">Design</a></li>
+<li><a href="/wiki/Software_construction" title="Software construction">Construction</a></li>
+<li><a href="/wiki/Software_engineering" title="Software engineering">Engineering</a></li>
+<li><a href="/wiki/Software_testing" title="Software testing">Testing</a></li>
+<li><a href="/wiki/Debugging" title="Debugging">Debugging</a></li>
+<li><a href="/wiki/Software_deployment" title="Software deployment">Deployment</a></li>
+<li><a href="/wiki/Software_maintenance" title="Software maintenance">Maintenance</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Paradigms and models</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Agile_software_development" title="Agile software development">Agile</a></li>
+<li><a href="/wiki/Cleanroom_software_engineering" title="Cleanroom software engineering">Cleanroom</a></li>
+<li><a href="/wiki/Incremental_build_model" title="Incremental build model">Incremental</a></li>
+<li><a href="/wiki/Software_prototyping" title="Software prototyping">Prototyping</a></li>
+<li><a href="/wiki/Spiral_model" title="Spiral model">Spiral</a></li>
+<li><a href="/wiki/V-Model_(software_development)" class="mw-redirect" title="V-Model (software development)">V model</a></li>
+<li><a href="/wiki/Waterfall_model" title="Waterfall model">Waterfall</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title"><a href="/wiki/Software_development_methodology" class="mw-redirect" title="Software development methodology">Methodologies</a> and frameworks</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Adaptive_software_development" title="Adaptive software development">ASD</a></li>
+<li><a href="/wiki/DevOps" title="DevOps">DevOps</a></li>
+<li><a href="/wiki/Disciplined_agile_delivery" title="Disciplined agile delivery">DAD</a></li>
+<li><a href="/wiki/Dynamic_systems_development_method" title="Dynamic systems development method">DSDM</a></li>
+<li><a href="/wiki/Feature-driven_development" title="Feature-driven development">FDD</a></li>
+<li><a href="/wiki/Iterative_and_incremental_development" title="Iterative and incremental development">IID</a></li>
+<li><a href="/wiki/Kanban_(development)" title="Kanban (development)">Kanban</a></li>
+<li><a href="/wiki/Lean_software_development" title="Lean software development">Lean SD</a></li>
+<li><a href="/wiki/Scrum_(software_development)#Large-scale_Scrum" title="Scrum (software development)">LeSS</a></li>
+<li><a href="/wiki/Model-driven_development" class="mw-redirect" title="Model-driven development">MDD</a></li>
+<li><a href="/wiki/Microsoft_Solutions_Framework" title="Microsoft Solutions Framework">MSF</a></li>
+<li><a href="/wiki/Personal_software_process" title="Personal software process">PSP</a></li>
+<li><a href="/wiki/Rapid_application_development" title="Rapid application development">RAD</a></li>
+<li><a href="/wiki/Rational_Unified_Process" class="mw-redirect" title="Rational Unified Process">RUP</a></li>
+<li><a href="/wiki/Scaled_agile_framework" title="Scaled agile framework">SAFe</a></li>
+<li><a href="/wiki/Scrum_(software_development)" title="Scrum (software development)">Scrum</a></li>
+<li><a href="/wiki/SEMAT" title="SEMAT">SEMAT</a></li>
+<li><a href="/wiki/Test-driven_development" title="Test-driven development">TDD</a></li>
+<li><a href="/wiki/Team_software_process" title="Team software process">TSP</a></li>
+<li><a href="/wiki/OpenUP" title="OpenUP">OpenUP</a></li>
+<li><a href="/wiki/Unified_Process" title="Unified Process">UP</a></li>
+<li><a href="/wiki/Extreme_programming" title="Extreme programming">XP</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Supporting disciplines</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Software_configuration_management" title="Software configuration management">Configuration management</a></li>
+<li><a href="/wiki/Software_documentation" title="Software documentation">Documentation</a></li>
+<li><a href="/wiki/Software_quality_assurance" title="Software quality assurance">Software quality assurance</a></li>
+<li><a href="/wiki/Software_project_management" title="Software project management">Project management</a></li>
+<li><a href="/wiki/User_experience" title="User experience">User experience</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Practices</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Acceptance_test%E2%80%93driven_development" class="mw-redirect" title="Acceptance test–driven development">ATDD</a></li>
+<li><a href="/wiki/Behavior-driven_development" title="Behavior-driven development">BDD</a></li>
+<li><a href="/wiki/Extreme_programming_practices#Collective_code_ownership" title="Extreme programming practices">CCO</a></li>
+<li><a href="/wiki/Continuous_integration" title="Continuous integration">CI</a></li>
+<li><a href="/wiki/Continuous_delivery" title="Continuous delivery">CD</a></li>
+<li><a href="/wiki/Domain-driven_design" title="Domain-driven design">DDD</a></li>
+<li><a href="/wiki/Pair_programming" title="Pair programming">PP</a></li>
+<li><a href="/wiki/Specification_by_example" title="Specification by example">SBE</a></li>
+<li><a href="/wiki/Stand-up_meeting" title="Stand-up meeting">Stand-up</a></li>
+<li><a href="/wiki/Test-driven_development" title="Test-driven development">TDD</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible"><div class="sidebar-list-title"><a href="/wiki/Programming_tool" title="Programming tool">Tools</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Compiler" title="Compiler">Compiler</a></li>
+<li><a href="/wiki/Debugger" title="Debugger">Debugger</a></li>
+<li><a class="mw-selflink selflink">Profiler</a></li>
+<li><a href="/wiki/Graphical_user_interface_builder" title="Graphical user interface builder">GUI designer</a></li>
+<li><a href="/wiki/UML_tool" title="UML tool">UML Modeling</a></li>
+<li><a href="/wiki/Integrated_development_environment" title="Integrated development environment">IDE</a></li>
+<li><a href="/wiki/Build_automation" title="Build automation">Build automation</a></li>
+<li><a href="/wiki/Application-release_automation" title="Application-release automation">Release automation</a></li>
+<li><a href="/wiki/Infrastructure_as_code" title="Infrastructure as code">Infrastructure as code</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Standards and bodies of knowledge</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Capability_Maturity_Model_Integration" title="Capability Maturity Model Integration">CMMI</a></li>
+<li><a href="/wiki/IEEE_Standards_Association" title="IEEE Standards Association">IEEE standards</a></li>
+<li><a href="/wiki/ISO_9001" class="mw-redirect" title="ISO 9001">ISO 9001</a></li>
+<li><a href="/wiki/ISO/IEC_JTC_1/SC_7" title="ISO/IEC JTC 1/SC 7">ISO/IEC standards</a></li>
+<li><a href="/wiki/Project_Management_Body_of_Knowledge" title="Project Management Body of Knowledge">PMBOK</a></li>
+<li><a href="/wiki/Software_Engineering_Body_of_Knowledge" title="Software Engineering Body of Knowledge">SWEBOK</a></li>
+<li><a href="/wiki/ITIL" title="ITIL">ITIL</a></li>
+<li><a href="/wiki/International_Requirements_Engineering_Board" title="International Requirements Engineering Board">IREB</a></li>
+<li><a href="/wiki/Object_Management_Group" title="Object Management Group">OMG</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Glossaries</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Glossary_of_artificial_intelligence" title="Glossary of artificial intelligence">Artificial intelligence</a></li>
+<li><a href="/wiki/Glossary_of_computer_science" title="Glossary of computer science">Computer science</a></li>
+<li><a href="/wiki/Glossary_of_electrical_and_electronics_engineering" title="Glossary of electrical and electronics engineering">Electrical and electronics engineering</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Outlines</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Outline_of_software_development" title="Outline of software development">Outline of software development</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-navbar"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Software_development_process" title="Template:Software development process"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Software_development_process" title="Template talk:Software development process"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Software_development_process" title="Special:EditPage/Template:Software development process"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Software_engineering" title="Software engineering">software engineering</a>, <b>profiling</b> ("program profiling", "software profiling") is a form of <a href="/wiki/Dynamic_program_analysis" title="Dynamic program analysis">dynamic program analysis</a> that measures, for example, the space (memory) or time <a href="/wiki/Computational_complexity_theory" title="Computational complexity theory">complexity of a program</a>, the <a href="/wiki/Instruction_set_simulator" title="Instruction set simulator">usage of particular instructions</a>, or the frequency and duration of function calls.  Most commonly, profiling information serves to aid <a href="/wiki/Program_optimization" title="Program optimization">program optimization</a>, and more specifically, <a href="/wiki/Performance_engineering" title="Performance engineering">performance engineering</a>.
+</p><p>Profiling is achieved by <a href="/wiki/Instrumentation_(computer_programming)" title="Instrumentation (computer programming)">instrumenting</a> either the program <a href="/wiki/Source_code" title="Source code">source code</a> or its binary executable form using a tool called a <i>profiler</i> (or <i>code profiler</i>). Profilers may use a number of different techniques, such as event-based, statistical, instrumented, and simulation methods.
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Gathering_program_events">Gathering program events</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=1" title="Edit section: Gathering program events"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Profilers use a wide variety of techniques to collect data, including <a href="/wiki/Hardware_interrupt" class="mw-redirect" title="Hardware interrupt">hardware interrupts</a>, <a href="/wiki/Instrumentation_(computer_programming)" title="Instrumentation (computer programming)">code instrumentation</a>, <a href="/wiki/Instruction_set_simulator" title="Instruction set simulator">instruction set simulation</a>, operating system <a href="/wiki/Hooking" title="Hooking">hooks</a>, and <a href="/wiki/Hardware_performance_counter" title="Hardware performance counter">performance counters</a>.  
+</p>
+<h2><span class="mw-headline" id="Use_of_profilers">Use of profilers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=2" title="Edit section: Use of profilers"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:CodeAnalyst3.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/0/08/CodeAnalyst3.png/220px-CodeAnalyst3.png" decoding="async" width="220" height="114" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/08/CodeAnalyst3.png/330px-CodeAnalyst3.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/08/CodeAnalyst3.png/440px-CodeAnalyst3.png 2x" data-file-width="1280" data-file-height="662" /></a><figcaption>Graphical output of the <a href="/wiki/CodeAnalyst" class="mw-redirect" title="CodeAnalyst">CodeAnalyst</a> profiler</figcaption></figure>
+<style data-mw-deduplicate="TemplateStyles:r996844942">.mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 40px}.mw-parser-output .templatequote .templatequotecite{line-height:1.5em;text-align:left;padding-left:1.6em;margin-top:0}</style><blockquote class="templatequote"><p>Program analysis tools are extremely important for understanding program behavior. Computer architects need such tools to evaluate how well programs will perform on new <a href="/wiki/Computer_architecture" title="Computer architecture">architectures</a>. Software writers need tools to analyze their programs and identify critical sections of code. <a href="/wiki/Compiler" title="Compiler">Compiler</a> writers often use such tools to find out how well their <a href="/wiki/Instruction_scheduling" title="Instruction scheduling">instruction scheduling</a> or <a href="/wiki/Branch_prediction" class="mw-redirect" title="Branch prediction">branch prediction</a> algorithm is performing...</p><div class="templatequotecite">—&#8202;<cite>ATOM, <a href="/wiki/Conference_on_Programming_Language_Design_and_Implementation" class="mw-redirect" title="Conference on Programming Language Design and Implementation">PLDI</a></cite></div></blockquote>
+<p>The output of a profiler may be:
+</p>
+<ul><li>A statistical <i>summary</i> of the events observed (a <b>profile</b>)</li></ul>
+<dl><dd>Summary profile information is often shown annotated against the source code statements where the events occur, so the size of measurement data is linear to the code size of the program.</dd></dl>
+<pre>/* ------------ source------------------------- count */             
+0001             IF X = "A"                     0055
+0002                THEN DO                       
+0003                  ADD 1 to XCOUNT           0032
+0004                ELSE
+0005             IF X = "B"                     0055
+</pre>
+<ul><li>A stream of recorded events (a <b>trace</b>)</li></ul>
+<dl><dd>For sequential programs, a summary profile is usually sufficient, but performance problems in parallel programs (waiting for messages or synchronization issues) often depend on the time relationship of events, thus requiring a full trace to get an understanding of what is happening.</dd>
+<dd>The size of a (full) trace is linear to the program's <a href="/wiki/Instruction_path_length" title="Instruction path length">instruction path length</a>, making it somewhat impractical. A trace may therefore be initiated at one point in a program and terminated at another point to limit the output.</dd></dl>
+<ul><li>An ongoing interaction with the <a href="/wiki/Hypervisor" title="Hypervisor">hypervisor</a> (continuous or periodic monitoring via on-screen display for instance)</li></ul>
+<dl><dd>This provides the opportunity to switch a trace on or off at any desired point during execution in addition to viewing on-going metrics about the (still executing) program. It also provides the opportunity to suspend asynchronous processes at critical points to examine interactions with other parallel processes in more detail.</dd></dl>
+<p>A profiler can be applied to an individual method or at the scale of a module or program, to identify performance bottlenecks by making long-running code obvious.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> A profiler can be used to understand code from a timing point of view, with the objective of optimizing it to handle various runtime conditions<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> or various loads.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> Profiling results can be ingested by a compiler that provides <a href="/wiki/Profile-guided_optimization" title="Profile-guided optimization">profile-guided optimization</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> Profiling results can be used to guide the design and optimization of an individual algorithm; the <a href="/wiki/Krauss_matching_wildcards_algorithm" class="mw-redirect" title="Krauss matching wildcards algorithm">Krauss matching wildcards algorithm</a> is an example.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> Profilers are built into some <a href="/wiki/Application_performance_management" title="Application performance management">application performance management</a> systems that aggregate profiling data to provide insight into <a href="/wiki/Transaction_processing" title="Transaction processing">transaction</a> workloads in <a href="/wiki/Distributed_computing" title="Distributed computing">distributed</a> applications.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=3" title="Edit section: History"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Performance-analysis tools existed on <a href="/wiki/IBM/360" class="mw-redirect" title="IBM/360">IBM/360</a> and <a href="/wiki/IBM/370" class="mw-redirect" title="IBM/370">IBM/370</a> platforms from the early 1970s, usually based on timer interrupts which recorded the <a href="/wiki/Program_status_word" title="Program status word">program status word</a> (PSW) at set timer-intervals to detect "hot spots" in executing code.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (February 2014)">citation needed</span></a></i>&#93;</sup> This was an early example of <a href="/wiki/Sampling_(statistics)" title="Sampling (statistics)">sampling</a> (see below). In early 1974 <a href="/wiki/Instruction_Set_Simulator" class="mw-redirect" title="Instruction Set Simulator">instruction-set simulators</a> permitted full trace and other performance-monitoring features.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (February 2014)">citation needed</span></a></i>&#93;</sup>
+</p><p>Profiler-driven program analysis on Unix dates back to 1973,<sup id="cite_ref-prof_7-0" class="reference"><a href="#cite_note-prof-7">&#91;7&#93;</a></sup> when Unix systems included a basic tool, <code>prof</code>, which listed each function and how much of program execution time it used. In 1982 <code>gprof</code> extended the concept to a complete <a href="/wiki/Call_graph" title="Call graph">call graph</a> analysis.<sup id="cite_ref-gprof_8-0" class="reference"><a href="#cite_note-gprof-8">&#91;8&#93;</a></sup>
+</p><p>In 1994, Amitabh Srivastava and <a href="/wiki/Alan_Eustace" title="Alan Eustace">Alan Eustace</a> of <a href="/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">Digital Equipment Corporation</a> published a paper describing ATOM<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> (Analysis Tools with OM). The ATOM platform converts a program into its own profiler: at <a href="/wiki/Compile_time" title="Compile time">compile time</a>, it inserts code into the program to be analyzed. That inserted code outputs analysis data. This technique - modifying a program to analyze itself - is known as "<a href="/wiki/Instrumentation_(computer_programming)" title="Instrumentation (computer programming)">instrumentation</a>".
+</p><p>In 2004 both the <code>gprof</code> and ATOM papers appeared on the list of the 50 most influential <a href="/wiki/Conference_on_Programming_Language_Design_and_Implementation" class="mw-redirect" title="Conference on Programming Language Design and Implementation">PLDI</a> papers for the 20-year period ending in 1999.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Profiler_types_based_on_output">Profiler types based on output</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=4" title="Edit section: Profiler types based on output"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Flat_profiler">Flat profiler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=5" title="Edit section: Flat profiler"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Flat profilers compute the average call times, from the calls, and do not break down the call times based on the callee or the context.
+</p>
+<h3><span class="mw-headline" id="Call-graph_profiler">Call-graph profiler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=6" title="Edit section: Call-graph profiler"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Call_graph" title="Call graph">Call graph</a> profilers<sup id="cite_ref-gprof_8-1" class="reference"><a href="#cite_note-gprof-8">&#91;8&#93;</a></sup> show the call times, and frequencies of the functions, and also the call-chains involved based on the callee. In some tools full context is not preserved.
+</p>
+<h3><span class="mw-headline" id="Input-sensitive_profiler">Input-sensitive profiler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=7" title="Edit section: Input-sensitive profiler"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Input-sensitive profilers<sup id="cite_ref-aprof_11-0" class="reference"><a href="#cite_note-aprof-11">&#91;11&#93;</a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup> add a further dimension to flat or call-graph profilers by relating performance measures to features of the input workloads, such as input size or input values. They generate charts that characterize how an application's performance scales as a function of its input.
+</p>
+<h2><span class="mw-headline" id="Data_granularity_in_profiler_types">Data granularity in profiler types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=8" title="Edit section: Data granularity in profiler types"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Profilers, which are also programs themselves, analyze target programs by collecting information on their execution. Based on their data granularity, on how profilers collect information, they are classified into event based or statistical profilers. Profilers interrupt program execution to collect information, which may result in a limited resolution in the time measurements, which should be taken with a grain of salt. <a href="/wiki/Basic_block" title="Basic block">Basic block</a> profilers report a number of machine <a href="/wiki/Cycles_per_instruction" title="Cycles per instruction">clock cycles</a> devoted to executing each line of code, or a timing based on adding these together; the timings reported per basic block may not reflect a difference between <a href="/wiki/CPU_cache" title="CPU cache">cache</a> hits and misses.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup><sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Event-based_profilers">Event-based profilers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=9" title="Edit section: Event-based profilers"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The programming languages listed here have event-based profilers:
+</p>
+<ul><li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>: the <a href="/wiki/Java_Virtual_Machine_Tools_Interface" title="Java Virtual Machine Tools Interface">JVMTI</a> (JVM Tools Interface) API, formerly JVMPI (JVM Profiling Interface), provides hooks to profilers, for trapping events like calls, class-load, unload, thread enter leave.</li>
+<li><a href="/wiki/.NET_Framework" title=".NET Framework">.NET</a>: Can attach a profiling agent as a <i>COM</i> server to the <i>CLR</i> using Profiling <i>API</i>. Like Java, the runtime then provides various callbacks into the agent, for trapping events like method <a href="/wiki/Interpreter" class="mw-redirect" title="Interpreter">JIT</a> / enter / leave, object creation, etc. Particularly powerful in that the profiling agent can rewrite the target application's bytecode in arbitrary ways.</li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>: Python profiling includes the profile module, hotshot (which is call-graph based), and using the 'sys.setprofile' function to trap events like c_{call,return,exception}, python_{call,return,exception}.</li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>: Ruby also uses a similar interface to Python for profiling. Flat-profiler in profile.rb, module, and ruby-prof a C-extension are present.</li></ul>
+<h3><span class="mw-headline" id="Statistical_profilers">Statistical profilers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=10" title="Edit section: Statistical profilers"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Some profilers operate by <a href="/wiki/Sampling_(statistics)" title="Sampling (statistics)">sampling</a>. A sampling profiler probes the target program's <a href="/wiki/Call_stack" title="Call stack">call stack</a> at regular intervals using <a href="/wiki/Operating_system" title="Operating system">operating system</a> <a href="/wiki/Interrupt" title="Interrupt">interrupts</a>. Sampling profiles are typically less numerically accurate and specific, but allow the target program to run at near full speed.
+</p><p>The resulting data are not exact, but a statistical approximation. "The actual amount of error is usually more than one sampling period. In fact, if a value is n times the sampling period, the expected error in it is the square-root of n sampling periods."<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup>
+</p><p>In practice, sampling profilers can often provide a more accurate picture of the target program's execution than other approaches, as they are not as intrusive to the target program, and thus don't have as many side effects (such as on memory caches or instruction decoding pipelines). Also since they don't affect the execution speed as much, they can detect issues that would otherwise be hidden. They are also relatively immune to over-evaluating the cost of small, frequently called routines or 'tight' loops. They can show the relative amount of time spent in user mode versus interruptible kernel mode such as <a href="/wiki/System_call" title="System call">system call</a> processing.
+</p><p>Still, kernel code to handle the interrupts entails a minor loss of CPU cycles, diverted cache usage, and is unable to distinguish the various tasks occurring in uninterruptible kernel code (microsecond-range activity).
+</p><p>Dedicated hardware can go beyond this: ARM Cortex-M3 and some recent MIPS processors JTAG interface have a PCSAMPLE register, which samples the <a href="/wiki/Program_counter" title="Program counter">program counter</a> in a truly undetectable manner, allowing non-intrusive collection of a flat profile.
+</p><p>Some commonly used<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;17&#93;</a></sup> statistical profilers for Java/managed code are <a href="/wiki/SmartBear_Software" title="SmartBear Software">SmartBear Software</a>'s <a href="/wiki/AQtime" title="AQtime">AQtime</a><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup> and <a href="/wiki/Microsoft" title="Microsoft">Microsoft</a>'s <a href="/wiki/CLR_Profiler" title="CLR Profiler">CLR Profiler</a>.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup> Those profilers also support native code profiling, along with <a href="/wiki/Apple_Inc." title="Apple Inc.">Apple Inc.</a>'s <a href="/wiki/Apple_Developer_Tools#Shark" title="Apple Developer Tools">Shark</a> (OSX),<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup> <a href="/wiki/OProfile" title="OProfile">OProfile</a> (Linux),<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">&#91;21&#93;</a></sup> <a href="/wiki/Intel" title="Intel">Intel</a> <a href="/wiki/VTune" title="VTune">VTune</a> and Parallel Amplifier (part of <a href="/wiki/Intel_Parallel_Studio" title="Intel Parallel Studio">Intel Parallel Studio</a>), and <a href="/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle</a> <a href="/wiki/Performance_Analyzer" title="Performance Analyzer">Performance Analyzer</a>,<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;22&#93;</a></sup> among others.
+</p>
+<h3><span class="mw-headline" id="Instrumentation">Instrumentation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=11" title="Edit section: Instrumentation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This technique effectively adds instructions to the target program to collect the required information. Note that <a href="/wiki/Instrumenting" class="mw-redirect" title="Instrumenting">instrumenting</a> a program can cause performance changes, and may in some cases lead to inaccurate results and/or <a href="/wiki/Heisenbug" title="Heisenbug">heisenbugs</a>.  The effect will depend on what information is being collected, on the level of timing details reported, and on whether basic block profiling is used in conjunction with instrumentation.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;23&#93;</a></sup>  For example, adding code to count every procedure/routine call will probably have less effect than counting how many times each statement is obeyed.  A few computers have special hardware to collect information; in this case the impact on the program is minimal.
+</p><p>Instrumentation is key to determining the level of control and amount of time resolution available to the profilers. 
+</p>
+<ul><li><b>Manual</b>: Performed by the programmer, e.g. by adding instructions to explicitly calculate runtimes, simply count events or calls to measurement <a href="/wiki/API" title="API">APIs</a> such as the <a href="/wiki/Application_Response_Measurement" title="Application Response Measurement">Application Response Measurement</a> standard.</li>
+<li><b>Automatic source level</b>: instrumentation added to the source code by an automatic tool according to an instrumentation policy.</li>
+<li><b>Intermediate language</b>: instrumentation added to <a href="/wiki/Assembly_language" title="Assembly language">assembly</a> or decompiled <a href="/wiki/Bytecode" title="Bytecode">bytecodes</a> giving support for multiple higher-level source languages and avoiding (non-symbolic) binary offset re-writing issues.</li>
+<li><b>Compiler assisted</b></li>
+<li><b>Binary translation</b>: The tool adds instrumentation to a compiled <a href="/wiki/Executable" title="Executable">executable</a>.</li>
+<li><b>Runtime instrumentation</b>: Directly before execution the code is instrumented. The program run is fully supervised and controlled by the tool.</li>
+<li><b>Runtime injection</b>: More lightweight than runtime instrumentation. Code is modified at runtime to have jumps to helper functions.</li></ul>
+<h3><span class="mw-headline" id="Interpreter_instrumentation">Interpreter instrumentation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=12" title="Edit section: Interpreter instrumentation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><b>Interpreter debug</b> options can enable the collection of performance metrics as the interpreter encounters each target statement. A <a href="/wiki/Bytecode" title="Bytecode">bytecode</a>, <a href="/wiki/Control_table" title="Control table">control table</a> or <a href="/wiki/Just-in-time_compilation" title="Just-in-time compilation">JIT</a> interpreters are three examples that usually have complete control over execution of the target code, thus enabling extremely comprehensive data collection opportunities.</li></ul>
+<h3><span id="Hypervisor.2FSimulator"></span><span class="mw-headline" id="Hypervisor/Simulator">Hypervisor/Simulator</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=13" title="Edit section: Hypervisor/Simulator"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><b>Hypervisor</b>: Data are collected by running the (usually) unmodified program under a <a href="/wiki/Hypervisor" title="Hypervisor">hypervisor</a>. Example: <a href="/wiki/SIMMON" title="SIMMON">SIMMON</a></li>
+<li><b>Simulator</b> and <b>Hypervisor</b>: Data collected interactively and selectively by running the unmodified program under an <a href="/wiki/Instruction_Set_Simulator" class="mw-redirect" title="Instruction Set Simulator">Instruction Set Simulator</a>.</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=14" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1147244281">.mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style><div class="div-col div-col-small" style="column-width: 20em;">
+<ul><li><a href="/wiki/Algorithmic_efficiency" title="Algorithmic efficiency">Algorithmic efficiency</a></li>
+<li><a href="/wiki/Benchmark_(computing)" title="Benchmark (computing)">Benchmark</a></li>
+<li><a href="/wiki/Java_performance" title="Java performance">Java performance</a></li>
+<li><a href="/wiki/List_of_performance_analysis_tools" title="List of performance analysis tools">List of performance analysis tools</a></li>
+<li><a href="/wiki/Performance_Application_Programming_Interface" title="Performance Application Programming Interface">PAPI</a> is a portable interface (in the form of a library) to hardware performance counters on modern microprocessors.</li>
+<li><a href="/wiki/Performance_engineering" title="Performance engineering">Performance engineering</a></li>
+<li><a href="/wiki/Performance_prediction" title="Performance prediction">Performance prediction</a></li>
+<li><a href="/wiki/Performance_tuning" title="Performance tuning">Performance tuning</a></li>
+<li><a href="/wiki/Runtime_verification" title="Runtime verification">Runtime verification</a></li>
+<li><a href="/wiki/Profile-guided_optimization" title="Profile-guided optimization">Profile-guided optimization</a></li>
+<li><a href="/wiki/Static_code_analysis" class="mw-redirect" title="Static code analysis">Static code analysis</a></li>
+<li><a href="/wiki/Software_archaeology" title="Software archaeology">Software archaeology</a></li>
+<li><a href="/wiki/Worst-case_execution_time" title="Worst-case execution time">Worst-case execution time</a> (WCET)</li></ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=15" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://stackoverflow.com/questions/13698674/how-to-find-the-performance-bottleneck-in-c-sharp-desktop-application">"How to find the performance bottleneck in C# desktop application?"</a>. <a href="/wiki/Stack_Overflow" title="Stack Overflow">Stack Overflow</a>. 2012.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=How+to+find+the+performance+bottleneck+in+C%23+desktop+application%3F&amp;rft.pub=Stack+Overflow&amp;rft.date=2012&amp;rft_id=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F13698674%2Fhow-to-find-the-performance-bottleneck-in-c-sharp-desktop-application&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFKrauss2017" class="citation web cs1">Krauss, Kirk J (2017). <a rel="nofollow" class="external text" href="http://www.developforperformance.com/PerformanceProfilingWithAFocus.html">"Performance Profiling with a Focus"</a>. Develop for Performance.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Performance+Profiling+with+a+Focus&amp;rft.pub=Develop+for+Performance&amp;rft.date=2017&amp;rft.aulast=Krauss&amp;rft.aufirst=Kirk+J&amp;rft_id=http%3A%2F%2Fwww.developforperformance.com%2FPerformanceProfilingWithAFocus.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://stackify.com/what-is-code-profiling/">"What is code profiling? Learn the 3 Types of Code Profilers"</a>. <i>Stackify Developer Tips, Tricks and Resources</i>. Disqus. 2016.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Stackify+Developer+Tips%2C+Tricks+and+Resources&amp;rft.atitle=What+is+code+profiling%3F+Learn+the+3+Types+of+Code+Profilers&amp;rft.date=2016&amp;rft_id=https%3A%2F%2Fstackify.com%2Fwhat-is-code-profiling%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFLawrence2016" class="citation web cs1">Lawrence, Eric (2016). <a rel="nofollow" class="external text" href="https://textslashplain.com/2016/01/10/getting-started-with-profile-guided-optimization/">"Getting Started with Profile Guided Optimization"</a>. <i>testslashplain</i>. WordPress.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=testslashplain&amp;rft.atitle=Getting+Started+with+Profile+Guided+Optimization&amp;rft.date=2016&amp;rft.aulast=Lawrence&amp;rft.aufirst=Eric&amp;rft_id=https%3A%2F%2Ftextslashplain.com%2F2016%2F01%2F10%2Fgetting-started-with-profile-guided-optimization%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFKrauss2018" class="citation web cs1">Krauss, Kirk (2018). <a rel="nofollow" class="external text" href="http://www.developforperformance.com/MatchingWildcards_AnImprovedAlgorithmForBigData.html">"Matching Wildcards: An Improved Algorithm for Big Data"</a>. Develop for Performance.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Matching+Wildcards%3A+An+Improved+Algorithm+for+Big+Data&amp;rft.pub=Develop+for+Performance&amp;rft.date=2018&amp;rft.aulast=Krauss&amp;rft.aufirst=Kirk&amp;rft_id=http%3A%2F%2Fwww.developforperformance.com%2FMatchingWildcards_AnImprovedAlgorithmForBigData.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://stackify.com/three-types-of-net-profilers/">"List of .Net Profilers: 3 Different Types and Why You Need All of Them"</a>. <i>Stackify Developer Tips, Tricks and Resources</i>. Disqus. 2016.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Stackify+Developer+Tips%2C+Tricks+and+Resources&amp;rft.atitle=List+of+.Net+Profilers%3A+3+Different+Types+and+Why+You+Need+All+of+Them&amp;rft.date=2016&amp;rft_id=https%3A%2F%2Fstackify.com%2Fthree-types-of-net-profilers%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-prof-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-prof_7-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.tuhs.org/Archive/Distributions/Research/Dennis_v4/v4man.tar.gz">Unix Programmer's Manual, 4th Edition</a></span>
+</li>
+<li id="cite_note-gprof-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-gprof_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-gprof_8-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">
+S.L. Graham, P.B. Kessler, and M.K. McKusick, <a rel="nofollow" class="external text" href="http://docs.freebsd.org/44doc/psd/18.gprof/paper.pdf"><i>gprof: a Call Graph Execution Profiler</i></a>, Proceedings of the SIGPLAN '82 Symposium on Compiler Construction, <i><a href="/wiki/SIGPLAN" title="SIGPLAN">SIGPLAN</a> Notices</i>, Vol. 17, No 6, pp. 120-126; <a href="//doi.org/10.1145/800230.806987" class="extiw" title="doi:10.1145/800230.806987">doi:10.1145/800230.806987</a></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">
+A. Srivastava and A. Eustace, <a rel="nofollow" class="external text" href="http://www.ece.cmu.edu/~ece548/tools/atom/man/wrl_94_2.pdf"><i>ATOM: A system for building customized program analysis tools</i></a>, Proceedings of the ACM SIGPLAN Conference on Programming language design and implementation (PLDI '94), pp. 196-205, 1994; ACM <i>SIGPLAN Notices</i> - Best of PLDI 1979-1999 Homepage archive, Vol. 39, No. 4, pp. 528-539; <a href="//doi.org/10.1145/989393.989446" class="extiw" title="doi:10.1145/989393.989446">doi:10.1145/989393.989446</a></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">
+<a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/mckinley/20-years.html">20 Years of PLDI (1979–1999): A Selection</a>, <a href="/wiki/Kathryn_S._McKinley" title="Kathryn S. McKinley">Kathryn S. McKinley</a>, Editor</span>
+</li>
+<li id="cite_note-aprof-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-aprof_11-0">^</a></b></span> <span class="reference-text">E. Coppa, C. Demetrescu, and I. Finocchi, <a rel="nofollow" class="external text" href="https://ieeexplore.ieee.org/document/6858059"><i>Input-Sensitive Profiling</i></a>, IEEE Trans. Software Eng. 40(12): 1185-1205 (2014); <a href="//doi.org/10.1109/TSE.2014.2339825" class="extiw" title="doi:10.1109/TSE.2014.2339825">doi:10.1109/TSE.2014.2339825</a></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">D. Zaparanuks and M. Hauswirth, <i>Algorithmic Profiling</i>, Proceedings of the 33rd ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2012), ACM SIGPLAN Notices, Vol. 47, No. 6, pp. 67-76, 2012; <a href="//doi.org/10.1145/2254064.2254074" class="extiw" title="doi:10.1145/2254064.2254074">doi:10.1145/2254064.2254074</a></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">T. Kustner, J. Weidendorfer, and T. Weinzierl, <i>Argument Controlled Profiling</i>, Proceedings of Euro-Par 2009 – Parallel Processing Workshops, Lecture Notes in Computer Science, Vol. 6043, pp. 177-184, 2010; <a href="//doi.org/10.1007/978-3-642-14122-5_22" class="extiw" title="doi:10.1007/978-3-642-14122-5 22">doi:10.1007/978-3-642-14122-5 22</a></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://archive.cnx.org/contents/d29c016a-2960-4fc9-b431-9eda881a28f5@3/timing-and-profiling-basic-block-profilers#id6897344">"Timing and Profiling - Basic Block Profilers"</a>. <i>OpenStax CNX Archive</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=OpenStax+CNX+Archive&amp;rft.atitle=Timing+and+Profiling+-+Basic+Block+Profilers&amp;rft_id=https%3A%2F%2Farchive.cnx.org%2Fcontents%2Fd29c016a-2960-4fc9-b431-9eda881a28f5%403%2Ftiming-and-profiling-basic-block-profilers%23id6897344&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBallLarus1994" class="citation journal cs1">Ball, Thomas; Larus, James R. (1994). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20180518195918/https://www.classes.cs.uchicago.edu/current/32001-1/papers/ball-larus-profiling.pdf">"Optimally profiling and tracing programs"</a> <span class="cs1-format">(PDF)</span>. <i>ACM Transactions on Programming Languages and Systems</i>. ACM Digital Library. <b>16</b> (4): 1319–1360. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F183432.183527">10.1145/183432.183527</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:6897138">6897138</a>. Archived from <a rel="nofollow" class="external text" href="https://www.classes.cs.uchicago.edu/current/32001-1/papers/ball-larus-profiling.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 2018-05-18<span class="reference-accessdate">. Retrieved <span class="nowrap">2018-05-18</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+Transactions+on+Programming+Languages+and+Systems&amp;rft.atitle=Optimally+profiling+and+tracing+programs&amp;rft.volume=16&amp;rft.issue=4&amp;rft.pages=1319-1360&amp;rft.date=1994&amp;rft_id=info%3Adoi%2F10.1145%2F183432.183527&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A6897138%23id-name%3DS2CID&amp;rft.aulast=Ball&amp;rft.aufirst=Thomas&amp;rft.au=Larus%2C+James+R.&amp;rft_id=https%3A%2F%2Fwww.classes.cs.uchicago.edu%2Fcurrent%2F32001-1%2Fpapers%2Fball-larus-profiling.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cs.utah.edu/dept/old/texinfo/as/gprof.html#SEC12">Statistical Inaccuracy of <code>gprof</code> Output</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20120529075000/http://www.cs.utah.edu/dept/old/texinfo/as/gprof.html">Archived</a> 2012-05-29 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.ginktage.com/2014/10/popular-c-profilers/">"Popular C# Profilers"</a>. Gingtage. 2014.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Popular+C%23+Profilers&amp;rft.pub=Gingtage&amp;rft.date=2014&amp;rft_id=http%3A%2F%2Fwww.ginktage.com%2F2014%2F10%2Fpopular-c-profilers%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://support.smartbear.com/viewarticle/54581/">"Sampling Profiler - Overview"</a>. <i>AQTime 8 Reference</i>. SmartBear Software. 2018.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=AQTime+8+Reference&amp;rft.atitle=Sampling+Profiler+-+Overview&amp;rft.date=2018&amp;rft_id=https%3A%2F%2Fsupport.smartbear.com%2Fviewarticle%2F54581%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWenzal2017" class="citation web cs1">Wenzal, Maira; et&#160;al. (2017). <a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/dotnet/framework/unmanaged-api/profiling/profiling-overview#supported-features">"Profiling Overview"</a>. <i>Microsoft .NET Framework Unmanaged API Reference</i>. Microsoft.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Microsoft+.NET+Framework+Unmanaged+API+Reference&amp;rft.atitle=Profiling+Overview&amp;rft.date=2017&amp;rft.aulast=Wenzal&amp;rft.aufirst=Maira&amp;rft_id=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fframework%2Funmanaged-api%2Fprofiling%2Fprofiling-overview%23supported-features&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://developer.apple.com/library/content/documentation/Performance/Conceptual/PerformanceOverview/PerformanceTools/PerformanceTools.html">"Performance Tools"</a>. <i><a href="/wiki/Apple_Developer_Tools" title="Apple Developer Tools">Apple Developer Tools</a></i>. Apple, Inc. 2013.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Apple+Developer+Tools&amp;rft.atitle=Performance+Tools&amp;rft.date=2013&amp;rft_id=https%3A%2F%2Fdeveloper.apple.com%2Flibrary%2Fcontent%2Fdocumentation%2FPerformance%2FConceptual%2FPerformanceOverview%2FPerformanceTools%2FPerformanceTools.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFNettoArnold2012" class="citation web cs1">Netto, Zanella; Arnold, Ryan S. (2012). <a rel="nofollow" class="external text" href="https://www.ibm.com/developerworks/linux/library/l-evaluatelinuxonpower/">"Evaluate performance for Linux on Power"</a>. <i><a href="/wiki/IBM_DeveloperWorks" class="mw-redirect" title="IBM DeveloperWorks">IBM DeveloperWorks</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=IBM+DeveloperWorks&amp;rft.atitle=Evaluate+performance+for+Linux+on+Power&amp;rft.date=2012&amp;rft.aulast=Netto&amp;rft.aufirst=Zanella&amp;rft.au=Arnold%2C+Ryan+S.&amp;rft_id=https%3A%2F%2Fwww.ibm.com%2Fdeveloperworks%2Flinux%2Flibrary%2Fl-evaluatelinuxonpower%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFSchmidlTerbovenan_MeyMüller2013" class="citation conference cs1">Schmidl, Dirk; Terboven, Christian; an Mey, Dieter; Müller, Matthias S. (2013). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=-I64BAAAQBAJ&amp;pg=PA27"><i>Suitability of Performance Tools for OpenMP Task-Parallel Programs</i></a>. Proc. 7th Int'l Workshop on Parallel Tools for High Performance Computing. pp.&#160;25–37. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9783319081441" title="Special:BookSources/9783319081441"><bdi>9783319081441</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Suitability+of+Performance+Tools+for+OpenMP+Task-Parallel+Programs&amp;rft.pages=25-37&amp;rft.date=2013&amp;rft.isbn=9783319081441&amp;rft.aulast=Schmidl&amp;rft.aufirst=Dirk&amp;rft.au=Terboven%2C+Christian&amp;rft.au=an+Mey%2C+Dieter&amp;rft.au=M%C3%BCller%2C+Matthias+S.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D-I64BAAAQBAJ%26pg%3DPA27&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFCarletonKirkegaardSehr1998" class="citation magazine cs1">Carleton, Gary; Kirkegaard, Knud; Sehr, David (1998). <a rel="nofollow" class="external text" href="http://www.drdobbs.com/profile-guided-optimizations/184410561">"Profile-Guided Optimizations"</a>. <i><a href="/wiki/Dr._Dobb%27s_Journal" title="Dr. Dobb&#39;s Journal">Dr. Dobb's Journal</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Dr.+Dobb%27s+Journal&amp;rft.atitle=Profile-Guided+Optimizations&amp;rft.date=1998&amp;rft.aulast=Carleton&amp;rft.aufirst=Gary&amp;rft.au=Kirkegaard%2C+Knud&amp;rft.au=Sehr%2C+David&amp;rft_id=http%3A%2F%2Fwww.drdobbs.com%2Fprofile-guided-optimizations%2F184410561&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProfiling+%28computer+programming%29" class="Z3988"></span></span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Profiling_(computer_programming)&amp;action=edit&amp;section=16" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Article "<a rel="nofollow" class="external text" href="http://www.ibm.com/developerworks/rational/library/05/1004_gupta/">Need for speed &#8212; Eliminating performance bottlenecks</a>" on doing execution time analysis of Java applications using <a href="/w/index.php?title=IBM_Rational_Application_Developer&amp;action=edit&amp;redlink=1" class="new" title="IBM Rational Application Developer (page does not exist)">IBM Rational Application Developer</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://software.intel.com/sites/products/documentation/hpc/vtune/windows/jit_profiling.pdf">Profiling Runtime Generated and Interpreted Code using the VTune Performance Analyzer</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1364
+Cached time: 20231031011818
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.401 seconds
+Real time usage: 0.514 seconds
+Preprocessor visited node count: 1761/1000000
+Post‐expand include size: 60138/2097152 bytes
+Template argument size: 2954/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 56893/5000000 bytes
+Lua time usage: 0.241/10.000 seconds
+Lua memory usage: 8538706/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  451.697      1 -total
+ 37.36%  168.766      1 Template:Reflist
+ 23.78%  107.408     12 Template:Cite_web
+ 17.30%   78.134      1 Template:Software_development_process
+ 16.93%   76.471      1 Template:Sidebar_with_collapsible_lists
+ 14.13%   63.842      1 Template:More_citations_needed
+ 13.10%   59.159      1 Template:Ambox
+ 12.48%   56.388      1 Template:Short_description
+  7.17%   32.408      2 Template:Pagetype
+  6.44%   29.100      2 Template:Citation_needed
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2310080-0!canonical and timestamp 20231031011818 and revision id 1154740224. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Profiling_(computer_programming)&amp;oldid=1154740224">https://en.wikipedia.org/w/index.php?title=Profiling_(computer_programming)&amp;oldid=1154740224</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Software_optimization" title="Category:Software optimization">Software optimization</a></li><li><a href="/wiki/Category:Profilers" title="Category:Profilers">Profilers</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_January_2009" title="Category:Articles needing additional references from January 2009">Articles needing additional references from January 2009</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_February_2014" title="Category:Articles with unsourced statements from February 2014">Articles with unsourced statements from February 2014</a></li><li><a href="/wiki/Category:Pages_using_div_col_with_small_parameter" title="Category:Pages using div col with small parameter">Pages using div col with small parameter</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 14 May 2023, at 10:59<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Profiling_(computer_programming)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw1364","wgBackendResponseTime":183,"wgPageParseReport":{"limitreport":{"cputime":"0.401","walltime":"0.514","ppvisitednodes":{"value":1761,"limit":1000000},"postexpandincludesize":{"value":60138,"limit":2097152},"templateargumentsize":{"value":2954,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":56893,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  451.697      1 -total"," 37.36%  168.766      1 Template:Reflist"," 23.78%  107.408     12 Template:Cite_web"," 17.30%   78.134      1 Template:Software_development_process"," 16.93%   76.471      1 Template:Sidebar_with_collapsible_lists"," 14.13%   63.842      1 Template:More_citations_needed"," 13.10%   59.159      1 Template:Ambox"," 12.48%   56.388      1 Template:Short_description","  7.17%   32.408      2 Template:Pagetype","  6.44%   29.100      2 Template:Citation_needed"]},"scribunto":{"limitreport-timeusage":{"value":"0.241","limit":"10.000"},"limitreport-memusage":{"value":8538706,"limit":52428800}},"cachereport":{"origin":"mw1364","timestamp":"20231031011818","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Profiling (computer programming)","url":"https:\/\/en.wikipedia.org\/wiki\/Profiling_(computer_programming)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1138496","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1138496","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-07-26T03:56:19Z","dateModified":"2023-05-14T10:59:35Z","headline":"technique of measuring the amount of time or other resources used by different components of an executing computer program"}</script>
+</body>
+</html>

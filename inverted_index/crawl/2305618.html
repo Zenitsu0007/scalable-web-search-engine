@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Universal Turing machine - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"212812d3-cc33-4624-bd32-f32a522ab795","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Universal_Turing_machine","wgTitle":"Universal Turing machine","wgCurRevisionId":1179081886,"wgRevisionId":1179081886,"wgArticleId":71435,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia articles needing page number citations from October 2023","Articles with short description","Short description is different from Wikidata","Use dmy dates from January 2020","All articles with unsourced statements","Articles with unsourced statements from October 2023","CS1: long volume value","Articles with GND identifiers","Turing machine"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext"
+,"wgRelevantPageName":"Universal_Turing_machine","wgRelevantArticleId":71435,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q2703890","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],
+"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.scribunto.logs","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head",
+"mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Universal Turing machine - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Universal_Turing_machine">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Universal_Turing_machine&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Universal_Turing_machine">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Universal_Turing_machine rootpage-Universal_Turing_machine skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Universal+Turing+machine" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Universal+Turing+machine" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Universal+Turing+machine" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Universal+Turing+machine" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Introduction"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Introduction">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Introduction</div>
+		</a>
+		
+		<ul id="toc-Introduction-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Mathematical_theory"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Mathematical_theory">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Mathematical theory</div>
+		</a>
+		
+		<ul id="toc-Mathematical_theory-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Efficiency"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Efficiency">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>Efficiency</div>
+		</a>
+		
+		<ul id="toc-Efficiency-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Smallest_machines"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Smallest_machines">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Smallest machines</div>
+		</a>
+		
+		<ul id="toc-Smallest_machines-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Machines_with_no_internal_states"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Machines_with_no_internal_states">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>Machines with no internal states</div>
+		</a>
+		
+		<ul id="toc-Machines_with_no_internal_states-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Example_of_coding"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Example_of_coding">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">6</span>Example of coding</div>
+		</a>
+		
+		<ul id="toc-Example_of_coding-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">7</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Notes"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Notes">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">8</span>Notes</div>
+		</a>
+		
+		<ul id="toc-Notes-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">9</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Further_reading"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Further_reading">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">10</span>Further reading</div>
+		</a>
+		
+		<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">11</span>External links</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Universal Turing machine</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 17 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-17" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">17 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%A2%D9%84%D8%A9_%D8%AA%D9%88%D8%B1%D9%8A%D9%86%D8%AC_%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9" title="آلة تورينج العالمية – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B0%D0%BB%D0%BD%D0%B0_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0_%D0%BD%D0%B0_%D0%A2%D1%8E%D1%80%D0%B8%D0%BD%D0%B3" title="Универсална машина на Тюринг – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/M%C3%A0quina_universal_de_Turing" title="Màquina universal de Turing – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Universelle_Turingmaschine" title="Universelle Turingmaschine – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%9A%CE%B1%CE%B8%CE%BF%CE%BB%CE%B9%CE%BA%CE%AE_%CE%9C%CE%B7%CF%87%CE%B1%CE%BD%CE%AE_%CE%A4%CE%BF%CF%8D%CF%81%CE%B9%CE%BD%CE%B3%CE%BA" title="Καθολική Μηχανή Τούρινγκ – Greek" lang="el" hreflang="el" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/M%C3%A1quina_de_Turing_universal" title="Máquina de Turing universal – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%A7%D8%B4%DB%8C%D9%86_%D8%AA%D9%88%D8%B1%DB%8C%D9%86%DA%AF_%D8%AC%D9%87%D8%A7%D9%86%DB%8C" title="ماشین تورینگ جهانی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Machine_de_Turing_universelle" title="Machine de Turing universelle – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-hr mw-list-item"><a href="https://hr.wikipedia.org/wiki/Univerzalni_Turingov_stroj" title="Univerzalni Turingov stroj – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target"><span>Hrvatski</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Macchina_di_Turing_universale" title="Macchina di Turing universale – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-mwl mw-list-item"><a href="https://mwl.wikipedia.org/wiki/M%C3%A1quina_de_Turing_ounibersal" title="Máquina de Turing ounibersal – Mirandese" lang="mwl" hreflang="mwl" class="interlanguage-link-target"><span>Mirandés</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Universele_Turing-machine" title="Universele Turing-machine – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/M%C3%A1quina_de_Turing_universal" title="Máquina de Turing universal – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0_%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0" title="Универсальная машина Тьюринга – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D0%B7%D0%B0%D0%BB%D0%BD%D0%B0_%D0%A2%D1%98%D1%83%D1%80%D0%B8%D0%BD%D0%B3%D0%BE%D0%B2%D0%B0_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0" title="Универзална Тјурингова машина – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%A3%D0%BD%D1%96%D0%B2%D0%B5%D1%80%D1%81%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0_%D0%A2%D1%8E%D1%80%D1%96%D0%BD%D0%B3%D0%B0" title="Універсальна машина Тюрінга – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E5%9C%96%E9%9D%88%E6%A9%9F" title="通用圖靈機 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q2703890#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Universal_Turing_machine" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Universal_Turing_machine" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Universal_Turing_machine"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Universal_Turing_machine&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Universal_Turing_machine"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Universal_Turing_machine&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Universal_Turing_machine" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Universal_Turing_machine" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Universal_Turing_machine&amp;oldid=1179081886" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Universal_Turing_machine&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Universal_Turing_machine&amp;id=1179081886&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUniversal_Turing_machine"><span>Get shortened URL</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q2703890" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Universal_Turing_machine&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Universal_Turing_machine&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Type of Turing machine</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">"Universal machine" redirects here. For other uses, see <a href="/wiki/Universal_machine_(disambiguation)" class="mw-disambig" title="Universal machine (disambiguation)">Universal machine (disambiguation)</a>.</div>
+<p class="mw-empty-elt">
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style><style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar nomobile nowraplinks"><tbody><tr><th class="sidebar-title"><a href="/wiki/Turing_machine" title="Turing machine">Turing machines</a></th></tr><tr><th class="sidebar-heading" style="background:#ddddff;">
+Machine</th></tr><tr><td class="sidebar-content plainlist">
+<ul><li><a href="/wiki/Turing_machine_equivalents" title="Turing machine equivalents">Turing machine equivalents</a></li>
+<li><a href="/wiki/Turing_machine_examples" title="Turing machine examples">Turing machine examples</a></li>
+<li><a href="/wiki/Turing_machine_gallery" title="Turing machine gallery">Turing machine gallery</a></li></ul></td>
+</tr><tr><th class="sidebar-heading" style="background:#ddddff;">
+Variants</th></tr><tr><td class="sidebar-content plainlist">
+<ul><li><a href="/wiki/Alternating_Turing_machine" title="Alternating Turing machine">Alternating Turing machine</a></li>
+<li><a href="/wiki/Neural_Turing_machine" title="Neural Turing machine">Neural Turing machine</a></li>
+<li><a href="/wiki/Nondeterministic_Turing_machine" title="Nondeterministic Turing machine">Nondeterministic Turing machine</a></li>
+<li><a href="/wiki/Quantum_Turing_machine" title="Quantum Turing machine">Quantum Turing machine</a></li>
+<li><a href="/wiki/Post%E2%80%93Turing_machine" title="Post–Turing machine">Post–Turing machine</a></li>
+<li><a href="/wiki/Probabilistic_Turing_machine" title="Probabilistic Turing machine">Probabilistic Turing machine</a></li>
+<li><a href="/wiki/Multitape_Turing_machine" title="Multitape Turing machine">Multitape Turing machine</a></li>
+<li><a href="/wiki/Multi-track_Turing_machine" title="Multi-track Turing machine">Multi-track Turing machine</a></li>
+<li><a href="/wiki/Symmetric_Turing_machine" title="Symmetric Turing machine">Symmetric Turing machine</a></li>
+<li><a href="/wiki/Total_Turing_machine" class="mw-redirect" title="Total Turing machine">Total Turing machine</a></li>
+<li><a href="/wiki/Unambiguous_Turing_machine" title="Unambiguous Turing machine">Unambiguous Turing machine</a></li>
+<li><a class="mw-selflink selflink">Universal Turing machine</a></li>
+<li><a href="/wiki/Zeno_machine" title="Zeno machine">Zeno machine</a></li></ul></td>
+</tr><tr><th class="sidebar-heading" style="background:#ddddff;">
+Science</th></tr><tr><td class="sidebar-content plainlist">
+<ul><li><a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a></li>
+<li><a href="/wiki/Category:Turing_machine" title="Category:Turing machine">Category:Turing machine</a></li></ul></td>
+</tr><tr><td class="sidebar-navbar"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Turing" title="Template:Turing"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Turing" title="Template talk:Turing"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Turing" title="Special:EditPage/Template:Turing"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Computer_science" title="Computer science">computer science</a>, a <b>universal Turing machine</b> (<b>UTM</b>) is a <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a> capable of computing any computable sequence,<sup id="cite_ref-FOOTNOTETuring1937241_1-0" class="reference"><a href="#cite_note-FOOTNOTETuring1937241-1">&#91;1&#93;</a></sup> as described by <a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a> in his seminal paper "On Computable Numbers, with an Application to the Entscheidungsproblem". Common sense might say that a universal machine is impossible, but Turing proves that it is possible.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;a&#93;</a></sup> He suggested that we may compare a man in the process of computing a real number to a machine which is only capable of a finite number of conditions q 1: q 2 . .... qI; which will be called "m-configurations".<sup id="cite_ref-FOOTNOTETuring1937231_3-0" class="reference"><a href="#cite_note-FOOTNOTETuring1937231-3">&#91;2&#93;</a></sup> He then described the operation of such machine, as described below, and argued:
+</p>
+<style data-mw-deduplicate="TemplateStyles:r996844942">.mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 40px}.mw-parser-output .templatequote .templatequotecite{line-height:1.5em;text-align:left;padding-left:1.6em;margin-top:0}</style><blockquote class="templatequote"><p>It is my contention that these operations include all those which are used in the computation of a number.<sup id="cite_ref-FOOTNOTETuring1937232_4-0" class="reference"><a href="#cite_note-FOOTNOTETuring1937232-4">&#91;3&#93;</a></sup> </p></blockquote>
+<p><a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a> introduced the idea of such a machine in 1936–1937. This principle is considered to be the origin of the idea of a <a href="/wiki/Stored-program_computer" title="Stored-program computer">stored-program computer</a> used by <a href="/wiki/John_von_Neumann" title="John von Neumann">John von Neumann</a> in 1946 for the "Electronic Computing Instrument" that now bears von Neumann's name: the <a href="/wiki/Von_Neumann_architecture" title="Von Neumann architecture">von Neumann architecture</a>.<sup id="cite_ref-FOOTNOTEDavis2018&#91;&#91;Category:Wikipedia_articles_needing_page_number_citations_from_October_2023&#93;&#93;&lt;sup_class=&quot;noprint_Inline-Template_&quot;_style=&quot;white-space:nowrap;&quot;&gt;&amp;#91;&lt;i&gt;&#91;&#91;Wikipedia:Citing_sources&#124;&lt;span_title=&quot;This_citation_requires_a_reference_to_the_specific_page_or_range_of_pages_in_which_the_material_appears.&amp;#32;(October_2023)&quot;&gt;page&amp;nbsp;needed&lt;/span&gt;&#93;&#93;&lt;/i&gt;&amp;#93;&lt;/sup&gt;_5-0" class="reference"><a href="#cite_note-FOOTNOTEDavis2018[[Category:Wikipedia_articles_needing_page_number_citations_from_October_2023]]&lt;sup_class=&quot;noprint_Inline-Template_&quot;_style=&quot;white-space:nowrap;&quot;&gt;&amp;#91;&lt;i&gt;[[Wikipedia:Citing_sources|&lt;span_title=&quot;This_citation_requires_a_reference_to_the_specific_page_or_range_of_pages_in_which_the_material_appears.&amp;#32;(October_2023)&quot;&gt;page&amp;nbsp;needed&lt;/span&gt;]]&lt;/i&gt;&amp;#93;&lt;/sup&gt;-5">&#91;4&#93;</a></sup>
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Introduction">Introduction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=1" title="Edit section: Introduction"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Further information: <a href="/wiki/Register_machine#Historical_development_of_the_register_machine_model" title="Register machine">Register machine §&#160;Historical development of the register machine model</a></div>
+<p><a href="/wiki/Martin_Davis_(mathematician)" title="Martin Davis (mathematician)">Davis</a> makes a persuasive argument that Turing's conception of what is now known as "the stored-program computer", of placing the "action table"—the instructions for the machine—in the same "memory" as the input data, strongly influenced <a href="/wiki/John_von_Neumann" title="John von Neumann">John von Neumann</a>'s conception of the first American discrete-symbol (as opposed to analog) computer—the <a href="/wiki/EDVAC" title="EDVAC">EDVAC</a>. Davis quotes <i>Time</i> magazine to this effect, that "everyone who taps at a keyboard&#160;... is working on an incarnation of a Turing machine", and that "John von Neumann [built] on the work of Alan Turing".<sup id="cite_ref-FOOTNOTEDavis2000193_quoting_&#39;&#39;Time&#39;&#39;_magazine_of_29_March_1999_6-0" class="reference"><a href="#cite_note-FOOTNOTEDavis2000193_quoting_&#39;&#39;Time&#39;&#39;_magazine_of_29_March_1999-6">&#91;5&#93;</a></sup>
+</p><p>Davis makes a case that Turing's <a href="/wiki/Automatic_Computing_Engine" title="Automatic Computing Engine">Automatic Computing Engine</a> (ACE) computer "anticipated" the notions of microprogramming (<a href="/wiki/Microcode" title="Microcode">microcode</a>) and <a href="/wiki/RISC" class="mw-redirect" title="RISC">RISC</a> processors.<sup id="cite_ref-FOOTNOTEDavis2000188_7-0" class="reference"><a href="#cite_note-FOOTNOTEDavis2000188-7">&#91;6&#93;</a></sup> <a href="/wiki/Donald_Knuth" title="Donald Knuth">Knuth</a> cites Turing's work on the ACE computer as designing "hardware to facilitate subroutine linkage";<sup id="cite_ref-FOOTNOTEKnuth1973225_8-0" class="reference"><a href="#cite_note-FOOTNOTEKnuth1973225-8">&#91;7&#93;</a></sup> Davis also references this work as Turing's use of a hardware "stack".<sup id="cite_ref-FOOTNOTEDavis2000237_footnote_18_9-0" class="reference"><a href="#cite_note-FOOTNOTEDavis2000237_footnote_18-9">&#91;8&#93;</a></sup>
+</p><p>As the Turing machine was encouraging the construction of <a href="/wiki/Computers" class="mw-redirect" title="Computers">computers</a>, the UTM was encouraging the development of the fledgling <a href="/wiki/Computer_science" title="Computer science">computer sciences</a>. An early, if not the very first, assembler was proposed "by a young hot-shot programmer" for the EDVAC.<sup id="cite_ref-FOOTNOTEDavis2000192_10-0" class="reference"><a href="#cite_note-FOOTNOTEDavis2000192-10">&#91;9&#93;</a></sup> Von Neumann's "first serious program ... [was] to simply sort data efficiently".<sup id="cite_ref-FOOTNOTEDavis2000184_11-0" class="reference"><a href="#cite_note-FOOTNOTEDavis2000184-11">&#91;10&#93;</a></sup> Knuth observes that the subroutine return embedded in the program itself rather than in special registers is attributable to von Neumann and Goldstine.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;b&#93;</a></sup> Knuth furthermore states that
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r996844942"><blockquote class="templatequote"><p>The first interpretive routine may be said to be the "Universal Turing Machine" ... Interpretive routines in the conventional sense were mentioned by <a href="/wiki/John_Mauchly" title="John Mauchly">John Mauchly</a> in his lectures at the <a href="/wiki/Moore_School_of_Electrical_Engineering" title="Moore School of Electrical Engineering">Moore School</a> in 1946 ... Turing took part in this development also; interpretive systems for the Pilot ACE computer were written under his direction.<sup id="cite_ref-FOOTNOTEKnuth1973226_13-0" class="reference"><a href="#cite_note-FOOTNOTEKnuth1973226-13">&#91;11&#93;</a></sup> </p></blockquote>
+<p>Davis briefly mentions operating systems and compilers as outcomes of the notion of program-as-data.<sup id="cite_ref-FOOTNOTEDavis2000185_14-0" class="reference"><a href="#cite_note-FOOTNOTEDavis2000185-14">&#91;12&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Mathematical_theory">Mathematical theory</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=2" title="Edit section: Mathematical theory"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>With this encoding of action tables as strings, it becomes possible, in principle, for Turing machines to answer questions about the behaviour of other Turing machines. Most of these questions, however, are <a href="/wiki/Undecidable_problem" title="Undecidable problem">undecidable</a>, meaning that the function in question cannot be calculated mechanically. For instance, the problem of determining whether an arbitrary Turing machine will halt on a particular input, or on all inputs, known as the <a href="/wiki/Halting_problem" title="Halting problem">Halting problem</a>, was shown to be, in general, undecidable in Turing's original paper. <a href="/wiki/Rice%27s_theorem" title="Rice&#39;s theorem">Rice's theorem</a> shows that any non-trivial question about the output of a Turing machine is undecidable.
+</p><p>A universal Turing machine can calculate any <a href="/wiki/Computable_function" title="Computable function">recursive function</a>, decide any <a href="/wiki/Recursive_language" title="Recursive language">recursive language</a>, and accept any <a href="/wiki/Recursively_enumerable_language" title="Recursively enumerable language">recursively enumerable language</a>. According to the <a href="/wiki/Church%E2%80%93Turing_thesis" title="Church–Turing thesis">Church–Turing thesis</a>, the problems solvable by a universal Turing machine are exactly those problems solvable by an <i><a href="/wiki/Algorithm" title="Algorithm">algorithm</a></i> or an <i>effective method of computation</i>, for any reasonable definition of those terms.  For these reasons, a universal Turing machine serves as a standard against which to compare computational systems, and a system that can simulate a universal Turing machine is called <a href="/wiki/Turing_complete" class="mw-redirect" title="Turing complete">Turing complete</a>.
+</p><p>An abstract version of the universal Turing machine is the <a href="/wiki/Utm_theorem" class="mw-redirect" title="Utm theorem">universal function</a>, a computable function which can be used to calculate any other computable function. The <a href="/wiki/UTM_theorem" title="UTM theorem">UTM theorem</a> proves the existence of such a function.
+</p>
+<h2><span class="mw-headline" id="Efficiency">Efficiency</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=3" title="Edit section: Efficiency"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Without loss of generality, the input of Turing machine can be assumed to be in the alphabet {0, 1}; any other finite alphabet can be encoded over {0, 1}. The behavior of a Turing machine <i>M</i> is determined by its transition function. This function can be easily encoded as a string over the alphabet {0, 1} as well. The size of the alphabet of <i>M</i>, the number of tapes it has, and the size of the state space can be deduced from the transition function's table. The distinguished states and symbols can be identified by their position, e.g. the first two states can by convention be the start and stop states. Consequently, every Turing machine can be encoded as a string over the alphabet {0, 1}. Additionally, we convene that every invalid encoding maps to a trivial Turing machine that immediately halts, and that every Turing machine can have an infinite number of encodings by padding the encoding with an arbitrary number of (say) 1's at the end, just like comments work in a programming language. It should be no surprise that we can achieve this encoding given the existence of a <a href="/wiki/G%C3%B6del_number" class="mw-redirect" title="Gödel number">Gödel number</a> and computational equivalence between Turing machines and <a href="/wiki/%CE%9C-recursive_function" class="mw-redirect" title="Μ-recursive function">μ-recursive functions</a>. Similarly, our construction associates to every binary string <i>α</i>, a Turing machine <i>M<sub>α</sub></i>.
+</p><p>Starting from the above encoding, in 1966 F. C. Hennie and <a href="/wiki/Richard_E._Stearns" title="Richard E. Stearns">R. E. Stearns</a> showed that given a Turing machine <i>M<sub>α</sub></i> that halts on input <i>x</i> within <i>N</i> steps, then there exists a multi-tape universal Turing machine that halts on inputs <i>α</i>, <i>x</i> (given on different tapes) in <i>CN</i> log <i>N</i>, where <i>C</i> is a machine-specific constant that does not depend on the length of the input <i>x</i>, but does depend on <i>M'</i>s alphabet size, number of tapes, and number of states. Effectively this is an <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {O}}\left(N\log {N}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">O</mi>
+          </mrow>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>N</mi>
+            <mi>log</mi>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>N</mi>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {O}}\left(N\log {N}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/00133491a49854d97294c9ed83fdf0078f3d02ed" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:11.92ex; height:2.843ex;" alt="{\displaystyle {\mathcal {O}}\left(N\log {N}\right)}"></span> simulation, using <a href="/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a>'s <a href="/wiki/Big_O_notation" title="Big O notation">Big O notation</a>.<sup id="cite_ref-FOOTNOTEAroraBarak2009Theorem_1.9_15-0" class="reference"><a href="#cite_note-FOOTNOTEAroraBarak2009Theorem_1.9-15">&#91;13&#93;</a></sup> The corresponding result for space-complexity rather than time-complexity is that we can simulate in a way that uses at most <i>CN</i> cells at any stage of the computation, an <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {O}}(N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">O</mi>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {O}}(N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5d707ed387b83504adae2f6b5af62901c87cd545" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.723ex; height:2.843ex;" alt="{\mathcal {O}}(N)"></span> simulation.<sup id="cite_ref-FOOTNOTEAroraBarak2009Exercises_4.1_16-0" class="reference"><a href="#cite_note-FOOTNOTEAroraBarak2009Exercises_4.1-16">&#91;14&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Smallest_machines">Smallest machines</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=4" title="Edit section: Smallest machines"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>When Alan Turing came up with the idea of a universal machine he had in mind the simplest computing model powerful enough to calculate all possible functions that can be calculated. <a href="/wiki/Claude_Shannon" title="Claude Shannon">Claude Shannon</a> first explicitly posed the question of finding the smallest possible universal Turing machine in 1956. He showed that two symbols were sufficient so long as enough states were used (or vice versa), and that it was always possible to exchange states for symbols. He also showed that no universal Turing machine of one state could exist.
+</p><p><a href="/wiki/Marvin_Minsky" title="Marvin Minsky">Marvin Minsky</a> discovered a 7-state 4-symbol universal Turing machine in 1962 using <a href="/wiki/Tag_system" title="Tag system">2-tag systems</a>. Other small universal Turing machines have since been found by Yurii Rogozhin and others by extending this approach of tag system simulation. If we denote by (<i>m</i>, <i>n</i>) the class of UTMs with <i>m</i> states and <i>n</i> symbols the following tuples have been found: (15, 2), (9, 3), (6, 4), (5, 5), (4, 6), (3, 9), and (2, 18).<sup id="cite_ref-FOOTNOTERogozhin1996_17-0" class="reference"><a href="#cite_note-FOOTNOTERogozhin1996-17">&#91;15&#93;</a></sup><sup id="cite_ref-FOOTNOTEKudlekRogozhin2002_18-0" class="reference"><a href="#cite_note-FOOTNOTEKudlekRogozhin2002-18">&#91;16&#93;</a></sup><sup id="cite_ref-FOOTNOTENearyWoods2009_19-0" class="reference"><a href="#cite_note-FOOTNOTENearyWoods2009-19">&#91;17&#93;</a></sup> Rogozhin's (4, 6) machine uses only 22 instructions, and no standard UTM of lesser descriptional complexity is known.
+</p><p>However, generalizing the standard Turing machine model admits even smaller UTMs. One such generalization is to allow an infinitely repeated word on one or both sides of the Turing machine input, thus extending the definition of universality and known as "semi-weak" or "weak" universality, respectively. Small weakly universal Turing machines that simulate the <a href="/wiki/Rule_110" title="Rule 110">Rule 110</a> cellular automaton have been given for the (6, 2), (3, 3), and (2, 4) state-symbol pairs.<sup id="cite_ref-FOOTNOTENearyWoods2009b_20-0" class="reference"><a href="#cite_note-FOOTNOTENearyWoods2009b-20">&#91;18&#93;</a></sup> The proof of universality for <a href="/wiki/Wolfram%27s_2-state_3-symbol_Turing_machine" title="Wolfram&#39;s 2-state 3-symbol Turing machine">Wolfram's 2-state 3-symbol Turing machine</a> further extends the notion of weak universality by allowing certain non-periodic initial configurations. Other variants on the standard Turing machine model that yield small UTMs include machines with multiple tapes or tapes of multiple dimension, and machines coupled with a <a href="/wiki/Finite_automaton" class="mw-redirect" title="Finite automaton">finite automaton</a>.
+</p>
+<h2><span class="mw-headline" id="Machines_with_no_internal_states">Machines with no internal states</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=5" title="Edit section: Machines with no internal states"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If multiple heads are allowed on a Turing machine then no internal states are required; as "states" can be encoded in the tape. For example, consider a tape with 6 colours: 0, 1, 2, 0A, 1A, 2A. Consider a tape such as 0,0,1,2,2A,0,2,1 where a 3-headed Turing machine is situated over the triple (2,2A,0). The rules then convert any triple to another triple and move the 3-heads left or right. For example, the rules might convert (2,2A,0) to (2,1,0) and move the head left. Thus in this example, the machine acts like a 3-colour Turing machine with internal states A and B (represented by no letter). The case for a 2-headed Turing machine is very similar. Thus a 2-headed Turing machine can be Universal with 6 colours. It is not known what the smallest number of colours needed for a multi-headed Turing machine is or if a 2-colour Universal Turing machine is possible with multiple heads. It also means that <a href="/wiki/Rewriting" title="Rewriting">rewrite rules</a> are Turing complete since the triple rules are equivalent to rewrite rules. Extending the tape to two dimensions with a head sampling a letter and its 8 neighbours, only 2 colours are needed, as for example, a colour can be encoded in a vertical triple pattern such as 110.
+</p>
+<h2><span class="mw-headline" id="Example_of_coding">Example of coding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=6" title="Edit section: Example of coding"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For those who would undertake the challenge of designing a UTM exactly as Turing specified see the article by Davies in <a href="#CITEREFCopeland2004">Copeland (2004)</a>. Davies corrects the errors in the original and shows what a sample run would look like. He successfully ran a (somewhat simplified) simulation.
+</p><p>The following example is taken from <a href="#CITEREFTuring1937">Turing (1937)</a>. For more about this example, see <a href="/wiki/Turing_machine_examples" title="Turing machine examples">Turing machine examples</a>.
+</p><p>Turing used seven symbols { A, C, D, R, L, N,&#160;; } to encode each 5-tuple; as described in the article <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a>, his 5-tuples are only of types N1, N2, and N3. The number of each "m&#x2011;configuration" (instruction, state) is represented by "D" followed by a unary string of A's, e.g. "q3" = DAAA. In a similar manner, he encodes the symbols blank as "D", the symbol "0" as "DC", the symbol "1" as DCC, etc. The symbols "R", "L", and "N" remain as is.
+</p><p>After encoding each 5-tuple is then "assembled" into a string in order as shown in the following table:
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Current m&#x2011;configuration
+</th>
+<th>Tape symbol
+</th>
+<th>Print-operation
+</th>
+<th>Tape-motion
+</th>
+<th>Final m&#x2011;configuration
+</th>
+<th>Current m&#x2011;configuration code
+</th>
+<th>Tape symbol code
+</th>
+<th>Print-operation code
+</th>
+<th>Tape-motion code
+</th>
+<th>Final m&#x2011;configuration code
+</th>
+<th>5-tuple assembled code
+</th></tr>
+<tr>
+<td>q1
+</td>
+<td style="background: #EEE; vertical-align: middle; text-align: center;" class="table-cast">blank
+</td>
+<td>P0
+</td>
+<td>R
+</td>
+<td>q2
+</td>
+<td>DA
+</td>
+<td>D
+</td>
+<td>DC
+</td>
+<td>R
+</td>
+<td>DAA
+</td>
+<td>DADDCRDAA
+</td></tr>
+<tr>
+<td>q2
+</td>
+<td style="background: #EEE; vertical-align: middle; text-align: center;" class="table-cast">blank
+</td>
+<td>E
+</td>
+<td>R
+</td>
+<td>q3
+</td>
+<td>DAA
+</td>
+<td>D
+</td>
+<td>D
+</td>
+<td>R
+</td>
+<td>DAAA
+</td>
+<td>DAADDRDAAA
+</td></tr>
+<tr>
+<td>q3
+</td>
+<td style="background: #EEE; vertical-align: middle; text-align: center;" class="table-cast">blank
+</td>
+<td>P1
+</td>
+<td>R
+</td>
+<td>q4
+</td>
+<td>DAAA
+</td>
+<td>D
+</td>
+<td>DCC
+</td>
+<td>R
+</td>
+<td>DAAAA
+</td>
+<td>DAAADDCCRDAAAA
+</td></tr>
+<tr>
+<td>q4
+</td>
+<td style="background: #EEE; vertical-align: middle; text-align: center;" class="table-cast">blank
+</td>
+<td>E
+</td>
+<td>R
+</td>
+<td>q1
+</td>
+<td>DAAAA
+</td>
+<td>D
+</td>
+<td>D
+</td>
+<td>R
+</td>
+<td>DA
+</td>
+<td>DAAAADDRDA
+</td></tr></tbody></table>
+<p>Finally, the codes for all four 5-tuples are strung together into a code started by ";" and separated by ";" i.e.:
+</p>
+<style data-mw-deduplicate="TemplateStyles:r996643573">.mw-parser-output .block-indent{padding-left:3em;padding-right:0;overflow:hidden}</style><div class="block-indent"> <b>;</b>DADDCRDAA<b>;</b>DAADDRDAAA<b>;</b>DAAADDCCRDAAAA<b>;</b>DAAAADDRDA</div>
+<p>This code he placed on alternate squares—the "F-squares" – leaving the "E-squares" (those liable to erasure) empty. The final assembly of the code on the tape for the U-machine consists of placing two special symbols ("e") one after the other, then the code separated out on alternate squares, and lastly the double-colon symbol "<b>::</b>" (blanks shown here with "." for clarity):
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r996643573"><div class="block-indent">ee.<b>;</b>.D.A.D.D.C.R.D.A.A.<b>;</b>.D.A.A.D.D.R.D.A.A.A.<b>;</b>.D.A.A.A.D.D.C.C.R.D.A.A.A.A.<b>;</b>.D.A.A.A.A.D.D.R.D.A.<b>::</b>......</div>
+<p>The U-machine's action-table (state-transition table) is responsible for decoding the symbols. Turing's action table keeps track of its place with markers "u", "v", "x", "y", "z" by placing them in "E-squares" to the right of "the marked symbol" – for example, to mark the current instruction <b>z</b> is placed to the right of ";"  <b>x</b> is keeping the place with respect to the current "m&#x2011;configuration" DAA. The U-machine's action table will shuttle these symbols around (erasing them and placing them in different locations) as the computation progresses:
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r996643573"><div class="block-indent">ee.<b>;</b> .D.A.D.D.C.R.D.A.A. <b>;</b> <b>z</b>D.A.A<b>x</b>D.D.R.D.A.A.A.<b>;</b>.D.A.A.A.D.D.C.C.R.D.A.A.A.A.<b>;</b>.D.A.A.A.A.D.D.R.D.A.<b>::</b>......</div>
+<p>Turing's action-table for his U-machine is very involved.
+</p><p><a href="/wiki/Roger_Penrose" title="Roger Penrose">Roger Penrose</a> provides examples of ways to encode instructions for the Universal machine using only binary symbols { 0, 1 }, or { blank, mark | }. Penrose goes further and writes out his entire U-machine code. He asserts that it truly is a U-machine code, an enormous number that spans almost 2 full pages of 1's and 0's.<sup id="cite_ref-FOOTNOTEPenrose198971–73_21-0" class="reference"><a href="#cite_note-FOOTNOTEPenrose198971–73-21">&#91;19&#93;</a></sup>
+</p><p>Asperti and Ricciotti described a multi-tape UTM defined by composing elementary machines with very simple semantics, rather than explicitly giving its full action table. This approach was sufficiently modular to allow them to formally prove the correctness of the machine in the <a href="/wiki/Matita" title="Matita">Matita</a> proof assistant.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (October 2023)">citation needed</span></a></i>&#93;</sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=7" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Alternating_Turing_machine" title="Alternating Turing machine">Alternating Turing machine</a>&#160;– Abstract computation model</li>
+<li><a href="/wiki/Counter_machine" title="Counter machine">Counter machine</a>&#160;– Abstract machine used in a formal logic and theoretical computer science</li>
+<li><a href="/wiki/Kleene%27s_T_predicate" title="Kleene&#39;s T predicate">Kleene's T predicate</a>&#160;– Concept in computability theory</li>
+<li><a href="/wiki/Mark_and_space" title="Mark and space">Mark and space</a>&#160;– States of a communications signal</li>
+<li><a href="/wiki/Turing_machine_equivalents" title="Turing machine equivalents">Turing machine equivalents</a>&#160;– Hypothetical computing devices</li>
+<li><a href="/wiki/Von_Neumann_universal_constructor" title="Von Neumann universal constructor">Von Neumann universal constructor</a>&#160;– Self-replicating cellular automaton</li></ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=8" title="Edit section: Notes"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist reflist-lower-alpha">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">From lecture transcript attributed to <a href="/wiki/John_von_Neumann" title="John von Neumann">John von Neumann</a>, as quoted by Copeland in <a href="#CITEREFCopelandFan2023">Copeland &amp; Fan (2023)</a>. </span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">In particular: <a href="#CITEREFBurksGoldstinevon_Neumann1971">Burks, Goldstine &amp; von Neumann (1971)</a> [1946].</span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=9" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1011085734"><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-FOOTNOTETuring1937241-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTETuring1937241_1-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFTuring1937">Turing (1937)</a>, p.&#160;241.</span>
+</li>
+<li id="cite_note-FOOTNOTETuring1937231-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTETuring1937231_3-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFTuring1937">Turing (1937)</a>, p.&#160;231.</span>
+</li>
+<li id="cite_note-FOOTNOTETuring1937232-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTETuring1937232_4-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFTuring1937">Turing (1937)</a>, p.&#160;232.</span>
+</li>
+<li id="cite_note-FOOTNOTEDavis2018&#91;&#91;Category:Wikipedia_articles_needing_page_number_citations_from_October_2023&#93;&#93;&lt;sup_class=&quot;noprint_Inline-Template_&quot;_style=&quot;white-space:nowrap;&quot;&gt;&amp;#91;&lt;i&gt;&#91;&#91;Wikipedia:Citing_sources&#124;&lt;span_title=&quot;This_citation_requires_a_reference_to_the_specific_page_or_range_of_pages_in_which_the_material_appears.&amp;#32;(October_2023)&quot;&gt;page&amp;nbsp;needed&lt;/span&gt;&#93;&#93;&lt;/i&gt;&amp;#93;&lt;/sup&gt;-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEDavis2018[[Category:Wikipedia_articles_needing_page_number_citations_from_October_2023]]&lt;sup_class=&quot;noprint_Inline-Template_&quot;_style=&quot;white-space:nowrap;&quot;&gt;&amp;#91;&lt;i&gt;[[Wikipedia:Citing_sources|&lt;span_title=&quot;This_citation_requires_a_reference_to_the_specific_page_or_range_of_pages_in_which_the_material_appears.&amp;#32;(October_2023)&quot;&gt;page&amp;nbsp;needed&lt;/span&gt;]]&lt;/i&gt;&amp;#93;&lt;/sup&gt;_5-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFDavis2018">Davis (2018)</a>, p.&#160;<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources"><span title="This citation requires a reference to the specific page or range of pages in which the material appears. (October 2023)">page&#160;needed</span></a></i>&#93;</sup>.</span>
+</li>
+<li id="cite_note-FOOTNOTEDavis2000193_quoting_&#39;&#39;Time&#39;&#39;_magazine_of_29_March_1999-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEDavis2000193_quoting_&#39;&#39;Time&#39;&#39;_magazine_of_29_March_1999_6-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFDavis2000">Davis (2000)</a>, p.&#160;193 quoting <i>Time</i> magazine of 29 March 1999.</span>
+</li>
+<li id="cite_note-FOOTNOTEDavis2000188-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEDavis2000188_7-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFDavis2000">Davis (2000)</a>, p.&#160;188.</span>
+</li>
+<li id="cite_note-FOOTNOTEKnuth1973225-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEKnuth1973225_8-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFKnuth1973">Knuth (1973)</a>, p.&#160;225.</span>
+</li>
+<li id="cite_note-FOOTNOTEDavis2000237_footnote_18-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEDavis2000237_footnote_18_9-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFDavis2000">Davis (2000)</a>, p.&#160;237 footnote 18.</span>
+</li>
+<li id="cite_note-FOOTNOTEDavis2000192-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEDavis2000192_10-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFDavis2000">Davis (2000)</a>, p.&#160;192.</span>
+</li>
+<li id="cite_note-FOOTNOTEDavis2000184-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEDavis2000184_11-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFDavis2000">Davis (2000)</a>, p.&#160;184.</span>
+</li>
+<li id="cite_note-FOOTNOTEKnuth1973226-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEKnuth1973226_13-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFKnuth1973">Knuth (1973)</a>, p.&#160;226.</span>
+</li>
+<li id="cite_note-FOOTNOTEDavis2000185-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEDavis2000185_14-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFDavis2000">Davis (2000)</a>, p.&#160;185.</span>
+</li>
+<li id="cite_note-FOOTNOTEAroraBarak2009Theorem_1.9-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEAroraBarak2009Theorem_1.9_15-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFAroraBarak2009">Arora &amp; Barak (2009)</a>, Theorem 1.9.</span>
+</li>
+<li id="cite_note-FOOTNOTEAroraBarak2009Exercises_4.1-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEAroraBarak2009Exercises_4.1_16-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFAroraBarak2009">Arora &amp; Barak (2009)</a>, Exercises 4.1.</span>
+</li>
+<li id="cite_note-FOOTNOTERogozhin1996-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTERogozhin1996_17-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFRogozhin1996">Rogozhin (1996)</a>.</span>
+</li>
+<li id="cite_note-FOOTNOTEKudlekRogozhin2002-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEKudlekRogozhin2002_18-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFKudlekRogozhin2002">Kudlek &amp; Rogozhin (2002)</a>.</span>
+</li>
+<li id="cite_note-FOOTNOTENearyWoods2009-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTENearyWoods2009_19-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFNearyWoods2009">Neary &amp; Woods (2009)</a>.</span>
+</li>
+<li id="cite_note-FOOTNOTENearyWoods2009b-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTENearyWoods2009b_20-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFNearyWoods2009b">Neary &amp; Woods (2009b)</a>.</span>
+</li>
+<li id="cite_note-FOOTNOTEPenrose198971–73-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEPenrose198971–73_21-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFPenrose1989">Penrose (1989)</a>, pp.&#160;71–73.</span>
+</li>
+</ol></div></div>
+<p><b>Original paper and correction</b>
+</p>
+<ul><li><style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFTuring1937" class="citation journal cs1"><a href="/wiki/Alan_Turing" title="Alan Turing">Turing, A. M.</a> (1937). <a rel="nofollow" class="external text" href="http://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf">"On Computable Numbers, with an Application to the Entscheidungsproblem"</a> <span class="cs1-format">(PDF)</span>. <i>Proceedings of the London Mathematical Society</i>. 2. <b>42</b> (1): 230–265. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1112%2Fplms%2Fs2-42.1.230">10.1112/plms/s2-42.1.230</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+London+Mathematical+Society&amp;rft.atitle=On+Computable+Numbers%2C+with+an+Application+to+the+Entscheidungsproblem&amp;rft.volume=42&amp;rft.issue=1&amp;rft.pages=230-265&amp;rft.date=1937&amp;rft_id=info%3Adoi%2F10.1112%2Fplms%2Fs2-42.1.230&amp;rft.aulast=Turing&amp;rft.aufirst=A.+M.&amp;rft_id=http%3A%2F%2Fwww.cs.virginia.edu%2F~robins%2FTuring_Paper_1936.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFTuring1938" class="citation journal cs1">Turing, A. M. (1938). "On Computable Numbers, with an Application to the Entscheidungsproblem: A correction". <i>Proceedings of the London Mathematical Society</i>. 2. <b>43</b> (6): 544–6. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1112%2Fplms%2Fs2-43.6.544">10.1112/plms/s2-43.6.544</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+London+Mathematical+Society&amp;rft.atitle=On+Computable+Numbers%2C+with+an+Application+to+the+Entscheidungsproblem%3A+A+correction&amp;rft.volume=43&amp;rft.issue=6&amp;rft.pages=544-6&amp;rft.date=1938&amp;rft_id=info%3Adoi%2F10.1112%2Fplms%2Fs2-43.6.544&amp;rft.aulast=Turing&amp;rft.aufirst=A.+M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li></ul>
+<p><b>Other works cited</b>
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1054258005">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}</style><div class="refbegin refbegin-columns references-column-width" style="column-width: 30em">
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFAroraBarak2009" class="citation book cs1">Arora, Sanjeev; Barak, Boaz (2009). <a rel="nofollow" class="external text" href="http://www.cs.princeton.edu/theory/complexity/"><i>Complexity Theory: A Modern Approach</i></a>. Cambridge University Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-521-42426-4" title="Special:BookSources/978-0-521-42426-4"><bdi>978-0-521-42426-4</bdi></a>. <q>section 1.4, "Machines as strings and the universal Turing machine" and 1.7, "Proof of theorem 1.9"<span class="cs1-kern-right"></span></q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Complexity+Theory%3A+A+Modern+Approach&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2009&amp;rft.isbn=978-0-521-42426-4&amp;rft.aulast=Arora&amp;rft.aufirst=Sanjeev&amp;rft.au=Barak%2C+Boaz&amp;rft_id=http%3A%2F%2Fwww.cs.princeton.edu%2Ftheory%2Fcomplexity%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFAspertiRicciotti2015" class="citation journal cs1">Asperti, Andrea; Ricciotti, Wilmer (2015). <a rel="nofollow" class="external text" href="https://www.pure.ed.ac.uk/ws/files/23785532/turing_final_1.pdf">"A formalization of multi-tape Turing machines"</a> <span class="cs1-format">(PDF)</span>. <i>Theoretical Computer Science</i>. Elsevier. <b>603</b>: 23–42. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.tcs.2015.07.013">10.1016/j.tcs.2015.07.013</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0304-3975">0304-3975</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Theoretical+Computer+Science&amp;rft.atitle=A+formalization+of+multi-tape+Turing+machines&amp;rft.volume=603&amp;rft.pages=23-42&amp;rft.date=2015&amp;rft_id=info%3Adoi%2F10.1016%2Fj.tcs.2015.07.013&amp;rft.issn=0304-3975&amp;rft.aulast=Asperti&amp;rft.aufirst=Andrea&amp;rft.au=Ricciotti%2C+Wilmer&amp;rft_id=https%3A%2F%2Fwww.pure.ed.ac.uk%2Fws%2Ffiles%2F23785532%2Fturing_final_1.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBurksGoldstinevon_Neumann1971" class="citation book cs1">Burks, Arthur W.; Goldstine, Herman H.; von Neumann, John (1971) [1946]. <span class="cs1-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/computerstructur00bell/page/92">"Planning and Coding of the Problems for an Electronic Computing Instrument"</a></span>. In Bell, C. Gordon; Newell, Allen (eds.). <i>Computer Structures: Readings and Examples</i>. New York: McGraw-Hill Book Company. pp.&#160;92–119. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-07-004357-4" title="Special:BookSources/0-07-004357-4"><bdi>0-07-004357-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Planning+and+Coding+of+the+Problems+for+an+Electronic+Computing+Instrument&amp;rft.btitle=Computer+Structures%3A+Readings+and+Examples&amp;rft.place=New+York&amp;rft.pages=92-119&amp;rft.pub=McGraw-Hill+Book+Company&amp;rft.date=1971&amp;rft.isbn=0-07-004357-4&amp;rft.aulast=Burks&amp;rft.aufirst=Arthur+W.&amp;rft.au=Goldstine%2C+Herman+H.&amp;rft.au=von+Neumann%2C+John&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fcomputerstructur00bell%2Fpage%2F92&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFCopeland2004" class="citation book cs1"><a href="/wiki/Jack_Copeland" title="Jack Copeland">Copeland, Jack</a>, ed. (2004). <i>The Essential Turing: Seminal Writings in Computing, Logic, Philosophy, Artificial Intelligence, and Artificial Life plus The Secrets of Enigma</i>. Oxford UK: Oxford University Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-19-825079-7" title="Special:BookSources/0-19-825079-7"><bdi>0-19-825079-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Essential+Turing%3A+Seminal+Writings+in+Computing%2C+Logic%2C+Philosophy%2C+Artificial+Intelligence%2C+and+Artificial+Life+plus+The+Secrets+of+Enigma&amp;rft.place=Oxford+UK&amp;rft.pub=Oxford+University+Press&amp;rft.date=2004&amp;rft.isbn=0-19-825079-7&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFCopelandFan2023" class="citation journal cs1">Copeland, B. J.; Fan, Z. (2023). "Turing and Von Neumann: From Logic to the Computer". <i>Philosophies</i>. <b>8</b> (22). <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.3390%2Fphilosophies8020022">10.3390/philosophies8020022</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Philosophies&amp;rft.atitle=Turing+and+Von+Neumann%3A+From+Logic+to+the+Computer&amp;rft.volume=8&amp;rft.issue=22&amp;rft.date=2023&amp;rft_id=info%3Adoi%2F10.3390%2Fphilosophies8020022&amp;rft.aulast=Copeland&amp;rft.aufirst=B.+J.&amp;rft.au=Fan%2C+Z.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDavis1980" class="citation book cs1"><a href="/wiki/Martin_Davis_(mathematician)" title="Martin Davis (mathematician)">Davis, Martin</a> (1980). "What is Computation?". In <a href="/wiki/Lynn_Steen" title="Lynn Steen">Steen, Lynn Arthur</a> (ed.). <span class="cs1-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/mathematicstoday00stee"><i>Mathematics Today: Twelve Informal Essays</i></a></span>. New York: Vintage Books (Random House). <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-394-74503-9" title="Special:BookSources/978-0-394-74503-9"><bdi>978-0-394-74503-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=What+is+Computation%3F&amp;rft.btitle=Mathematics+Today%3A+Twelve+Informal+Essays&amp;rft.place=New+York&amp;rft.pub=Vintage+Books+%28Random+House%29&amp;rft.date=1980&amp;rft.isbn=978-0-394-74503-9&amp;rft.aulast=Davis&amp;rft.aufirst=Martin&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fmathematicstoday00stee&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDavis2000" class="citation book cs1">Davis, Martin (2000). <i>Engines of Logic: Mathematicians and the origin of the Computer</i> (1st&#160;ed.). New York: W. W. Norton &amp; Company. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-393-32229-7" title="Special:BookSources/0-393-32229-7"><bdi>0-393-32229-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Engines+of+Logic%3A+Mathematicians+and+the+origin+of+the+Computer&amp;rft.place=New+York&amp;rft.edition=1st&amp;rft.pub=W.+W.+Norton+%26+Company&amp;rft.date=2000&amp;rft.isbn=0-393-32229-7&amp;rft.aulast=Davis&amp;rft.aufirst=Martin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDavis2018" class="citation book cs1">Davis, Martin (2018). <i>The Universal Computer: The Road from Leibniz to Turing</i>. Taylor &amp; Francis Group. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1138413931" title="Special:BookSources/978-1138413931"><bdi>978-1138413931</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Universal+Computer%3A+The+Road+from+Leibniz+to+Turing&amp;rft.pub=Taylor+%26+Francis+Group&amp;rft.date=2018&amp;rft.isbn=978-1138413931&amp;rft.aulast=Davis&amp;rft.aufirst=Martin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFHennieStearns1966" class="citation journal cs1">Hennie, F. C.; Stearns, R. E. (1966). "Two-Tape Simulation of Multitape Turing Machines". <i>Journal of the ACM</i>. <b>13</b> (4): 533. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F321356.321362">10.1145/321356.321362</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:2347143">2347143</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.atitle=Two-Tape+Simulation+of+Multitape+Turing+Machines&amp;rft.volume=13&amp;rft.issue=4&amp;rft.pages=533&amp;rft.date=1966&amp;rft_id=info%3Adoi%2F10.1145%2F321356.321362&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A2347143%23id-name%3DS2CID&amp;rft.aulast=Hennie&amp;rft.aufirst=F.+C.&amp;rft.au=Stearns%2C+R.+E.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFKnuth1973" class="citation book cs1 cs1-prop-long-vol"><a href="/wiki/Donald_Knuth" title="Donald Knuth">Knuth, Donald E.</a> (1973). <i>The Art of Computer Programming</i>. Vol.&#160;1/Fundamental Algorithms (second&#160;ed.). Addison-Wesley Publishing Company.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Art+of+Computer+Programming&amp;rft.edition=second&amp;rft.pub=Addison-Wesley+Publishing+Company&amp;rft.date=1973&amp;rft.aulast=Knuth&amp;rft.aufirst=Donald+E.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFKudlekRogozhin2002" class="citation conference cs1">Kudlek, Manfred; Rogozhin, Yurii (2002). "A universal Turing machine with 3 states and 9 symbols". In Kuich, Werner; Rozenberg, Grzegorz; Salomaa, Arto (eds.). <i>Developments in Language Theory: 5th International Conference, DLT 2001 Wien, Austria, July 16–21, 2001, Revised Papers</i>. Lecture Notes in Computer Science. Vol.&#160;2295. Springer. pp.&#160;311–318. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F3-540-46011-x_27">10.1007/3-540-46011-x_27</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-43453-5" title="Special:BookSources/978-3-540-43453-5"><bdi>978-3-540-43453-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=A+universal+Turing+machine+with+3+states+and+9+symbols&amp;rft.btitle=Developments+in+Language+Theory%3A+5th+International+Conference%2C+DLT+2001+Wien%2C+Austria%2C+July+16%E2%80%9321%2C+2001%2C+Revised+Papers&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=311-318&amp;rft.pub=Springer&amp;rft.date=2002&amp;rft_id=info%3Adoi%2F10.1007%2F3-540-46011-x_27&amp;rft.isbn=978-3-540-43453-5&amp;rft.aulast=Kudlek&amp;rft.aufirst=Manfred&amp;rft.au=Rogozhin%2C+Yurii&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFNearyWoods2009" class="citation journal cs1">Neary, Turlough; Woods, Damien (2009). <a rel="nofollow" class="external text" href="http://mural.maynoothuniversity.ie/12416/1/Woods_FourSmall_2009.pdf">"Four Small Universal Turing Machines"</a> <span class="cs1-format">(PDF)</span>. <i>Fundamenta Informaticae</i>. <b>91</b> (1): 123–144. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.3233%2FFI-2009-0036">10.3233/FI-2009-0036</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Fundamenta+Informaticae&amp;rft.atitle=Four+Small+Universal+Turing+Machines&amp;rft.volume=91&amp;rft.issue=1&amp;rft.pages=123-144&amp;rft.date=2009&amp;rft_id=info%3Adoi%2F10.3233%2FFI-2009-0036&amp;rft.aulast=Neary&amp;rft.aufirst=Turlough&amp;rft.au=Woods%2C+Damien&amp;rft_id=http%3A%2F%2Fmural.maynoothuniversity.ie%2F12416%2F1%2FWoods_FourSmall_2009.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFNearyWoods2009b" class="citation book cs1">Neary, Turlough; Woods, Damien (2009b). "Small Weakly Universal Turing Machines". <a href="/wiki/International_Symposium_on_Fundamentals_of_Computation_Theory" title="International Symposium on Fundamentals of Computation Theory"><i>17th International Symposium on Fundamentals of Computation Theory</i></a>. Lecture Notes in Computer Science. Vol.&#160;5699. Springer. pp.&#160;262–273.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Small+Weakly+Universal+Turing+Machines&amp;rft.btitle=17th+International+Symposium+on+Fundamentals+of+Computation+Theory&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=262-273&amp;rft.pub=Springer&amp;rft.date=2009&amp;rft.aulast=Neary&amp;rft.aufirst=Turlough&amp;rft.au=Woods%2C+Damien&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFPenrose1989" class="citation book cs1"><a href="/wiki/Roger_Penrose" title="Roger Penrose">Penrose, Roger</a> (1989). <a href="/wiki/The_Emperor%27s_New_Mind" title="The Emperor&#39;s New Mind"><i>The Emperor's New Mind</i></a>. Oxford UK: Oxford University Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-19-851973-7" title="Special:BookSources/0-19-851973-7"><bdi>0-19-851973-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Emperor%27s+New+Mind&amp;rft.place=Oxford+UK&amp;rft.pub=Oxford+University+Press&amp;rft.date=1989&amp;rft.isbn=0-19-851973-7&amp;rft.aulast=Penrose&amp;rft.aufirst=Roger&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFRogozhin1996" class="citation journal cs1">Rogozhin, Yurii (1996). <a rel="nofollow" class="external text" href="https://doi.org/10.1016%2FS0304-3975%2896%2900077-1">"Small Universal Turing Machines"</a>. <i>Theoretical Computer Science</i>. <b>168</b> (2): 215–240. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1016%2FS0304-3975%2896%2900077-1">10.1016/S0304-3975(96)00077-1</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Theoretical+Computer+Science&amp;rft.atitle=Small+Universal+Turing+Machines&amp;rft.volume=168&amp;rft.issue=2&amp;rft.pages=215-240&amp;rft.date=1996&amp;rft_id=info%3Adoi%2F10.1016%2FS0304-3975%2896%2900077-1&amp;rft.aulast=Rogozhin&amp;rft.aufirst=Yurii&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1016%252FS0304-3975%252896%252900077-1&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li></ul>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=10" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1054258005"><div class="refbegin refbegin-hanging-indents refbegin-columns references-column-width" style="column-width: 30em">
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFArbib1988" class="citation book cs1">Arbib, M. A. (1988). "From universal Turing machines to self-reproduction". In Herken, R. (ed.). <i>A half-century survey on The Universal Turing Machine</i>. Oxford University Press. pp.&#160;177–189. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-19-853741-0" title="Special:BookSources/978-0-19-853741-0"><bdi>978-0-19-853741-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=From+universal+Turing+machines+to+self-reproduction&amp;rft.btitle=A+half-century+survey+on+The+Universal+Turing+Machine&amp;rft.pages=177-189&amp;rft.pub=Oxford+University+Press&amp;rft.date=1988&amp;rft.isbn=978-0-19-853741-0&amp;rft.aulast=Arbib&amp;rft.aufirst=M.+A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDavis1965" class="citation book cs1">Davis, Martin, ed. (1965). <span class="cs1-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/undecidablebasic0000davi"><i>The Undecidable</i></a></span> (Reprint&#160;ed.). Hewlett, New York: Raven Press.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Undecidable&amp;rft.place=Hewlett%2C+New+York&amp;rft.edition=Reprint&amp;rft.pub=Raven+Press&amp;rft.date=1965&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fundecidablebasic0000davi&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFHerken1995" class="citation cs2">Herken, Rolf (1995), <i>The Universal Turing Machine: A Half-Century Survey</i>, Springer Verlag, <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/3-211-82637-8" title="Special:BookSources/3-211-82637-8"><bdi>3-211-82637-8</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Universal+Turing+Machine%3A+A+Half-Century+Survey&amp;rft.pub=Springer+Verlag&amp;rft.date=1995&amp;rft.isbn=3-211-82637-8&amp;rft.aulast=Herken&amp;rft.aufirst=Rolf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span>.</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFMinsky1962" class="citation cs2"><a href="/wiki/Marvin_Minsky" title="Marvin Minsky">Minsky, Marvin</a> (1962), "Size and Structure of Universal Turing Machines using Tag Systems, Recursive Function Theory", <i>Proc. Symp. Pure Mathematics</i>, Providence RI: American Mathematical Society, <b>5</b>: 229–238, <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1090%2Fpspum%2F005%2F0142452">10.1090/pspum/005/0142452</a></span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proc.+Symp.+Pure+Mathematics&amp;rft.atitle=Size+and+Structure+of+Universal+Turing+Machines+using+Tag+Systems%2C+Recursive+Function+Theory&amp;rft.volume=5&amp;rft.pages=229-238&amp;rft.date=1962&amp;rft_id=info%3Adoi%2F10.1090%2Fpspum%2F005%2F0142452&amp;rft.aulast=Minsky&amp;rft.aufirst=Marvin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span>.</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFShannon1956" class="citation cs2"><a href="/wiki/Claude_Shannon" title="Claude Shannon">Shannon, Claude</a> (1956), "A Universal Turing Machine with Two Internal States", <i>Automata Studies</i>, Princeton, NJ: Princeton University Press, pp.&#160;157–165</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=A+Universal+Turing+Machine+with+Two+Internal+States&amp;rft.btitle=Automata+Studies&amp;rft.place=Princeton%2C+NJ&amp;rft.pages=157-165&amp;rft.pub=Princeton+University+Press&amp;rft.date=1956&amp;rft.aulast=Shannon&amp;rft.aufirst=Claude&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span>.</li></ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Universal_Turing_machine&amp;action=edit&amp;section=11" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFSmith" class="citation web cs1">Smith, Alvy Ray. <a rel="nofollow" class="external text" href="http://alvyray.com/CreativeCommons/BizCardUniversalTuringMachine_v2.3.pdf">"A Business Card Universal Turing Machine"</a> <span class="cs1-format">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">2 January</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=A+Business+Card+Universal+Turing+Machine&amp;rft.aulast=Smith&amp;rft.aufirst=Alvy+Ray&amp;rft_id=http%3A%2F%2Falvyray.com%2FCreativeCommons%2FBizCardUniversalTuringMachine_v2.3.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AUniversal+Turing+machine" class="Z3988"></span></li></ul>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox authority-control" aria-label="Navbox" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control databases</a>: National <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless"><a href="https://www.wikidata.org/wiki/Q2703890#identifiers" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></span></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><span class="uid"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/4203523-5">Germany</a></span></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1433
+Cached time: 20231031010836
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.655 seconds
+Real time usage: 0.912 seconds
+Preprocessor visited node count: 4321/1000000
+Post‐expand include size: 65535/2097152 bytes
+Template argument size: 5150/2097152 bytes
+Highest expansion depth: 19/100
+Expensive parser function count: 7/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 65913/5000000 bytes
+Lua time usage: 0.468/10.000 seconds
+Lua memory usage: 20116941/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  821.992      1 -total
+ 23.16%  190.374      6 Template:Anli
+ 17.10%  140.560     19 Template:Sfnp
+ 11.60%   95.351      7 Template:Cite_journal
+  9.10%   74.806      1 Template:Turing
+  8.89%   73.116      1 Template:Sidebar
+  7.36%   60.481      1 Template:Authority_control
+  7.28%   59.812      2 Template:Fix
+  7.27%   59.767     11 Template:Cite_book
+  7.18%   59.029      1 Template:Pn
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:71435-0!canonical and timestamp 20231031010835 and revision id 1179081886. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Universal_Turing_machine&amp;oldid=1179081886">https://en.wikipedia.org/w/index.php?title=Universal_Turing_machine&amp;oldid=1179081886</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Category</a>: <ul><li><a href="/wiki/Category:Turing_machine" title="Category:Turing machine">Turing machine</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_articles_needing_page_number_citations_from_October_2023" title="Category:Wikipedia articles needing page number citations from October 2023">Wikipedia articles needing page number citations from October 2023</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Use_dmy_dates_from_January_2020" title="Category:Use dmy dates from January 2020">Use dmy dates from January 2020</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_October_2023" title="Category:Articles with unsourced statements from October 2023">Articles with unsourced statements from October 2023</a></li><li><a href="/wiki/Category:CS1:_long_volume_value" title="Category:CS1: long volume value">CS1: long volume value</a></li><li><a href="/wiki/Category:Articles_with_GND_identifiers" title="Category:Articles with GND identifiers">Articles with GND identifiers</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 7 October 2023, at 19:21<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Universal_Turing_machine&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw1353","wgBackendResponseTime":140,"wgPageParseReport":{"limitreport":{"cputime":"0.655","walltime":"0.912","ppvisitednodes":{"value":4321,"limit":1000000},"postexpandincludesize":{"value":65535,"limit":2097152},"templateargumentsize":{"value":5150,"limit":2097152},"expansiondepth":{"value":19,"limit":100},"expensivefunctioncount":{"value":7,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":65913,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  821.992      1 -total"," 23.16%  190.374      6 Template:Anli"," 17.10%  140.560     19 Template:Sfnp"," 11.60%   95.351      7 Template:Cite_journal","  9.10%   74.806      1 Template:Turing","  8.89%   73.116      1 Template:Sidebar","  7.36%   60.481      1 Template:Authority_control","  7.28%   59.812      2 Template:Fix","  7.27%   59.767     11 Template:Cite_book","  7.18%   59.029      1 Template:Pn"]},"scribunto":{"limitreport-timeusage":{"value":"0.468","limit":"10.000"},"limitreport-memusage":{"value":20116941,"limit":52428800},"limitreport-logs":"anchor_id_list = table#1 {\n    [\"CITEREFArbib1988\"] = 1,\n    [\"CITEREFAroraBarak2009\"] = 1,\n    [\"CITEREFAspertiRicciotti2015\"] = 1,\n    [\"CITEREFBurksGoldstinevon_Neumann1971\"] = 1,\n    [\"CITEREFCopeland2004\"] = 1,\n    [\"CITEREFCopelandFan2023\"] = 1,\n    [\"CITEREFDavis1965\"] = 1,\n    [\"CITEREFDavis1980\"] = 1,\n    [\"CITEREFDavis2000\"] = 1,\n    [\"CITEREFDavis2018\"] = 1,\n    [\"CITEREFHennieStearns1966\"] = 1,\n    [\"CITEREFHerken1995\"] = 1,\n    [\"CITEREFKnuth1973\"] = 1,\n    [\"CITEREFKudlekRogozhin2002\"] = 1,\n    [\"CITEREFMinsky1962\"] = 1,\n    [\"CITEREFNearyWoods2009\"] = 1,\n    [\"CITEREFNearyWoods2009b\"] = 1,\n    [\"CITEREFPenrose1989\"] = 1,\n    [\"CITEREFRogozhin1996\"] = 1,\n    [\"CITEREFShannon1956\"] = 1,\n    [\"CITEREFSmith\"] = 1,\n    [\"CITEREFTuring1937\"] = 1,\n    [\"CITEREFTuring1938\"] = 1,\n}\ntemplate_list = table#1 {\n    [\"Anli\"] = 6,\n    [\"Authority control\"] = 1,\n    [\"Block indent\"] = 3,\n    [\"Blockquote\"] = 2,\n    [\"CNone\"] = 4,\n    [\"Citation\"] = 3,\n    [\"Cite book\"] = 11,\n    [\"Cite conference\"] = 1,\n    [\"Cite journal\"] = 7,\n    [\"Cite web\"] = 1,\n    [\"Cn\"] = 1,\n    [\"DEFAULTSORT:Universal Turing Machine\"] = 1,\n    [\"Efn\"] = 2,\n    [\"Further\"] = 1,\n    [\"Harvp\"] = 4,\n    [\"Nbh\"] = 6,\n    [\"Notelist\"] = 1,\n    [\"Pn\"] = 1,\n    [\"Redirect\"] = 1,\n    [\"Refbegin\"] = 2,\n    [\"Refend\"] = 2,\n    [\"Reflist\"] = 1,\n    [\"Sfnp\"] = 19,\n    [\"Short description\"] = 1,\n    [\"Turing\"] = 1,\n    [\"Use dmy dates\"] = 1,\n}\narticle_whitelist = table#1 {\n}\n"},"cachereport":{"origin":"mw1433","timestamp":"20231031010836","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Universal Turing machine","url":"https:\/\/en.wikipedia.org\/wiki\/Universal_Turing_machine","sameAs":"http:\/\/www.wikidata.org\/entity\/Q2703890","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q2703890","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-08-14T04:16:51Z","dateModified":"2023-10-07T19:21:35Z","headline":"turing machine that can simulate an arbitrary Turing machine on arbitrary input by reading both the description of the machine to be simulated as well as the input thereof from its own tape"}</script>
+</body>
+</html>

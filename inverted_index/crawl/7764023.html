@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Iterative and incremental development - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"05556585-64c4-4446-9498-988361deed6d","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Iterative_and_incremental_development","wgTitle":"Iterative and incremental development","wgCurRevisionId":1162994616,"wgRevisionId":1162994616,"wgArticleId":163878,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","All articles with dead external links","Articles with dead external links from January 2020","Articles with permanently dead external links","Articles with short description","Short description is different from Wikidata","Wikipedia articles needing clarification from October 2018","All Wikipedia articles needing clarification",
+"Wikipedia articles needing clarification from November 2019","Wikipedia articles needing clarification from November 2018","All articles with unsourced statements","Articles with unsourced statements from November 2018","Articles lacking in-text citations from September 2010","All articles lacking in-text citations","Software development philosophies","Software project management"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Iterative_and_incremental_development","wgRelevantArticleId":163878,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,
+"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1543216","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":
+"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Iterative_Process_Diagram.svg/1200px-Iterative_Process_Diagram.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="673">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Iterative_Process_Diagram.svg/800px-Iterative_Process_Diagram.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="448">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Iterative_Process_Diagram.svg/640px-Iterative_Process_Diagram.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="359">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Iterative and incremental development - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Iterative_and_incremental_development">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Iterative_and_incremental_development">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Iterative_and_incremental_development rootpage-Iterative_and_incremental_development skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Iterative+and+incremental+development" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Iterative+and+incremental+development" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Iterative+and+incremental+development" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Iterative+and+incremental+development" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Overview"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Overview">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Overview</div>
+		</a>
+		
+			<button aria-controls="toc-Overview-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Overview subsection</span>
+			</button>
+		
+		<ul id="toc-Overview-sublist" class="vector-toc-list">
+			<li id="toc-Phases"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Phases">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.1</span>Phases</div>
+			</a>
+			
+			<ul id="toc-Phases-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Usage/History"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Usage/History">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.2</span>Usage/History</div>
+			</a>
+			
+			<ul id="toc-Usage/History-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Contrast_with_Waterfall_development"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Contrast_with_Waterfall_development">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.3</span>Contrast with Waterfall development</div>
+			</a>
+			
+			<ul id="toc-Contrast_with_Waterfall_development-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Implementation_guidelines"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Implementation_guidelines">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.4</span>Implementation guidelines</div>
+			</a>
+			
+			<ul id="toc-Implementation_guidelines-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Use_in_hardware_and_embedded_systems"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Use_in_hardware_and_embedded_systems">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Use in hardware and embedded systems</div>
+		</a>
+		
+		<ul id="toc-Use_in_hardware_and_embedded_systems-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Notes"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Notes">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Notes</div>
+		</a>
+		
+		<ul id="toc-Notes-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Iterative and incremental development</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 15 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-15" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">15 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D8%AA%D9%83%D8%B1%D8%B1_%D9%88%D8%AA%D8%B5%D8%A7%D8%B9%D8%AF%D9%8A" title="تطوير متكرر وتصاعدي – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Desenvolupament_iteratiu_i_incremental" title="Desenvolupament iteratiu i incremental – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Inkrementelles_Vorgehensmodell" title="Inkrementelles Vorgehensmodell – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Desarrollo_iterativo_y_creciente" title="Desarrollo iterativo y creciente – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%AA%D9%88%D8%B3%D8%B9%D9%87_%D8%AA%DA%A9%D8%B1%D8%A7%D8%B1_%D8%B4%D9%88%D9%86%D8%AF%D9%87_%D9%88_%D8%A7%D9%81%D8%B2%D8%A7%DB%8C%D8%B4%DB%8C" title="توسعه تکرار شونده و افزایشی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%B0%98%EB%B3%B5%EC%A0%81_%EC%A0%90%EC%A7%84%EC%A0%81_%EA%B0%9C%EB%B0%9C" title="반복적 점진적 개발 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Modello_incrementale" title="Modello incrementale – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Iterative_application_development" title="Iterative application development – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E5%8F%8D%E5%BE%A9%E5%9E%8B%E9%96%8B%E7%99%BA" title="反復型開発 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Model_przyrostowy" title="Model przyrostowy – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%98%D1%82%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0" title="Итеративная разработка – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%98%D1%82%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8_%D0%B8_%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD_%D1%80%D0%B0%D0%B7%D0%B2%D0%BE%D1%98" title="Итеративни и постепен развој – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%86%D1%82%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0_%D1%82%D0%B0_%D1%96%D0%BD%D0%BA%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BD%D0%B0_%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B0" title="Ітеративна та інкрементна розробка – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E7%96%8A%E4%BB%A3%E5%A2%9E%E9%80%B2%E9%96%8B%E7%99%BC" title="疊代增進開發 – Cantonese" lang="yue" hreflang="yue" class="interlanguage-link-target"><span>粵語</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E8%BF%AD%E4%BB%A3%E5%BC%8F%E5%BC%80%E5%8F%91" title="迭代式开发 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1543216#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Iterative_and_incremental_development" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Iterative_and_incremental_development" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Iterative_and_incremental_development"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Iterative_and_incremental_development"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Iterative_and_incremental_development" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Iterative_and_incremental_development" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Iterative_and_incremental_development&amp;oldid=1162994616" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Iterative_and_incremental_development&amp;id=1162994616&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FIterative_and_incremental_development"><span>Get shortened URL</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1543216" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Iterative_and_incremental_development&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Iterative_and_incremental_development&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Development methodology</div>
+<p><b>Iterative and incremental development</b> is any combination of both <a href="/wiki/Iterative_design" title="Iterative design">iterative design</a> or <a href="/wiki/Iterative_method" title="Iterative method">iterative method</a> and <a href="/wiki/Incremental_build_model" title="Incremental build model">incremental build model</a> for <a href="/wiki/New_product_development" title="New product development">development</a>.
+</p><p>Usage of the term began in <a href="/wiki/Software_development" title="Software development">software development</a>, with a long-standing combination of the two terms <i>iterative</i> and <i>incremental</i><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> having been widely suggested for large development efforts. For example, the 1985 <a href="/wiki/DOD-STD-2167" class="mw-redirect" title="DOD-STD-2167">DOD-STD-2167</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+mentions (in section 4.1.2): "During software development, more than one iteration of the software development cycle may be in progress at the same time." and "This process may be described as an 'evolutionary acquisition' or 'incremental build' approach." In software, the relationship between iterations and increments is determined by the overall <a href="/wiki/Software_development_process" title="Software development process">software development process</a>.
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar sidebar-collapse nomobile"><tbody><tr><td class="sidebar-pretitle">Part of a series on</td></tr><tr><th class="sidebar-title-with-pretitle" style="background:#5137e2;padding:0.25em;border-bottom:5px solid whitesmoke;"><a href="/wiki/Software_development" title="Software development"><span style="color:white">Software development<br /></span></a></th></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Core activities</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Data_modeling" title="Data modeling">Data modeling</a></li>
+<li><a href="/wiki/Software_development_process" title="Software development process">Processes</a></li>
+<li><a href="/wiki/Requirements_analysis" title="Requirements analysis">Requirements</a></li>
+<li><a href="/wiki/Software_design" title="Software design">Design</a></li>
+<li><a href="/wiki/Software_construction" title="Software construction">Construction</a></li>
+<li><a href="/wiki/Software_engineering" title="Software engineering">Engineering</a></li>
+<li><a href="/wiki/Software_testing" title="Software testing">Testing</a></li>
+<li><a href="/wiki/Debugging" title="Debugging">Debugging</a></li>
+<li><a href="/wiki/Software_deployment" title="Software deployment">Deployment</a></li>
+<li><a href="/wiki/Software_maintenance" title="Software maintenance">Maintenance</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Paradigms and models</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Agile_software_development" title="Agile software development">Agile</a></li>
+<li><a href="/wiki/Cleanroom_software_engineering" title="Cleanroom software engineering">Cleanroom</a></li>
+<li><a href="/wiki/Incremental_build_model" title="Incremental build model">Incremental</a></li>
+<li><a href="/wiki/Software_prototyping" title="Software prototyping">Prototyping</a></li>
+<li><a href="/wiki/Spiral_model" title="Spiral model">Spiral</a></li>
+<li><a href="/wiki/V-Model_(software_development)" class="mw-redirect" title="V-Model (software development)">V model</a></li>
+<li><a href="/wiki/Waterfall_model" title="Waterfall model">Waterfall</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title"><a href="/wiki/Software_development_methodology" class="mw-redirect" title="Software development methodology">Methodologies</a> and frameworks</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Adaptive_software_development" title="Adaptive software development">ASD</a></li>
+<li><a href="/wiki/DevOps" title="DevOps">DevOps</a></li>
+<li><a href="/wiki/Disciplined_agile_delivery" title="Disciplined agile delivery">DAD</a></li>
+<li><a href="/wiki/Dynamic_systems_development_method" title="Dynamic systems development method">DSDM</a></li>
+<li><a href="/wiki/Feature-driven_development" title="Feature-driven development">FDD</a></li>
+<li><a class="mw-selflink selflink">IID</a></li>
+<li><a href="/wiki/Kanban_(development)" title="Kanban (development)">Kanban</a></li>
+<li><a href="/wiki/Lean_software_development" title="Lean software development">Lean SD</a></li>
+<li><a href="/wiki/Scrum_(software_development)#Large-scale_Scrum" title="Scrum (software development)">LeSS</a></li>
+<li><a href="/wiki/Model-driven_development" class="mw-redirect" title="Model-driven development">MDD</a></li>
+<li><a href="/wiki/Microsoft_Solutions_Framework" title="Microsoft Solutions Framework">MSF</a></li>
+<li><a href="/wiki/Personal_software_process" title="Personal software process">PSP</a></li>
+<li><a href="/wiki/Rapid_application_development" title="Rapid application development">RAD</a></li>
+<li><a href="/wiki/Rational_Unified_Process" class="mw-redirect" title="Rational Unified Process">RUP</a></li>
+<li><a href="/wiki/Scaled_agile_framework" title="Scaled agile framework">SAFe</a></li>
+<li><a href="/wiki/Scrum_(software_development)" title="Scrum (software development)">Scrum</a></li>
+<li><a href="/wiki/SEMAT" title="SEMAT">SEMAT</a></li>
+<li><a href="/wiki/Test-driven_development" title="Test-driven development">TDD</a></li>
+<li><a href="/wiki/Team_software_process" title="Team software process">TSP</a></li>
+<li><a href="/wiki/OpenUP" title="OpenUP">OpenUP</a></li>
+<li><a href="/wiki/Unified_Process" title="Unified Process">UP</a></li>
+<li><a href="/wiki/Extreme_programming" title="Extreme programming">XP</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Supporting disciplines</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Software_configuration_management" title="Software configuration management">Configuration management</a></li>
+<li><a href="/wiki/Software_documentation" title="Software documentation">Documentation</a></li>
+<li><a href="/wiki/Software_quality_assurance" title="Software quality assurance">Software quality assurance</a></li>
+<li><a href="/wiki/Software_project_management" title="Software project management">Project management</a></li>
+<li><a href="/wiki/User_experience" title="User experience">User experience</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Practices</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Acceptance_test%E2%80%93driven_development" class="mw-redirect" title="Acceptance test–driven development">ATDD</a></li>
+<li><a href="/wiki/Behavior-driven_development" title="Behavior-driven development">BDD</a></li>
+<li><a href="/wiki/Extreme_programming_practices#Collective_code_ownership" title="Extreme programming practices">CCO</a></li>
+<li><a href="/wiki/Continuous_integration" title="Continuous integration">CI</a></li>
+<li><a href="/wiki/Continuous_delivery" title="Continuous delivery">CD</a></li>
+<li><a href="/wiki/Domain-driven_design" title="Domain-driven design">DDD</a></li>
+<li><a href="/wiki/Pair_programming" title="Pair programming">PP</a></li>
+<li><a href="/wiki/Specification_by_example" title="Specification by example">SBE</a></li>
+<li><a href="/wiki/Stand-up_meeting" title="Stand-up meeting">Stand-up</a></li>
+<li><a href="/wiki/Test-driven_development" title="Test-driven development">TDD</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title"><a href="/wiki/Programming_tool" title="Programming tool">Tools</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Compiler" title="Compiler">Compiler</a></li>
+<li><a href="/wiki/Debugger" title="Debugger">Debugger</a></li>
+<li><a href="/wiki/Profiling_(computer_programming)" title="Profiling (computer programming)">Profiler</a></li>
+<li><a href="/wiki/Graphical_user_interface_builder" title="Graphical user interface builder">GUI designer</a></li>
+<li><a href="/wiki/UML_tool" title="UML tool">UML Modeling</a></li>
+<li><a href="/wiki/Integrated_development_environment" title="Integrated development environment">IDE</a></li>
+<li><a href="/wiki/Build_automation" title="Build automation">Build automation</a></li>
+<li><a href="/wiki/Application-release_automation" title="Application-release automation">Release automation</a></li>
+<li><a href="/wiki/Infrastructure_as_code" title="Infrastructure as code">Infrastructure as code</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Standards and bodies of knowledge</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Capability_Maturity_Model_Integration" title="Capability Maturity Model Integration">CMMI</a></li>
+<li><a href="/wiki/IEEE_Standards_Association" title="IEEE Standards Association">IEEE standards</a></li>
+<li><a href="/wiki/ISO_9001" class="mw-redirect" title="ISO 9001">ISO 9001</a></li>
+<li><a href="/wiki/ISO/IEC_JTC_1/SC_7" title="ISO/IEC JTC 1/SC 7">ISO/IEC standards</a></li>
+<li><a href="/wiki/Project_Management_Body_of_Knowledge" title="Project Management Body of Knowledge">PMBOK</a></li>
+<li><a href="/wiki/Software_Engineering_Body_of_Knowledge" title="Software Engineering Body of Knowledge">SWEBOK</a></li>
+<li><a href="/wiki/ITIL" title="ITIL">ITIL</a></li>
+<li><a href="/wiki/International_Requirements_Engineering_Board" title="International Requirements Engineering Board">IREB</a></li>
+<li><a href="/wiki/Object_Management_Group" title="Object Management Group">OMG</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Glossaries</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Glossary_of_artificial_intelligence" title="Glossary of artificial intelligence">Artificial intelligence</a></li>
+<li><a href="/wiki/Glossary_of_computer_science" title="Glossary of computer science">Computer science</a></li>
+<li><a href="/wiki/Glossary_of_electrical_and_electronics_engineering" title="Glossary of electrical and electronics engineering">Electrical and electronics engineering</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Outlines</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Outline_of_software_development" title="Outline of software development">Outline of software development</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-navbar"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Software_development_process" title="Template:Software development process"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Software_development_process" title="Template talk:Software development process"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Software_development_process" title="Special:EditPage/Template:Software development process"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Iterative_Process_Diagram.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/5/58/Iterative_Process_Diagram.svg/300px-Iterative_Process_Diagram.svg.png" decoding="async" width="300" height="168" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/58/Iterative_Process_Diagram.svg/450px-Iterative_Process_Diagram.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/58/Iterative_Process_Diagram.svg/600px-Iterative_Process_Diagram.svg.png 2x" data-file-width="512" data-file-height="287" /></a><figcaption>Iterative development model</figcaption></figure>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit&amp;section=1" title="Edit section: Overview"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:Agile_Project_Management_by_Planbox.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/5/50/Agile_Project_Management_by_Planbox.png/220px-Agile_Project_Management_by_Planbox.png" decoding="async" width="220" height="135" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/50/Agile_Project_Management_by_Planbox.png/330px-Agile_Project_Management_by_Planbox.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/50/Agile_Project_Management_by_Planbox.png/440px-Agile_Project_Management_by_Planbox.png 2x" data-file-width="1048" data-file-height="642" /></a><figcaption>A simplified version of a typical iteration cycle in agile project management</figcaption></figure><p>The basic idea behind this method is to develop a system through repeated cycles (iterative) and in smaller portions at a time (incremental), allowing <a href="/wiki/Software_developer" class="mw-redirect" title="Software developer">software developers</a> to take advantage of what was learned during development of earlier parts or versions of the system.  Learning comes from both the development and use of the system, where possible key steps in the process start with a simple implementation of a subset of the software requirements and iteratively enhance the evolving versions until the full system is implemented. At each <a href="/wiki/Iteration" title="Iteration">iteration</a>, design modifications are made and new functional capabilities are added.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p><p>The procedure itself consists of the initialization step, the iteration step, and the Project Control List. The initialization step creates a base version of the system. The goal for this initial implementation is to create a product to which the user can react. It should offer a sampling of the key aspects of the problem and provide a solution that is simple enough to understand and implement easily.  To guide the iteration process, a project control list is created that contains a record of all tasks that need to be performed. It includes items such as new features to be implemented and areas of redesign of the existing solution. The control list is constantly being revised as a result of the analysis phase.
+</p><p>The iteration involves the redesign and implementation of iteration is to be simple, straightforward, and modular, supporting redesign at that stage or as a task added to the project control list.<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (October 2018)">clarification needed</span></a></i>&#93;</sup> The level of design detail is not dictated by the iterative approach.  In a light-weight iterative project the code may represent the major source of <a href="/wiki/Software_documentation" title="Software documentation">documentation</a> of the system; however, in a critical iterative project a formal <a href="/wiki/Software_Design_Document" class="mw-redirect" title="Software Design Document">Software Design Document</a> may be used. The analysis of an iteration is based upon user feedback, and the program analysis facilities available. It involves analysis of the structure, modularity, <a href="/wiki/Usability" title="Usability">usability</a>, reliability, efficiency, &amp; achievement of goals. The project control list is modified in light of the analysis results.
+</p>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Development-iterative.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/1/19/Development-iterative.png/320px-Development-iterative.png" decoding="async" width="320" height="206" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/19/Development-iterative.png/480px-Development-iterative.png 1.5x, //upload.wikimedia.org/wikipedia/commons/1/19/Development-iterative.png 2x" data-file-width="493" data-file-height="317" /></a><figcaption>Iterative development.</figcaption></figure>
+<h3><span class="mw-headline" id="Phases">Phases</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit&amp;section=2" title="Edit section: Phases"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Incremental development slices the system functionality into increments (portions).  In each increment, a slice of functionality is delivered through <a href="/wiki/Cross_discipline" class="mw-redirect" title="Cross discipline">cross-discipline</a> work, from the <a href="/wiki/Requirements" class="mw-redirect" title="Requirements">requirements</a> to the <a href="/wiki/Software_deployment" title="Software deployment">deployment</a>.  The <a href="/wiki/Unified_Process" title="Unified Process">Unified Process</a> groups increments/iterations into phases: inception, elaboration, construction, and transition.
+</p>
+<ul><li>Inception identifies project scope, requirements (functional and non-functional) and risks at a high level but in enough detail that work can be estimated.</li>
+<li>Elaboration delivers a working architecture that mitigates the top risks and fulfills the non-functional requirements.</li>
+<li>Construction incrementally fills-in the architecture with production-ready code produced from analysis, design, implementation, and testing of the functional requirements.</li>
+<li>Transition delivers the system into the production operating environment.</li></ul>
+<p>Each of the phases may be divided into 1 or more iterations, which are usually time-boxed rather than feature-boxed.  Architects and analysts work one iteration ahead of developers and testers to keep their work-product backlog full.
+</p>
+<h3><span id="Usage.2FHistory"></span><span class="mw-headline" id="Usage/History">Usage/History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit&amp;section=3" title="Edit section: Usage/History"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Many examples of early usage are provided in <a href="/wiki/Craig_Larman" title="Craig Larman">Craig Larman</a> and <a href="/wiki/Victor_Basili" title="Victor Basili">Victor Basili</a>'s article "Iterative and Incremental Development: A Brief History",<sup id="cite_ref-ieee2003_4-0" class="reference"><a href="#cite_note-ieee2003-4">&#91;4&#93;</a></sup> with one of the earliest being NASA's 1960s <a href="/wiki/Project_Mercury" title="Project Mercury">Project Mercury</a>.
+</p><p>Some of those Mercury engineers later formed a <a href="/wiki/History_of_IBM#IBM_Federal_Systems_Division_.28FSD.29" title="History of IBM">new division within IBM</a>, where "another early and striking example of a major IID success [was] the very heart of NASA’s space shuttle software—the primary avionics software system, which [they] built from 1977 to 1980. The team applied IID in a series of 17 iterations over 31 months, averaging around eight weeks per iteration. Their motivation for avoiding the waterfall life cycle was that the shuttle program’s requirements changed during the software development process."<sup id="cite_ref-ieee2003_4-1" class="reference"><a href="#cite_note-ieee2003-4">&#91;4&#93;</a></sup>
+</p><p>Some organizations, such as the US Department of Defense, have a preference for iterative methodologies, starting with <a href="/wiki/MIL-STD-498" title="MIL-STD-498">MIL-STD-498</a> "clearly encouraging evolutionary acquisition and IID".
+</p><p>
+The DoD Instruction 5000.2 released in 2000 stated a clear preference for IID: </p><blockquote><p>There are two approaches, evolutionary and single step [waterfall], to full capability. An evolutionary approach is preferred. … [In this] approach, the ultimate capability delivered to the user is divided into two or more blocks, with increasing increments of capability...software development shall follow an iterative spiral development process in which continually expanding software versions are based on learning from earlier development. It can also be done in phases.</p></blockquote><p> Recent revisions to DoDI 5000.02 no longer refer to "spiral development," but do advocate the general approach as a baseline for software-intensive development/procurement programs.<sup id="cite_ref-DoDI_5000.02_rev2017-02-02_5-0" class="reference"><a href="#cite_note-DoDI_5000.02_rev2017-02-02-5">&#91;5&#93;</a></sup> In addition, the <a href="/wiki/United_States_Agency_for_International_Development" title="United States Agency for International Development">United States Agency for International Development</a> (USAID) also employs an iterative and incremental developmental approach to its programming cycle to design, monitor, evaluate, learn and adapt international development projects with a project management approach that focuses on incorporating collaboration, learning, and adaptation strategies to iterate and adapt programming.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
+</p><h3><span class="mw-headline" id="Contrast_with_Waterfall_development">Contrast with Waterfall development</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit&amp;section=4" title="Edit section: Contrast with Waterfall development"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Waterfall_development" class="mw-redirect" title="Waterfall development">Waterfall development</a></div>
+<p>The main cause of the software development projects failure is the choice of the model, so should be made with a great care.<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Vagueness" title="Wikipedia:Vagueness"><span title="improve clarity, in support of colleagues prepared to decide whether wording is merely incompetent, or intentionally overblown as a means of disguising cluelessness (November 2019)">vague</span></a></i>&#93;</sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p><p>For example, the <a href="/wiki/Waterfall_development" class="mw-redirect" title="Waterfall development">Waterfall development</a> paradigm completes the project-wide work-products of each discipline in one step before moving on to the next discipline in a succeeding step. Business value is delivered all at once, and only at the very end of the project, whereas backtracking<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (November 2018)">clarification needed</span></a></i>&#93;</sup> is possible in an iterative approach.  Comparing the two approaches, some patterns begin to emerge:<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (November 2018)">citation needed</span></a></i>&#93;</sup>
+</p>
+<ul><li><b>User involvement</b>: In the waterfall model, the user is involved in two stages of the model, i.e. requirements and acceptance testing, and possibly creation of user education material. Whereas in the incremental model, the client is involved at each and every stage.</li>
+<li><b>Variability</b>: The software is delivered to the user only after the build stage of the life cycle is completed, for user acceptance testing. On the other hand, every increment is delivered to the user and after the approval of user, the developer is allowed to move towards the next module.</li>
+<li><b>Human resources</b>: In the incremental model fewer staff are potentially required as compared to the waterfall model.</li>
+<li><b>Time limitation</b>: An operational product is delivered after months while in the incremental model the product is given to the user within a few weeks.</li>
+<li><b>Project size</b>: Waterfall model is unsuitable for small projects while the incremental model is suitable for small, as well as large projects.</li></ul>
+<h3><span class="mw-headline" id="Implementation_guidelines">Implementation guidelines</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit&amp;section=5" title="Edit section: Implementation guidelines"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Guidelines that drive software implementation and analysis include:<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (November 2018)">citation needed</span></a></i>&#93;</sup>
+</p>
+<ul><li>Any difficulty in design, coding and testing a modification should signal the need for redesign or re-coding.</li>
+<li>Modifications should fit easily into isolated and easy-to-find modules. If they do not, some redesign is possibly needed.</li>
+<li>Modifications to tables should be especially easy to make. If any table modification is not quickly and easily done, redesign is indicated.</li>
+<li>Modifications should become easier to make as the iterations progress. If they are not, there is a basic problem such as a design flaw or a proliferation of <a href="/wiki/Patch_(computing)" title="Patch (computing)">patches</a>.</li>
+<li>Patches should normally be allowed to exist for only one or two iterations. Patches may be necessary to avoid redesigning during an implementation phase.</li>
+<li>The existing implementation should be analyzed frequently to determine how well it measures up to project goals.</li>
+<li>Program analysis facilities should be used whenever available to aid in the analysis of partial implementations.</li>
+<li>User reaction should be solicited and analyzed for indications of deficiencies in the current implementation.</li></ul>
+<h2><span class="mw-headline" id="Use_in_hardware_and_embedded_systems">Use in hardware and embedded systems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit&amp;section=6" title="Edit section: Use in hardware and embedded systems"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>While the term <i>iterative and incremental</i> development got started in the software industry, many <a href="/wiki/Open-source_hardware" title="Open-source hardware">hardware</a> and <a href="/wiki/Embedded_software" title="Embedded software">embedded software</a> <a href="/wiki/New_product_development" title="New product development">development</a> efforts are using iterative and incremental techniques.
+</p><p>Examples of this may be seen in a number of industries.  One sector that has recently been substantially affected by this shift of thinking has been the <a href="/wiki/Launch_service_provider" class="mw-redirect" title="Launch service provider">space launch</a> industry, with <a href="/wiki/Space_launch_market_competition" title="Space launch market competition">substantial new competitive forces</a> at work brought about by faster and more extensive technology innovation brought to bear by the formation of <a href="/wiki/Private_spaceflight" title="Private spaceflight">private</a> companies pursuing space launch.  These companies, such as <a href="/wiki/SpaceX" title="SpaceX">SpaceX</a><sup id="cite_ref-fp20131209_8-0" class="reference"><a href="#cite_note-fp20131209-8">&#91;8&#93;</a></sup> and <a href="/wiki/Rocket_Lab" title="Rocket Lab">Rocket Lab</a>,<sup id="cite_ref-eda20181111_9-0" class="reference"><a href="#cite_note-eda20181111-9">&#91;9&#93;</a></sup> are now both providing commercial orbital launch services in the past decade, something that only six nations had done prior to a decade<sup id="cite_ref-sfn20080928_10-0" class="reference"><a href="#cite_note-sfn20080928-10">&#91;10&#93;</a></sup> ago.  New innovation in technology development approaches, pricing, and service offerings—including the ability that has existed only since 2016 to fly to space on a <a href="/wiki/SpaceX_reusable_launch_system_development_program" title="SpaceX reusable launch system development program">previously flown (reusable) booster stage</a>—further decreasing the price of obtaining access to space.<sup id="cite_ref-arstech20180625_11-0" class="reference"><a href="#cite_note-arstech20180625-11">&#91;11&#93;</a></sup><sup id="cite_ref-fp20131209_8-1" class="reference"><a href="#cite_note-fp20131209-8">&#91;8&#93;</a></sup>
+</p><p>SpaceX has been explicit about its effort to bring iterative design practices into the space industry, and uses the technique on spacecraft, launch vehicles, electronics and avionics, and operational flight hardware operations.<sup id="cite_ref-qz20141021_12-0" class="reference"><a href="#cite_note-qz20141021-12">&#91;12&#93;</a></sup>
+</p><p>As the industry has begun to change, other launch competitors are beginning to change their <a href="/wiki/Cost-plus_contract" title="Cost-plus contract">long-term development practices with government agencies</a> as well.  For example, the large US <a href="/wiki/Launch_service_provider" class="mw-redirect" title="Launch service provider">launch service provider</a> <a href="/wiki/United_Launch_Alliance" title="United Launch Alliance">United Launch Alliance</a> (ULA) began in 2015 a decade-long project to restructure its launch business—reducing <a href="/wiki/Atlas_V" title="Atlas V">two lau</a><a href="/wiki/Delta_IV" title="Delta IV">nch vehicles</a> to <a href="/wiki/Vulcan_launch_vehicle" class="mw-redirect" title="Vulcan launch vehicle">one</a>—using an iterative and incremental approach to get to a <a href="/wiki/Reusable_launch_vehicle" title="Reusable launch vehicle">partially-reusable</a> and much lower-cost launch system over the next decade.<sup id="cite_ref-sn20150424_13-0" class="reference"><a href="#cite_note-sn20150424-13">&#91;13&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit&amp;section=7" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1147244281">.mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style><div class="div-col" style="column-width: 22em;">
+<ul><li><a href="/wiki/Adaptive_management" title="Adaptive management">Adaptive management</a></li>
+<li><a href="/wiki/Agile_software_development" title="Agile software development">Agile software development</a></li>
+<li><a href="/wiki/Continuous_integration" title="Continuous integration">Continuous integration</a></li>
+<li><a href="/wiki/DevOps#Incremental_adoption" title="DevOps">DevOps §&#160;Incremental adoption</a></li>
+<li><a href="/wiki/Dynamic_systems_development_method" title="Dynamic systems development method">Dynamic systems development method</a></li>
+<li><a href="/wiki/Goal-Driven_Software_Development_Process" title="Goal-Driven Software Development Process">Goal-Driven Software Development Process</a></li>
+<li><a href="/wiki/Interaction_design" title="Interaction design">Interaction design</a></li>
+<li><a href="/wiki/Kaizen" title="Kaizen">Kaizen</a></li>
+<li><a href="/wiki/Microsoft_Solutions_Framework" title="Microsoft Solutions Framework">Microsoft Solutions Framework</a></li>
+<li><a href="/wiki/Object-oriented_analysis_and_design" title="Object-oriented analysis and design">Object-oriented analysis and design</a></li>
+<li><a href="/wiki/OpenUP/Basic" class="mw-redirect" title="OpenUP/Basic">OpenUP/Basic</a></li>
+<li><a href="/wiki/PDCA" title="PDCA">PDCA</a></li>
+<li><a href="/wiki/Rapid_application_development" title="Rapid application development">Rapid application development</a></li>
+<li><a href="/wiki/Release_early,_release_often" title="Release early, release often">Release early, release often</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit&amp;section=8" title="Edit section: Notes"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFLarman2003" class="citation journal cs1">Larman, Craig (June 2003). <a rel="nofollow" class="external text" href="http://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf">"Iterative and Incremental Development: A Brief History"</a> <span class="cs1-format">(PDF)</span>. <i>Computer</i>. <b>36</b> (6): 47–56. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FMC.2003.1204375">10.1109/MC.2003.1204375</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0018-9162">0018-9162</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:9240477">9240477</a>. <q>We were doing incremental development as early as 1957, in Los Angeles, under the direction of Bernie Dimsdale [at IBM's ServiceBureau Corporation]. He was a colleague of <a href="/wiki/John_von_Neumann" title="John von Neumann">John von Neumann</a>, so perhaps he learned it there, or assumed it as totally natural. I do remember Herb Jacobs (primarily, though we all participated) developing a large simulation for Motorola, where the technique used was, as far as I can tell ...'<span class="cs1-kern-right"></span></q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computer&amp;rft.atitle=Iterative+and+Incremental+Development%3A+A+Brief+History&amp;rft.volume=36&amp;rft.issue=6&amp;rft.pages=47-56&amp;rft.date=2003-06&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A9240477%23id-name%3DS2CID&amp;rft.issn=0018-9162&amp;rft_id=info%3Adoi%2F10.1109%2FMC.2003.1204375&amp;rft.aulast=Larman&amp;rft.aufirst=Craig&amp;rft_id=http%3A%2F%2Fwww.craiglarman.com%2Fwiki%2Fdownloads%2Fmisc%2Fhistory-of-iterative-larman-and-basili-ieee-computer.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">
+<a rel="nofollow" class="external text" href="http://www.everyspec.com/DoD/DoD-STD/DOD-STD-2167_278/">DOD-STD-2167 Defense Systems Software Development (04 JUN 1985)</a> on everyspec.com</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFFarcic2014" class="citation web cs1">Farcic, Viktor (January 21, 2014). <a rel="nofollow" class="external text" href="https://technologyconversations.com/2014/01/21/software-development-models-iterative-and-incremental-development/">"Software Development Models: Iterative and Incremental Development"</a>. <i>Technology Conversations</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Technology+Conversations&amp;rft.atitle=Software+Development+Models%3A+Iterative+and+Incremental+Development&amp;rft.date=2014-01-21&amp;rft.aulast=Farcic&amp;rft.aufirst=Viktor&amp;rft_id=https%3A%2F%2Ftechnologyconversations.com%2F2014%2F01%2F21%2Fsoftware-development-models-iterative-and-incremental-development%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></span>
+</li>
+<li id="cite_note-ieee2003-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-ieee2003_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ieee2003_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://doi.ieeecomputersociety.org/10.1109/MC.2003.1204375">Iterative and Incremental Development: A Brief History</a>, Craig Larman and Victor Basili, IEEE Computer, June 2003</span>
+</li>
+<li id="cite_note-DoDI_5000.02_rev2017-02-02-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-DoDI_5000.02_rev2017-02-02_5-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFKendallGilmoreHalvorsen2017" class="citation web cs1">Kendall, Frank; Gilmore, J. Michael; Halvorsen, Terry (2017-02-02). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20170809221013/http://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500002_dodi_2015.pdf">"Operation of the Defense Acquisition System"</a> <span class="cs1-format">(PDF)</span>. <i>DoD Issuances</i>. Under Secretary of Defense for Acquisition, Technology, and Logistics. pp.&#160;12–14. Archived from <a rel="nofollow" class="external text" href="http://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500002_dodi_2015.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 2017-08-09<span class="reference-accessdate">. Retrieved <span class="nowrap">2017-08-09</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=DoD+Issuances&amp;rft.atitle=Operation+of+the+Defense+Acquisition+System&amp;rft.pages=12-14&amp;rft.date=2017-02-02&amp;rft.aulast=Kendall&amp;rft.aufirst=Frank&amp;rft.au=Gilmore%2C+J.+Michael&amp;rft.au=Halvorsen%2C+Terry&amp;rft_id=http%3A%2F%2Fwww.esd.whs.mil%2FPortals%2F54%2FDocuments%2FDD%2Fissuances%2Fdodi%2F500002_dodi_2015.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">USAID. <a rel="nofollow" class="external text" href="https://www.usaid.gov/sites/default/files/documents/1870/201.pdf">"ADS Chapter 201 Program Cycle Operational Policy"</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20191023195937/https://www.usaid.gov/sites/default/files/documents/1870/201.pdf">Archived</a> 2019-10-23 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>. Retrieved April 19, 2017</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://researchapedia.info/difference-between-waterfall-and-incremental-model/">"Difference between Waterfall and Incremental Model"</a>. May 19, 2016.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Difference+between+Waterfall+and+Incremental+Model&amp;rft.date=2016-05-19&amp;rft_id=https%3A%2F%2Fresearchapedia.info%2Fdifference-between-waterfall-and-incremental-model%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">&#91;<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link tagged January 2020">permanent dead link</span></a></i>&#93;</span></sup></span>
+</li>
+<li id="cite_note-fp20131209-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-fp20131209_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-fp20131209_8-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBelfiore2013" class="citation news cs1">Belfiore, Michael (9 December 2013). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20131210233009/http://www.foreignpolicy.com/articles/2013/12/02/the_rocketeer_elon_musk">"The Rocketeer"</a>. <i><a href="/wiki/Foreign_Policy" title="Foreign Policy">Foreign Policy</a></i>. Archived from <a rel="nofollow" class="external text" href="https://foreignpolicy.com/articles/2013/12/02/the_rocketeer_elon_musk">the original</a> on 10 December 2013<span class="reference-accessdate">. Retrieved <span class="nowrap">11 November</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Foreign+Policy&amp;rft.atitle=The+Rocketeer&amp;rft.date=2013-12-09&amp;rft.aulast=Belfiore&amp;rft.aufirst=Michael&amp;rft_id=https%3A%2F%2Fforeignpolicy.com%2Farticles%2F2013%2F12%2F02%2Fthe_rocketeer_elon_musk&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></span>
+</li>
+<li id="cite_note-eda20181111-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-eda20181111_9-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation news cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20181012134827/https://everydayastronaut.com/inside-rocketlab/">"Exclusive Inside Look at Rocket Lab's Previously-secret new Mega Factory!"</a>. <i>Everyday Astronaut</i>. 11 October 2018. Archived from <a rel="nofollow" class="external text" href="https://everydayastronaut.com/inside-rocketlab/">the original</a> on 12 October 2018<span class="reference-accessdate">. Retrieved <span class="nowrap">11 November</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Everyday+Astronaut&amp;rft.atitle=Exclusive+Inside+Look+at+Rocket+Lab%27s+Previously-secret+new+Mega+Factory%21&amp;rft.date=2018-10-11&amp;rft_id=https%3A%2F%2Feverydayastronaut.com%2Finside-rocketlab%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></span>
+</li>
+<li id="cite_note-sfn20080928-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-sfn20080928_10-0">^</a></b></span> <span class="reference-text">
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFClark2008" class="citation web cs1">Clark, Stephen (28 September 2008). <a rel="nofollow" class="external text" href="http://www.spaceflightnow.com/falcon/004/index.html">"Sweet Success at Last for Falcon 1 Rocket"</a>. <i>Spaceflight Now</i><span class="reference-accessdate">. Retrieved <span class="nowrap">11 November</span> 2018</span>. <q><i>the first privately developed liquid-fueled rocket to successfully reach orbit.</i></q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Spaceflight+Now&amp;rft.atitle=Sweet+Success+at+Last+for+Falcon+1+Rocket&amp;rft.date=2008-09-28&amp;rft.aulast=Clark&amp;rft.aufirst=Stephen&amp;rft_id=http%3A%2F%2Fwww.spaceflightnow.com%2Ffalcon%2F004%2Findex.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></span>
+</li>
+<li id="cite_note-arstech20180625-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-arstech20180625_11-0">^</a></b></span> <span class="reference-text">
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBerger2018" class="citation news cs1">Berger, Eric (2018-06-25). <a rel="nofollow" class="external text" href="https://arstechnica.com/science/2018/06/russias-proton-rocket-which-predates-apollo-will-finally-stop-flying/">"Russia's Proton rocket, which predates Apollo, will finally stop flying Technical problems, rise of SpaceX are contributing factors"</a>. <i>arsTechica</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2018-06-26</span></span>. <q><i>the rapid rise of low-cost alternatives such as SpaceX's Falcon 9 rocket, have caused the number of Proton launches in a given year to dwindle from eight or so to just one or two.</i></q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=arsTechica&amp;rft.atitle=Russia%27s+Proton+rocket%2C+which+predates+Apollo%2C+will+finally+stop+flying+Technical+problems%2C+rise+of+SpaceX+are+contributing+factors.&amp;rft.date=2018-06-25&amp;rft.aulast=Berger&amp;rft.aufirst=Eric&amp;rft_id=https%3A%2F%2Farstechnica.com%2Fscience%2F2018%2F06%2Frussias-proton-rocket-which-predates-apollo-will-finally-stop-flying%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></span>
+</li>
+<li id="cite_note-qz20141021-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-qz20141021_12-0">^</a></b></span> <span class="reference-text">
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFFernholz2014" class="citation news cs1">Fernholz, Tim (21 October 2014). <a rel="nofollow" class="external text" href="https://qz.com/281619/what-it-took-for-elon-musks-spacex-to-disrupt-boeing-leapfrog-nasa-and-become-a-serious-space-company/">"What it took for Elon Musk's SpaceX to disrupt Boeing, leapfrog NASA, and become a serious space company"</a>. <i><a href="/wiki/Quartz_(publication)" title="Quartz (publication)">Quartz</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">11 November</span> 2018</span>. <q><i>But SpaceX always thought of itself as a tech firm, and its clashes with NASA often took a form computer developers—or anyone familiar with the troubled roll-out of healthcare.gov—would recognize as generational. SpaceX followed an iterative design process, continually improving prototypes in response to testing. Traditional product management calls for a robust plan executed to completion, a recipe for cost overruns.</i></q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Quartz&amp;rft.atitle=What+it+took+for+Elon+Musk%27s+SpaceX+to+disrupt+Boeing%2C+leapfrog+NASA%2C+and+become+a+serious+space+company&amp;rft.date=2014-10-21&amp;rft.aulast=Fernholz&amp;rft.aufirst=Tim&amp;rft_id=https%3A%2F%2Fqz.com%2F281619%2Fwhat-it-took-for-elon-musks-spacex-to-disrupt-boeing-leapfrog-nasa-and-become-a-serious-space-company%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></span>
+</li>
+<li id="cite_note-sn20150424-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-sn20150424_13-0">^</a></b></span> <span class="reference-text">
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFGruss2015" class="citation news cs1">Gruss, Mike (2015-04-24). <a rel="nofollow" class="external text" href="http://spacenews.com/evolution-of-a-plan-ula-execs-spell-out-logic-behind-vulcan-design-choices/">"Evolution of a Plan&#160;: ULA Execs Spell Out Logic Behind Vulcan Design Choices"</a>. <i>Space News</i><span class="reference-accessdate">. Retrieved <span class="nowrap">25 April</span> 2015</span>. <q><i>ULA's April 13 announcement that it would develop a rocket dubbed Vulcan using an incremental approach whose first iteration essentially is an Atlas 5 outfitted with a new first stage.</i></q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Space+News&amp;rft.atitle=Evolution+of+a+Plan+%3A+ULA+Execs+Spell+Out+Logic+Behind+Vulcan+Design+Choices&amp;rft.date=2015-04-24&amp;rft.aulast=Gruss&amp;rft.aufirst=Mike&amp;rft_id=http%3A%2F%2Fspacenews.com%2Fevolution-of-a-plan-ula-execs-spell-out-logic-behind-vulcan-design-choices%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<style data-mw-deduplicate="TemplateStyles:r1097763485">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><table class="box-More_footnotes plainlinks metadata ambox ambox-style ambox-More_footnotes" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></span></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article includes a list of general <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">references</a>, but <b>it lacks sufficient corresponding <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>.<span class="hide-when-compact"> Please help to <a href="/wiki/Wikipedia:WikiProject_Reliability" title="Wikipedia:WikiProject Reliability">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span>  <span class="date-container"><i>(<span class="date">September 2010</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Iterative_and_incremental_development&amp;action=edit&amp;section=9" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDr._Alistair_Cockburn2008" class="citation journal cs1">Dr. Alistair Cockburn (May 2008). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20120526153630/http://www.crosstalkonline.org/storage/issue-archives/2008/200805/200805-Cockburn.pdf">"Using Both Incremental and Iterative Development"</a> <span class="cs1-format">(PDF)</span>. <i>STSC CrossTalk</i>. <a href="/wiki/USAF" class="mw-redirect" title="USAF">USAF</a> Software Technology Support Center. <b>21</b> (5): 27–30. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/2160-1593">2160-1593</a>. Archived from <a rel="nofollow" class="external text" href="http://www.crosstalkonline.org/storage/issue-archives/2008/200805/200805-Cockburn.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 2012-05-26<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-07-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=STSC+CrossTalk&amp;rft.atitle=Using+Both+Incremental+and+Iterative+Development&amp;rft.volume=21&amp;rft.issue=5&amp;rft.pages=27-30&amp;rft.date=2008-05&amp;rft.issn=2160-1593&amp;rft.au=Dr.+Alistair+Cockburn&amp;rft_id=http%3A%2F%2Fwww.crosstalkonline.org%2Fstorage%2Fissue-archives%2F2008%2F200805%2F200805-Cockburn.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFCraig_Larman,_Victor_R._Basili2003" class="citation journal cs1">Craig Larman, Victor R. Basili (June 2003). <a rel="nofollow" class="external text" href="http://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf">"Iterative and Incremental Development: A Brief History"</a> <span class="cs1-format">(PDF)</span>. <i><a href="/wiki/IEEE_Computer" class="mw-redirect" title="IEEE Computer">IEEE Computer</a></i>. IEEE Computer Society. <b>36</b> (6): 47–56. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FMC.2003.1204375">10.1109/MC.2003.1204375</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0018-9162">0018-9162</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:9240477">9240477</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2009-01-10</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Computer&amp;rft.atitle=Iterative+and+Incremental+Development%3A+A+Brief+History&amp;rft.volume=36&amp;rft.issue=6&amp;rft.pages=47-56&amp;rft.date=2003-06&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A9240477%23id-name%3DS2CID&amp;rft.issn=0018-9162&amp;rft_id=info%3Adoi%2F10.1109%2FMC.2003.1204375&amp;rft.au=Craig+Larman%2C+Victor+R.+Basili&amp;rft_id=http%3A%2F%2Fwww.craiglarman.com%2Fwiki%2Fdownloads%2Fmisc%2Fhistory-of-iterative-larman-and-basili-ieee-computer.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIterative+and+incremental+development" class="Z3988"></span></li></ul>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Software_engineering" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Software_engineering" title="Template:Software engineering"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Software_engineering" title="Template talk:Software engineering"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Software_engineering" title="Special:EditPage/Template:Software engineering"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Software_engineering" style="font-size:114%;margin:0 4em"><a href="/wiki/Software_engineering" title="Software engineering">Software engineering</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Fields</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Computer_programming" title="Computer programming">Computer programming</a></li>
+<li><a href="/wiki/DevOps" title="DevOps">DevOps</a></li>
+<li><a href="/wiki/Formal_methods" title="Formal methods">Formal methods</a></li>
+<li><a href="/wiki/Requirements_engineering" title="Requirements engineering">Requirements engineering</a></li>
+<li><a href="/wiki/Site_reliability_engineering" title="Site reliability engineering">Site reliability engineering</a></li>
+<li><a href="/wiki/Software_deployment" title="Software deployment">Software deployment</a></li>
+<li><a href="/wiki/Software_design" title="Software design">Software design</a></li>
+<li><a href="/wiki/Software_maintenance" title="Software maintenance">Software maintenance</a></li>
+<li><a href="/wiki/Software_testing" title="Software testing">Software testing</a></li>
+<li><a href="/wiki/Systems_analysis" title="Systems analysis">Systems analysis</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Concepts</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Data_modeling" title="Data modeling">Data modeling</a></li>
+<li><a href="/wiki/Enterprise_architecture" title="Enterprise architecture">Enterprise architecture</a></li>
+<li><a href="/wiki/Functional_specification" title="Functional specification">Functional specification</a></li>
+<li><a href="/wiki/Modeling_language" title="Modeling language">Modeling language</a></li>
+<li><a href="/wiki/Programming_paradigm" title="Programming paradigm">Programming paradigm</a></li>
+<li><a href="/wiki/Software" title="Software">Software</a></li>
+<li><a href="/wiki/Software_archaeology" title="Software archaeology">Software archaeology</a></li>
+<li><a href="/wiki/Software_architecture" title="Software architecture">Software architecture</a></li>
+<li><a href="/wiki/Software_configuration_management" title="Software configuration management">Software configuration management</a></li>
+<li><a href="/wiki/Software_development_process" title="Software development process">Software development process/methodology</a></li>
+<li><a href="/wiki/Software_quality" title="Software quality">Software quality</a></li>
+<li><a href="/wiki/Software_quality_assurance" title="Software quality assurance">Software quality assurance</a></li>
+<li><a href="/wiki/Software_verification_and_validation" title="Software verification and validation">Software verification and validation</a></li>
+<li><a href="/wiki/Structured_analysis" title="Structured analysis">Structured analysis</a>
+<ul><li><a href="/wiki/Essential_systems_analysis" title="Essential systems analysis">Essential analysis</a></li></ul></li>
+<li><a href="/wiki/CI/CD" title="CI/CD">CI/CD</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Orientations</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Agile_software_development" title="Agile software development">Agile</a></li>
+<li><a href="/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object orientation</a></li>
+<li><a href="/wiki/Ontology_(computer_science)" class="mw-redirect" title="Ontology (computer science)">Ontology</a></li>
+<li><a href="/wiki/Service-oriented_architecture" title="Service-oriented architecture">Service orientation</a></li>
+<li><a href="/wiki/Systems_development_life_cycle" title="Systems development life cycle">SDLC</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Models</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">Developmental</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Agile_software_development" title="Agile software development">Agile</a></li>
+<li><a href="/wiki/Enterprise_Unified_Process" class="mw-redirect" title="Enterprise Unified Process">EUP</a></li>
+<li><a href="/wiki/Executable_UML" title="Executable UML">Executable UML</a></li>
+<li><a href="/wiki/Incremental_build_model" title="Incremental build model">Incremental model</a></li>
+<li><a class="mw-selflink selflink">Iterative model</a></li>
+<li><a href="/wiki/Software_prototyping" title="Software prototyping">Prototype model</a></li>
+<li><a href="/wiki/Rapid_application_development" title="Rapid application development">RAD</a></li>
+<li><a href="/wiki/Unified_Process" title="Unified Process">UP</a></li>
+<li><a href="/wiki/Scrum_(software_development)" title="Scrum (software development)">Scrum</a></li>
+<li><a href="/wiki/Spiral_model" title="Spiral model">Spiral model</a></li>
+<li><a href="/wiki/V-Model_(software_development)" class="mw-redirect" title="V-Model (software development)">V-Model</a></li>
+<li><a href="/wiki/Waterfall_model" title="Waterfall model">Waterfall model</a></li>
+<li><a href="/wiki/Extreme_programming" title="Extreme programming">XP</a></li>
+<li><a href="/wiki/Model-driven_engineering" title="Model-driven engineering">Model-driven engineering</a></li>
+<li><a href="/wiki/Round-trip_engineering" title="Round-trip engineering">Round-trip engineering</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">Other</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/ISO/IEC_15504" title="ISO/IEC 15504">SPICE</a></li>
+<li><a href="/wiki/Capability_Maturity_Model_Integration" title="Capability Maturity Model Integration">CMMI</a></li>
+<li><a href="/wiki/Data_model" title="Data model">Data model</a></li>
+<li><a href="/wiki/Entity%E2%80%93relationship_model" title="Entity–relationship model">ER model</a></li>
+<li><a href="/wiki/Function_model" title="Function model">Function model</a></li>
+<li><a href="/wiki/Information_model" title="Information model">Information model</a></li>
+<li><a href="/wiki/Metamodeling" title="Metamodeling">Metamodeling</a></li>
+<li><a href="/wiki/Object_model" title="Object model">Object model</a></li>
+<li><a href="/wiki/Systems_modeling" title="Systems modeling">Systems model</a></li>
+<li><a href="/wiki/View_model" title="View model">View model</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;font-weight:normal;">Languages</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/IDEF" title="IDEF">IDEF</a></li>
+<li><a href="/wiki/Unified_Modeling_Language" title="Unified Modeling Language">UML</a></li>
+<li><a href="/wiki/Universal_Systems_Language" class="mw-redirect" title="Universal Systems Language">USL</a></li>
+<li><a href="/wiki/Systems_Modeling_Language" class="mw-redirect" title="Systems Modeling Language">SysML</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related fields</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Computer_science" title="Computer science">Computer science</a></li>
+<li><a href="/wiki/Computer_engineering" title="Computer engineering">Computer engineering</a></li>
+<li><a href="/wiki/Information_science" title="Information science">Information science</a></li>
+<li><a href="/wiki/Project_management" title="Project management">Project management</a></li>
+<li><a href="/wiki/Risk_management" title="Risk management">Risk management</a></li>
+<li><a href="/wiki/Systems_engineering" title="Systems engineering">Systems engineering</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2" style="font-weight:bold;"><div>
+<ul><li><span class="noviewer" typeof="mw:File"><span title="Commons page"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" decoding="async" width="12" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></span></span> <a href="https://commons.wikimedia.org/wiki/Category:Software_engineering" class="extiw" title="commons:Category:Software engineering">Commons</a></li>
+<li><span class="noviewer" typeof="mw:File"><span title="Category"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" decoding="async" width="16" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" data-file-width="180" data-file-height="185" /></span></span> <a href="/wiki/Category:Software_engineering" title="Category:Software engineering">Category</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1364
+Cached time: 20231031010837
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.568 seconds
+Real time usage: 0.718 seconds
+Preprocessor visited node count: 2215/1000000
+Post‐expand include size: 85695/2097152 bytes
+Template argument size: 4398/2097152 bytes
+Highest expansion depth: 17/100
+Expensive parser function count: 7/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 55909/5000000 bytes
+Lua time usage: 0.367/10.000 seconds
+Lua memory usage: 7540063/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  624.222      1 -total
+ 38.38%  239.583      1 Template:Reflist
+ 21.40%  133.614      3 Template:Cite_journal
+ 13.61%   84.933      1 Template:Software_development_process
+ 13.16%   82.138      1 Template:Sidebar_with_collapsible_lists
+ 10.06%   62.791      1 Template:Short_description
+  9.67%   60.380      2 Template:Clarify
+  9.46%   59.025      3 Template:Fix-span
+  7.22%   45.088     12 Template:Category_handler
+  6.99%   43.630      1 Template:Software_engineering
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:163878-0!canonical and timestamp 20231031010837 and revision id 1162994616. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Iterative_and_incremental_development&amp;oldid=1162994616">https://en.wikipedia.org/w/index.php?title=Iterative_and_incremental_development&amp;oldid=1162994616</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Software_development_philosophies" title="Category:Software development philosophies">Software development philosophies</a></li><li><a href="/wiki/Category:Software_project_management" title="Category:Software project management">Software project management</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">All articles with dead external links</a></li><li><a href="/wiki/Category:Articles_with_dead_external_links_from_January_2020" title="Category:Articles with dead external links from January 2020">Articles with dead external links from January 2020</a></li><li><a href="/wiki/Category:Articles_with_permanently_dead_external_links" title="Category:Articles with permanently dead external links">Articles with permanently dead external links</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_October_2018" title="Category:Wikipedia articles needing clarification from October 2018">Wikipedia articles needing clarification from October 2018</a></li><li><a href="/wiki/Category:All_Wikipedia_articles_needing_clarification" title="Category:All Wikipedia articles needing clarification">All Wikipedia articles needing clarification</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_November_2019" title="Category:Wikipedia articles needing clarification from November 2019">Wikipedia articles needing clarification from November 2019</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_November_2018" title="Category:Wikipedia articles needing clarification from November 2018">Wikipedia articles needing clarification from November 2018</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_November_2018" title="Category:Articles with unsourced statements from November 2018">Articles with unsourced statements from November 2018</a></li><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_September_2010" title="Category:Articles lacking in-text citations from September 2010">Articles lacking in-text citations from September 2010</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 2 July 2023, at 09:10<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Iterative_and_incremental_development&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw1416","wgBackendResponseTime":119,"wgPageParseReport":{"limitreport":{"cputime":"0.568","walltime":"0.718","ppvisitednodes":{"value":2215,"limit":1000000},"postexpandincludesize":{"value":85695,"limit":2097152},"templateargumentsize":{"value":4398,"limit":2097152},"expansiondepth":{"value":17,"limit":100},"expensivefunctioncount":{"value":7,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":55909,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  624.222      1 -total"," 38.38%  239.583      1 Template:Reflist"," 21.40%  133.614      3 Template:Cite_journal"," 13.61%   84.933      1 Template:Software_development_process"," 13.16%   82.138      1 Template:Sidebar_with_collapsible_lists"," 10.06%   62.791      1 Template:Short_description","  9.67%   60.380      2 Template:Clarify","  9.46%   59.025      3 Template:Fix-span","  7.22%   45.088     12 Template:Category_handler","  6.99%   43.630      1 Template:Software_engineering"]},"scribunto":{"limitreport-timeusage":{"value":"0.367","limit":"10.000"},"limitreport-memusage":{"value":7540063,"limit":52428800}},"cachereport":{"origin":"mw1364","timestamp":"20231031010837","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Iterative and incremental development","url":"https:\/\/en.wikipedia.org\/wiki\/Iterative_and_incremental_development","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1543216","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1543216","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-01-02T04:47:48Z","dateModified":"2023-07-02T09:10:05Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/58\/Iterative_Process_Diagram.svg","headline":"types of methodologies to develop a system through repeated cycles (iterative) and in smaller portions at a time (incremental), allowing developers to take advantage of what was learned during development of earlier parts or versions of the system"}</script>
+</body>
+</html>
