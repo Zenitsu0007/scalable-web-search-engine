@@ -63,3 +63,12 @@ madoop \
   -output output4 \
   -mapper ./map4.py \
   -reducer ./reduce4.py
+
+# Job 5
+madoop \
+  -input output4 \
+  -output output \
+  -mapper ./map5.py \
+  -reducer ./reduce5.py \
+  -partitioner ./partition.py \
+  -numReduceTasks 3
