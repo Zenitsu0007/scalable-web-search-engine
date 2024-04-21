@@ -5,7 +5,7 @@ import threading
 import heapq
 import requests
 import flask
-from flask import request, render_template, current_app
+from flask import request, render_template
 import search.model
 
 class Search:
@@ -63,9 +63,9 @@ def show_index():
     docs = []
     for hit in top_hits:
         doc = db.execute(
-            'SELECT * FROM'
-            'documents'
-            'WHERE docid = ?', 
+            'SELECT * '
+            'FROM Documents '
+            'WHERE docid == ? ', 
             (hit['docid'],)).fetchone()
         if doc and not doc['summary']:
             doc['summary'] = 'No summary available'
