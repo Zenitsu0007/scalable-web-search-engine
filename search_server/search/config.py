@@ -1,3 +1,4 @@
+"""search server configuration."""
 import pathlib
 
 APPLICATION_ROOT = '/'
@@ -9,5 +10,5 @@ SEARCH_INDEX_SEGMENT_API_URLS = [
     "http://localhost:9002/api/v1/hits/",
 ]
 
-# Database file 
+# Database file
 DATABASE_FILENAME = DATABASE_ROOT/'var'/'search.sqlite3'

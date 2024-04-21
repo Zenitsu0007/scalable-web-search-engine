@@ -1,6 +1,4 @@
-"""
-Search server index views
-"""
+"""Search server index views."""
 import threading
 import heapq
 import requests
@@ -8,8 +6,12 @@ import flask
 from flask import request, render_template
 import search.model
 
+
 class Search:
+    """Search class to fetch hits from index servers."""
+
     def __init__(self, index_urls, query, weight):
+        """Initialize the search instance."""
         self.index_urls = index_urls
         self.query = query
         self.weight = weight
@@ -23,7 +25,7 @@ class Search:
             response = requests.get(url, params=params, timeout=1)
             if response.status_code == 200:
                 for hit in response.json()['hits']:
-                    heapq.heappush(self.hits, 
+                    heapq.heappush(self.hits,
                                    (-hit['score'], hit['docid'], hit))
         except requests.RequestException as e:
             print(f"Error contacting {url}: {e}")
@@ -40,11 +42,13 @@ class Search:
 
     def get_top_hits(self, num_results=10):
         """Retrieve the top N hits based on score."""
-        return [heapq.heappop(self.hits)[-1] for _ in 
+        return [heapq.heappop(self.hits)[-1] for _ in
                 range(min(len(self.hits), num_results))]
+
 
 @search.app.route('/', methods=['GET'])
 def show_index():
+    """Display the search page."""
     query = request.args.get('q', '')
     weight = request.args.get('w', 0.5)
     if not query:
@@ -65,7 +69,7 @@ def show_index():
         doc = db.execute(
             'SELECT * '
             'FROM Documents '
-            'WHERE docid == ? ', 
+            'WHERE docid == ? ',
             (hit['docid'],)).fetchone()
         if doc and not doc['summary']:
             doc['summary'] = 'No summary available'
