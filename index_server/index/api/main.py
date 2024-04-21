@@ -44,14 +44,10 @@ def hits():
         # query vector
         query_vector = []
         for term in qterm_freq.keys():
-            print(term)
-            print(inverted_index[term]['idf'] )
-            print(inverted_index[term]['idf'] * qterm_freq[term])
             query_vector.append(inverted_index[term]['idf'] * qterm_freq[term])
         q_norm = math.sqrt(sum(x ** 2 for x in query_vector))
         # cal score for each doc
         for doc_id in doc_id_set:
-            print(doc_id)
             doc_vector = []
             for term in qterm_freq.keys():
                 doc_vector.append(inverted_index[term]['idf'] *
@@ -59,10 +55,8 @@ def hits():
             d_norm = math.sqrt(inverted_index[term]['doc_info'][doc_id]['norm_factor'])
             tf_idf= sum(query_vector[i] * doc_vector[i]
                        for i in range(len(doc_vector)))/(q_norm * d_norm)
-            print(tf_idf)
             weight_score = weight * pagerank[doc_id]+ (1 - weight) * tf_idf
             hits.append({"docid": doc_id, "score": weight_score})
         hits.sort(key=lambda hit: (hit['score'], -1*hit['docid']), reverse=True)
     context ={"hits": hits}
-    print(context)
     return flask.jsonify(**context), 200
