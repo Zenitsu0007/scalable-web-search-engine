@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    </head>
+    <body>
+        <div class="feed"></div>
+            <div class="ask485">ask485</div>
+            <div class="search_bar">
+                <!-- DO NOT CHANGE THIS (aside from where we say 'FIXME') -->
+                <form action="/" method="GET">
+                    <div>
+                    <input type="text" 
+                        name="q" 
+                        placeholder="Search"
+                        value="{{ query }}"/>
+                    </div>
+                    <div>
+                    <input type="range" 
+                        name="w" 
+                        min="0" 
+                        max="1" 
+                        step="0.01" 
+                        value="{{ weight }}"/>
+                    </div>
+                <input type="submit" value="Search"/>
+                </form>
+            </div>
+            <div class="pagerank_weight">Pagerank Weight</div>
+
+            {% if docs %}
+                <div class="docs">
+                {% for doc in docs %}
+                    {% if doc.url %}
+                        <a class="doc_url" href="{{ doc.url }}">{{ doc.url }}</a>
+                    {% else %}
+                        <a class="doc_url">No url available</a>
+                    {% endif %}
+                    <div class="doc_title">{{ doc.title }}</div>
+                    <div class="doc_summary">{{ doc.summary }}</div>
+                {% endfor %}
+                </div>
+            {% else %}
+                <div class="no_results">No search results found!</div>
+            {% endif %} 
+        </div>  
+    </body>
+</html>

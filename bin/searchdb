@@ -1,0 +1,43 @@
+#!/bin/bash
+
+set -Eeuo pipefail
+
+# Variables
+DB_FILE="var/search.sqlite3"
+SQL_SCRIPT="search_server/search/sql/search.sql"
+
+function create_db {
+  if [ -f "$DB_FILE" ]; then
+    echo "Error: database already exists"
+    exit 1
+  else
+    mkdir -p var/
+    sqlite3 "$DB_FILE" < "$SQL_SCRIPT"
+  fi
+}
+
+function destroy_db {
+  rm -f "$DB_FILE"
+}
+
+function reset_db {
+  destroy_db
+  create_db
+}
+
+# Command line argument processing
+case "$1" in
+  create)
+    create_db
+    ;;
+  destroy)
+    destroy_db
+    ;;
+  reset)
+    reset_db
+    ;;
+  *)
+    echo "Usage: $0 {create|destroy|reset}"
+    exit 1
+    ;;
+esac
