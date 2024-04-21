@@ -19,11 +19,11 @@ def reduce_one_group(key, group):
         output[dict_key].append([di, tfik, normal])
 
     for term in output:
-        final_output = term[0] + " " + term[1]
-        for value_list in output[term]:
-            values = " ".join(value_list)
-            final_output = final_output + " " + values
-        print(final_output)
+        final = term[0] + " " + term[1]
+        for item in output[term]:
+            item_list = " ".join(item)
+            final = final + " " + item_list
+        print(final)
 
 
 def keyfunc(line):
