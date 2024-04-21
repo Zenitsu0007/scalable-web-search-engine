@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Declarative programming - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"dd24d2ab-8646-4870-a413-76cc63133ab1","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Declarative_programming","wgTitle":"Declarative programming","wgCurRevisionId":1181160093,"wgRevisionId":1181160093,"wgArticleId":210648,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","Articles with short description","Short description is different from Wikidata","Articles lacking in-text citations from April 2010","All articles lacking in-text citations","Articles needing additional references from February 2015","All articles needing additional references","Articles with multiple maintenance issues","Articles containing potentially dated statements from 2013",
+"All articles containing potentially dated statements","All articles with specifically marked weasel-worded phrases","Articles with specifically marked weasel-worded phrases from July 2020","All articles with unsourced statements","Articles with unsourced statements from July 2020","Articles with BNE identifiers","Articles with BNF identifiers","Articles with BNFdata identifiers","Articles with GND identifiers","Articles with J9U identifiers","Articles with LCCN identifiers","Declarative programming","Programming paradigms"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Declarative_programming","wgRelevantArticleId":210648,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{
+"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":30000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q531152","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready",
+"user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022",
+"ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Declarative programming - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Declarative_programming">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Declarative_programming&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Declarative_programming">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Declarative_programming rootpage-Declarative_programming skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Declarative+programming" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Declarative+programming" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Declarative+programming" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Declarative+programming" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Definition"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Definition">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Definition</div>
+		</a>
+		
+		<ul id="toc-Definition-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Subparadigms"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Subparadigms">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Subparadigms</div>
+		</a>
+		
+			<button aria-controls="toc-Subparadigms-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Subparadigms subsection</span>
+			</button>
+		
+		<ul id="toc-Subparadigms-sublist" class="vector-toc-list">
+			<li id="toc-Constraint_programming"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Constraint_programming">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1</span>Constraint programming</div>
+			</a>
+			
+			<ul id="toc-Constraint_programming-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Domain-specific_languages"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Domain-specific_languages">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.2</span>Domain-specific languages</div>
+			</a>
+			
+			<ul id="toc-Domain-specific_languages-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Functional_programming"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Functional_programming">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.3</span>Functional programming</div>
+			</a>
+			
+			<ul id="toc-Functional_programming-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Hybrid_languages"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Hybrid_languages">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.4</span>Hybrid languages</div>
+			</a>
+			
+			<ul id="toc-Hybrid_languages-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Logic_programming"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Logic_programming">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.5</span>Logic programming</div>
+			</a>
+			
+			<ul id="toc-Logic_programming-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Modeling"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Modeling">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.6</span>Modeling</div>
+			</a>
+			
+			<ul id="toc-Modeling-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Examples"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Examples">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>Examples</div>
+		</a>
+		
+			<button aria-controls="toc-Examples-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Examples subsection</span>
+			</button>
+		
+		<ul id="toc-Examples-sublist" class="vector-toc-list">
+			<li id="toc-Lisp"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Lisp">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.1</span>Lisp</div>
+			</a>
+			
+			<ul id="toc-Lisp-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-ML"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#ML">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.2</span>ML</div>
+			</a>
+			
+			<ul id="toc-ML-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Prolog"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Prolog">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.3</span>Prolog</div>
+			</a>
+			
+			<ul id="toc-Prolog-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Datalog"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Datalog">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.4</span>Datalog</div>
+			</a>
+			
+			<ul id="toc-Datalog-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Answer_Set_Programming"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Answer_Set_Programming">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.5</span>Answer Set Programming</div>
+			</a>
+			
+			<ul id="toc-Answer_Set_Programming-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">6</span>External links</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Declarative programming</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 32 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-32" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">32 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%D9%8A%D8%A9" title="برمجة تعريفية – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-az mw-list-item"><a href="https://az.wikipedia.org/wiki/Deklarativ_proqramla%C5%9Fd%C4%B1rma" title="Deklarativ proqramlaşdırma – Azerbaijani" lang="az" hreflang="az" class="interlanguage-link-target"><span>Azərbaycanca</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Deklarativn%C3%AD_programov%C3%A1n%C3%AD" title="Deklarativní programování – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Deklarative_Programmierung" title="Deklarative Programmierung – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wikipedia.org/wiki/Deklaratiivne_programmeerimine" title="Deklaratiivne programmeerimine – Estonian" lang="et" hreflang="et" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%94%CE%B7%CE%BB%CF%89%CF%84%CE%B9%CE%BA%CF%8C%CF%82_%CF%80%CF%81%CE%BF%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CF%83%CE%BC%CF%8C%CF%82" title="Δηλωτικός προγραμματισμός – Greek" lang="el" hreflang="el" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_declarativa" title="Programación declarativa – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a href="https://eu.wikipedia.org/wiki/Programazio_deklaratibo" title="Programazio deklaratibo – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C_%D8%A7%D8%B9%D9%84%D8%A7%D9%86%DB%8C" title="برنامه‌نویسی اعلانی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Programmation_d%C3%A9clarative" title="Programmation déclarative – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ga mw-list-item"><a href="https://ga.wikipedia.org/wiki/R%C3%ADomhchl%C3%A1r%C3%BA_f%C3%B3grach" title="Ríomhchlárú fógrach – Irish" lang="ga" hreflang="ga" class="interlanguage-link-target"><span>Gaeilge</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EC%84%A0%EC%96%B8%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" title="선언형 프로그래밍 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-io mw-list-item"><a href="https://io.wikipedia.org/wiki/Deklarativa_programifo" title="Deklarativa programifo – Ido" lang="io" hreflang="io" class="interlanguage-link-target"><span>Ido</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Pemrograman_deklaratif" title="Pemrograman deklaratif – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Programmazione_dichiarativa" title="Programmazione dichiarativa – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%AA%D7%9B%D7%A0%D7%95%D7%AA_%D7%94%D7%A6%D7%94%D7%A8%D7%AA%D7%99" title="תכנות הצהרתי – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-ky mw-list-item"><a href="https://ky.wikipedia.org/wiki/%D0%94%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%82%D0%B8%D0%B2_%D1%82%D0%B8%D0%BB%D0%B8" title="Декларатив тили – Kyrgyz" lang="ky" hreflang="ky" class="interlanguage-link-target"><span>Кыргызча</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Deklarat%C3%ADv_programoz%C3%A1s" title="Deklaratív programozás – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-ms mw-list-item"><a href="https://ms.wikipedia.org/wiki/Pengaturcaraan_penyata" title="Pengaturcaraan penyata – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target"><span>Bahasa Melayu</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Declaratieve_taal" title="Declaratieve taal – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E5%AE%A3%E8%A8%80%E5%9E%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" title="宣言型プログラミング – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Programowanie_deklaratywne" title="Programowanie deklaratywne – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_declarativa" title="Programação declarativa – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="Декларативное программирование – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%94%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5" title="Декларативно програмирање – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Deklaratiivinen_ohjelmointi" title="Deklaratiivinen ohjelmointi – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Deklarativ_programmering" title="Deklarativ programmering – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Bildirimsel_programlama" title="Bildirimsel programlama – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%94%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" title="Декларативне програмування – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/L%E1%BA%ADp_tr%C3%ACnh_khai_b%C3%A1o" title="Lập trình khai báo – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E5%AE%A3%E5%91%8A%E5%BC%8F%E7%B7%A8%E7%A8%8B" title="宣告式編程 – Cantonese" lang="yue" hreflang="yue" class="interlanguage-link-target"><span>粵語</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%AE%A3%E5%91%8A%E5%BC%8F%E7%B7%A8%E7%A8%8B" title="宣告式編程 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q531152#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Declarative_programming" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Declarative_programming" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Declarative_programming"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Declarative_programming&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Declarative_programming&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Declarative_programming"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Declarative_programming&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Declarative_programming&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Declarative_programming" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Declarative_programming" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Declarative_programming&amp;oldid=1181160093" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Declarative_programming&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Declarative_programming&amp;id=1181160093&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDeclarative_programming"><span>Get shortened URL</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q531152" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Declarative_programming&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Declarative_programming&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Declarative_programming" hreflang="en"><span>Wikimedia Commons</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Programming paradigm based on modeling the logic of a computation</div>
+<style data-mw-deduplicate="TemplateStyles:r1097763485">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><style data-mw-deduplicate="TemplateStyles:r1086701767">.mw-parser-output .multiple-issues-text{width:95%;margin:0.2em 0}.mw-parser-output .multiple-issues-text>.mw-collapsible-content{margin-top:0.3em}.mw-parser-output .compact-ambox .ambox{border:none;border-collapse:collapse;background-color:transparent;margin:0 0 0 1.6em!important;padding:0!important;width:auto;display:block}body.mediawiki .mw-parser-output .compact-ambox .ambox.mbox-small-left{font-size:100%;width:auto;margin:0}.mw-parser-output .compact-ambox .ambox .mbox-text{padding:0!important;margin:0!important}.mw-parser-output .compact-ambox .ambox .mbox-text-span{display:list-item;line-height:1.5em;list-style-type:disc}.mw-parser-output .compact-ambox .ambox .mbox-image,.mw-parser-output .compact-ambox .ambox .mbox-imageright,.mw-parser-output .compact-ambox .ambox .mbox-empty-cell,.mw-parser-output .compact-ambox .hide-when-compact{display:none}</style><table class="box-Multiple_issues plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></span></span></div></td><td class="mbox-text"><div class="mbox-text-span"><div class="multiple-issues-text mw-collapsible"><b>This article has multiple issues.</b> Please help <b><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Declarative_programming&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:Declarative_programming" title="Talk:Declarative programming">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these template messages</a>)</i></small>
+<div class="mw-collapsible-content">
+      <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1097763485"><table class="box-More_footnotes plainlinks metadata ambox ambox-style ambox-More_footnotes" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></span></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article includes a list of general <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">references</a>, but <b>it lacks sufficient corresponding <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>.<span class="hide-when-compact"> Please help to <a href="/wiki/Wikipedia:WikiProject_Reliability" title="Wikipedia:WikiProject Reliability">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span>  <span class="date-container"><i>(<span class="date">April 2010</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1097763485"><table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><a href="/wiki/File:Question_book-new.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" decoding="async" width="50" height="39" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>.<span class="hide-when-compact"> Please help <a href="/wiki/Special:EditPage/Declarative_programming" title="Special:EditPage/Declarative programming">improve this article</a> by <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.<br /><small><span class="plainlinks"><i>Find sources:</i>&#160;<a rel="nofollow" class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Declarative+programming%22">"Declarative programming"</a>&#160;–&#160;<a rel="nofollow" class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Declarative+programming%22+-wikipedia&amp;tbs=ar:1">news</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.google.com/search?&amp;q=%22Declarative+programming%22&amp;tbs=bkt:s&amp;tbm=bks">newspapers</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Declarative+programming%22+-wikipedia">books</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://scholar.google.com/scholar?q=%22Declarative+programming%22">scholar</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Declarative+programming%22&amp;acc=on&amp;wc=on">JSTOR</a></span></small></span>  <span class="date-container"><i>(<span class="date">February 2015</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+    </div>
+</div><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+<style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar nomobile nowraplinks"><tbody><tr><th class="sidebar-title"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Programming paradigms</a></th></tr><tr><td class="sidebar-content" style="text-align: left">
+<ul><li><a href="/wiki/Action_language" title="Action language">Action</a></li>
+<li><a href="/wiki/Array_programming" title="Array programming">Array-oriented</a></li>
+<li><a href="/wiki/Automata-based_programming" title="Automata-based programming">Automata-based</a></li>
+<li><a href="/wiki/Concurrent_computing" title="Concurrent computing">Concurrent computing</a>
+<ul><li><a href="/wiki/Actor_model" title="Actor model">Actor-based</a></li>
+<li><a href="/wiki/Choreographic_programming" title="Choreographic programming">Choreographic programming</a></li>
+<li><a href="/wiki/Multitier_programming" title="Multitier programming">Multitier programming</a></li>
+<li><a href="/wiki/Relativistic_programming" title="Relativistic programming">Relativistic programming</a></li>
+<li><a href="/wiki/Structured_concurrency" title="Structured concurrency">Structured concurrency</a></li></ul></li>
+<li><a href="/wiki/Data-driven_programming" title="Data-driven programming">Data-driven</a></li>
+<li><a href="/wiki/Data-oriented_design" title="Data-oriented design">Data-oriented</a></li>
+<li><a class="mw-selflink selflink">Declarative</a> (contrast: <a href="/wiki/Imperative_programming" title="Imperative programming">Imperative</a>)
+<ul><li><a href="/wiki/Functional_programming" title="Functional programming">Functional</a>
+<ul><li><a href="/wiki/Functional_logic_programming" title="Functional logic programming">Functional logic</a></li>
+<li><a href="/wiki/Purely_functional_programming" title="Purely functional programming">Purely functional</a></li></ul></li>
+<li><a href="/wiki/Logic_programming" title="Logic programming">Logic</a>
+<ul><li><a href="/wiki/Abductive_logic_programming" title="Abductive logic programming">Abductive logic</a></li>
+<li><a href="/wiki/Answer_set_programming" title="Answer set programming">Answer set</a></li>
+<li><a href="/wiki/Concurrent_logic_programming" title="Concurrent logic programming">Concurrent logic</a></li>
+<li><a href="/wiki/Functional_logic_programming" title="Functional logic programming">Functional logic</a></li>
+<li><a href="/wiki/Inductive_logic_programming" title="Inductive logic programming">Inductive logic</a></li></ul></li>
+<li><a href="/wiki/Constraint_programming" title="Constraint programming">Constraint</a>
+<ul><li><a href="/wiki/Constraint_logic_programming" title="Constraint logic programming">Constraint logic</a>
+<ul><li><a href="/wiki/Concurrent_constraint_logic_programming" title="Concurrent constraint logic programming">Concurrent constraint logic</a></li></ul></li></ul></li>
+<li><a href="/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a>
+<ul><li><a href="/wiki/Flow-based_programming" title="Flow-based programming">Flow-based</a></li>
+<li><a href="/wiki/Reactive_programming" title="Reactive programming">Reactive</a>
+<ul><li><a href="/wiki/Functional_reactive_programming" title="Functional reactive programming">Functional reactive</a></li></ul></li></ul></li>
+<li><a href="/wiki/Ontology_language" title="Ontology language">Ontology</a></li>
+<li><a href="/wiki/Query_language" title="Query language">Query language</a></li></ul></li>
+<li><a href="/wiki/Differentiable_programming" title="Differentiable programming">Differentiable</a></li>
+<li><a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">Dynamic/scripting</a></li>
+<li><a href="/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a></li>
+<li><a href="/wiki/Function-level_programming" title="Function-level programming">Function-level</a> (contrast: <a href="/wiki/Value-level_programming" title="Value-level programming">Value-level</a>)
+<ul><li><a href="/wiki/Tacit_programming" title="Tacit programming">Point-free style</a>
+<ul><li><a href="/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li></ul></li></ul></li>
+<li><a href="/wiki/Generic_programming" title="Generic programming">Generic</a></li>
+<li><a href="/wiki/Imperative_programming" title="Imperative programming">Imperative</a> (contrast: <a class="mw-selflink selflink">Declarative</a>)
+<ul><li><a href="/wiki/Procedural_programming" title="Procedural programming">Procedural</a></li>
+<li><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented</a></li></ul></li>
+<li><a href="/wiki/Intentional_programming" title="Intentional programming">Intentional</a></li>
+<li><a href="/wiki/Language-oriented_programming" title="Language-oriented programming">Language-oriented</a>
+<ul><li><a href="/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li></ul></li>
+<li><a href="/wiki/Literate_programming" title="Literate programming">Literate</a></li>
+<li><a href="/wiki/Macroprogramming" title="Macroprogramming">Macroprogramming</a></li>
+<li><a href="/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a>
+<ul><li><a href="/wiki/Automatic_programming" title="Automatic programming">Automatic</a>
+<ul><li><a href="/wiki/Inductive_programming" title="Inductive programming">Inductive programming</a></li>
+<li><a href="/wiki/Program_synthesis" title="Program synthesis">Program synthesis</a></li></ul></li>
+<li><a href="/wiki/Reflective_programming" title="Reflective programming">Reflective</a>
+<ul><li><a href="/wiki/Attribute-oriented_programming" title="Attribute-oriented programming">Attribute-oriented</a></li></ul></li>
+<li><a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">Macro</a></li>
+<li><a href="/wiki/Template_metaprogramming" title="Template metaprogramming">Template</a></li></ul></li>
+<li><a href="/wiki/Natural-language_programming" title="Natural-language programming">Natural-language programming</a></li>
+<li><a href="/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a> (contrast: <a href="/wiki/Structured_programming" title="Structured programming">Structured</a>)
+<ul><li><a href="/wiki/Array_programming" title="Array programming">Array</a></li></ul></li>
+<li><a href="/wiki/Nondeterministic_programming" title="Nondeterministic programming">Nondeterministic</a></li>
+<li><a href="/wiki/Parallel_computing" title="Parallel computing">Parallel computing</a>
+<ul><li><a href="/wiki/Process-oriented_programming" title="Process-oriented programming">Process-oriented</a></li></ul></li>
+<li><a href="/wiki/Probabilistic_programming" title="Probabilistic programming">Probabilistic</a></li>
+<li><a href="/wiki/Quantum_programming" title="Quantum programming">Quantum</a></li>
+<li><a href="/wiki/Set_theoretic_programming" title="Set theoretic programming">Set-theoretic</a></li>
+<li><a href="/wiki/Stack-oriented_programming" title="Stack-oriented programming">Stack-based</a></li>
+<li><a href="/wiki/Structured_programming" title="Structured programming">Structured</a> (contrast: <a href="/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a>)
+<ul><li><a href="/wiki/Block_(programming)" title="Block (programming)">Block-structured</a></li>
+<li><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented</a>
+<ul><li><a href="/wiki/Agent-oriented_programming" title="Agent-oriented programming">Agent-oriented</a></li>
+<li><a href="/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="/wiki/Concurrent_object-oriented_programming" title="Concurrent object-oriented programming">Concurrent</a></li>
+<li><a href="/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+<li>By <a href="/wiki/Separation_of_concerns" title="Separation of concerns">separation of concerns</a>:
+<ul><li><a href="/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="/wiki/Role-oriented_programming" title="Role-oriented programming">Role-oriented</a></li>
+<li><a href="/wiki/Subject-oriented_programming" title="Subject-oriented programming">Subject-oriented</a></li></ul></li></ul></li>
+<li><a href="/wiki/Recursion_(computer_science)" title="Recursion (computer science)">Recursive</a></li></ul></li>
+<li><a href="/wiki/Symbolic_programming" title="Symbolic programming">Symbolic</a></li>
+<li><a href="/wiki/Value-level_programming" title="Value-level programming">Value-level</a> (contrast: <a href="/wiki/Function-level_programming" title="Function-level programming">Function-level</a>)</li></ul></td>
+</tr><tr><td class="sidebar-navbar"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Programming_paradigms" title="Template:Programming paradigms"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Programming_paradigms" title="Template talk:Programming paradigms"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Programming_paradigms" title="Special:EditPage/Template:Programming paradigms"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Computer_science" title="Computer science">computer science</a>, <b>declarative programming</b> is a <a href="/wiki/Programming_paradigm" title="Programming paradigm">programming paradigm</a>—a style of building the structure and elements of computer programs—that expresses the logic of a <a href="/wiki/Computation" title="Computation">computation</a> without describing its <a href="/wiki/Control_flow" title="Control flow">control flow</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> 
+</p><p>Many languages that apply this style attempt to minimize or eliminate <a href="/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">side effects</a> by describing <i>what</i> the program must accomplish in terms of the <a href="/wiki/Domain_knowledge" title="Domain knowledge">problem domain</a>, rather than describing <i>how</i> to accomplish it as a sequence of the programming <a href="/wiki/Language_primitive" title="Language primitive">language primitives</a><sup id="cite_ref-FOLDOC_2004_2-0" class="reference"><a href="#cite_note-FOLDOC_2004-2">&#91;2&#93;</a></sup> (the <i>how</i> being left up to the language's <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementation</a>). This is in contrast with <a href="/wiki/Imperative_programming" title="Imperative programming">imperative programming</a>, which implements <a href="/wiki/Algorithm" title="Algorithm">algorithms</a> in explicit steps.<sup id="cite_ref-Sebesta_2016_3-0" class="reference"><a href="#cite_note-Sebesta_2016-3">&#91;3&#93;</a></sup>
+</p><p>Declarative programming often considers <a href="/wiki/Program_(machine)" title="Program (machine)">programs</a> as theories of a <a href="/wiki/Mathematical_logic#Formal_logical_systems" title="Mathematical logic">formal logic</a>, and computations as deductions in that logic space. Declarative programming may greatly simplify writing <a href="/wiki/Parallel_computing" title="Parallel computing">parallel programs</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
+</p><p>Common declarative languages include those of <a href="/wiki/Query_languages" class="mw-redirect" title="Query languages">database query languages</a> (e.g., <a href="/wiki/SQL" title="SQL">SQL</a>, <a href="/wiki/XQuery" title="XQuery">XQuery</a>), <a href="/wiki/Regular_expression" title="Regular expression">regular expressions</a>, <a href="/wiki/Logic_programming" title="Logic programming">logic programming</a> (e.g. <a href="/wiki/Prolog" title="Prolog">Prolog</a>, <a href="/wiki/Datalog" title="Datalog">Datalog</a>, <a href="/wiki/Answer_set_programming" title="Answer set programming">answer set programming</a>), <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a>, and <a href="/wiki/Configuration_management_database" title="Configuration management database">configuration management</a> systems.
+</p><p>The term is often used in contrast to imperative programming, which dictates the transformation steps of its state explicitly.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=1" title="Edit section: Definition"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Declarative programming is often defined as any style of programming that is not imperative. A number of other common definitions attempt to define it by simply contrasting it with imperative programming. For example:
+</p>
+<ul><li>A high-level program that describes what a computation should perform.</li>
+<li>Any programming language that lacks <a href="/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">side effects</a> (or more specifically, is <a href="/wiki/Referential_transparency" title="Referential transparency">referentially transparent</a>)</li>
+<li>A language with a clear correspondence to <a href="/wiki/Mathematical_logic" title="Mathematical logic">mathematical logic</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup></li></ul>
+<p>These definitions overlap substantially.
+</p><p>Declarative programming is a non-imperative style of programming in which programs describe their desired results without explicitly listing commands or steps that must be performed. Functional and logic programming languages are characterized by a declarative programming style. In logic programming, programs consist of sentences expressed in logical form, and computation uses those sentences to solve problems, which are also expressed in logical form.
+</p><p>In a <a href="/wiki/Pure_functional_language" class="mw-redirect" title="Pure functional language">pure functional language</a>, such as <a href="/wiki/Haskell_(programming_language)" class="mw-redirect" title="Haskell (programming language)">Haskell</a>, all functions are <a href="/wiki/Pure_function" title="Pure function">without side effects</a>, and state changes are only represented as functions that transform the state, which is explicitly represented as a <a href="/wiki/First-class_citizen" title="First-class citizen">first-class</a> object in the program. Although pure functional languages are non-imperative, they often provide a facility for describing the effect of a function as a series of steps. Other functional languages, such as <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="/wiki/OCaml" title="OCaml">OCaml</a> and <a href="/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a>, support a mixture of procedural and functional programming.
+</p><p>Some logic programming languages, such as <a href="/wiki/Prolog" title="Prolog">Prolog</a>, and database query languages, such as SQL, while declarative in principle, also support a procedural style of programming.
+</p>
+<h2><span class="mw-headline" id="Subparadigms">Subparadigms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=2" title="Edit section: Subparadigms"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Declarative programming is an <a href="/wiki/Umbrella_term" class="mw-redirect" title="Umbrella term">umbrella term</a> that includes a number of better-known <a href="/wiki/Programming_paradigm" title="Programming paradigm">programming paradigms</a>.
+</p>
+<h3><span class="mw-headline" id="Constraint_programming">Constraint programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=3" title="Edit section: Constraint programming"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Constraint_programming" title="Constraint programming">Constraint programming</a> states relations between variables in the form of constraints that specify the properties of the target solution. The set of constraints is <a href="/wiki/Solver_(computer_science)" class="mw-redirect" title="Solver (computer science)">solved</a> by giving a value to each variable so that the solution is consistent with the maximum number of constraints. Constraint programming often complements other paradigms: functional, logical, or even imperative programming.
+</p>
+<h3><span class="mw-headline" id="Domain-specific_languages">Domain-specific languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=4" title="Edit section: Domain-specific languages"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Well-known examples of declarative <a href="/wiki/Domain-specific_language" title="Domain-specific language">domain-specific languages</a> (DSLs) include the <a href="/wiki/Yacc" title="Yacc">yacc</a> parser generator input language, <a href="/wiki/QML" title="QML">QML</a>, the <a href="/wiki/Make_(software)" title="Make (software)">Make</a> build specification language, <a href="/wiki/Puppet_(software)" title="Puppet (software)">Puppet</a>'s configuration management language, <a href="/wiki/Regular_expression" title="Regular expression">regular expressions</a>, <a href="/wiki/Datalog" title="Datalog">Datalog</a>, <a href="/wiki/Answer_set_programming" title="Answer set programming">answer set programming</a> and a subset of <a href="/wiki/SQL" title="SQL">SQL</a> (SELECT queries, for example). DSLs have the advantage of being useful while not necessarily needing to be <a href="/wiki/Turing-complete" class="mw-redirect" title="Turing-complete">Turing-complete</a>, which makes it easier for a language to be purely declarative.
+</p><p>Many markup languages such as <a href="/wiki/HTML" title="HTML">HTML</a>, <a href="/wiki/MXML" title="MXML">MXML</a>, <a href="/wiki/XAML" class="mw-redirect" title="XAML">XAML</a>, <a href="/wiki/XSLT" title="XSLT">XSLT</a> or other <a href="/wiki/User-interface_markup_language" class="mw-redirect" title="User-interface markup language">user-interface markup languages</a> are often declarative. HTML, for example, only describes what should appear on a webpage - it specifies neither <a href="/wiki/Control_flow" title="Control flow">control flow</a> for rendering a page nor the page's possible <a href="/wiki/Human-computer_interaction" class="mw-redirect" title="Human-computer interaction">interactions with a user</a>.
+</p><p>As of 2013<sup class="plainlinks noexcerpt noprint asof-tag update" style="display:none;"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Declarative_programming&amp;action=edit">&#91;update&#93;</a></sup>, some software systems<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Avoid_weasel_words" class="mw-redirect" title="Wikipedia:Avoid weasel words"><span title="The material near this tag possibly uses too vague attribution or weasel words. (July 2020)">which?</span></a></i>&#93;</sup> combine traditional user-interface markup languages (such as HTML) with declarative markup that defines what (but not how) the back-end server systems should do to support the declared interface. Such systems, typically using a domain-specific <a href="/wiki/XML_namespace" title="XML namespace">XML namespace</a>, may include abstractions of SQL database syntax or parameterized calls to web services using <a href="/wiki/Representational_state_transfer" class="mw-redirect" title="Representational state transfer">representational state transfer</a> (REST) and <a href="/wiki/SOAP" title="SOAP">SOAP</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2020)">citation needed</span></a></i>&#93;</sup>
+</p>
+<h3><span class="mw-headline" id="Functional_programming">Functional programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=5" title="Edit section: Functional programming"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Functional programming languages such as <a href="/wiki/Haskell_(programming_language)" class="mw-redirect" title="Haskell (programming language)">Haskell</a>, <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, and <a href="/wiki/Standard_ML" title="Standard ML">ML</a> evaluate expressions via function application. Unlike the related but more imperative paradigm of <a href="/wiki/Procedural_programming" title="Procedural programming">procedural programming</a>, functional programming places little emphasis on explicit sequencing. For example, in <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, the order of evaluation of many kinds of sub-expressions is undefined or implicit.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> Instead, computations are characterised by various kinds of recursive <a href="/wiki/Higher-order_function" title="Higher-order function">higher-order function</a> application and <a href="/wiki/Function_composition_(computer_science)" title="Function composition (computer science)">composition</a>, and as such can be regarded simply as a set of mappings between <a href="/wiki/Domain_of_a_function" title="Domain of a function">domains</a> and <a href="/wiki/Codomain" title="Codomain">codomains</a>. Many functional languages, including most of those in the ML and Lisp families, are not <a href="/wiki/Purely_functional_programming" title="Purely functional programming">purely functional</a>, and thus allow the introduction of <a href="/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">stateful effects</a> in programs.
+</p>
+<h3><span class="mw-headline" id="Hybrid_languages">Hybrid languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=6" title="Edit section: Hybrid languages"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">Multi-paradigm programming language</a></div>
+<p>Makefiles, for example, specify dependencies in a declarative fashion,<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> but include an imperative list of actions to take as well. Similarly, yacc specifies a context free grammar declaratively, but includes code snippets from a host language, which is usually imperative (such as <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>).
+</p>
+<h3><span class="mw-headline" id="Logic_programming">Logic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=7" title="Edit section: Logic programming"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Logic_programming" title="Logic programming">Logic programming</a> languages, such as <a href="/wiki/Prolog" title="Prolog">Prolog</a>, <a href="/wiki/Datalog" title="Datalog">Datalog</a> and <a href="/wiki/Answer_set_programming" title="Answer set programming">answer set programming</a>, compute by proving that a goal is a logical consequence of the program, or by showing that the goal is true in a model defined by the program. Prolog computes by reducing goals to subgoals, top-down using <a href="/wiki/Backward_chaining" title="Backward chaining"> backward reasoning</a>, whereas most Datalog systems compute bottom-up using <a href="/wiki/Forward_chaining" title="Forward chaining"> forward reasoning</a>. Answer set programs typically use <a href="/wiki/Boolean_SAT_solver" class="mw-redirect" title="Boolean SAT solver">SAT solvers</a> to generate a model of the program.
+</p>
+<h3><span class="mw-headline" id="Modeling">Modeling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=8" title="Edit section: Modeling"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Mathematical_model" title="Mathematical model">Mathematical model</a></div>
+<p>Models, or mathematical representations, of physical systems may be implemented in computer code that is declarative. The code contains a number of equations, not imperative assignments, that describe ("declare") the behavioral relationships. When a model is expressed in this formalism, a computer is able to perform algebraic manipulations to best formulate the solution algorithm.  The mathematical causality is typically imposed at the boundaries of the physical system, while the behavioral description of the system itself is declarative or acausal. Declarative <a href="/wiki/Modeling_language" title="Modeling language">modeling languages</a> and environments include <a href="/wiki/Analytica_(software)" title="Analytica (software)">Analytica</a>, <a href="/wiki/Modelica" title="Modelica">Modelica</a> and <a href="/w/index.php?title=Simile_(computing)&amp;action=edit&amp;redlink=1" class="new" title="Simile (computing) (page does not exist)">Simile</a>.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=9" title="Edit section: Examples"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Lisp">Lisp</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=10" title="Edit section: Lisp"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> (1958) stands for "LISt Processor."<sup id="cite_ref-ArtOfLisp_10-0" class="reference"><a href="#cite_note-ArtOfLisp-10">&#91;10&#93;</a></sup> It is tailored to process <a href="/wiki/List_(abstract_data_type)" title="List (abstract data type)">lists</a>. A data structure is formed by building lists of lists. In memory, this forms a <a href="/wiki/Tree_(data_structure)" title="Tree (data structure)">tree data structure</a>. Internally, the tree structure of typical Lisp data lends itself nicely to processing with <a href="/wiki/Recursion_(computer_science)" title="Recursion (computer science)">recursive</a> functions.<sup id="cite_ref-cpl_3rd-ch9-220_11-0" class="reference"><a href="#cite_note-cpl_3rd-ch9-220-11">&#91;11&#93;</a></sup> The syntax to build a tree is to enclose the whitespace-separated <a href="/wiki/Element_(mathematics)" title="Element (mathematics)">elements</a> within parenthesis. The following is a list of three elements. The first two elements are themselves lists of two elements each:
+</p>
+<div class="mw-highlight mw-highlight-lang-lisp mw-content-ltr" dir="ltr"><pre><span></span><span class="p">((</span><span class="nv">A</span><span class="w"> </span><span class="nv">B</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nv">HELLO</span><span class="w"> </span><span class="nv">WORLD</span><span class="p">)</span><span class="w"> </span><span class="mi">94</span><span class="p">)</span>
+</pre></div>
+<p>Lisp has functions to extract and reconstruct elements.<sup id="cite_ref-cpl_3rd-ch9-221_12-0" class="reference"><a href="#cite_note-cpl_3rd-ch9-221-12">&#91;12&#93;</a></sup> The function <code>car</code> (sometimes called <code>first</code>) returns the first element in the list. The function <code>cdr</code> (sometimes called <code>rest</code>) returns a list containing everything but the first element. The function <code>cons</code> returns a list that is the second argument with the first prepended to it. Therefore, if X is a non-empty list, the following expression evaluates to the list <code>X</code>:
+</p>
+<div class="mw-highlight mw-highlight-lang-lisp mw-content-ltr" dir="ltr"><pre><span></span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="nb">car</span><span class="w"> </span><span class="nv">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="nv">x</span><span class="p">))</span>
+</pre></div>
+<p>The code itself returns a <i>copy</i> of the list <code>X</code>. As is typical in functional languages, operations in Lisp often copy data when asked to produce new data from old. The tree structure of Lisp data facilitates this as well: a new structure made from pre-existing data shares as much of its internal structure with its antecedents as possible, with new additions stored as branches of the tree, and references to the original structure under its original name will return exactly that and no more.
+</p><p>One drawback of Lisp is when many functions are nested, the parentheses may look confusing.<sup id="cite_ref-cpl_3rd-ch9-230_13-0" class="reference"><a href="#cite_note-cpl_3rd-ch9-230-13">&#91;13&#93;</a></sup> Modern Lisp <a href="/wiki/Integrated_development_environment" title="Integrated development environment">environments</a> help ensure parenthesis match. As an aside, Lisp does support the <i>imperative language</i> operations of the assignment statement and goto loops.<sup id="cite_ref-cpl_3rd-ch9-229_14-0" class="reference"><a href="#cite_note-cpl_3rd-ch9-229-14">&#91;14&#93;</a></sup> Also, <i>Lisp</i> is not concerned with the <a href="/wiki/Data_type" title="Data type">datatype</a> of the elements at compile time. Instead, it assigns the datatypes at runtime. This may lead to programming errors not being detected early in the development process. To counteract this, Lisp development is typically carried out in an extremely incremental manner, with functions and higher-order functions built up and tested live during development. Additionally, through the use of <a href="/wiki/Macro_(computer_science)#Syntactic_macros" title="Macro (computer science)">macros</a>, which are Lisp functions that operate upon Lisp programs as data structures, type checking may be performed discretionally at any point the programmer wishes.
+</p><p>Writing large, reliable, and readable Lisp programs requires forethought. If properly planned, the program may be much shorter than an equivalent <i>imperative language</i> program.<sup id="cite_ref-cpl_3rd-ch9-230_13-1" class="reference"><a href="#cite_note-cpl_3rd-ch9-230-13">&#91;13&#93;</a></sup> <i>Lisp</i> is widely used in <a href="/wiki/Artificial_intelligence" title="Artificial intelligence">artificial intelligence</a>. However, its usage has been accepted only because it has <i>imperative language</i> operations, making unintended side-effects possible.<sup id="cite_ref-cpl_3rd-ch9-241_15-0" class="reference"><a href="#cite_note-cpl_3rd-ch9-241-15">&#91;15&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="ML">ML</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=11" title="Edit section: ML"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/ML_(programming_language)" title="ML (programming language)">ML</a> (1973)<sup id="cite_ref-Gordon1996_16-0" class="reference"><a href="#cite_note-Gordon1996-16">&#91;16&#93;</a></sup> stands for "Meta Language." ML is statically typed, and function arguments and return types may be annotated.<sup id="cite_ref-cpl_3rd-ch9-233_17-0" class="reference"><a href="#cite_note-cpl_3rd-ch9-233-17">&#91;17&#93;</a></sup> 
+</p>
+<div class="mw-highlight mw-highlight-lang-sml mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">fun</span> <span class="nf">times_10</span><span class="p">(</span><span class="n">n</span> <span class="p">:</span> <span class="n">int</span><span class="p">)</span> <span class="p">:</span> <span class="n">int</span> <span class="p">=</span> <span class="mi">10</span> <span class="n">*</span> <span class="n">n</span><span class="p">;</span>
+</pre></div>
+<p><i>ML</i> is not as bracket-centric as <i>Lisp</i>, and instead uses a wider variety of syntax to codify the relationship between code elements, rather than appealing to list ordering and nesting to express everything. The following is an application of <code>times_10</code>:
+</p>
+<pre>times_10 2
+</pre>
+<p>It returns "20&#160;: int", that is, <code>20</code>, a value of type <code>int</code>. 
+</p><p>Like <i>Lisp</i>, <i>ML</i> is tailored to process lists, though all elements of a list must be the same type.<sup id="cite_ref-cpl_3rd-ch9-235_18-0" class="reference"><a href="#cite_note-cpl_3rd-ch9-235-18">&#91;18&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Prolog">Prolog</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=12" title="Edit section: Prolog"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Prolog" title="Prolog">Prolog</a> (1972) stands for "PROgramming in LOGic." It was developed for natural language <a href="/wiki/Question_answering" title="Question answering">question answering</a>,<sup id="cite_ref-PrologHistory_19-0" class="reference"><a href="#cite_note-PrologHistory-19">&#91;19&#93;</a></sup> using SL resolution<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup> both to deduce answers to queries and to parse and generate natural language sentences.
+</p><p>The building blocks of a Prolog program are <i>facts</i> and <i>rules</i>. Here is a simple example:
+</p>
+<div class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">cat</span><span class="p">(</span><span class="s s-Atom">tom</span><span class="p">).</span>                        <span class="c1">% tom is a cat</span>
+<span class="nf">mouse</span><span class="p">(</span><span class="s s-Atom">jerry</span><span class="p">).</span>                    <span class="c1">% jerry is a mouse</span>
+
+<span class="nf">animal</span><span class="p">(</span><span class="nv">X</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">cat</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>             <span class="c1">% each cat is an animal</span>
+<span class="nf">animal</span><span class="p">(</span><span class="nv">X</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">mouse</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>           <span class="c1">% each mouse is an animal</span>
+
+<span class="nf">big</span><span class="p">(</span><span class="nv">X</span><span class="p">)</span>   <span class="p">:-</span> <span class="nf">cat</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>              <span class="c1">% each cat is big</span>
+<span class="nf">small</span><span class="p">(</span><span class="nv">X</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">mouse</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>            <span class="c1">% each mouse is small</span>
+
+<span class="nf">eat</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">mouse</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nf">cheese</span><span class="p">(</span><span class="nv">Y</span><span class="p">).</span> <span class="c1">% each mouse eats each cheese</span>
+<span class="nf">eat</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">big</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span>   <span class="nf">small</span><span class="p">(</span><span class="nv">Y</span><span class="p">).</span>  <span class="c1">% each big being eats each small being</span>
+</pre></div>
+<p>Given this program, the query <code class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><span class="nf">eat</span><span class="p">(</span><span class="s s-Atom">tom</span><span class="p">,</span><span class="s s-Atom">jerry</span><span class="p">)</span></code> succeeds, while <code class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><span class="nf">eat</span><span class="p">(</span><span class="s s-Atom">jerry</span><span class="p">,</span><span class="s s-Atom">tom</span><span class="p">)</span></code> fails. Moreover, the query <code class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><span class="nf">eat</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="s s-Atom">jerry</span><span class="p">)</span></code> succeeds with the answer substitution <code class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><span class="nv">X</span><span class="o">=</span><span class="s s-Atom">tom</span></code>.
+</p><p>Prolog executes programs top-down, using <a href="/wiki/SLD_resolution" title="SLD resolution">SLD resolution</a> to <a href="/wiki/Backward_chaining" title="Backward chaining"> reason backwards</a>, reducing goals to subgoals. In this example, it uses the last rule of the program to reduce the goal of answering the query <code class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><span class="nf">eat</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="s s-Atom">jerry</span><span class="p">)</span></code> to the subgoals of first finding an X such that <code class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><span class="nf">big</span><span class="p">(</span><span class="nv">X</span><span class="p">)</span></code> holds and then of showing that <code class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><span class="nf">small</span><span class="p">(</span><span class="s s-Atom">jerry</span><span class="p">)</span></code> holds. It repeatedly uses rules to further reduce subgoals to other subgoals, until it eventually succeeds in <a href="/wiki/Unification_(computer_science)#Application:_unification_in_logic_programming" title="Unification (computer science)"> unifying</a> all subgoals with facts in the program. This backward reasoning, goal-reduction strategy treats rules in logic programs as procedures, and makes Prolog both a declarative and <a href="/wiki/Procedural_programming#Logic_programming" title="Procedural programming"> procedural programming</a> language.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">&#91;21&#93;</a></sup>
+</p><p>The broad range of Prolog applications is highlighted in the Year of Prolog Book,<sup id="cite_ref-Prolog_Book_22-0" class="reference"><a href="#cite_note-Prolog_Book-22">&#91;22&#93;</a></sup> celebrating the 50 year anniversary of Prolog.
+</p>
+<h3><span class="mw-headline" id="Datalog">Datalog</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=13" title="Edit section: Datalog"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/Datalog#History" title="Datalog"> origins of Datalog</a> date back to the beginning of logic programming, but it was identified as a separate area around 1977. <a href="/wiki/Syntax_and_semantics_of_logic_programming" title="Syntax and semantics of logic programming">Syntactically and semantically</a>, it is a subset of Prolog. But because it does not have <a href="/wiki/Prolog#Data_types" title="Prolog"> compound terms</a>, it is not <a href="/wiki/Turing_completeness" title="Turing completeness">Turing-complete</a>.
+</p><p>Most Datalog systems execute programs bottom-up, using rules to <a href="/wiki/Forward_chaining" title="Forward chaining"> reason forwards</a>, deriving new facts from existing facts, and terminating when there are no new facts that can be derived, or when the derived facts unify with the query. In the above example, a typical Datalog system would first derive the new facts:
+</p>
+<div class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">animal</span><span class="p">(</span><span class="s s-Atom">tom</span><span class="p">).</span>
+<span class="nf">animal</span><span class="p">(</span><span class="s s-Atom">jerry</span><span class="p">).</span>
+<span class="nf">big</span><span class="p">(</span><span class="s s-Atom">tom</span><span class="p">).</span>
+<span class="nf">small</span><span class="p">(</span><span class="s s-Atom">jerry</span><span class="p">).</span>
+</pre></div>
+<p>Using these facts, it would then derive the additional fact:
+</p>
+<div class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">eats</span><span class="p">(</span><span class="s s-Atom">tom</span><span class="p">,</span> <span class="s s-Atom">jerry</span><span class="p">).</span>
+</pre></div><p>
+It would then terminate, both because no new, additional facts can be derived, and because the newly derived fact unifies with the query </p><div class="mw-highlight mw-highlight-lang-prolog mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">eats</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="s s-Atom">jerry</span><span class="p">).</span>
+</pre></div>
+<p>Datalog has been applied to such problems as <a href="/wiki/Data_integration" title="Data integration">data integration</a>, <a href="/wiki/Information_extraction" title="Information extraction">information extraction</a>, <a href="/wiki/Computer_network" title="Computer network">networking</a>, <a href="/wiki/Security" title="Security">security</a>, <a href="/wiki/Cloud_computing" title="Cloud computing">cloud computing</a> and <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a>.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;23&#93;</a></sup><sup id="cite_ref-24" class="reference"><a href="#cite_note-24">&#91;24&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Answer_Set_Programming">Answer Set Programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=14" title="Edit section: Answer Set Programming"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Answer_set_programming" title="Answer set programming">Answer set programming</a> (ASP) evolved in the late 1990s, based on the <a href="/wiki/Stable_model_semantics" title="Stable model semantics">stable model</a> (answer set) semantics of logic programming. Like Datalog, it is a subset of Prolog; and, because it does not have compound terms, it is not Turing-complete.
+</p><p>Most implementations of ASP execute a program by first "grounding" the program, replacing all variables in rules by constants in all possible ways, and then using a propositional SAT solver, such as the <a href="/wiki/DPLL_algorithm" title="DPLL algorithm">DPLL algorithm</a> to generate one or more models of the program.
+</p><p>Its applications are oriented towards solving difficult <a href="/wiki/Search_algorithm" title="Search algorithm">search problems</a> and <a href="/wiki/Knowledge_representation" class="mw-redirect" title="Knowledge representation">knowledge representation</a>.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">&#91;25&#93;</a></sup><sup id="cite_ref-26" class="reference"><a href="#cite_note-26">&#91;26&#93;</a></sup> 
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=15" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Comparison_of_programming_paradigms" title="Comparison of programming paradigms">Comparison of programming paradigms</a></li>
+<li><a href="/wiki/Inductive_programming" title="Inductive programming">Inductive programming</a></li>
+<li><a href="/wiki/List_of_programming_languages_by_type#Declarative_languages" title="List of programming languages by type">List of declarative programming languages</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=16" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFLloyd" class="citation cs2">Lloyd, J.W., <i>Practical Advantages of Declarative Programming</i></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Practical+Advantages+of+Declarative+Programming&amp;rft.aulast=Lloyd&amp;rft.aufirst=J.W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-FOLDOC_2004-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOLDOC_2004_2-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://foldoc.org/declarative+language">"declarative language"</a>. <i>FOLDOC</i>. 17 May 2004<span class="reference-accessdate">. Retrieved <span class="nowrap">7 September</span> 2023</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=FOLDOC&amp;rft.atitle=declarative+language&amp;rft.date=2004-05-17&amp;rft_id=https%3A%2F%2Ffoldoc.org%2Fdeclarative%2Blanguage&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Sebesta_2016-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-Sebesta_2016_3-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFSebesta2016" class="citation book cs1">Sebesta, Robert (2016). <i>Concepts of programming languages</i>. Boston: Pearson. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-13-394302-3" title="Special:BookSources/978-0-13-394302-3"><bdi>978-0-13-394302-3</bdi></a>. <a href="/wiki/OCLC_(identifier)" class="mw-redirect" title="OCLC (identifier)">OCLC</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/oclc/896687896">896687896</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Concepts+of+programming+languages&amp;rft.place=Boston&amp;rft.pub=Pearson&amp;rft.date=2016&amp;rft_id=info%3Aoclcnum%2F896687896&amp;rft.isbn=978-0-13-394302-3&amp;rft.aulast=Sebesta&amp;rft.aufirst=Robert&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20130913162703/http://www.cse.unsw.edu.au/~pls/damp09/">"DAMP 2009: Workshop on Declarative Aspects of Multicore Programming"</a>. Cse.unsw.edu.au. 20 January 2009. Archived from <a rel="nofollow" class="external text" href="http://www.cse.unsw.edu.au/~pls/damp09/">the original</a> on 13 September 2013<span class="reference-accessdate">. Retrieved <span class="nowrap">15 August</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=DAMP+2009%3A+Workshop+on+Declarative+Aspects+of+Multicore+Programming&amp;rft.pub=Cse.unsw.edu.au&amp;rft.date=2009-01-20&amp;rft_id=http%3A%2F%2Fwww.cse.unsw.edu.au%2F~pls%2Fdamp09%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.ionos.com/digitalguide/websites/web-development/imperative-programming/">"Imperative programming: Overview of the oldest programming paradigm"</a>. <i>IONOS Digital Guide</i>. 2021-05-21<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-05-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=IONOS+Digital+Guide&amp;rft.atitle=Imperative+programming%3A+Overview+of+the+oldest+programming+paradigm&amp;rft.date=2021-05-21&amp;rft_id=https%3A%2F%2Fwww.ionos.com%2Fdigitalguide%2Fwebsites%2Fweb-development%2Fimperative-programming%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFChakravarty1997" class="citation thesis cs1">Chakravarty, Manuel M. T. (14 February 1997). <a rel="nofollow" class="external text" href="http://www.cse.unsw.edu.au/~chak/papers/diss.ps.gz"><i>On the Massively Parallel Execution of Declarative Programs</i></a> (Doctoral dissertation). <a href="/wiki/Technical_University_of_Berlin" title="Technical University of Berlin">Technical University of Berlin</a><span class="reference-accessdate">. Retrieved <span class="nowrap">26 February</span> 2015</span>. <q>In this context, the criterion for calling a programming language declarative is the existence of a clear, mathematically established correspondence between the language and mathematical logic such that a declarative semantics for the language can be based on the model or the proof theory (or both) of the logic.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation&amp;rft.title=On+the+Massively+Parallel+Execution+of+Declarative+Programs&amp;rft.inst=Technical+University+of+Berlin&amp;rft.date=1997-02-14&amp;rft.aulast=Chakravarty&amp;rft.aufirst=Manuel+M.+T.&amp;rft_id=http%3A%2F%2Fwww.cse.unsw.edu.au%2F~chak%2Fpapers%2Fdiss.ps.gz&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://small.r7rs.org/attachment/r7rs.pdf">"Revised<sup>7</sup> Report on the Algorithmic Language Scheme"</a> <span class="cs1-format">(PDF)</span>. Scheme Working Group 1<span class="reference-accessdate">. Retrieved <span class="nowrap">2020-12-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Revised%3Csup%3E7%3C%2Fsup%3E+Report+on+the+Algorithmic+Language+Scheme&amp;rft.pub=Scheme+Working+Group+1&amp;rft_id=https%3A%2F%2Fsmall.r7rs.org%2Fattachment%2Fr7rs.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20071023021126/http://phoenix.labri.fr/wiki/doku.php?id=an_overview_on_dsls">"An overview on dsls"</a>. Archived from <a rel="nofollow" class="external text" href="http://phoenix.labri.fr/wiki/doku.php?id=an_overview_on_dsls">the original</a> on October 23, 2007.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=An+overview+on+dsls&amp;rft_id=http%3A%2F%2Fphoenix.labri.fr%2Fwiki%2Fdoku.php%3Fid%3Dan_overview_on_dsls&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.simulistics.com/tour/declarative.htm">"Declarative modelling"</a>. Simulistics<span class="reference-accessdate">. Retrieved <span class="nowrap">15 August</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Declarative+modelling&amp;rft.pub=Simulistics&amp;rft_id=http%3A%2F%2Fwww.simulistics.com%2Ftour%2Fdeclarative.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-ArtOfLisp-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-ArtOfLisp_10-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFJonesMaynardStewart2012" class="citation book cs1">Jones, Robin; Maynard, Clive; Stewart, Ian (December 6, 2012). <i>The Art of Lisp Programming</i>. Springer Science &amp; Business Media. p.&#160;2. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781447117193" title="Special:BookSources/9781447117193"><bdi>9781447117193</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Art+of+Lisp+Programming&amp;rft.pages=2&amp;rft.pub=Springer+Science+%26+Business+Media&amp;rft.date=2012-12-06&amp;rft.isbn=9781447117193&amp;rft.aulast=Jones&amp;rft.aufirst=Robin&amp;rft.au=Maynard%2C+Clive&amp;rft.au=Stewart%2C+Ian&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-cpl_3rd-ch9-220-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-cpl_3rd-ch9-220_11-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWilson2001" class="citation book cs1">Wilson, Leslie B. (2001). <i>Comparative Programming Languages, Third Edition</i>. Addison-Wesley. p.&#160;220. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-71012-9" title="Special:BookSources/0-201-71012-9"><bdi>0-201-71012-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Comparative+Programming+Languages%2C+Third+Edition&amp;rft.pages=220&amp;rft.pub=Addison-Wesley&amp;rft.date=2001&amp;rft.isbn=0-201-71012-9&amp;rft.aulast=Wilson&amp;rft.aufirst=Leslie+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-cpl_3rd-ch9-221-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-cpl_3rd-ch9-221_12-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWilson2001" class="citation book cs1">Wilson, Leslie B. (2001). <i>Comparative Programming Languages, Third Edition</i>. Addison-Wesley. p.&#160;221. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-71012-9" title="Special:BookSources/0-201-71012-9"><bdi>0-201-71012-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Comparative+Programming+Languages%2C+Third+Edition&amp;rft.pages=221&amp;rft.pub=Addison-Wesley&amp;rft.date=2001&amp;rft.isbn=0-201-71012-9&amp;rft.aulast=Wilson&amp;rft.aufirst=Leslie+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-cpl_3rd-ch9-230-13"><span class="mw-cite-backlink">^ <a href="#cite_ref-cpl_3rd-ch9-230_13-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-cpl_3rd-ch9-230_13-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWilson2001" class="citation book cs1">Wilson, Leslie B. (2001). <i>Comparative Programming Languages, Third Edition</i>. Addison-Wesley. p.&#160;230. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-71012-9" title="Special:BookSources/0-201-71012-9"><bdi>0-201-71012-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Comparative+Programming+Languages%2C+Third+Edition&amp;rft.pages=230&amp;rft.pub=Addison-Wesley&amp;rft.date=2001&amp;rft.isbn=0-201-71012-9&amp;rft.aulast=Wilson&amp;rft.aufirst=Leslie+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-cpl_3rd-ch9-229-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-cpl_3rd-ch9-229_14-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWilson2001" class="citation book cs1">Wilson, Leslie B. (2001). <i>Comparative Programming Languages, Third Edition</i>. Addison-Wesley. p.&#160;229. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-71012-9" title="Special:BookSources/0-201-71012-9"><bdi>0-201-71012-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Comparative+Programming+Languages%2C+Third+Edition&amp;rft.pages=229&amp;rft.pub=Addison-Wesley&amp;rft.date=2001&amp;rft.isbn=0-201-71012-9&amp;rft.aulast=Wilson&amp;rft.aufirst=Leslie+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-cpl_3rd-ch9-241-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-cpl_3rd-ch9-241_15-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWilson2001" class="citation book cs1">Wilson, Leslie B. (2001). <i>Comparative Programming Languages, Third Edition</i>. Addison-Wesley. p.&#160;241. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-71012-9" title="Special:BookSources/0-201-71012-9"><bdi>0-201-71012-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Comparative+Programming+Languages%2C+Third+Edition&amp;rft.pages=241&amp;rft.pub=Addison-Wesley&amp;rft.date=2001&amp;rft.isbn=0-201-71012-9&amp;rft.aulast=Wilson&amp;rft.aufirst=Leslie+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Gordon1996-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-Gordon1996_16-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFGordon1996" class="citation web cs1"><a href="/wiki/Michael_J._C._Gordon" title="Michael J. C. Gordon">Gordon, Michael J. C.</a> (1996). <a rel="nofollow" class="external text" href="http://www.cl.cam.ac.uk/~mjcg/papers/HolHistory.html">"From LCF to HOL: a short history"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-10-30</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=From+LCF+to+HOL%3A+a+short+history&amp;rft.date=1996&amp;rft.aulast=Gordon&amp;rft.aufirst=Michael+J.+C.&amp;rft_id=http%3A%2F%2Fwww.cl.cam.ac.uk%2F~mjcg%2Fpapers%2FHolHistory.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-cpl_3rd-ch9-233-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-cpl_3rd-ch9-233_17-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWilson2001" class="citation book cs1">Wilson, Leslie B. (2001). <i>Comparative Programming Languages, Third Edition</i>. Addison-Wesley. p.&#160;233. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-71012-9" title="Special:BookSources/0-201-71012-9"><bdi>0-201-71012-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Comparative+Programming+Languages%2C+Third+Edition&amp;rft.pages=233&amp;rft.pub=Addison-Wesley&amp;rft.date=2001&amp;rft.isbn=0-201-71012-9&amp;rft.aulast=Wilson&amp;rft.aufirst=Leslie+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-cpl_3rd-ch9-235-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-cpl_3rd-ch9-235_18-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWilson2001" class="citation book cs1">Wilson, Leslie B. (2001). <i>Comparative Programming Languages, Third Edition</i>. Addison-Wesley. p.&#160;235. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-71012-9" title="Special:BookSources/0-201-71012-9"><bdi>0-201-71012-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Comparative+Programming+Languages%2C+Third+Edition&amp;rft.pages=235&amp;rft.pub=Addison-Wesley&amp;rft.date=2001&amp;rft.isbn=0-201-71012-9&amp;rft.aulast=Wilson&amp;rft.aufirst=Leslie+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-PrologHistory-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-PrologHistory_19-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://alain.colmerauer.free.fr/alcol/ArchivesPublications/PrologHistory/19november92.pdf">"Birth of Prolog"</a> <span class="cs1-format">(PDF)</span>. November 1992.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Birth+of+Prolog&amp;rft.date=1992-11&amp;rft_id=http%3A%2F%2Falain.colmerauer.free.fr%2Falcol%2FArchivesPublications%2FPrologHistory%2F19november92.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFRobert_KowalskiDonald_Kuehner1971" class="citation journal cs1">Robert Kowalski; Donald Kuehner (Winter 1971). <a rel="nofollow" class="external text" href="http://www.doc.ic.ac.uk/~rak/papers/sl.pdf">"Linear Resolution with Selection Function"</a> <span class="cs1-format">(PDF)</span>. <i>Artificial Intelligence</i>. <b>2</b> (3–4): 227–260. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2F0004-3702%2871%2990012-9">10.1016/0004-3702(71)90012-9</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0004-3702">0004-3702</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Artificial+Intelligence&amp;rft.atitle=Linear+Resolution+with+Selection+Function&amp;rft.ssn=winter&amp;rft.volume=2&amp;rft.issue=3%E2%80%934&amp;rft.pages=227-260&amp;rft.date=1971&amp;rft_id=info%3Adoi%2F10.1016%2F0004-3702%2871%2990012-9&amp;rft.issn=0004-3702&amp;rft.au=Robert+Kowalski&amp;rft.au=Donald+Kuehner&amp;rft_id=http%3A%2F%2Fwww.doc.ic.ac.uk%2F~rak%2Fpapers%2Fsl.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text">Robert Kowalski <a rel="nofollow" class="external text" href="http://www.doc.ic.ac.uk/~rak/papers/IFIP%2074.pdf">Predicate Logic as a Programming Language</a> Memo 70, Department of Artificial Intelligence, University of Edinburgh.  1973. Also in Proceedings IFIP Congress, Stockholm, North Holland Publishing Co., 1974, pp. 569-574.</span>
+</li>
+<li id="cite_note-Prolog_Book-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-Prolog_Book_22-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWarren2023" class="citation book cs1">Warren, D.S. (2023). "Introduction to Prolog". In Warren, D.S.; Dahl, V.; Eiter, T.; Hermenegildo, M.V.; Kowalski, R.; Rossi, F. (eds.). <i>Prolog: The Next 50 Years</i>. Lecture Notes in Computer Science(). Vol.&#160;13900. Springer, Cham. pp.&#160;3–19. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F978-3-031-35254-6_1">10.1007/978-3-031-35254-6_1</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-031-35253-9" title="Special:BookSources/978-3-031-35253-9"><bdi>978-3-031-35253-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Introduction+to+Prolog&amp;rft.btitle=Prolog%3A+The+Next+50+Years&amp;rft.series=Lecture+Notes+in+Computer+Science%28%29&amp;rft.pages=3-19&amp;rft.pub=Springer%2C+Cham.&amp;rft.date=2023&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-031-35254-6_1&amp;rft.isbn=978-3-031-35253-9&amp;rft.aulast=Warren&amp;rft.aufirst=D.S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFHuangGreenLoo2011" class="citation conference cs1">Huang, Shan Shan; Green, Todd J.; Loo, Boon Thau (June 12–16, 2011). <a rel="nofollow" class="external text" href="http://www.cs.ucdavis.edu/~green/papers/sigmod906t-huang.pdf"><i>Datalog and Emerging applications</i></a> <span class="cs1-format">(PDF)</span>. SIGMOD 2011. Athens, Greece: Association for Computing Machinery. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4503-0661-4" title="Special:BookSources/978-1-4503-0661-4"><bdi>978-1-4503-0661-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Datalog+and+Emerging+applications&amp;rft.place=Athens%2C+Greece&amp;rft.pub=Association+for+Computing+Machinery&amp;rft.date=2011-06-12%2F2011-06-16&amp;rft.isbn=978-1-4503-0661-4&amp;rft.aulast=Huang&amp;rft.aufirst=Shan+Shan&amp;rft.au=Green%2C+Todd+J.&amp;rft.au=Loo%2C+Boon+Thau&amp;rft_id=http%3A%2F%2Fwww.cs.ucdavis.edu%2F~green%2Fpapers%2Fsigmod906t-huang.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFMeiQinXuEisner2020" class="citation conference cs1">Mei, Hongyuan; Qin, Guanghui; Xu, Minjie; Eisner, Jason (2020). "Neural Datalog Through Time: Informed Temporal Modeling via Logical Specification". <i>Proceedings of ICML 2020</i>. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/2006.16723">2006.16723</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Neural+Datalog+Through+Time%3A+Informed+Temporal+Modeling+via+Logical+Specification&amp;rft.btitle=Proceedings+of+ICML+2020&amp;rft.date=2020&amp;rft_id=info%3Aarxiv%2F2006.16723&amp;rft.aulast=Mei&amp;rft.aufirst=Hongyuan&amp;rft.au=Qin%2C+Guanghui&amp;rft.au=Xu%2C+Minjie&amp;rft.au=Eisner%2C+Jason&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBaral2003" class="citation book cs1">Baral, Chitta (2003). <span class="cs1-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/knowledgereprese00bara"><i>Knowledge Representation, Reasoning and Declarative Problem Solving</i></a></span>. Cambridge University Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-521-81802-5" title="Special:BookSources/978-0-521-81802-5"><bdi>978-0-521-81802-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Knowledge+Representation%2C+Reasoning+and+Declarative+Problem+Solving&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2003&amp;rft.isbn=978-0-521-81802-5&amp;rft.aulast=Baral&amp;rft.aufirst=Chitta&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fknowledgereprese00bara&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFGelfond2008" class="citation book cs1">Gelfond, Michael (2008). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=xwBDylHhJhYC&amp;pg=PA285">"Answer sets"</a>. In van Harmelen, Frank; Lifschitz, Vladimir; Porter, Bruce (eds.). <i>Handbook of Knowledge Representation</i>. Elsevier. pp.&#160;285–316. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-08-055702-1" title="Special:BookSources/978-0-08-055702-1"><bdi>978-0-08-055702-1</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Answer+sets&amp;rft.btitle=Handbook+of+Knowledge+Representation&amp;rft.pages=285-316&amp;rft.pub=Elsevier&amp;rft.date=2008&amp;rft.isbn=978-0-08-055702-1&amp;rft.aulast=Gelfond&amp;rft.aufirst=Michael&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DxwBDylHhJhYC%26pg%3DPA285&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADeclarative+programming" class="Z3988"></span> <a rel="nofollow" class="external text" href="http://www.depts.ttu.edu/cs/research/krlab/pdfs/papers/gel07b.pdf">as PDF</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160303231241/http://www.depts.ttu.edu/cs/research/krlab/pdfs/papers/gel07b.pdf">Archived</a> 2016-03-03 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Declarative_programming&amp;action=edit&amp;section=17" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Frans Coenen. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20060424045449/http://www.csc.liv.ac.uk/~frans/OldLectures/2CS24/declarative.html#detail">Characteristics of declarative programming languages</a>. 1999.</li>
+<li><a href="/wiki/Robert_Harper_(computer_scientist)" title="Robert Harper (computer scientist)">Robert Harper</a>.
+<ul><li><a rel="nofollow" class="external text" href="https://existentialtype.wordpress.com/2013/07/18/what-if-anything-is-a-declarative-language/">What, If Anything, Is A Declarative Language?</a>. 2013.</li>
+<li>"<a rel="nofollow" class="external text" href="https://existentialtype.wordpress.com/2013/07/22/there-is-such-a-thing-as-a-declarative-language/">There Is Such A Thing As A Declarative Language, and It's The World's Best DSL</a>". 2013.</li></ul></li>
+<li>Olof Torgersson. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20060330033506/http://www.cs.chalmers.se/~oloft/Papers/wm96/wm96.html">A Note on Declarative Programming Paradigms and the Future of Definitional Programming</a>. 1996.</li></ul>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Types_of_programming_languages" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Types_of_programming_languages" title="Template:Types of programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Types_of_programming_languages" title="Template talk:Types of programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Types_of_programming_languages" title="Special:EditPage/Template:Types of programming languages"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Types_of_programming_languages" style="font-size:114%;margin:0 4em"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Types of programming languages</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Actor_model" title="Actor model">Actor-based</a></li>
+<li><a href="/wiki/Array_programming" title="Array programming">Array</a></li>
+<li><a href="/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li>
+<li><a href="/wiki/Concurrent_computing" title="Concurrent computing">Concurrent</a></li>
+<li><a href="/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a></li>
+<li><a class="mw-selflink selflink">Declarative</a></li>
+<li><a href="/wiki/Differentiable_programming" title="Differentiable programming">Differentiable</a></li>
+<li><a href="/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li>
+<li><a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">Dynamic</a></li>
+<li><a href="/wiki/Esoteric_programming_language" title="Esoteric programming language">Esoteric</a></li>
+<li><a href="/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a></li>
+<li><a href="/wiki/Extensible_programming" title="Extensible programming">Extensible</a></li>
+<li><a href="/wiki/Functional_programming" title="Functional programming">Functional</a></li>
+<li><a href="/wiki/Imperative_programming" title="Imperative programming">Imperative</a></li>
+<li><a href="/wiki/Logic_programming" title="Logic programming">Logic</a></li>
+<li><a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">Macro</a></li>
+<li><a href="/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a></li>
+<li><a href="/wiki/Object-based_language" title="Object-based language">Object-based</a></li>
+<li><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented</a></li>
+<li><a href="/wiki/Pipeline_(software)" title="Pipeline (software)">Pipeline</a></li>
+<li><a href="/wiki/Procedural_programming" title="Procedural programming">Procedural</a></li>
+<li><a href="/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+<li><a href="/wiki/Reflective_programming" title="Reflective programming">Reflective</a></li>
+<li><a href="/wiki/Rule-based_system" title="Rule-based system">Rule-based</a></li>
+<li><a href="/wiki/Scripting_language" title="Scripting language">Scripting</a></li>
+<li><a href="/wiki/Stack-oriented_programming" title="Stack-oriented programming">Stack-oriented</a></li>
+<li><a href="/wiki/Synchronous_programming_language" title="Synchronous programming language">Synchronous</a></li>
+<li><a href="/wiki/Tactile_programming_language" title="Tactile programming language">Tactile</a></li>
+<li><a href="/wiki/Template_processor" title="Template processor">Template</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Level</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Machine_code" title="Machine code">Machine</a></li>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/Compiled_language" title="Compiled language">Compiled</a></li>
+<li><a href="/wiki/Interpreted_language" class="mw-redirect" title="Interpreted language">Interpreted</a></li></ul>
+<ul><li><a href="/wiki/Low-level_programming_language" title="Low-level programming language">Low-level</a></li>
+<li><a href="/wiki/High-level_programming_language" title="High-level programming language">High-level</a></li>
+<li><a href="/wiki/Very_high-level_programming_language" title="Very high-level programming language">Very high-level</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Generation</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/First-generation_programming_language" title="First-generation programming language">First</a></li>
+<li><a href="/wiki/Second-generation_programming_language" title="Second-generation programming language">Second</a></li>
+<li><a href="/wiki/Third-generation_programming_language" title="Third-generation programming language">Third</a></li>
+<li><a href="/wiki/Fourth-generation_programming_language" title="Fourth-generation programming language">Fourth</a></li>
+<li><a href="/wiki/Fifth-generation_programming_language" title="Fifth-generation programming language">Fifth</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+<li><a href="/wiki/Visual_programming_language" title="Visual programming language">Visual</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"></div><div role="navigation" class="navbox authority-control" aria-label="Navbox" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control databases</a>: National <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless"><a href="https://www.wikidata.org/wiki/Q531152#identifiers" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></span></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><span class="uid"><a rel="nofollow" class="external text" href="http://catalogo.bne.es/uhtbin/authoritybrowse.cgi?action=display&amp;authority_id=XX538968">Spain</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://catalogue.bnf.fr/ark:/12148/cb123495726">France</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://data.bnf.fr/ark:/12148/cb123495726">BnF data</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/4293503-9">Germany</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="http://uli.nli.org.il/F/?func=find-b&amp;local_base=NLX10&amp;find_code=UID&amp;request=987007544381005171">Israel</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://id.loc.gov/authorities/sh93000071">United States</a></span></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1416
+Cached time: 20231031010910
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.543 seconds
+Real time usage: 1.145 seconds
+Preprocessor visited node count: 2453/1000000
+Post‐expand include size: 111142/2097152 bytes
+Template argument size: 11148/2097152 bytes
+Highest expansion depth: 19/100
+Expensive parser function count: 27/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 104467/5000000 bytes
+Lua time usage: 0.345/10.000 seconds
+Lua memory usage: 9015849/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1065.962      1 -total
+ 20.22%  215.568      1 Template:Reflist
+ 14.24%  151.767      3 Template:Ambox
+  9.00%   95.938      1 Template:Multiple_issues
+  6.55%   69.822      1 Template:Programming_paradigms
+  6.38%   68.032      1 Template:Sidebar
+  6.35%   67.658      1 Template:Citation
+  5.87%   62.614      1 Template:Short_description
+  5.41%   57.688     12 Template:Cite_book
+  4.96%   52.907      1 Template:More_footnotes
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:210648-0!canonical and timestamp 20231031010909 and revision id 1181160093. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Declarative_programming&amp;oldid=1181160093">https://en.wikipedia.org/w/index.php?title=Declarative_programming&amp;oldid=1181160093</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Declarative_programming" title="Category:Declarative programming">Declarative programming</a></li><li><a href="/wiki/Category:Programming_paradigms" title="Category:Programming paradigms">Programming paradigms</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_April_2010" title="Category:Articles lacking in-text citations from April 2010">Articles lacking in-text citations from April 2010</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_February_2015" title="Category:Articles needing additional references from February 2015">Articles needing additional references from February 2015</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Articles_with_multiple_maintenance_issues" title="Category:Articles with multiple maintenance issues">Articles with multiple maintenance issues</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_2013" title="Category:Articles containing potentially dated statements from 2013">Articles containing potentially dated statements from 2013</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li><li><a href="/wiki/Category:All_articles_with_specifically_marked_weasel-worded_phrases" title="Category:All articles with specifically marked weasel-worded phrases">All articles with specifically marked weasel-worded phrases</a></li><li><a href="/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_July_2020" title="Category:Articles with specifically marked weasel-worded phrases from July 2020">Articles with specifically marked weasel-worded phrases from July 2020</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_July_2020" title="Category:Articles with unsourced statements from July 2020">Articles with unsourced statements from July 2020</a></li><li><a href="/wiki/Category:Articles_with_BNE_identifiers" title="Category:Articles with BNE identifiers">Articles with BNE identifiers</a></li><li><a href="/wiki/Category:Articles_with_BNF_identifiers" title="Category:Articles with BNF identifiers">Articles with BNF identifiers</a></li><li><a href="/wiki/Category:Articles_with_BNFdata_identifiers" title="Category:Articles with BNFdata identifiers">Articles with BNFdata identifiers</a></li><li><a href="/wiki/Category:Articles_with_GND_identifiers" title="Category:Articles with GND identifiers">Articles with GND identifiers</a></li><li><a href="/wiki/Category:Articles_with_J9U_identifiers" title="Category:Articles with J9U identifiers">Articles with J9U identifiers</a></li><li><a href="/wiki/Category:Articles_with_LCCN_identifiers" title="Category:Articles with LCCN identifiers">Articles with LCCN identifiers</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 21 October 2023, at 06:54<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Declarative_programming&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw1478","wgBackendResponseTime":149,"wgPageParseReport":{"limitreport":{"cputime":"0.543","walltime":"1.145","ppvisitednodes":{"value":2453,"limit":1000000},"postexpandincludesize":{"value":111142,"limit":2097152},"templateargumentsize":{"value":11148,"limit":2097152},"expansiondepth":{"value":19,"limit":100},"expensivefunctioncount":{"value":27,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":104467,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00% 1065.962      1 -total"," 20.22%  215.568      1 Template:Reflist"," 14.24%  151.767      3 Template:Ambox","  9.00%   95.938      1 Template:Multiple_issues","  6.55%   69.822      1 Template:Programming_paradigms","  6.38%   68.032      1 Template:Sidebar","  6.35%   67.658      1 Template:Citation","  5.87%   62.614      1 Template:Short_description","  5.41%   57.688     12 Template:Cite_book","  4.96%   52.907      1 Template:More_footnotes"]},"scribunto":{"limitreport-timeusage":{"value":"0.345","limit":"10.000"},"limitreport-memusage":{"value":9015849,"limit":52428800}},"cachereport":{"origin":"mw1416","timestamp":"20231031010910","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Declarative programming","url":"https:\/\/en.wikipedia.org\/wiki\/Declarative_programming","sameAs":"http:\/\/www.wikidata.org\/entity\/Q531152","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q531152","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-04-14T23:15:13Z","dateModified":"2023-10-21T06:54:18Z","headline":"programming paradigm that expresses the logic of a computation without describing its control flow"}</script>
+</body>
+</html>

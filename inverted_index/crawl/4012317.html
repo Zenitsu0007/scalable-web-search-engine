@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Edge computing - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"6c78a6ec-b466-4f36-a0d9-67d7e68909b2","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Edge_computing","wgTitle":"Edge computing","wgCurRevisionId":1181814206,"wgRevisionId":1181814206,"wgArticleId":5276122,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 Serbian-language sources (sr)","Articles with short description","Short description is different from Wikidata","Articles with too many examples from July 2023","All articles with too many examples","Wikipedia articles with style issues from July 2023","Post-cloud computing architecture","Distributed computing architecture","Load balancing (computing)","Network performance","Networking hardware","Internet of things","Ambient intelligence"],
+"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Edge_computing","wgRelevantArticleId":5276122,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q5337692","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness",
+"brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp",
+"ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/b/bf/Edge_computing_infrastructure.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1044">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/b/bf/Edge_computing_infrastructure.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="696">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="557">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Edge computing - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Edge_computing">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Edge_computing&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Edge_computing">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Edge_computing rootpage-Edge_computing skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Edge+computing" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Edge+computing" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Edge+computing" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Edge+computing" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Definition"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Definition">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Definition</div>
+		</a>
+		
+		<ul id="toc-Definition-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Concept"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Concept">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Concept</div>
+		</a>
+		
+			<button aria-controls="toc-Concept-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Concept subsection</span>
+			</button>
+		
+		<ul id="toc-Concept-sublist" class="vector-toc-list">
+			<li id="toc-Privacy_and_security"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Privacy_and_security">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1</span>Privacy and security</div>
+			</a>
+			
+			<ul id="toc-Privacy_and_security-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Scalability"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Scalability">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.2</span>Scalability</div>
+			</a>
+			
+			<ul id="toc-Scalability-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Reliability"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Reliability">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.3</span>Reliability</div>
+			</a>
+			
+			<ul id="toc-Reliability-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Speed"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Speed">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.4</span>Speed</div>
+			</a>
+			
+			<ul id="toc-Speed-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Efficiency"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Efficiency">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.5</span>Efficiency</div>
+			</a>
+			
+			<ul id="toc-Efficiency-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Applications"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Applications">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>Applications</div>
+		</a>
+		
+		<ul id="toc-Applications-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Edge computing</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 15 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-15" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">15 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9_%D8%A7%D9%84%D8%AD%D8%A7%D9%81%D8%A9" title="حوسبة الحافة – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Edge_Computing" title="Edge Computing – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Computaci%C3%B3n_frontera" title="Computación frontera – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%B1%D8%A7%DB%8C%D8%A7%D9%86%D8%B4_%D9%84%D8%A8%D9%87%E2%80%8C%D8%A7%DB%8C" title="رایانش لبه‌ای – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Edge_computing" title="Edge computing – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EC%97%90%EC%A7%80_%EC%BB%B4%ED%93%A8%ED%8C%85" title="에지 컴퓨팅 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-hy mw-list-item"><a href="https://hy.wikipedia.org/wiki/%D4%B5%D5%A6%D6%80%D5%A1%D5%B5%D5%AB%D5%B6_%D5%B0%D5%A1%D5%B7%D5%BE%D5%A1%D6%80%D5%AF" title="Եզրային հաշվարկ – Armenian" lang="hy" hreflang="hy" class="interlanguage-link-target"><span>Հայերեն</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Komputasi_tepi" title="Komputasi tepi – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Edge_computing" title="Edge computing – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ml mw-list-item"><a href="https://ml.wikipedia.org/wiki/%E0%B4%8E%E0%B4%A1%E0%B5%8D%E0%B4%9C%E0%B5%8D_%E0%B4%95%E0%B4%AE%E0%B5%8D%E0%B4%AA%E0%B5%8D%E0%B4%AF%E0%B5%82%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B4%BF%E0%B4%82%E0%B4%97%E0%B5%8D" title="എഡ്ജ് കമ്പ്യൂട്ടിംഗ് – Malayalam" lang="ml" hreflang="ml" class="interlanguage-link-target"><span>മലയാളം</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%83%E3%82%B8%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" title="エッジコンピューティング – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-qu mw-list-item"><a href="https://qu.wikipedia.org/wiki/Manya_anta%C3%B1iqiy" title="Manya antañiqiy – Quechua" lang="qu" hreflang="qu" class="interlanguage-link-target"><span>Runa Simi</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F" title="Граничные вычисления – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B4%D0%BE%D0%BD%D0%BD%D1%96_%D0%BE%D0%B1%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F" title="Кордонні обчислення – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E9%82%8A%E7%B7%A3%E9%81%8B%E7%AE%97" title="邊緣運算 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5337692#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Edge_computing" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Edge_computing" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Edge_computing"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Edge_computing&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Edge_computing&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Edge_computing"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Edge_computing&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Edge_computing&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Edge_computing" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Edge_computing" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Edge_computing&amp;oldid=1181814206" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Edge_computing&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Edge_computing&amp;id=1181814206&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEdge_computing"><span>Get shortened URL</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5337692" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Edge_computing&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Edge_computing&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Distributed computing paradigm</div>
+<style data-mw-deduplicate="TemplateStyles:r1097763485">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><table class="box-Example_farm plainlinks metadata ambox ambox-content" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></span></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>may contain <a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_an_indiscriminate_collection_of_information" title="Wikipedia:What Wikipedia is not">indiscriminate</a>, <a href="/wiki/Wikipedia:Manual_of_Style/Lists#List_size" title="Wikipedia:Manual of Style/Lists">excessive</a>, or <a href="/wiki/Wikipedia:Neutral_point_of_view#Due_and_undue_weight" title="Wikipedia:Neutral point of view">irrelevant</a> examples</b>.<span class="hide-when-compact"> Please <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Edge_computing&amp;action=edit">improve the article</a> by adding more descriptive text and removing <a href="/wiki/Wikipedia:Example_cruft" title="Wikipedia:Example cruft">less pertinent examples</a>. See Wikipedia's <a href="/wiki/Wikipedia:Writing_better_articles" title="Wikipedia:Writing better articles">guide to writing better articles</a> for further suggestions.</span>  <span class="date-container"><i>(<span class="date">July 2023</span>)</i></span></div></td></tr></tbody></table>
+<p><b>Edge computing</b> is a <a href="/wiki/Distributed_computing" title="Distributed computing">distributed computing</a> paradigm that brings <a href="/wiki/Computation" title="Computation">computation</a> and <a href="/wiki/Data_storage" title="Data storage">data storage</a> closer to the sources of data. This is expected to improve response times and save <a href="/wiki/Bandwidth_(computing)" title="Bandwidth (computing)">bandwidth</a>.<sup id="cite_ref-ED_CP_01_1-0" class="reference"><a href="#cite_note-ED_CP_01-1">&#91;1&#93;</a></sup> Edge computing is an architecture rather than a specific technology,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> and a <a href="/wiki/Logical_topology" class="mw-redirect" title="Logical topology">topology</a>- and location-sensitive form of distributed computing.
+</p><p>The origins of edge computing lie in <a href="/wiki/Content_delivery_network" title="Content delivery network">content distribution networks</a> that were created in the late 1990s to serve web and video content from edge <a href="/wiki/Server_(computing)" title="Server (computing)">servers</a> that were deployed close to users.<sup id="cite_ref-:02_3-0" class="reference"><a href="#cite_note-:02-3">&#91;3&#93;</a></sup> In the early 2000s, these networks evolved to host applications and application components on edge servers,<sup id="cite_ref-:1_4-0" class="reference"><a href="#cite_note-:1-4">&#91;4&#93;</a></sup> resulting in the first commercial edge computing services<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> that hosted applications such as dealer locators, shopping carts, real-time data aggregators, and ad insertion engines.<sup id="cite_ref-:1_4-1" class="reference"><a href="#cite_note-:1-4">&#91;4&#93;</a></sup>
+</p><p><a href="/wiki/Internet_of_things" title="Internet of things">Internet of things</a> (IoT) is an example of edge computing. A common misconception is that edge and IoT are synonymous.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
+</p>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:Edge_computing_infrastructure.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Edge_computing_infrastructure.png/220px-Edge_computing_infrastructure.png" decoding="async" width="220" height="191" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Edge_computing_infrastructure.png/330px-Edge_computing_infrastructure.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Edge_computing_infrastructure.png/440px-Edge_computing_infrastructure.png 2x" data-file-width="554" data-file-height="482" /></a><figcaption>The edge computing infrastructure</figcaption></figure>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Edge_computing&amp;action=edit&amp;section=1" title="Edit section: Definition"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>One definition of edge computing is the use of any type of <a href="/wiki/Computer_program" title="Computer program">computer program</a> that delivers low latency <a href="/wiki/Locality_of_reference" title="Locality of reference">nearer to the requests</a>. Karim Arabi, in an IEEE DAC 2014 Keynote <sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> and subsequently in an invited talk at MIT's MTL Seminar in 2015, defined edge computing broadly as all computing outside the <a href="/wiki/Cloud_computing" title="Cloud computing">cloud</a> happening at the edge of the network, and more specifically in applications where real-time processing of data is required.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> Thus, edge computing does not have the climate-controlled advantages of <a href="/wiki/Data_center" title="Data center">data centers</a> despite the large amount of processing power necessary.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
+</p><p>The term is often used as synonymous with <a href="/wiki/Fog_computing" title="Fog computing">fog computing</a>.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> This especially is quite relevant for small deployments. However, when the deployment size is large, e.g., for <a href="/wiki/Smart_city" title="Smart city">Smart Cities</a>, fog computing can be a distinct layer between the Edge and the Cloud. Hence in such deployments, Edge layer is a distinct layer too which has specific responsibilities.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup>
+</p><p>According to <i>The State of the Edge</i> report, edge computing concentrates on servers "in proximity to the last mile network".<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup> Alex Reznik, Chair of the <a href="/wiki/ETSI" title="ETSI">ETSI</a> MEC ISG standards committee, loosely defines the term by essentially suggesting that anything that's not a traditional data center could be the 'edge' for somebody.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup>
+</p><p>Edge nodes used for game streaming are known as <i>gamelets</i>,<sup id="cite_ref-:0_15-0" class="reference"><a href="#cite_note-:0-15">&#91;15&#93;</a></sup> which are usually one or two hops away from the client.<sup id="cite_ref-Anand_14–20_16-0" class="reference"><a href="#cite_note-Anand_14–20-16">&#91;16&#93;</a></sup> Per Anand and Edwin say "the edge node is mostly one or two hops away from the mobile client to meet the response time constraints for real-time games' in the <a href="/wiki/Cloud_gaming" title="Cloud gaming">cloud gaming</a> context."<sup id="cite_ref-Anand_14–20_16-1" class="reference"><a href="#cite_note-Anand_14–20-16">&#91;16&#93;</a></sup>
+</p><p>Edge computing may employ <a href="/wiki/Virtualization" title="Virtualization">virtualization</a> technology to make it easier to deploy and run a wide range of applications on edge servers.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;17&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Concept">Concept</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Edge_computing&amp;action=edit&amp;section=2" title="Edit section: Concept"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The world's data is expected to grow 61 percent to 175 <a href="/wiki/Byte#Multiple-byte_units" title="Byte">zettabytes</a> by 2025.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup> According to research firm Gartner, around 10 percent of enterprise-generated data is created and processed outside a traditional centralized data center or cloud. By 2025, the firm predicts that this figure will reach 75 percent.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup> The increase of <a href="/wiki/Internet_of_things" title="Internet of things">IoT</a> devices at the edge of the network is producing a massive amount of data - storing and using all that data in cloud <a href="/wiki/Data_centers" class="mw-redirect" title="Data centers">data centers</a> pushes network bandwidth requirements to the limit.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup> Despite the improvements of <a href="/wiki/Telecommunications_network" title="Telecommunications network">network</a> technology, data centers cannot guarantee acceptable transfer rates and response times, which often is a critical requirement for many applications.<sup id="cite_ref-shi-edge_21-0" class="reference"><a href="#cite_note-shi-edge-21">&#91;21&#93;</a></sup> Furthermore, devices at the edge constantly consume data coming from the cloud, forcing companies to decentralize data storage and service provisioning, leveraging physical proximity to the end user.
+</p><p>In a similar way, the aim of edge computing is to move the computation away from data centers towards the edge of the network, exploiting <a href="/wiki/Smart_objects" class="mw-redirect" title="Smart objects">smart objects</a>, <a href="/wiki/Smartphone" title="Smartphone">mobile phones</a>, or <a href="/wiki/Gateway_(telecommunications)" title="Gateway (telecommunications)">network gateways</a> to perform tasks and provide services on behalf of the cloud.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;22&#93;</a></sup> By moving <a href="/wiki/Service_(systems_architecture)" title="Service (systems architecture)">services</a> to the edge, it is possible to provide content <a href="/wiki/Cache_(computing)" title="Cache (computing)">caching</a>, service delivery, persistent data storage, and IoT management resulting in better response times and transfer rates. At the same time, distributing the logic to different network nodes introduces new issues and challenges.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;23&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Privacy_and_security">Privacy and security</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Edge_computing&amp;action=edit&amp;section=3" title="Edit section: Privacy and security"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The distributed nature of this paradigm introduces a shift in security schemes used in <a href="/wiki/Cloud_computing" title="Cloud computing">cloud computing</a>. In edge computing, data may travel between different distributed nodes connected through the <a href="/wiki/Internet" title="Internet">Internet</a> and thus requires special encryption mechanisms independent of the cloud. Edge nodes may also be resource-constrained devices, limiting the choice in terms of security methods. Moreover, a shift from centralized top-down infrastructure to a decentralized trust model is required.<sup id="cite_ref-lopez-edge_24-0" class="reference"><a href="#cite_note-lopez-edge-24">&#91;24&#93;</a></sup>
+On the other hand, by keeping and processing data at the edge, it is possible to increase privacy by minimizing the transmission of sensitive information to the cloud. Furthermore, the ownership of collected data shifts from service providers to end-users.<sup id="cite_ref-brand_25-0" class="reference"><a href="#cite_note-brand-25">&#91;25&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Scalability">Scalability</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Edge_computing&amp;action=edit&amp;section=4" title="Edit section: Scalability"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Scalability" title="Scalability">Scalability</a> in a distributed network must face different issues. First, it must take into account the heterogeneity of the devices, having different performance and energy constraints, the highly dynamic condition, and the reliability of the connections compared to more robust infrastructure of cloud data centers. Moreover, security requirements may introduce further latency in the communication between nodes, which may slow down the scaling process.<sup id="cite_ref-shi-edge_21-1" class="reference"><a href="#cite_note-shi-edge-21">&#91;21&#93;</a></sup>
+</p><p>The state-of-the-art scheduling technique can increase the effective utilization of edge resources and scales the edge server by assigning minimum edge resources to each offloaded task.<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">&#91;26&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Reliability">Reliability</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Edge_computing&amp;action=edit&amp;section=5" title="Edit section: Reliability"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Management of <a href="/wiki/Failover" title="Failover">failovers</a> is crucial in order to keep a service alive. If a single node goes down and is unreachable, users should still be able to access a service without interruptions. Moreover, edge computing systems must provide actions to recover from a failure and alert the user about the incident. To this aim, each device must maintain the <a href="/wiki/Network_topology" title="Network topology">network topology</a> of the entire distributed system, so that detection of errors and recovery become easily applicable. Other factors that may influence this aspect are the connection technologies in use, which may provide different levels of reliability, and the accuracy of the data produced at the edge that could be unreliable due to particular environment conditions.<sup id="cite_ref-shi-edge_21-2" class="reference"><a href="#cite_note-shi-edge-21">&#91;21&#93;</a></sup> As an example, an edge computing device, such as a <a href="/wiki/Voice_assistant" class="mw-redirect" title="Voice assistant">voice assistant</a>, may continue to provide service to local users even during cloud service or internet outages.<sup id="cite_ref-brand_25-1" class="reference"><a href="#cite_note-brand-25">&#91;25&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Speed">Speed</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Edge_computing&amp;action=edit&amp;section=6" title="Edit section: Speed"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Edge computing brings analytical computational resources close to the end users and therefore can increase the responsiveness and throughput of applications. A well-designed edge platform would significantly outperform a traditional cloud-based system. Some applications rely on short response times, making edge computing a significantly more feasible option than cloud computing. Examples range from IoT to autonomous driving,<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">&#91;27&#93;</a></sup> anything health or human / public safety relevant,<sup id="cite_ref-28" class="reference"><a href="#cite_note-28">&#91;28&#93;</a></sup> or involving human perception such as facial recognition, which typically takes a human between 370-620&#160;ms to perform.<sup id="cite_ref-:2_29-0" class="reference"><a href="#cite_note-:2-29">&#91;29&#93;</a></sup> Edge computing is more likely to be able to mimic the same perception <a href="/wiki/Speed" title="Speed">speed</a> as humans, which is useful in applications such as augmented reality where the headset should preferably recognize who a person is at the same time as the wearer does.
+</p>
+<h3><span class="mw-headline" id="Efficiency">Efficiency</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Edge_computing&amp;action=edit&amp;section=7" title="Edit section: Efficiency"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Due to the nearness of the analytical resources to the end users, sophisticated analytical tools and Artificial Intelligence tools can run on the edge of the system. This placement at the edge helps to increase operational efficiency and is responsible for many advantages to the system.
+</p><p>Additionally, the usage of edge computing as an intermediate stage between client devices and the wider internet results in efficiency savings that can be demonstrated in the following example: A client device requires computationally intensive processing on video files to be performed on external servers. By using servers located on a local edge network to perform those computations, the video files only need to be transmitted in the local network. Avoiding transmission over the internet results in significant bandwidth savings and therefore increases efficiency.<sup id="cite_ref-:2_29-1" class="reference"><a href="#cite_note-:2-29">&#91;29&#93;</a></sup>  Another example is <a href="/wiki/Speech_recognition" title="Speech recognition">voice recognition</a>. If the recognition is performed locally, it is possible to send the recognized text to the cloud rather than audio recordings, significantly reducing the amount of required bandwidth.<sup id="cite_ref-brand_25-2" class="reference"><a href="#cite_note-brand-25">&#91;25&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Edge_computing&amp;action=edit&amp;section=8" title="Edit section: Applications"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Edge application services reduce the volumes of data that must be moved, the consequent traffic, and the distance that data must travel. That provides lower latency and reduces transmission costs. <a href="/wiki/Computation_offloading" title="Computation offloading">Computation offloading</a> for real-time applications, such as facial recognition algorithms, showed considerable improvements in response times, as demonstrated in early research.<sup id="cite_ref-fog-yi_30-0" class="reference"><a href="#cite_note-fog-yi-30">&#91;30&#93;</a></sup> Further research showed that using resource-rich machines called <a href="/wiki/Cloudlet" title="Cloudlet">cloudlets</a> or micro data centers near mobile users, which offer services typically found in the cloud, provided improvements in execution time when some of the tasks are offloaded to the edge node.<sup id="cite_ref-verbelen-cloudlets_31-0" class="reference"><a href="#cite_note-verbelen-cloudlets-31">&#91;31&#93;</a></sup> On the other hand, offloading every task may result in a slowdown due to transfer times between device and nodes, so depending on the workload, an optimal configuration can be defined.
+</p><p>IoT-based power grid system enables communication of electricity and data to monitor and control the power grid,<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">&#91;32&#93;</a></sup> which makes energy management more efficient.
+</p><p>Another use of the architecture is cloud gaming, where some aspects of a game could run in the cloud, while the rendered video is transferred to lightweight clients running on devices such as mobile phones, VR glasses, etc. This type of streaming is also known as <i>pixel streaming</i>.<sup id="cite_ref-:0_15-1" class="reference"><a href="#cite_note-:0-15">&#91;15&#93;</a></sup>
+</p><p>Other notable applications include <a href="/wiki/Connected_car" title="Connected car">connected cars</a>, <a href="/wiki/Autonomous_car" class="mw-redirect" title="Autonomous car">autonomous cars</a>,<sup id="cite_ref-33" class="reference"><a href="#cite_note-33">&#91;33&#93;</a></sup> <a href="/wiki/Smart_city" title="Smart city">smart cities</a>,<sup id="cite_ref-taleb-mobile_34-0" class="reference"><a href="#cite_note-taleb-mobile-34">&#91;34&#93;</a></sup> <a href="/wiki/Industry_4.0" class="mw-redirect" title="Industry 4.0">Industry 4.0</a>, <a href="/wiki/Home_automation" title="Home automation">home automation</a><sup id="cite_ref-chakraborty-home_35-0" class="reference"><a href="#cite_note-chakraborty-home-35">&#91;35&#93;</a></sup> and <a href="/wiki/Satellite" title="Satellite">satellite</a> systems.<sup id="cite_ref-36" class="reference"><a href="#cite_note-36">&#91;36&#93;</a></sup> The nascent field of <b>edge artificial intelligence</b> (edge AI) implements the <a href="/wiki/Artificial_intelligence" title="Artificial intelligence">artificial intelligence</a> in an edge computing environment, close to where data is collected.<sup id="cite_ref-37" class="reference"><a href="#cite_note-37">&#91;37&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Edge_computing&amp;action=edit&amp;section=9" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1147244281">.mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style><div class="div-col" style="column-width: 30em;">
+<ul><li><a href="/wiki/Content_delivery_network" title="Content delivery network">Content delivery network</a></li>
+<li><a href="/wiki/Dew_computing" title="Dew computing">Dew computing</a></li>
+<li><a href="/wiki/Edge_data_integration" title="Edge data integration">Edge data integration</a></li>
+<li><a href="/wiki/Edge_device" title="Edge device">Edge device</a></li>
+<li><a href="/wiki/Fat_client" class="mw-redirect" title="Fat client">Fat client</a></li>
+<li><a href="/wiki/Heterogeneous_computing" title="Heterogeneous computing">Heterogeneous computing</a></li>
+<li><a href="/wiki/Mobile_edge_computing" class="mw-redirect" title="Mobile edge computing">Mobile edge computing</a></li>
+<li><a href="/wiki/Personal_computer" title="Personal computer">Personal computer</a></li>
+<li><a href="/wiki/Serverless_architecture" class="mw-redirect" title="Serverless architecture">Serverless architecture</a></li>
+<li><a href="/wiki/Smart_camera" title="Smart camera">Smart camera</a></li>
+<li><a href="/wiki/Ubiquitous_computing" title="Ubiquitous computing">Ubiquitous computing</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Edge_computing&amp;action=edit&amp;section=10" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-ED_CP_01-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-ED_CP_01_1-0">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFHamilton2018" class="citation web cs1">Hamilton, Eric (27 December 2018). <a rel="nofollow" class="external text" href="https://www.cloudwards.net/what-is-edge-computing/">"What is Edge Computing: The Network Edge Explained"</a>. <i>cloudwards.net</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-05-14</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=cloudwards.net&amp;rft.atitle=What+is+Edge+Computing%3A+The+Network+Edge+Explained&amp;rft.date=2018-12-27&amp;rft.aulast=Hamilton&amp;rft.aufirst=Eric&amp;rft_id=https%3A%2F%2Fwww.cloudwards.net%2Fwhat-is-edge-computing%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFGartner" class="citation web cs1">Gartner. <a rel="nofollow" class="external text" href="https://emtemp.gcom.cloud/ngw/globalassets/en/doc/documents/3889058-the-edge-completes-the-cloud-a-gartner-trend-insight-report.pdf">"Gartner Trend Insights report 2018"</a> <span class="cs1-format">(PDF)</span>. <i>Gartner</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20201218093221/https://emtemp.gcom.cloud/ngw/globalassets/en/doc/documents/3889058-the-edge-completes-the-cloud-a-gartner-trend-insight-report.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on 2020-12-18<span class="reference-accessdate">. Retrieved <span class="nowrap">2021-05-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Gartner&amp;rft.atitle=Gartner+Trend+Insights+report+2018&amp;rft.au=Gartner&amp;rft_id=https%3A%2F%2Femtemp.gcom.cloud%2Fngw%2Fglobalassets%2Fen%2Fdoc%2Fdocuments%2F3889058-the-edge-completes-the-cloud-a-gartner-trend-insight-report.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:02-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-:02_3-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://people.cs.umass.edu/~ramesh/Site/PUBLICATIONS_files/DMPPSW02.pdf">"Globally Distributed Content Delivery, by J. Dilley, B. Maggs, J. Parikh, H. Prokop, R. Sitaraman and B. Weihl, IEEE Internet Computing, Volume 6, Issue 5, November 2002"</a> <span class="cs1-format">(PDF)</span>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20170809231307/http://people.cs.umass.edu/~ramesh/Site/PUBLICATIONS_files/DMPPSW02.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on 2017-08-09<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-10-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Globally+Distributed+Content+Delivery%2C+by+J.+Dilley%2C+B.+Maggs%2C+J.+Parikh%2C+H.+Prokop%2C+R.+Sitaraman+and+B.+Weihl%2C+IEEE+Internet+Computing%2C+Volume+6%2C+Issue+5%2C+November+2002.&amp;rft_id=https%3A%2F%2Fpeople.cs.umass.edu%2F~ramesh%2FSite%2FPUBLICATIONS_files%2FDMPPSW02.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:1-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-:1_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:1_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFNygren.,_E.Sitaraman_R._K.Sun,_J.2010" class="citation journal cs1">Nygren., E.; Sitaraman R. K.; Sun, J. (2010). <a rel="nofollow" class="external text" href="http://www.akamai.com/dl/technical_publications/network_overview_osr.pdf">"The Akamai network: A platform for high-performance internet applications"</a> <span class="cs1-format">(PDF)</span>. <i>ACM SIGOPS Operating Systems Review</i>. <b>44</b> (3): 2–19. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F1842733.1842736">10.1145/1842733.1842736</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:207181702">207181702</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20120913205810/http://www.akamai.com/dl/technical_publications/network_overview_osr.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on September 13, 2012<span class="reference-accessdate">. Retrieved <span class="nowrap">November 19,</span> 2012</span>. <q>See Section 6.2: Distributing Applications to the Edge</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+SIGOPS+Operating+Systems+Review&amp;rft.atitle=The+Akamai+network%3A+A+platform+for+high-performance+internet+applications&amp;rft.volume=44&amp;rft.issue=3&amp;rft.pages=2-19&amp;rft.date=2010&amp;rft_id=info%3Adoi%2F10.1145%2F1842733.1842736&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A207181702%23id-name%3DS2CID&amp;rft.au=Nygren.%2C+E.&amp;rft.au=Sitaraman+R.+K.&amp;rft.au=Sun%2C+J.&amp;rft_id=http%3A%2F%2Fwww.akamai.com%2Fdl%2Ftechnical_publications%2Fnetwork_overview_osr.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDavisParikhWeihl2004" class="citation book cs1">Davis, A.; Parikh, J.; Weihl, W. (2004). "Edgecomputing: Extending enterprise applications to the edge of the internet". <i>Proceedings of the 13th international World Wide Web conference on Alternate track papers &amp; posters - WWW Alt. '04</i>. p.&#160;180. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F1013367.1013397">10.1145/1013367.1013397</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1581139128" title="Special:BookSources/1581139128"><bdi>1581139128</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:578337">578337</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Edgecomputing%3A+Extending+enterprise+applications+to+the+edge+of+the+internet&amp;rft.btitle=Proceedings+of+the+13th+international+World+Wide+Web+conference+on+Alternate+track+papers+%26+posters+-+WWW+Alt.+%2704&amp;rft.pages=180&amp;rft.date=2004&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A578337%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F1013367.1013397&amp;rft.isbn=1581139128&amp;rft.aulast=Davis&amp;rft.aufirst=A.&amp;rft.au=Parikh%2C+J.&amp;rft.au=Weihl%2C+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFGartner" class="citation web cs1">Gartner. <a rel="nofollow" class="external text" href="https://www.gartner.com/doc/reprints?id=1-24JFAZOO&amp;ct=201104&amp;st=sb">"2021 Strategic Roadmap for Edge Computing"</a>. <i>www.gartner.com</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20210330133536/https://www.gartner.com/doc/reprints?id=1-24JFAZOO&amp;ct=201104&amp;st=sb">Archived</a> from the original on 2021-03-30<span class="reference-accessdate">. Retrieved <span class="nowrap">2021-07-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.gartner.com&amp;rft.atitle=2021+Strategic+Roadmap+for+Edge+Computing&amp;rft.au=Gartner&amp;rft_id=https%3A%2F%2Fwww.gartner.com%2Fdoc%2Freprints%3Fid%3D1-24JFAZOO%26ct%3D201104%26st%3Dsb&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20200730234708/http://www2.dac.com/events/videoarchive.aspx?confid=170&amp;filter=keynote&amp;id=170-103--0&amp;#video">"IEEE DAC 2014 Keynote: Mobile Computing Opportunities, Challenges and Technology Drivers"</a>. Archived from <a rel="nofollow" class="external text" href="http://www2.dac.com/events/videoarchive.aspx?confid=170&amp;filter=keynote&amp;id=170-103--0&amp;#video">the original</a> on 2020-07-30<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-03-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=IEEE+DAC+2014+Keynote%3A+Mobile+Computing+Opportunities%2C+Challenges+and+Technology+Drivers&amp;rft_id=http%3A%2F%2Fwww2.dac.com%2Fevents%2Fvideoarchive.aspx%3Fconfid%3D170%26filter%3Dkeynote%26id%3D170-103--0%26%23video&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.mtl.mit.edu/seminars/trends-opportunities-and-challenges-driving-architecture-and-design-next-generation-mobile">MIT MTL Seminar: Trends, Opportunities and Challenges Driving Architecture and Design of Next Generation Mobile Computing and IoT Devices</a></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFKenn_Anthony_Mendoza" class="citation web cs1">Kenn Anthony Mendoza. <a rel="nofollow" class="external text" href="https://itwire.com/business-it-sp-511/business-it/super-micro-computer-introduces-new-systems-for-edge-computing.html">"Super Micro Computer introduces new systems for edge computing"</a>. <a href="/wiki/Supermicro" title="Supermicro">Supermicro</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Super+Micro+Computer+introduces+new+systems+for+edge+computing&amp;rft.pub=Supermicro&amp;rft.au=Kenn+Anthony+Mendoza&amp;rft_id=https%3A%2F%2Fitwire.com%2Fbusiness-it-sp-511%2Fbusiness-it%2Fsuper-micro-computer-introduces-new-systems-for-edge-computing.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.capgemini.com/2017/03/what-is-fog-and-edge-computing/">"What is fog and edge computing?"</a>. <i>Capgemini Worldwide</i>. 2017-03-02<span class="reference-accessdate">. Retrieved <span class="nowrap">2021-07-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Capgemini+Worldwide&amp;rft.atitle=What+is+fog+and+edge+computing%3F&amp;rft.date=2017-03-02&amp;rft_id=https%3A%2F%2Fwww.capgemini.com%2F2017%2F03%2Fwhat-is-fog-and-edge-computing%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFDoluiDatta2017" class="citation book cs1">Dolui, Koustabh; Datta, Soumya Kanti (June 2017). <a rel="nofollow" class="external text" href="https://ieeexplore.ieee.org/document/8016213">"Comparison of edge computing implementations: Fog computing, cloudlet and mobile edge computing"</a>. <i>2017 Global Internet of Things Summit (GIoTS)</i>. pp.&#160;1–6. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FGIOTS.2017.8016213">10.1109/GIOTS.2017.8016213</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-5090-5873-0" title="Special:BookSources/978-1-5090-5873-0"><bdi>978-1-5090-5873-0</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:11600169">11600169</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Comparison+of+edge+computing+implementations%3A+Fog+computing%2C+cloudlet+and+mobile+edge+computing&amp;rft.btitle=2017+Global+Internet+of+Things+Summit+%28GIoTS%29&amp;rft.pages=1-6&amp;rft.date=2017-06&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A11600169%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FGIOTS.2017.8016213&amp;rft.isbn=978-1-5090-5873-0&amp;rft.aulast=Dolui&amp;rft.aufirst=Koustabh&amp;rft.au=Datta%2C+Soumya+Kanti&amp;rft_id=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F8016213&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.geeksforgeeks.org/difference-between-edge-computing-and-fog-computing/">"Difference Between Edge Computing and Fog Computing"</a>. <i>GeeksforGeeks</i>. 2021-11-27<span class="reference-accessdate">. Retrieved <span class="nowrap">2022-09-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GeeksforGeeks&amp;rft.atitle=Difference+Between+Edge+Computing+and+Fog+Computing&amp;rft.date=2021-11-27&amp;rft_id=https%3A%2F%2Fwww.geeksforgeeks.org%2Fdifference-between-edge-computing-and-fog-computing%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://stateoftheedge.com/reports/data-at-the-edge-2019/">"Data at the Edge Report"</a>. <a href="/wiki/Seagate_Technology" title="Seagate Technology">Seagate Technology</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Data+at+the+Edge+Report&amp;rft.pub=Seagate+Technology&amp;rft_id=https%3A%2F%2Fstateoftheedge.com%2Freports%2Fdata-at-the-edge-2019%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFReznik2018" class="citation web cs1">Reznik, Alex (2018-05-14). <a rel="nofollow" class="external text" href="https://www.etsi.org/newsroom/blogs/entry/what-is-edge">"What is Edge?"</a>. <i>ETSI - ETSI Blog - etsi.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-02-19</span></span>. <q>What is 'Edge'? The best that I can do is this: it's anything that's not a 'data center cloud'.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ETSI+-+ETSI+Blog+-+etsi.org&amp;rft.atitle=What+is+Edge%3F&amp;rft.date=2018-05-14&amp;rft.aulast=Reznik&amp;rft.aufirst=Alex&amp;rft_id=https%3A%2F%2Fwww.etsi.org%2Fnewsroom%2Fblogs%2Fentry%2Fwhat-is-edge&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:0-15"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_15-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_15-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.researchgate.net/publication/320578846">"CloudHide: Towards Latency Hiding Techniques for Thin-client Cloud Gaming"</a>. <i>ResearchGate</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-04-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ResearchGate&amp;rft.atitle=CloudHide%3A+Towards+Latency+Hiding+Techniques+for+Thin-client+Cloud+Gaming&amp;rft_id=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F320578846&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Anand_14–20-16"><span class="mw-cite-backlink">^ <a href="#cite_ref-Anand_14–20_16-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Anand_14–20_16-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFAnandEdwin2014" class="citation book cs1">Anand, B.; Edwin, A. J. Hao (January 2014). "Gamelets — Multiplayer mobile games with distributed micro-clouds". <i>2014 Seventh International Conference on Mobile Computing and Ubiquitous Networking (ICMU)</i>. pp.&#160;14–20. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FICMU.2014.6799051">10.1109/ICMU.2014.6799051</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4799-2231-4" title="Special:BookSources/978-1-4799-2231-4"><bdi>978-1-4799-2231-4</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:10374389">10374389</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Gamelets+%E2%80%94+Multiplayer+mobile+games+with+distributed+micro-clouds&amp;rft.btitle=2014+Seventh+International+Conference+on+Mobile+Computing+and+Ubiquitous+Networking+%28ICMU%29&amp;rft.pages=14-20&amp;rft.date=2014-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A10374389%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FICMU.2014.6799051&amp;rft.isbn=978-1-4799-2231-4&amp;rft.aulast=Anand&amp;rft.aufirst=B.&amp;rft.au=Edwin%2C+A.+J.+Hao&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.techtarget.com/searchitoperations/feature/Edge-virtualization-manages-the-data-deluge-but-can-be-complex">"Edge virtualization manages the data deluge, but can be complex | TechTarget"</a>. <i>IT Operations</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2022-12-13</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=IT+Operations&amp;rft.atitle=Edge+virtualization+manages+the+data+deluge%2C+but+can+be+complex+%7C+TechTarget&amp;rft_id=https%3A%2F%2Fwww.techtarget.com%2Fsearchitoperations%2Ffeature%2FEdge-virtualization-manages-the-data-deluge-but-can-be-complex&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFPatrizio2018" class="citation web cs1">Patrizio, Andy (2018-12-03). <a rel="nofollow" class="external text" href="https://www.networkworld.com/article/3325397/idc-expect-175-zettabytes-of-data-worldwide-by-2025.html">"IDC: Expect 175 zettabytes of data worldwide by 2025"</a>. <i>Network World</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-07-09</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Network+World&amp;rft.atitle=IDC%3A+Expect+175+zettabytes+of+data+worldwide+by+2025&amp;rft.date=2018-12-03&amp;rft.aulast=Patrizio&amp;rft.aufirst=Andy&amp;rft_id=https%3A%2F%2Fwww.networkworld.com%2Farticle%2F3325397%2Fidc-expect-175-zettabytes-of-data-worldwide-by-2025.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.gartner.com/en/about">"What We Do and How We Got Here"</a>. <i>Gartner</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-12-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Gartner&amp;rft.atitle=What+We+Do+and+How+We+Got+Here&amp;rft_id=https%3A%2F%2Fwww.gartner.com%2Fen%2Fabout&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFIvkovic2016" class="citation thesis cs1 cs1-prop-foreign-lang-source">Ivkovic, Jovan (2016-07-11). <a rel="nofollow" class="external text" href="https://nardus.mpn.gov.rs/bitstream/handle/123456789/8683/Disertacija13336.pdf?sequence=5&amp;isAllowed=y"><i>The Methods and Procedures for Accelerating Operations and Queries in Large Database Systems and Data Warehouse (Big Data Systems)</i></a> <span class="cs1-format">(PDF)</span>. <i>National Repository of Dissertations in Serbia</i> (Doctoral thesis) (in Serbian and American English).</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation&amp;rft.title=The+Methods+and+Procedures+for+Accelerating+Operations+and+Queries+in+Large+Database+Systems+and+Data+Warehouse+%28Big+Data+Systems%29&amp;rft.degree=Doctoral&amp;rft.date=2016-07-11&amp;rft.aulast=Ivkovic&amp;rft.aufirst=Jovan&amp;rft_id=https%3A%2F%2Fnardus.mpn.gov.rs%2Fbitstream%2Fhandle%2F123456789%2F8683%2FDisertacija13336.pdf%3Fsequence%3D5%26isAllowed%3Dy&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-shi-edge-21"><span class="mw-cite-backlink">^ <a href="#cite_ref-shi-edge_21-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-shi-edge_21-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-shi-edge_21-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFShiCaoZhangLi2016" class="citation journal cs1">Shi, Weisong; Cao, Jie; Zhang, Quan; Li, Youhuizi; Xu, Lanyu (October 2016). "Edge Computing: Vision and Challenges". <i>IEEE Internet of Things Journal</i>. <b>3</b> (5): 637–646. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FJIOT.2016.2579198">10.1109/JIOT.2016.2579198</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:4237186">4237186</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Internet+of+Things+Journal&amp;rft.atitle=Edge+Computing%3A+Vision+and+Challenges&amp;rft.volume=3&amp;rft.issue=5&amp;rft.pages=637-646&amp;rft.date=2016-10&amp;rft_id=info%3Adoi%2F10.1109%2FJIOT.2016.2579198&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A4237186%23id-name%3DS2CID&amp;rft.aulast=Shi&amp;rft.aufirst=Weisong&amp;rft.au=Cao%2C+Jie&amp;rft.au=Zhang%2C+Quan&amp;rft.au=Li%2C+Youhuizi&amp;rft.au=Xu%2C+Lanyu&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFMerendaPorcaroIero2020" class="citation journal cs1">Merenda, Massimo; Porcaro, Carlo; Iero, Demetrio (29 April 2020). <a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7273223">"Edge Machine Learning for AI-Enabled IoT Devices: A Review"</a>. <i>Sensors</i>. <b>20</b> (9): 2533. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2020Senso..20.2533M">2020Senso..20.2533M</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.3390%2Fs20092533">10.3390/s20092533</a></span>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7273223">7273223</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="https://pubmed.ncbi.nlm.nih.gov/32365645">32365645</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Sensors&amp;rft.atitle=Edge+Machine+Learning+for+AI-Enabled+IoT+Devices%3A+A+Review&amp;rft.volume=20&amp;rft.issue=9&amp;rft.pages=2533&amp;rft.date=2020-04-29&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC7273223%23id-name%3DPMC&amp;rft_id=info%3Apmid%2F32365645&amp;rft_id=info%3Adoi%2F10.3390%2Fs20092533&amp;rft_id=info%3Abibcode%2F2020Senso..20.2533M&amp;rft.aulast=Merenda&amp;rft.aufirst=Massimo&amp;rft.au=Porcaro%2C+Carlo&amp;rft.au=Iero%2C+Demetrio&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC7273223&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://aristeksystems.com/blog/iot-2020-whats-next/">"IoT management"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2020-04-08</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=IoT+management&amp;rft_id=https%3A%2F%2Faristeksystems.com%2Fblog%2Fiot-2020-whats-next%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-lopez-edge-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-lopez-edge_24-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFGarcia_LopezMontresorEpemaDatta2015" class="citation journal cs1">Garcia Lopez, Pedro; Montresor, Alberto; Epema, Dick; Datta, Anwitaman; Higashino, Teruo; Iamnitchi, Adriana; Barcellos, Marinho; Felber, Pascal; Riviere, Etienne (30 September 2015). <a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F2831347.2831354">"Edge-centric Computing"</a>. <i>ACM SIGCOMM Computer Communication Review</i>. <b>45</b> (5): 37–42. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F2831347.2831354">10.1145/2831347.2831354</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+SIGCOMM+Computer+Communication+Review&amp;rft.atitle=Edge-centric+Computing&amp;rft.volume=45&amp;rft.issue=5&amp;rft.pages=37-42&amp;rft.date=2015-09-30&amp;rft_id=info%3Adoi%2F10.1145%2F2831347.2831354&amp;rft.aulast=Garcia+Lopez&amp;rft.aufirst=Pedro&amp;rft.au=Montresor%2C+Alberto&amp;rft.au=Epema%2C+Dick&amp;rft.au=Datta%2C+Anwitaman&amp;rft.au=Higashino%2C+Teruo&amp;rft.au=Iamnitchi%2C+Adriana&amp;rft.au=Barcellos%2C+Marinho&amp;rft.au=Felber%2C+Pascal&amp;rft.au=Riviere%2C+Etienne&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%252F2831347.2831354&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-brand-25"><span class="mw-cite-backlink">^ <a href="#cite_ref-brand_25-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-brand_25-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-brand_25-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://medium.com/@aronbrand/edge-computing-alexa-and-the-future-of-enterprise-it-51c13268a365">3 Advantages of Edge Computing</a>. Aron Brand. Medium.com. Sep 20, 2019</span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBabarSohail_Khan2021" class="citation journal cs1">Babar, Mohammad; Sohail Khan, Muhammad (July 2021). <a rel="nofollow" class="external text" href="https://doi.org/10.1177%2F15501477211035332">"ScalEdge: A framework for scalable edge computing in Internet of things–based smart systems"</a>. <i>International Journal of Distributed Sensor Networks</i>. <b>17</b> (7): 155014772110353. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1177%2F15501477211035332">10.1177/15501477211035332</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/1550-1477">1550-1477</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:236917011">236917011</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=International+Journal+of+Distributed+Sensor+Networks&amp;rft.atitle=ScalEdge%3A+A+framework+for+scalable+edge+computing+in+Internet+of+things%E2%80%93based+smart+systems&amp;rft.volume=17&amp;rft.issue=7&amp;rft.pages=155014772110353&amp;rft.date=2021-07&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A236917011%23id-name%3DS2CID&amp;rft.issn=1550-1477&amp;rft_id=info%3Adoi%2F10.1177%2F15501477211035332&amp;rft.aulast=Babar&amp;rft.aufirst=Mohammad&amp;rft.au=Sohail+Khan%2C+Muhammad&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1177%252F15501477211035332&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFLiu,_S.Liu,_L.Tang,_B._WuWang,_J.2019" class="citation journal cs1">Liu, S.; Liu, L.; Tang, B. Wu; Wang, J.; Shi, W. (2019). <a rel="nofollow" class="external text" href="https://ieeexplore.ieee.org/document/8744265">"Edge Computing for Autonomous Driving: Opportunities and Challenges"</a>. <i>Proceedings of the IEEE</i>. <b>107</b> (8): 1697–1716. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FJPROC.2019.2915983">10.1109/JPROC.2019.2915983</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:198311944">198311944</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20210526094559/https://ieeexplore.ieee.org/abstract/document/8744265">Archived</a> from the original on 2021-05-26<span class="reference-accessdate">. Retrieved <span class="nowrap">2021-05-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+IEEE&amp;rft.atitle=Edge+Computing+for+Autonomous+Driving%3A+Opportunities+and+Challenges&amp;rft.volume=107&amp;rft.issue=8&amp;rft.pages=1697-1716&amp;rft.date=2019&amp;rft_id=info%3Adoi%2F10.1109%2FJPROC.2019.2915983&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A198311944%23id-name%3DS2CID&amp;rft.au=Liu%2C+S.&amp;rft.au=Liu%2C+L.&amp;rft.au=Tang%2C+B.+Wu&amp;rft.au=Wang%2C+J.&amp;rft.au=Shi%2C+W.&amp;rft_id=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F8744265&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFYu2018" class="citation journal cs1">Yu, W.; et&#160;al. (2018). <a rel="nofollow" class="external text" href="https://ieeexplore.ieee.org/document/9403374">"A Survey on the Edge Computing for the Internet of Things"</a>. <i>IEEE Access, vol. 6, pp. 6900-6919</i>. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/2104.01776">2104.01776</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FJIOT.2021.3072611">10.1109/JIOT.2021.3072611</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:233025108">233025108</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20210526094559/https://ieeexplore.ieee.org/abstract/document/9403374">Archived</a> from the original on 2021-05-26<span class="reference-accessdate">. Retrieved <span class="nowrap">2021-05-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Access%2C+vol.+6%2C+pp.+6900-6919&amp;rft.atitle=A+Survey+on+the+Edge+Computing+for+the+Internet+of+Things&amp;rft.date=2018&amp;rft_id=info%3Aarxiv%2F2104.01776&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A233025108%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FJIOT.2021.3072611&amp;rft.aulast=Yu&amp;rft.aufirst=W.&amp;rft_id=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F9403374&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:2-29"><span class="mw-cite-backlink">^ <a href="#cite_ref-:2_29-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:2_29-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFSatyanarayanan2017" class="citation journal cs1">Satyanarayanan, Mahadev (January 2017). <a rel="nofollow" class="external text" href="https://ieeexplore.ieee.org/document/7807196">"The Emergence of Edge Computing"</a>. <i>Computer</i>. <b>50</b> (1): 30–39. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FMC.2017.9">10.1109/MC.2017.9</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/1558-0814">1558-0814</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:12563598">12563598</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computer&amp;rft.atitle=The+Emergence+of+Edge+Computing&amp;rft.volume=50&amp;rft.issue=1&amp;rft.pages=30-39&amp;rft.date=2017-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A12563598%23id-name%3DS2CID&amp;rft.issn=1558-0814&amp;rft_id=info%3Adoi%2F10.1109%2FMC.2017.9&amp;rft.aulast=Satyanarayanan&amp;rft.aufirst=Mahadev&amp;rft_id=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F7807196&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-fog-yi-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-fog-yi_30-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFYiHaoQinLi2015" class="citation book cs1">Yi, S.; Hao, Z.; Qin, Z.; Li, Q. (November 2015). "Fog Computing: Platform and Applications". <i>2015 Third IEEE Workshop on Hot Topics in Web Systems and Technologies (HotWeb)</i>. pp.&#160;73–78. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FHotWeb.2015.22">10.1109/HotWeb.2015.22</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4673-9688-2" title="Special:BookSources/978-1-4673-9688-2"><bdi>978-1-4673-9688-2</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:6753944">6753944</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Fog+Computing%3A+Platform+and+Applications&amp;rft.btitle=2015+Third+IEEE+Workshop+on+Hot+Topics+in+Web+Systems+and+Technologies+%28HotWeb%29&amp;rft.pages=73-78&amp;rft.date=2015-11&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A6753944%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FHotWeb.2015.22&amp;rft.isbn=978-1-4673-9688-2&amp;rft.aulast=Yi&amp;rft.aufirst=S.&amp;rft.au=Hao%2C+Z.&amp;rft.au=Qin%2C+Z.&amp;rft.au=Li%2C+Q.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-verbelen-cloudlets-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-verbelen-cloudlets_31-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFVerbelenSimoensDe_TurckDhoedt2012" class="citation book cs1">Verbelen, Tim; Simoens, Pieter; De Turck, Filip; Dhoedt, Bart (2012). <a rel="nofollow" class="external text" href="https://dl.acm.org/citation.cfm?id=2307858">"Cloudlets"</a>. <i>Proceedings of the third ACM workshop on Mobile cloud computing and services</i>. ACM. pp.&#160;29–36. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F2307849.2307858">10.1145/2307849.2307858</a>. <a href="/wiki/Hdl_(identifier)" class="mw-redirect" title="Hdl (identifier)">hdl</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://hdl.handle.net/1854%2FLU-2984272">1854/LU-2984272</a></span>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781450313193" title="Special:BookSources/9781450313193"><bdi>9781450313193</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:3249347">3249347</a><span class="reference-accessdate">. Retrieved <span class="nowrap">4 July</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Cloudlets&amp;rft.btitle=Proceedings+of+the+third+ACM+workshop+on+Mobile+cloud+computing+and+services&amp;rft.pages=29-36&amp;rft.pub=ACM&amp;rft.date=2012&amp;rft_id=info%3Ahdl%2F1854%2FLU-2984272&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A3249347%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F2307849.2307858&amp;rft.isbn=9781450313193&amp;rft.aulast=Verbelen&amp;rft.aufirst=Tim&amp;rft.au=Simoens%2C+Pieter&amp;rft.au=De+Turck%2C+Filip&amp;rft.au=Dhoedt%2C+Bart&amp;rft_id=https%3A%2F%2Fdl.acm.org%2Fcitation.cfm%3Fid%3D2307858&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFMinhNguyenQuyNgoc2022" class="citation journal cs1">Minh, Quy Nguyen; Nguyen, Van-Hau; Quy, Vu Khanh; Ngoc, Le Anh; Chehri, Abdellah; Jeon, Gwanggil (2022). <a rel="nofollow" class="external text" href="https://doi.org/10.3390%2Fen15176140">"Edge Computing for IoT-Enabled Smart Grid: The Future of Energy"</a>. <i>Energies</i>. <b>15</b> (17): 6140. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.3390%2Fen15176140">10.3390/en15176140</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/1996-1073">1996-1073</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Energies&amp;rft.atitle=Edge+Computing+for+IoT-Enabled+Smart+Grid%3A+The+Future+of+Energy&amp;rft.volume=15&amp;rft.issue=17&amp;rft.pages=6140&amp;rft.date=2022&amp;rft_id=info%3Adoi%2F10.3390%2Fen15176140&amp;rft.issn=1996-1073&amp;rft.aulast=Minh&amp;rft.aufirst=Quy+Nguyen&amp;rft.au=Nguyen%2C+Van-Hau&amp;rft.au=Quy%2C+Vu+Khanh&amp;rft.au=Ngoc%2C+Le+Anh&amp;rft.au=Chehri%2C+Abdellah&amp;rft.au=Jeon%2C+Gwanggil&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.3390%252Fen15176140&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.wired.com/story/its-time-to-think-beyond-cloud-computing/">It's Time to Think Beyond Cloud Computing</a> Published by wired.com retrieved April 10, 2019</span>
+</li>
+<li id="cite_note-taleb-mobile-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-taleb-mobile_34-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFTalebDuttaKsentiniIqbal2017" class="citation journal cs1">Taleb, Tarik; Dutta, Sunny; Ksentini, Adlen; Iqbal, Muddesar; Flinck, Hannu (March 2017). <a rel="nofollow" class="external text" href="http://researchopen.lsbu.ac.uk/378/">"Mobile Edge Computing Potential in Making Cities Smarter"</a>. <i>IEEE Communications Magazine</i>. <b>55</b> (3): 38–43. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FMCOM.2017.1600249CM">10.1109/MCOM.2017.1600249CM</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:11163718">11163718</a><span class="reference-accessdate">. Retrieved <span class="nowrap">5 July</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Communications+Magazine&amp;rft.atitle=Mobile+Edge+Computing+Potential+in+Making+Cities+Smarter&amp;rft.volume=55&amp;rft.issue=3&amp;rft.pages=38-43&amp;rft.date=2017-03&amp;rft_id=info%3Adoi%2F10.1109%2FMCOM.2017.1600249CM&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A11163718%23id-name%3DS2CID&amp;rft.aulast=Taleb&amp;rft.aufirst=Tarik&amp;rft.au=Dutta%2C+Sunny&amp;rft.au=Ksentini%2C+Adlen&amp;rft.au=Iqbal%2C+Muddesar&amp;rft.au=Flinck%2C+Hannu&amp;rft_id=http%3A%2F%2Fresearchopen.lsbu.ac.uk%2F378%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-chakraborty-home-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-chakraborty-home_35-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFChakrabortyDatta2017" class="citation book cs1">Chakraborty, T.; Datta, S. K. (November 2017). "Home automation using edge computing and Internet of Things". <i>2017 IEEE International Symposium on Consumer Electronics (ISCE)</i>. pp.&#160;47–49. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FISCE.2017.8355544">10.1109/ISCE.2017.8355544</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-5386-2189-9" title="Special:BookSources/978-1-5386-2189-9"><bdi>978-1-5386-2189-9</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:19156163">19156163</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Home+automation+using+edge+computing+and+Internet+of+Things&amp;rft.btitle=2017+IEEE+International+Symposium+on+Consumer+Electronics+%28ISCE%29&amp;rft.pages=47-49&amp;rft.date=2017-11&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A19156163%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FISCE.2017.8355544&amp;rft.isbn=978-1-5386-2189-9&amp;rft.aulast=Chakraborty&amp;rft.aufirst=T.&amp;rft.au=Datta%2C+S.+K.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-36">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.satellitetoday.com/in-space-services/2023/05/12/size-of-the-prize-how-will-edge-computing-in-space-drive-value-creation/">Size of the Prize: How Will Edge Computing in Space Drive Value Creation?</a> Published by Via Satellite retrieved August 18, 2023</span>
+</li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-37">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.redhat.com/en/topics/edge-computing/what-is-edge-ai">"What is edge AI?"</a>. <i>www.redhat.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-10-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.redhat.com&amp;rft.atitle=What+is+edge+AI%3F&amp;rft_id=https%3A%2F%2Fwww.redhat.com%2Fen%2Ftopics%2Fedge-computing%2Fwhat-is-edge-ai&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEdge+computing" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Embedded_systems" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Embedded_systems" title="Template:Embedded systems"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Embedded_systems" title="Template talk:Embedded systems"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Embedded_systems" title="Special:EditPage/Template:Embedded systems"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Embedded_systems" style="font-size:114%;margin:0 4em"><a href="/wiki/Embedded_system" title="Embedded system">Embedded systems</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">General terms</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Application-specific_integrated_circuit" title="Application-specific integrated circuit">ASIC</a></li>
+<li><a href="/wiki/Board_support_package" title="Board support package">Board support package</a></li>
+<li><a href="/wiki/Bootloader" title="Bootloader">Bootloader</a></li>
+<li><a href="/wiki/Consumer_electronics" title="Consumer electronics">Consumer electronics</a></li>
+<li><a href="/wiki/Cross_compiler" title="Cross compiler">Cross compiler</a></li>
+<li><a href="/wiki/Embedded_database" title="Embedded database">Embedded database</a></li>
+<li><a href="/wiki/Embedded_hypervisor" title="Embedded hypervisor">Embedded hypervisor</a></li>
+<li><a href="/wiki/Embedded_operating_system" title="Embedded operating system">Embedded OS</a></li>
+<li><a href="/wiki/Embedded_software" title="Embedded software">Embedded software</a></li>
+<li><a href="/wiki/Field-programmable_gate_array" title="Field-programmable gate array">FPGA</a></li>
+<li><a href="/wiki/Internet_of_things" title="Internet of things">IoT</a></li>
+<li><a href="/wiki/Memory_footprint" title="Memory footprint">Memory footprint</a></li>
+<li><a href="/wiki/Microcontroller" title="Microcontroller">Microcontroller</a></li>
+<li><a href="/wiki/Single-board_computer" title="Single-board computer">Single-board computer</a>
+<ul><li><a href="/wiki/Raspberry_Pi" title="Raspberry Pi">Raspberry Pi</a></li></ul></li>
+<li><a href="/wiki/System_on_a_chip" title="System on a chip">SoC</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Firmware" title="Firmware">Firmware</a> and controls</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Firmware" title="Firmware">Firmware</a>
+<ul><li><a href="/wiki/Custom_firmware" title="Custom firmware">Custom firmware</a></li>
+<li><a href="/wiki/Proprietary_firmware" title="Proprietary firmware">Proprietary firmware</a></li></ul></li>
+<li><a href="/wiki/Closed_platform" title="Closed platform">Closed platform</a></li>
+<li><a href="/wiki/Crippleware" title="Crippleware">Crippleware</a></li>
+<li><a href="/wiki/Defective_by_Design" title="Defective by Design">Defective by Design</a></li>
+<li><a href="/wiki/Hacking_of_consumer_electronics" title="Hacking of consumer electronics">Hacking of consumer electronics</a></li>
+<li><a href="/wiki/Homebrew_(video_games)" title="Homebrew (video games)">Homebrew (video games)</a></li>
+<li><a href="/wiki/IOS_jailbreaking" title="IOS jailbreaking">iOS jailbreaking</a></li>
+<li><a href="/wiki/PlayStation_3_Jailbreak" title="PlayStation 3 Jailbreak">PlayStation 3 Jailbreak</a></li>
+<li><a href="/wiki/Rooting_(Android)" title="Rooting (Android)">Rooting (Android)</a></li>
+<li><a href="/wiki/UEFI" title="UEFI">UEFI</a></li>
+<li><a href="/wiki/Vendor_lock-in" title="Vendor lock-in">Vendor lock-in</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Booting" title="Booting">Boot loaders</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Das_U-Boot" title="Das U-Boot">U-Boot</a></li>
+<li><a href="/wiki/Barebox" title="Barebox">Barebox</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Library_(computing)" title="Library (computing)">Software libraries</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/UClibc" title="UClibc">uClibc</a></li>
+<li><a href="/wiki/Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="/wiki/Embedded_GLIBC" class="mw-redirect" title="Embedded GLIBC">Embedded GLIBC</a></li>
+<li><a href="/wiki/LwIP" title="LwIP">lwIP</a></li>
+<li><a href="/wiki/Musl" title="Musl">musl</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Programming_tool" title="Programming tool">Programming tools</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Almquist_shell" title="Almquist shell">Almquist shell</a></li>
+<li><a href="/wiki/BitBake" title="BitBake">BitBake</a></li>
+<li><a href="/wiki/Buildroot" title="Buildroot">Buildroot</a></li>
+<li><a href="/wiki/BusyBox" title="BusyBox">BusyBox</a></li>
+<li><a href="/wiki/OpenEmbedded" title="OpenEmbedded">OpenEmbedded</a></li>
+<li><a href="/wiki/Stand-alone_shell" title="Stand-alone shell">Stand-alone shell</a></li>
+<li><a href="/wiki/Toybox" title="Toybox">Toybox</a></li>
+<li><a href="/wiki/Yocto_Project" title="Yocto Project">Yocto Project</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Embedded_operating_system" title="Embedded operating system">Operating systems</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Linux_on_embedded_systems" title="Linux on embedded systems">Linux on embedded systems</a></li>
+<li><a href="/wiki/Linux_for_mobile_devices" title="Linux for mobile devices">Linux for mobile devices</a></li>
+<li><a href="/wiki/Light-weight_Linux_distribution" title="Light-weight Linux distribution">Light-weight Linux distribution</a></li>
+<li><a href="/wiki/Real-time_operating_system" title="Real-time operating system">Real-time operating system</a></li>
+<li><a href="/wiki/Windows_IoT" title="Windows IoT">Windows IoT</a>
+<ul><li><a href="/wiki/Windows_Embedded_Compact" title="Windows Embedded Compact">Win CE</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Programming_language" title="Programming language">Programming languages</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a></li>
+<li><a href="/wiki/Assembly_language" title="Assembly language">Assembly language</a></li>
+<li><a href="/w/index.php?title=Communication_Access_Programming_Language&amp;action=edit&amp;redlink=1" class="new" title="Communication Access Programming Language (page does not exist)">CAPL</a></li>
+<li><a href="/wiki/Embedded_C" title="Embedded C">Embedded C</a></li>
+<li><a href="/wiki/Embedded_C%2B%2B" title="Embedded C++">Embedded C++</a></li>
+<li><a href="/wiki/Embedded_Java" title="Embedded Java">Embedded Java</a></li>
+<li><a href="/wiki/MISRA_C" title="MISRA C">MISRA C</a></li>
+<li><a href="/wiki/MicroPython" title="MicroPython">MicroPython</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><a href="/wiki/Comparison_of_lightweight_web_browsers" title="Comparison of lightweight web browsers">Lightweight browsers</a></li>
+<li><a href="/wiki/List_of_open-source_hardware" class="mw-redirect" title="List of open-source hardware">List of open-source hardware</a></li>
+<li><a href="/wiki/Open-source_robotics" title="Open-source robotics">Open-source robotics</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"></div><div role="navigation" class="navbox" aria-labelledby="Ambient_intelligence" style="padding:3px"><table class="nowraplinks mw-collapsible mw-collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Ambient_intelligence" title="Template:Ambient intelligence"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Ambient_intelligence" title="Template talk:Ambient intelligence"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Ambient_intelligence" title="Special:EditPage/Template:Ambient intelligence"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Ambient_intelligence" style="font-size:114%;margin:0 4em"><a href="/wiki/Ambient_intelligence" title="Ambient intelligence">Ambient intelligence</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Concepts</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Ambient_IoT" title="Ambient IoT">Ambient IoT</a></li>
+<li><a href="/wiki/Context_awareness" title="Context awareness">Context awareness</a></li>
+<li><a href="/wiki/Device_ecology" title="Device ecology">Device ecology</a></li>
+<li><a href="/wiki/Internet_of_things" title="Internet of things">Internet of things</a></li>
+<li><a href="/wiki/Object_hyperlinking" title="Object hyperlinking">Object hyperlinking</a></li>
+<li><a href="/wiki/Profiling_(information_science)" title="Profiling (information science)">Profiling</a></li>
+<li><a href="/wiki/Spime" title="Spime">Spime</a></li>
+<li><a href="/wiki/Supranet" title="Supranet">Supranet</a></li>
+<li><a href="/wiki/Ubiquitous_computing" title="Ubiquitous computing">Ubiquitous computing</a></li>
+<li><a href="/wiki/Web_of_Things" title="Web of Things">Web of Things</a></li>
+<li><a href="/wiki/Wireless_sensor_network" title="Wireless sensor network">Wireless sensor networks</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Technologies</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/6LoWPAN" title="6LoWPAN">6LoWPAN</a></li>
+<li><a href="/wiki/ANT%2B" class="mw-redirect" title="ANT+">ANT+</a></li>
+<li><a href="/wiki/DASH7" title="DASH7">DASH7</a></li>
+<li><a href="/wiki/IEEE_802.15.4" title="IEEE 802.15.4">IEEE 802.15.4</a></li>
+<li><a href="/wiki/Internet_0" title="Internet 0">Internet 0</a></li>
+<li><a href="/wiki/Machine_to_machine" title="Machine to machine">Machine to machine</a></li>
+<li><a href="/wiki/Radio-frequency_identification" title="Radio-frequency identification">Radio-frequency identification</a></li>
+<li><a href="/wiki/Smartdust" title="Smartdust">Smartdust</a></li>
+<li><a href="/wiki/XBee" title="XBee">XBee</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Platforms</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Arduino" title="Arduino">Arduino</a></li>
+<li><a href="/wiki/Contiki" title="Contiki">Contiki</a></li>
+<li><a href="/wiki/.NET_Gadgeteer" title=".NET Gadgeteer">Gadgeteer</a></li>
+<li><a href="/wiki/IoBridge" title="IoBridge">ioBridge</a></li>
+<li><a href="/wiki/Netduino" title="Netduino">Netduino</a></li>
+<li><a href="/wiki/Raspberry_Pi" title="Raspberry Pi">Raspberry Pi</a></li>
+<li><a href="/wiki/TinyOS" title="TinyOS">TinyOS</a></li>
+<li><a href="/wiki/Wiring_(development_platform)" class="mw-redirect" title="Wiring (development platform)">Wiring</a></li>
+<li><a href="/wiki/Xively" title="Xively">Xively</a></li>
+<li><a href="/wiki/NodeMCU" title="NodeMCU">NodeMCU</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Applications</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Ambient_device" title="Ambient device">Ambient device</a></li>
+<li><a href="/wiki/CeNSE" title="CeNSE">CeNSE</a></li>
+<li><a href="/wiki/Connected_car" title="Connected car">Connected car</a></li>
+<li><a href="/wiki/Home_automation" title="Home automation">Home automation</a></li>
+<li><a href="/wiki/HomeOS" title="HomeOS">HomeOS</a></li>
+<li><a href="/wiki/Internet_refrigerator" class="mw-redirect" title="Internet refrigerator">Internet refrigerator</a></li>
+<li><a href="/wiki/Nabaztag" title="Nabaztag">Nabaztag</a></li>
+<li><a href="/wiki/Smart_city" title="Smart city">Smart city</a></li>
+<li><a href="/wiki/Smart_TV" title="Smart TV">Smart TV</a></li>
+<li><a href="/wiki/Smarter_Planet" title="Smarter Planet">Smarter Planet</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Pioneers</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Kevin_Ashton" title="Kevin Ashton">Kevin Ashton</a></li>
+<li><a href="/wiki/Gaetano_Borriello" title="Gaetano Borriello">Gaetano Borriello</a></li>
+<li><a href="/wiki/Adam_Dunkels" title="Adam Dunkels">Adam Dunkels</a></li>
+<li><a href="/wiki/Stefano_Marzano" title="Stefano Marzano">Stefano Marzano</a></li>
+<li><a href="/wiki/Don_Norman" title="Don Norman">Don Norman</a></li>
+<li><a href="/wiki/Roel_Pieper" title="Roel Pieper">Roel Pieper</a></li>
+<li><a href="/wiki/Josef_Preishuber-Pfl%C3%BCgl" title="Josef Preishuber-Pflügl">Josef Preishuber-Pflügl</a></li>
+<li><a href="/wiki/John_Seely_Brown" title="John Seely Brown">John Seely Brown</a></li>
+<li><a href="/wiki/Bruce_Sterling" title="Bruce Sterling">Bruce Sterling</a></li>
+<li><a href="/wiki/Mark_Weiser" title="Mark Weiser">Mark Weiser</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Ambient_Devices" title="Ambient Devices">Ambient Devices</a></li>
+<li><a href="/wiki/AmbieSense" title="AmbieSense">AmbieSense</a></li>
+<li><a href="/wiki/Framework_Programmes_for_Research_and_Technological_Development" title="Framework Programmes for Research and Technological Development">Ebbits project</a></li>
+<li><a href="/wiki/IPSO_Alliance" title="IPSO Alliance">IPSO Alliance</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1433
+Cached time: 20231031012035
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.475 seconds
+Real time usage: 0.568 seconds
+Preprocessor visited node count: 2272/1000000
+Post‐expand include size: 100268/2097152 bytes
+Template argument size: 731/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 123684/5000000 bytes
+Lua time usage: 0.314/10.000 seconds
+Lua memory usage: 7014901/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  492.786      1 -total
+ 53.56%  263.955      1 Template:Reflist
+ 24.42%  120.328     16 Template:Cite_web
+ 16.90%   83.264      2 Template:Navbox
+ 16.46%   81.096      1 Template:Embedded_systems
+ 12.72%   62.670     10 Template:Cite_journal
+ 11.72%   57.732      1 Template:Excessive_examples
+ 11.39%   56.151      1 Template:Short_description
+  8.69%   42.839      1 Template:Ambox
+  7.85%   38.706      6 Template:Cite_book
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:5276122-0!canonical and timestamp 20231031012034 and revision id 1181814206. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Edge_computing&amp;oldid=1181814206">https://en.wikipedia.org/w/index.php?title=Edge_computing&amp;oldid=1181814206</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Post-cloud_computing_architecture" title="Category:Post-cloud computing architecture">Post-cloud computing architecture</a></li><li><a href="/wiki/Category:Distributed_computing_architecture" title="Category:Distributed computing architecture">Distributed computing architecture</a></li><li><a href="/wiki/Category:Load_balancing_(computing)" title="Category:Load balancing (computing)">Load balancing (computing)</a></li><li><a href="/wiki/Category:Network_performance" title="Category:Network performance">Network performance</a></li><li><a href="/wiki/Category:Networking_hardware" title="Category:Networking hardware">Networking hardware</a></li><li><a href="/wiki/Category:Internet_of_things" title="Category:Internet of things">Internet of things</a></li><li><a href="/wiki/Category:Ambient_intelligence" title="Category:Ambient intelligence">Ambient intelligence</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_Serbian-language_sources_(sr)" title="Category:CS1 Serbian-language sources (sr)">CS1 Serbian-language sources (sr)</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Articles_with_too_many_examples_from_July_2023" title="Category:Articles with too many examples from July 2023">Articles with too many examples from July 2023</a></li><li><a href="/wiki/Category:All_articles_with_too_many_examples" title="Category:All articles with too many examples">All articles with too many examples</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_style_issues_from_July_2023" title="Category:Wikipedia articles with style issues from July 2023">Wikipedia articles with style issues from July 2023</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 25 October 2023, at 11:08<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Edge_computing&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw1433","wgBackendResponseTime":717,"wgPageParseReport":{"limitreport":{"cputime":"0.475","walltime":"0.568","ppvisitednodes":{"value":2272,"limit":1000000},"postexpandincludesize":{"value":100268,"limit":2097152},"templateargumentsize":{"value":731,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":123684,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  492.786      1 -total"," 53.56%  263.955      1 Template:Reflist"," 24.42%  120.328     16 Template:Cite_web"," 16.90%   83.264      2 Template:Navbox"," 16.46%   81.096      1 Template:Embedded_systems"," 12.72%   62.670     10 Template:Cite_journal"," 11.72%   57.732      1 Template:Excessive_examples"," 11.39%   56.151      1 Template:Short_description","  8.69%   42.839      1 Template:Ambox","  7.85%   38.706      6 Template:Cite_book"]},"scribunto":{"limitreport-timeusage":{"value":"0.314","limit":"10.000"},"limitreport-memusage":{"value":7014901,"limit":52428800}},"cachereport":{"origin":"mw1433","timestamp":"20231031012035","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Edge computing","url":"https:\/\/en.wikipedia.org\/wiki\/Edge_computing","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5337692","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5337692","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2006-05-24T18:41:35Z","dateModified":"2023-10-25T11:08:15Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/b\/bf\/Edge_computing_infrastructure.png","headline":"distributed computing"}</script>
+</body>
+</html>

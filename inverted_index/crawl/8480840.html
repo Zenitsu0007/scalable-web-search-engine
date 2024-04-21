@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Convex polytope - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4937bef7-f8bb-4091-9e06-a7d63a691ebb","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Convex_polytope","wgTitle":"Convex polytope","wgCurRevisionId":1176202072,"wgRevisionId":1176202072,"wgArticleId":1817885,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: location missing publisher","Articles with short description","Short description matches Wikidata","Commons category link is on Wikidata","Polytopes","Convex geometry"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Convex_polytope","wgRelevantArticleId":1817885,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],
+"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q4129097","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={
+"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents",
+"ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/3dpoly.svg/1200px-3dpoly.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1117">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/3dpoly.svg/800px-3dpoly.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="744">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/3dpoly.svg/640px-3dpoly.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="595">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Convex polytope - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Convex_polytope">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Convex_polytope&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Convex_polytope">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Convex_polytope rootpage-Convex_polytope skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Convex+polytope" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Convex+polytope" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Convex+polytope" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Convex+polytope" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Examples"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Examples">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Examples</div>
+		</a>
+		
+		<ul id="toc-Examples-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Definitions"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Definitions">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Definitions</div>
+		</a>
+		
+			<button aria-controls="toc-Definitions-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Definitions subsection</span>
+			</button>
+		
+		<ul id="toc-Definitions-sublist" class="vector-toc-list">
+			<li id="toc-Vertex_representation_(convex_hull)"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Vertex_representation_(convex_hull)">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1</span>Vertex representation (convex hull)</div>
+			</a>
+			
+			<ul id="toc-Vertex_representation_(convex_hull)-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Intersection_of_half-spaces"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Intersection_of_half-spaces">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.2</span>Intersection of half-spaces</div>
+			</a>
+			
+			<ul id="toc-Intersection_of_half-spaces-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Using_the_different_representations"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Using_the_different_representations">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.3</span>Using the different representations</div>
+			</a>
+			
+			<ul id="toc-Using_the_different_representations-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Representation_of_unbounded_polytopes"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Representation_of_unbounded_polytopes">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.4</span>Representation of unbounded polytopes</div>
+			</a>
+			
+			<ul id="toc-Representation_of_unbounded_polytopes-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Properties"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Properties">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>Properties</div>
+		</a>
+		
+			<button aria-controls="toc-Properties-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Properties subsection</span>
+			</button>
+		
+		<ul id="toc-Properties-sublist" class="vector-toc-list">
+			<li id="toc-The_face_lattice"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#The_face_lattice">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.1</span>The face lattice</div>
+			</a>
+			
+			<ul id="toc-The_face_lattice-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Topological_properties"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Topological_properties">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.2</span>Topological properties</div>
+			</a>
+			
+			<ul id="toc-Topological_properties-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Simplicial_decomposition"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Simplicial_decomposition">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.3</span>Simplicial decomposition</div>
+			</a>
+			
+			<ul id="toc-Simplicial_decomposition-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Algorithmic_problems_for_a_convex_polytope"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Algorithmic_problems_for_a_convex_polytope">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Algorithmic problems for a convex polytope</div>
+		</a>
+		
+			<button aria-controls="toc-Algorithmic_problems_for_a_convex_polytope-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Algorithmic problems for a convex polytope subsection</span>
+			</button>
+		
+		<ul id="toc-Algorithmic_problems_for_a_convex_polytope-sublist" class="vector-toc-list">
+			<li id="toc-Construction_of_representations"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Construction_of_representations">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.1</span>Construction of representations</div>
+			</a>
+			
+			<ul id="toc-Construction_of_representations-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Volume_computation"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Volume_computation">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.2</span>Volume computation</div>
+			</a>
+			
+			<ul id="toc-Volume_computation-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">6</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">7</span>External links</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Convex polytope</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 11 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-11" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">11 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Pol%C3%ADtop_convex" title="Polítop convex – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-de badge-Q70894304 mw-list-item" title=""><a href="https://de.wikipedia.org/wiki/Konvexes_Polytop" title="Konvexes Polytop – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%9A%CF%85%CF%81%CF%84%CF%8C_%CF%80%CE%BF%CE%BB%CF%8D%CF%84%CE%BF%CF%80%CE%BF" title="Κυρτό πολύτοπο – Greek" lang="el" hreflang="el" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Politopo_convexo" title="Politopo convexo – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%B3%BC%EB%A1%9D_%EB%8B%A4%ED%8F%AC%EC%B2%B4" title="볼록 다포체 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Politop_cembung" title="Politop cembung – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Pol%C3%ADtopo_convexo" title="Polítopo convexo – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a href="https://ro.wikipedia.org/wiki/Politop_convex" title="Politop convex – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target"><span>Română</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9E%D0%BF%D1%83%D0%BA%D0%BB%D0%B8%D0%B9_%D0%BF%D0%BE%D0%BB%D1%96%D1%82%D0%BE%D0%BF" title="Опуклий політоп – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-ur mw-list-item"><a href="https://ur.wikipedia.org/wiki/%D9%85%D8%AD%D8%AF%D8%A8_%DA%A9%D8%AB%DB%8C%D8%B1_%D8%B3%D8%B7%D8%AD%DB%8C" title="محدب کثیر سطحی – Urdu" lang="ur" hreflang="ur" class="interlanguage-link-target"><span>اردو</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%87%B8%E5%A4%9A%E8%83%9E%E5%BD%A2" title="凸多胞形 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4129097#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Convex_polytope" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Convex_polytope" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Convex_polytope"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Convex_polytope&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Convex_polytope&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Convex_polytope"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Convex_polytope&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Convex_polytope&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Convex_polytope" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Convex_polytope" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Convex_polytope&amp;oldid=1176202072" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Convex_polytope&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Convex_polytope&amp;id=1176202072&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FConvex_polytope"><span>Get shortened URL</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4129097" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Convex_polytope&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Convex_polytope&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Convex_polytopes" hreflang="en"><span>Wikimedia Commons</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Convex hull of a finite set of points in a Euclidean space</div>
+<figure class="mw-default-size mw-halign-right" typeof="mw:File/Thumb"><a href="/wiki/File:3dpoly.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/3dpoly.svg/220px-3dpoly.svg.png" decoding="async" width="220" height="205" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/3dpoly.svg/330px-3dpoly.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ef/3dpoly.svg/440px-3dpoly.svg.png 2x" data-file-width="647" data-file-height="602" /></a><figcaption>A 3-dimensional convex polytope</figcaption></figure>
+<p>A <b>convex polytope</b> is a special case of a <a href="/wiki/Polytope" title="Polytope">polytope</a>, having the additional property that it is also a <a href="/wiki/Convex_set" title="Convex set">convex set</a> contained in the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>-dimensional Euclidean space <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {R} ^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {R} ^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c510b63578322050121fe966f2e5770bea43308d" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.897ex; height:2.343ex;" alt="\mathbb {R} ^{n}"></span>. Most texts<sup id="cite_ref-grun_1-0" class="reference"><a href="#cite_note-grun-1">&#91;1&#93;</a></sup><sup id="cite_ref-zieg_2-0" class="reference"><a href="#cite_note-zieg-2">&#91;2&#93;</a></sup> use the term "polytope" for a <a href="/wiki/Bounded_set" title="Bounded set">bounded</a> convex polytope, and the word "polyhedron" for the more general, possibly unbounded object. Others<sup id="cite_ref-Jeter_3-0" class="reference"><a href="#cite_note-Jeter-3">&#91;3&#93;</a></sup> (including this article) allow polytopes to be unbounded. The terms "bounded/unbounded convex polytope" will be used below whenever the boundedness is critical to the discussed issue. Yet other texts identify a convex polytope with its boundary.
+</p><p>Convex polytopes play an important role both in various branches of <a href="/wiki/Mathematics" title="Mathematics">mathematics</a> and in applied areas, most notably in <a href="/wiki/Linear_programming" title="Linear programming">linear programming</a>.
+</p><p>In the influential textbooks of Grünbaum<sup id="cite_ref-grun_1-1" class="reference"><a href="#cite_note-grun-1">&#91;1&#93;</a></sup> and Ziegler<sup id="cite_ref-zieg_2-1" class="reference"><a href="#cite_note-zieg-2">&#91;2&#93;</a></sup> on the subject, as well as in many other texts in <a href="/wiki/Discrete_geometry" title="Discrete geometry">discrete geometry</a>, convex polytopes are often simply called "polytopes". Grünbaum points out that this is solely to avoid the endless repetition of the word "convex", and that the discussion should throughout be understood as applying only to the convex variety (p. 51).
+</p><p>A polytope is called <i>full-dimensional</i> if it is an <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>-dimensional object in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {R} ^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {R} ^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c510b63578322050121fe966f2e5770bea43308d" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.897ex; height:2.343ex;" alt="\mathbb {R} ^{n}"></span>.
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=1" title="Edit section: Examples"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Many examples of bounded convex polytopes can be found in the article "<a href="/wiki/Polyhedron" title="Polyhedron">polyhedron</a>".</li>
+<li>In the 2-dimensional case the full-dimensional examples are a  <a href="/wiki/Half-plane" class="mw-redirect" title="Half-plane">half-plane</a>, a strip between two parallel lines, an <a href="/wiki/Angle" title="Angle">angle</a> shape (the intersection of two non-parallel half-planes), a shape defined by a convex <a href="/wiki/Polygonal_chain" title="Polygonal chain">polygonal chain</a> with two <a href="/wiki/Ray_(geometry)" class="mw-redirect" title="Ray (geometry)">rays</a> attached to its ends, and  a <a href="/wiki/Convex_polygon" title="Convex polygon">convex polygon</a>.</li>
+<li>Special cases of an unbounded convex polytope are a <a href="/wiki/Slab_(geometry)" title="Slab (geometry)">slab</a> between two parallel hyperplanes, a wedge defined by two non-parallel <a href="/wiki/Half-space_(geometry)" title="Half-space (geometry)">half-spaces</a>, a <a href="/wiki/Polyhedral_cylinder" class="mw-redirect" title="Polyhedral cylinder">polyhedral cylinder</a> (infinite <a href="/wiki/Prism_(geometry)" title="Prism (geometry)">prism</a>), and a <a href="/wiki/Polyhedral_cone" class="mw-redirect" title="Polyhedral cone">polyhedral cone</a> (infinite <a href="/wiki/Cone" title="Cone">cone</a>) defined by three or more half-spaces passing through a common point.</li></ul>
+<h2><span class="mw-headline" id="Definitions">Definitions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=2" title="Edit section: Definitions"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A convex polytope may be defined in a number of ways, depending on what is more suitable for the problem at hand. Grünbaum's definition is in terms of a convex set of points in space. Other important definitions are: as the <a href="/wiki/Intersection_(set_theory)" title="Intersection (set theory)">intersection</a> of <a href="/wiki/Half-space_(geometry)" title="Half-space (geometry)">half-spaces</a> (half-space representation) and as the <a href="/wiki/Convex_hull" title="Convex hull">convex hull</a> of a set of points (vertex representation).
+</p>
+<h3><span id="Vertex_representation_.28convex_hull.29"></span><span class="mw-headline" id="Vertex_representation_(convex_hull)">Vertex representation (convex hull)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=3" title="Edit section: Vertex representation (convex hull)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In his book <i><a href="/wiki/Convex_Polytopes" title="Convex Polytopes">Convex Polytopes</a></i>, Grünbaum defines a convex polytope as a <b><a href="/wiki/Compact_space" title="Compact space">compact</a> <a href="/wiki/Convex_set" title="Convex set">convex set</a> with a finite number of <a href="/wiki/Extreme_points" class="mw-redirect" title="Extreme points">extreme points</a></b>:
+</p>
+<dl><dd>A set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="K"></span> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {R} ^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {R} ^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c510b63578322050121fe966f2e5770bea43308d" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.897ex; height:2.343ex;" alt="\mathbb {R} ^{n}"></span> is <i>convex</i> if, for each pair of distinct points <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span> in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="K"></span>, the closed segment with endpoints <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span> is contained within <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="K"></span>.</dd></dl>
+<p>This is equivalent to defining a bounded convex polytope as the <a href="/wiki/Convex_hull" title="Convex hull">convex hull</a> of a finite set of points, where the finite set must contain the set of extreme points of the polytope. Such a definition is called a <b>vertex representation</b> (<b>V-representation</b> or <b>V-description</b>).<sup id="cite_ref-grun_1-2" class="reference"><a href="#cite_note-grun-1">&#91;1&#93;</a></sup>  For a compact convex polytope, the minimal V-description is unique and it is given by the set of the <a href="/wiki/Vertex_(geometry)" title="Vertex (geometry)">vertices</a> of the polytope.<sup id="cite_ref-grun_1-3" class="reference"><a href="#cite_note-grun-1">&#91;1&#93;</a></sup> A convex polytope is called an <a href="/wiki/Integral_polytope" title="Integral polytope">integral polytope</a> if all of its vertices have integer coordinates.
+</p>
+<h3><span class="mw-headline" id="Intersection_of_half-spaces">Intersection of half-spaces</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=4" title="Edit section: Intersection of half-spaces"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A convex polytope may be defined as an intersection of a finite number of half-spaces. Such definition is called a <b>half-space representation</b> (<b>H-representation</b> or <b>H-description</b>).<sup id="cite_ref-grun_1-4" class="reference"><a href="#cite_note-grun-1">&#91;1&#93;</a></sup>  There  exist infinitely many H-descriptions of a convex polytope. However, for a full-dimensional convex polytope, the minimal H-description is in fact unique and is given by the set of the <a href="/wiki/Facet_(geometry)" title="Facet (geometry)">facet</a>-defining halfspaces.<sup id="cite_ref-grun_1-5" class="reference"><a href="#cite_note-grun-1">&#91;1&#93;</a></sup>
+</p><p>A <a href="/wiki/Closed_half-space" class="mw-redirect" title="Closed half-space">closed half-space</a> can be written as a <a href="/wiki/Linear_inequality" title="Linear inequality">linear inequality</a>:<sup id="cite_ref-grun_1-6" class="reference"><a href="#cite_note-grun-1">&#91;1&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{1}x_{1}+a_{2}x_{2}+\cdots +a_{n}x_{n}\leq b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mo>&#x22EF;<!-- ⋯ --></mo>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{1}x_{1}+a_{2}x_{2}+\cdots +a_{n}x_{n}\leq b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1a473095d0636a74fe0060e30545195f473171bc" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:29.673ex; height:2.509ex;" alt="a_{1}x_{1}+a_{2}x_{2}+\cdots +a_{n}x_{n}\leq b"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> is the dimension of the space containing the polytope under consideration. Hence, a <b>closed convex polytope</b> may be regarded as the set of solutions to the <a href="/wiki/System_of_linear_inequalities" class="mw-redirect" title="System of linear inequalities">system of linear inequalities</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{alignedat}{7}a_{11}x_{1}&amp;&amp;\;+\;&amp;&amp;a_{12}x_{2}&amp;&amp;\;+\cdots +\;&amp;&amp;a_{1n}x_{n}&amp;&amp;\;\leq \;&amp;&amp;&amp;b_{1}\\a_{21}x_{1}&amp;&amp;\;+\;&amp;&amp;a_{22}x_{2}&amp;&amp;\;+\cdots +\;&amp;&amp;a_{2n}x_{n}&amp;&amp;\;\leq \;&amp;&amp;&amp;b_{2}\\\vdots \;\;\;&amp;&amp;&amp;&amp;\vdots \;\;\;&amp;&amp;&amp;&amp;\vdots \;\;\;&amp;&amp;&amp;&amp;&amp;\;\vdots \\a_{m1}x_{1}&amp;&amp;\;+\;&amp;&amp;a_{m2}x_{2}&amp;&amp;\;+\cdots +\;&amp;&amp;a_{mn}x_{n}&amp;&amp;\;\leq \;&amp;&amp;&amp;b_{m}\\\end{alignedat}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 0em 0em 0em 0em 0em 0em 0em 0em 0em 0em 0em 0em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>11</mn>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd />
+              <mtd>
+                <mspace width="thickmathspace" />
+                <mo>+</mo>
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>12</mn>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd />
+              <mtd>
+                <mspace width="thickmathspace" />
+                <mo>+</mo>
+                <mo>&#x22EF;<!-- ⋯ --></mo>
+                <mo>+</mo>
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd />
+              <mtd>
+                <mspace width="thickmathspace" />
+                <mo>&#x2264;<!-- ≤ --></mo>
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd />
+              <mtd>
+                <msub>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>21</mn>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd />
+              <mtd>
+                <mspace width="thickmathspace" />
+                <mo>+</mo>
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>22</mn>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd />
+              <mtd>
+                <mspace width="thickmathspace" />
+                <mo>+</mo>
+                <mo>&#x22EF;<!-- ⋯ --></mo>
+                <mo>+</mo>
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd />
+              <mtd>
+                <mspace width="thickmathspace" />
+                <mo>&#x2264;<!-- ≤ --></mo>
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd />
+              <mtd>
+                <msub>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo>&#x22EE;<!-- ⋮ --></mo>
+                <mspace width="thickmathspace" />
+                <mspace width="thickmathspace" />
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd />
+              <mtd />
+              <mtd>
+                <mo>&#x22EE;<!-- ⋮ --></mo>
+                <mspace width="thickmathspace" />
+                <mspace width="thickmathspace" />
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd />
+              <mtd />
+              <mtd>
+                <mo>&#x22EE;<!-- ⋮ --></mo>
+                <mspace width="thickmathspace" />
+                <mspace width="thickmathspace" />
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd />
+              <mtd />
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mspace width="thickmathspace" />
+                <mo>&#x22EE;<!-- ⋮ --></mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd />
+              <mtd>
+                <mspace width="thickmathspace" />
+                <mo>+</mo>
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd />
+              <mtd>
+                <mspace width="thickmathspace" />
+                <mo>+</mo>
+                <mo>&#x22EF;<!-- ⋯ --></mo>
+                <mo>+</mo>
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd />
+              <mtd>
+                <mspace width="thickmathspace" />
+                <mo>&#x2264;<!-- ≤ --></mo>
+                <mspace width="thickmathspace" />
+              </mtd>
+              <mtd />
+              <mtd />
+              <mtd>
+                <msub>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{alignedat}{7}a_{11}x_{1}&amp;&amp;\;+\;&amp;&amp;a_{12}x_{2}&amp;&amp;\;+\cdots +\;&amp;&amp;a_{1n}x_{n}&amp;&amp;\;\leq \;&amp;&amp;&amp;b_{1}\\a_{21}x_{1}&amp;&amp;\;+\;&amp;&amp;a_{22}x_{2}&amp;&amp;\;+\cdots +\;&amp;&amp;a_{2n}x_{n}&amp;&amp;\;\leq \;&amp;&amp;&amp;b_{2}\\\vdots \;\;\;&amp;&amp;&amp;&amp;\vdots \;\;\;&amp;&amp;&amp;&amp;\vdots \;\;\;&amp;&amp;&amp;&amp;&amp;\;\vdots \\a_{m1}x_{1}&amp;&amp;\;+\;&amp;&amp;a_{m2}x_{2}&amp;&amp;\;+\cdots +\;&amp;&amp;a_{mn}x_{n}&amp;&amp;\;\leq \;&amp;&amp;&amp;b_{m}\\\end{alignedat}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/36bb53f33b17e8c6de10cbe0d07ed4181fa4932a" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -6.005ex; width:36.815ex; height:13.176ex;" alt="{\begin{alignedat}{7}a_{{11}}x_{1}&amp;&amp;\;+\;&amp;&amp;a_{{12}}x_{2}&amp;&amp;\;+\cdots +\;&amp;&amp;a_{{1n}}x_{n}&amp;&amp;\;\leq \;&amp;&amp;&amp;b_{1}\\a_{{21}}x_{1}&amp;&amp;\;+\;&amp;&amp;a_{{22}}x_{2}&amp;&amp;\;+\cdots +\;&amp;&amp;a_{{2n}}x_{n}&amp;&amp;\;\leq \;&amp;&amp;&amp;b_{2}\\\vdots \;\;\;&amp;&amp;&amp;&amp;\vdots \;\;\;&amp;&amp;&amp;&amp;\vdots \;\;\;&amp;&amp;&amp;&amp;&amp;\;\vdots \\a_{{m1}}x_{1}&amp;&amp;\;+\;&amp;&amp;a_{{m2}}x_{2}&amp;&amp;\;+\cdots +\;&amp;&amp;a_{{mn}}x_{n}&amp;&amp;\;\leq \;&amp;&amp;&amp;b_{m}\\\end{alignedat}}"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="m"></span> is the number of half-spaces defining the polytope. This can be concisely written as the <a href="/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a> inequality:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Ax\leq b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mi>x</mi>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Ax\leq b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/08249140bbb640be6c1242b705a896fb8951886f" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.505ex; width:7.169ex; height:2.343ex;" alt="Ax\leq b"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"></span> is an <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle m\times n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m\times n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/12b23d207d23dd430b93320539abbb0bde84870d" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:6.276ex; height:1.676ex;" alt="m\times n"></span> matrix, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"></span> is an <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n\times 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\times 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d24148f103e1cccb60addeeb0a64cb1c3d5622e0" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:5.398ex; height:2.176ex;" alt="{\displaystyle n\times 1}"></span> column vector whose coordinates are the variables <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a8788bf85d532fa88d1fb25eff6ae382a601c308" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.384ex; height:2.009ex;" alt="x_{1}"></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c5ea190699149306d242b70439e663559e3ffbe" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.548ex; height:2.009ex;" alt="x_{n}"></span>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span> is an <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle m\times 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m\times 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7f7ea91d81567531f5ef6d3b669be211ff953e6a" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:6.043ex; height:2.176ex;" alt="{\displaystyle m\times 1}"></span> column vector whose coordinates are the right-hand sides <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9af2720c91be489f57ecde4bb651b95e113d0144" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.052ex; height:2.509ex;" alt="b_{1}"></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b_{m}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b_{m}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/330e36691c8285b9c890d82a7c11855f3259dd58" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.673ex; height:2.509ex;" alt="b_{m}"></span> of the scalar inequalities.
+</p><p>An <b>open convex polytope</b> is defined in the same way, with strict inequalities used in the formulas instead of the non-strict ones.
+</p><p>The coefficients of each row of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span> correspond with the coefficients of the linear inequality defining the respective half-space. Hence, each row in the matrix corresponds with a <b>supporting hyperplane</b> of the polytope, a hyperplane bounding a half-space that contains the polytope. If a supporting hyperplane also intersects the polytope, it is called a <b>bounding hyperplane</b> (since it is a supporting hyperplane, it can only intersect the polytope at the polytope's boundary).
+</p><p>The foregoing definition assumes that the polytope is full-dimensional. In this case, there is a <i>unique</i> minimal set of defining inequalities (up to multiplication by a positive number). Inequalities belonging to this unique minimal system are called <b>essential</b>. The set of points of a polytope which satisfy an essential inequality with equality is called a <b>facet</b>.
+</p><p>If the polytope is not full-dimensional, then the solutions of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Ax\leq b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mi>x</mi>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Ax\leq b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/08249140bbb640be6c1242b705a896fb8951886f" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.505ex; width:7.169ex; height:2.343ex;" alt="{\displaystyle Ax\leq b}"></span> lie in a proper <a href="/wiki/Affine_subspace" class="mw-redirect" title="Affine subspace">affine subspace</a> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {R} ^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {R} ^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c510b63578322050121fe966f2e5770bea43308d" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.897ex; height:2.343ex;" alt="\mathbb {R} ^{n}"></span> and the polytope can be studied as an object in this subspace. In this case, there exist linear equations which are satisfied by all points of the polytope. Adding one of these equations to any of the defining inequalities does not change the polytope. Therefore, in general there is no unique minimal set of inequalities defining the polytope.
+</p><p>In general the intersection of arbitrary half-spaces need not be bounded. However if one wishes to have a definition equivalent to that as a convex hull, then bounding must be explicitly required.
+</p>
+<h3><span class="mw-headline" id="Using_the_different_representations">Using the different representations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=5" title="Edit section: Using the different representations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The two representations together provide an efficient way to decide whether a given vector is included in a given convex polytope: to show that it is in the polytope, it is sufficient to present it as a convex combination of the polytope vertices (the V-description is used); to show that it is not in the polytope, it is sufficient to present a single defining inequality that it violates.<sup id="cite_ref-lp_4-0" class="reference"><a href="#cite_note-lp-4">&#91;4&#93;</a></sup><sup class="reference nowrap"><span title="Page / location: 256">&#58;&#8202;256&#8202;</span></sup>
+</p><p>A subtle point in the representation by vectors is that the number of vectors may be exponential in the dimension, so the proof that a vector is in the polytope might be exponentially long. Fortunately, <a href="/wiki/Carath%C3%A9odory%27s_theorem_(convex_hull)" title="Carathéodory&#39;s theorem (convex hull)">Carathéodory's theorem</a> guarantees that every vector in the polytope can be represented by at most <i>d</i>+1 defining vectors, where <i>d</i> is the dimension of the space.
+</p>
+<h3><span class="mw-headline" id="Representation_of_unbounded_polytopes">Representation of unbounded polytopes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=6" title="Edit section: Representation of unbounded polytopes"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For an unbounded polytope (sometimes called: polyhedron), the H-description is still valid, but the V-description should be extended. <a href="/wiki/Theodore_Motzkin" title="Theodore Motzkin">Theodore Motzkin</a> (1936) proved that any unbounded polytope can be represented as a sum of a <i>bounded polytope</i> and a <a href="/wiki/Convex_cone" title="Convex cone"><i>convex polyhedral cone</i></a>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> In other words, every vector in an unbounded polytope is a <a href="/wiki/Convex_sum" class="mw-redirect" title="Convex sum">convex sum</a> of its vertices (its "defining points"), plus a <a href="/wiki/Conical_sum" class="mw-redirect" title="Conical sum">conical sum</a> of the <a href="/wiki/Euclidean_vector" title="Euclidean vector">Euclidean vectors</a> of its infinite edges (its "defining rays"). This is called the <b>finite basis theorem</b>.<sup id="cite_ref-Jeter_3-1" class="reference"><a href="#cite_note-Jeter-3">&#91;3&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Properties">Properties</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=7" title="Edit section: Properties"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Every (bounded) convex polytope is the image of a <a href="/wiki/Simplex" title="Simplex">simplex</a>, as every point is a <a href="/wiki/Convex_combination" title="Convex combination">convex combination</a> of the (finitely many) vertices. However, polytopes are not in general isomorphic to simplices. This is in contrast to the case of <a href="/wiki/Vector_spaces" class="mw-redirect" title="Vector spaces">vector spaces</a> and <a href="/wiki/Linear_combination" title="Linear combination">linear combinations</a>, every finite-dimensional vector space being not only an image of, but in fact isomorphic to, Euclidean space of some dimension (or analog over other fields).
+</p>
+<h3><span class="mw-headline" id="The_face_lattice">The face lattice</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=8" title="Edit section: The face lattice"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Abstract_polytope" title="Abstract polytope">abstract polytope</a></div>
+<p>A <a href="/wiki/Face_(geometry)" title="Face (geometry)"><b>face</b></a> of a convex polytope is any intersection of the polytope with a <a href="/wiki/Half-space_(geometry)" title="Half-space (geometry)">halfspace</a> such that none of the interior points of the polytope lie on the boundary of the halfspace. Equivalently, a face is the set of points giving equality in some valid inequality of the polytope.<sup id="cite_ref-lp_4-1" class="reference"><a href="#cite_note-lp-4">&#91;4&#93;</a></sup><sup class="reference nowrap"><span title="Page / location: 258">&#58;&#8202;258&#8202;</span></sup>
+</p><p>If a polytope is <i>d</i>-dimensional, its <a href="/wiki/Facet_(mathematics)" class="mw-redirect" title="Facet (mathematics)">facets</a> are its (<i>d</i>&#160;&#8722;&#160;1)-dimensional faces, its <a href="/wiki/Vertex_(geometry)" title="Vertex (geometry)">vertices</a> are its 0-dimensional faces, its <a href="/wiki/Edge_(geometry)" title="Edge (geometry)">edges</a> are its 1-dimensional faces, and its <a href="/wiki/Ridge_(geometry)" class="mw-redirect" title="Ridge (geometry)">ridges</a> are its (<i>d</i>&#160;&#8722;&#160;2)-dimensional faces.
+</p><p>Given a convex polytope <i>P</i> defined by the matrix inequality <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Ax\leq b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mi>x</mi>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Ax\leq b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/08249140bbb640be6c1242b705a896fb8951886f" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.505ex; width:7.169ex; height:2.343ex;" alt="Ax\leq b"></span>, if each row in <i>A</i> corresponds with a bounding hyperplane and is <a href="/wiki/Linearly_independent" class="mw-redirect" title="Linearly independent">linearly independent</a> of the other rows, then each facet of <i>P</i> corresponds with exactly one row of <i>A</i>, and vice versa. Each point on a given facet will satisfy the linear equality of the corresponding row in the matrix. (It may or may not also satisfy equality in other rows). Similarly, each point on a ridge will satisfy equality in two of the rows of <i>A</i>.
+</p>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Pyramid_face_lattice.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Pyramid_face_lattice.svg/360px-Pyramid_face_lattice.svg.png" decoding="async" width="360" height="182" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Pyramid_face_lattice.svg/540px-Pyramid_face_lattice.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Pyramid_face_lattice.svg/720px-Pyramid_face_lattice.svg.png 2x" data-file-width="605" data-file-height="306" /></a><figcaption>The face lattice of a <a href="/wiki/Square_pyramid" title="Square pyramid">square pyramid</a>, drawn as a <a href="/wiki/Hasse_diagram" title="Hasse diagram">Hasse diagram</a>; each face in the lattice is labeled by its vertex set.</figcaption></figure>
+<p>In general, an (<i>n</i>&#160;&#8722;&#160;<i>j</i>)-dimensional face satisfies equality in <i>j</i> specific rows of <i>A</i>. These rows form a <b>basis</b> of the face.  Geometrically speaking, this means that the face is the set of points on the polytope that lie in the intersection of <i>j</i> of the polytope's bounding hyperplanes.
+</p><p>The faces of a convex polytope thus form an <a href="/wiki/Eulerian_poset" title="Eulerian poset">Eulerian</a> <a href="/wiki/Lattice_(order)" title="Lattice (order)">lattice</a> called its <b>face lattice</b>, where the partial ordering is by set containment of faces. The definition of a face given above allows both the polytope itself and the empty set to be considered as faces, ensuring that every pair of faces has a join and a meet in the face lattice.  The whole polytope is the unique maximum element of the lattice, and the empty set, considered to be a (&#8722;1)-dimensional face (a <b>null polytope</b>) of every polytope, is the unique minimum element of the lattice.
+</p><p>Two polytopes are called <b>combinatorially isomorphic</b> if their face lattices are <a href="/wiki/Isomorphism" title="Isomorphism">isomorphic</a>.
+</p><p>The <b>polytope graph</b> (<b>polytopal graph</b>, <b>graph of the polytope</b>, <b>1-skeleton</b>) is the set of vertices and edges of the polytope only, ignoring higher-dimensional faces.  For instance, a <a href="/wiki/Polyhedral_graph" title="Polyhedral graph">polyhedral graph</a> is the polytope graph of a three-dimensional polytope. By a result of <a href="/wiki/Hassler_Whitney" title="Hassler Whitney">Whitney</a><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>  the face lattice of a three-dimensional polytope is determined by its graph. The same is true for <a href="/wiki/Simple_polytope" title="Simple polytope">simple polytopes</a> of arbitrary dimension (Blind &amp; Mani-Levitska 1987, proving a conjecture of <a href="/wiki/Micha_Perles" title="Micha Perles">Micha Perles</a>).<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>  Kalai (1988)<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> gives a simple proof based on <a href="/wiki/Unique_sink_orientation" title="Unique sink orientation">unique sink orientations</a>. Because these polytopes' face lattices are determined by their graphs, the problem of deciding whether two three-dimensional or simple convex polytopes are combinatorially isomorphic can be formulated equivalently as a special case of the <a href="/wiki/Graph_isomorphism_problem" title="Graph isomorphism problem">graph isomorphism problem</a>. However, it is also possible to translate these problems in the opposite direction, showing that polytope isomorphism testing is graph-isomorphism complete.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Topological_properties">Topological properties</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=9" title="Edit section: Topological properties"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A convex polytope, like any compact convex subset of <b>R</b><sup><i>n</i></sup>, is <a href="/wiki/Homeomorphism" title="Homeomorphism">homeomorphic</a> to a closed <a href="/wiki/Ball_(mathematics)" title="Ball (mathematics)">ball</a>.<sup id="cite_ref-bredon_10-0" class="reference"><a href="#cite_note-bredon-10">&#91;10&#93;</a></sup> Let <i>m</i> denote the dimension of the polytope. If the polytope is full-dimensional, then <i>m</i> = <i>n</i>. The convex polytope therefore is an <i>m</i>-dimensional <a href="/wiki/Manifold_(mathematics)" class="mw-redirect" title="Manifold (mathematics)">manifold</a> with boundary, its <a href="/wiki/Euler_characteristic" title="Euler characteristic">Euler characteristic</a> is 1, and its <a href="/wiki/Fundamental_group" title="Fundamental group">fundamental group</a> is trivial. The boundary of the convex polytope is homeomorphic to an <a href="/wiki/N-sphere" title="N-sphere">(<i>m</i>&#160;&#8722;&#160;1)-sphere</a>. The boundary's Euler characteristic is 0 for even <i>m</i> and 2 for odd <i>m</i>. The boundary may also be regarded as a <a href="/wiki/Tessellation" title="Tessellation">tessellation</a> of (<i>m</i>&#160;&#8722;&#160;1)-dimensional <a href="/wiki/Elliptic_space" class="mw-redirect" title="Elliptic space">spherical space</a> &#8212; i.e. as a <a href="/wiki/Spherical_tiling" class="mw-redirect" title="Spherical tiling">spherical tiling</a>.
+</p>
+<h3><span class="mw-headline" id="Simplicial_decomposition">Simplicial decomposition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=10" title="Edit section: Simplicial decomposition"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A convex polytope can be decomposed into a <a href="/wiki/Simplicial_complex" title="Simplicial complex">simplicial complex</a>, or union of <a href="/wiki/Simplex" title="Simplex">simplices</a>, satisfying certain properties.
+</p><p>Given a convex <i>r</i>-dimensional polytope <i>P</i>,  a subset of its vertices containing (<i>r</i>+1) <a href="/wiki/Affinely_independent" class="mw-redirect" title="Affinely independent">affinely independent</a> points defines an <a href="/wiki/Simplex" title="Simplex"><i>r</i>-simplex</a>. It is possible to form a collection of subsets such that the union of the corresponding simplices is equal to <i>P</i>, and the intersection of any two simplices is either empty or a lower-dimensional simplex.  This simplicial decomposition is the basis of many methods for computing the volume of a convex polytope, since the volume of a simplex is easily given by a formula.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Algorithmic_problems_for_a_convex_polytope">Algorithmic problems for a convex polytope</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=11" title="Edit section: Algorithmic problems for a convex polytope"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Construction_of_representations">Construction of representations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=12" title="Edit section: Construction of representations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Different representations of a convex polytope have different utility, therefore the construction of one representation given another one is an important problem. The problem of the construction of a V-representation is known as the <a href="/wiki/Vertex_enumeration_problem" title="Vertex enumeration problem">vertex enumeration problem</a> and the problem of the construction of a H-representation is known as the <b>facet enumeration problem</b>. While the vertex set of a bounded convex polytope uniquely defines it, in  various applications it is important to know more about the combinatorial structure of the polytope, i.e., about its face lattice. Various <a href="/wiki/Convex_hull_algorithms" title="Convex hull algorithms">convex hull algorithms</a> deal both with the facet enumeration and face lattice construction.
+</p><p>In the planar case, i.e., for a <a href="/wiki/Convex_polygon" title="Convex polygon">convex polygon</a>, both facet and vertex enumeration problems amount to the ordering vertices (resp. edges) around the convex hull. It is a trivial task when the convex polygon is specified in a traditional way for <a href="/wiki/Polygon" title="Polygon">polygons</a>, i.e., by the ordered sequence of its vertices <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{1},\dots ,v_{m}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{1},\dots ,v_{m}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1ae3a2a0bf3211a6a659dff53f57d626aab5c4fb" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:10.163ex; height:2.009ex;" alt="v_{1},\dots ,v_{m}"></span>. When the input list of vertices (or edges) is unordered, the <a href="/wiki/Time_complexity" title="Time complexity">time complexity</a> of the problems becomes <a href="/wiki/Big_Oh_notation" class="mw-redirect" title="Big Oh notation">O</a>(<i>m</i>&#160;log&#160;<i>m</i>).<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> A matching <a href="/wiki/Lower_bound" class="mw-redirect" title="Lower bound">lower bound</a> is known in the <a href="/wiki/Algebraic_decision_tree" class="mw-redirect" title="Algebraic decision tree">algebraic decision tree</a> model of computation.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Volume_computation">Volume computation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=13" title="Edit section: Volume computation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The task of computing the <a href="/wiki/Volume" title="Volume">volume</a> of a convex polytope has been studied in the field of <a href="/wiki/Computational_geometry" title="Computational geometry">computational geometry</a>. The volume can be computed <a href="/wiki/Approximation_algorithm" title="Approximation algorithm">approximately</a>, for instance, using the <a href="/wiki/Convex_volume_approximation" title="Convex volume approximation">convex volume approximation</a> technique, when having access to a membership <a href="/wiki/Oracle_machine" title="Oracle machine">oracle</a>. As for <a href="/wiki/Exact_algorithm" title="Exact algorithm">exact computation</a>, one obstacle is that, when given a representation of the convex polytope as an <a href="/wiki/Equation_system" class="mw-redirect" title="Equation system">equation system</a> of <a href="/wiki/Linear_inequality" title="Linear inequality">linear inequalities</a>, the volume of the polytope may have a <a href="/wiki/Bit-length" title="Bit-length">bit-length</a> which is not polynomial in this representation.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=14" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Oriented_matroid" title="Oriented matroid">Oriented matroid</a></li>
+<li><a href="/wiki/Nef_polyhedron" class="mw-redirect" title="Nef polyhedron">Nef polyhedron</a></li>
+<li><a href="/wiki/Steinitz%27s_theorem" title="Steinitz&#39;s theorem">Steinitz's theorem</a> for convex polyhedra</li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=15" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-grun-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-grun_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-grun_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-grun_1-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-grun_1-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-grun_1-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-grun_1-5"><sup><i><b>f</b></i></sup></a> <a href="#cite_ref-grun_1-6"><sup><i><b>g</b></i></sup></a></span> <span class="reference-text"><a href="/wiki/Branko_Gr%C3%BCnbaum" title="Branko Grünbaum">Branko Grünbaum</a>, <i><a href="/wiki/Convex_Polytopes" title="Convex Polytopes">Convex Polytopes</a></i>, 2nd edition, prepared by <a href="/w/index.php?title=Volker_Kaibel&amp;action=edit&amp;redlink=1" class="new" title="Volker Kaibel (page does not exist)">Volker Kaibel</a>, <a href="/wiki/Victor_Klee" title="Victor Klee">Victor Klee</a>, and <a href="/wiki/G%C3%BCnter_M._Ziegler" title="Günter M. Ziegler">Günter M. Ziegler</a>, 2003, <style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-387-40409-0" title="Special:BookSources/0-387-40409-0">0-387-40409-0</a>, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-387-40409-7" title="Special:BookSources/978-0-387-40409-7">978-0-387-40409-7</a>, 466pp.</span>
+</li>
+<li id="cite_note-zieg-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-zieg_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-zieg_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFZiegler1995" class="citation cs2"><a href="/wiki/G%C3%BCnter_M._Ziegler" title="Günter M. Ziegler">Ziegler, Günter M.</a> (1995), <i>Lectures on Polytopes</i>, Graduate Texts in Mathematics, vol.&#160;152, Berlin, New York: <a href="/wiki/Springer-Verlag" class="mw-redirect" title="Springer-Verlag">Springer-Verlag</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Lectures+on+Polytopes&amp;rft.place=Berlin%2C+New+York&amp;rft.series=Graduate+Texts+in+Mathematics&amp;rft.pub=Springer-Verlag&amp;rft.date=1995&amp;rft.aulast=Ziegler&amp;rft.aufirst=G%C3%BCnter+M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-Jeter-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-Jeter_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Jeter_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><i>Mathematical Programming</i>, by Melvyn W. Jeter (1986) <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-8247-7478-7" title="Special:BookSources/0-8247-7478-7">0-8247-7478-7</a>, <a rel="nofollow" class="external text" href="https://books.google.com/books?id=ofrBsl61lq8C&amp;pg=PA67">p. 68</a></span>
+</li>
+<li id="cite_note-lp-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-lp_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-lp_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFLovászPlummer1986" class="citation cs2"><a href="/wiki/L%C3%A1szl%C3%B3_Lov%C3%A1sz" title="László Lovász">Lovász, László</a>; <a href="/wiki/Michael_D._Plummer" title="Michael D. Plummer">Plummer, M. D.</a> (1986), <i>Matching Theory</i>, Annals of Discrete Mathematics, vol.&#160;29, North-Holland, <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-444-87916-1" title="Special:BookSources/0-444-87916-1"><bdi>0-444-87916-1</bdi></a>, <a href="/wiki/MR_(identifier)" class="mw-redirect" title="MR (identifier)">MR</a>&#160;<a rel="nofollow" class="external text" href="https://mathscinet.ams.org/mathscinet-getitem?mr=0859549">0859549</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Matching+Theory&amp;rft.series=Annals+of+Discrete+Mathematics&amp;rft.pub=North-Holland&amp;rft.date=1986&amp;rft.isbn=0-444-87916-1&amp;rft_id=https%3A%2F%2Fmathscinet.ams.org%2Fmathscinet-getitem%3Fmr%3D0859549%23id-name%3DMR&amp;rft.aulast=Lov%C3%A1sz&amp;rft.aufirst=L%C3%A1szl%C3%B3&amp;rft.au=Plummer%2C+M.+D.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFMotzkin1936" class="citation book cs1">Motzkin, Theodore (1936). <i>Beitrage zur Theorie der linearen Ungleichungen (Ph.D. dissertation)</i>. Jerusalem.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Beitrage+zur+Theorie+der+linearen+Ungleichungen+%28Ph.D.+dissertation%29&amp;rft.place=Jerusalem&amp;rft.date=1936&amp;rft.aulast=Motzkin&amp;rft.aufirst=Theodore&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_book" title="Template:Cite book">cite book</a>}}</code>:  CS1 maint: location missing publisher (<a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">link</a>)</span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFWhitney1932" class="citation journal cs1"><a href="/wiki/Hassler_Whitney" title="Hassler Whitney">Whitney, Hassler</a> (1932). "Congruent graphs and the connectivity of graphs". <i>Amer. J. Math</i>. <b>54</b> (1): 150–168. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.2307%2F2371086">10.2307/2371086</a>. <a href="/wiki/Hdl_(identifier)" class="mw-redirect" title="Hdl (identifier)">hdl</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://hdl.handle.net/10338.dmlcz%2F101067">10338.dmlcz/101067</a></span>. <a href="/wiki/JSTOR_(identifier)" class="mw-redirect" title="JSTOR (identifier)">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="https://www.jstor.org/stable/2371086">2371086</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Amer.+J.+Math.&amp;rft.atitle=Congruent+graphs+and+the+connectivity+of+graphs&amp;rft.volume=54&amp;rft.issue=1&amp;rft.pages=150-168&amp;rft.date=1932&amp;rft_id=info%3Ahdl%2F10338.dmlcz%2F101067&amp;rft_id=https%3A%2F%2Fwww.jstor.org%2Fstable%2F2371086%23id-name%3DJSTOR&amp;rft_id=info%3Adoi%2F10.2307%2F2371086&amp;rft.aulast=Whitney&amp;rft.aufirst=Hassler&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBlindMani-Levitska1987" class="citation cs2"><a href="/wiki/Roswitha_Blind" title="Roswitha Blind">Blind, Roswitha</a>; Mani-Levitska, Peter (1987), "Puzzles and polytope isomorphisms", <i><a href="/wiki/Aequationes_Mathematicae" title="Aequationes Mathematicae">Aequationes Mathematicae</a></i>, <b>34</b> (2–3): 287–297, <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF01830678">10.1007/BF01830678</a>, <a href="/wiki/MR_(identifier)" class="mw-redirect" title="MR (identifier)">MR</a>&#160;<a rel="nofollow" class="external text" href="https://mathscinet.ams.org/mathscinet-getitem?mr=0921106">0921106</a>, <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:120222616">120222616</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Aequationes+Mathematicae&amp;rft.atitle=Puzzles+and+polytope+isomorphisms&amp;rft.volume=34&amp;rft.issue=2%E2%80%933&amp;rft.pages=287-297&amp;rft.date=1987&amp;rft_id=https%3A%2F%2Fmathscinet.ams.org%2Fmathscinet-getitem%3Fmr%3D921106%23id-name%3DMR&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A120222616%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2FBF01830678&amp;rft.aulast=Blind&amp;rft.aufirst=Roswitha&amp;rft.au=Mani-Levitska%2C+Peter&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFKalai1988" class="citation cs2"><a href="/wiki/Gil_Kalai" title="Gil Kalai">Kalai, Gil</a> (1988), "A simple way to tell a simple polytope from its graph", <i><a href="/wiki/Journal_of_Combinatorial_Theory" title="Journal of Combinatorial Theory">Journal of Combinatorial Theory</a></i>, Ser. A, <b>49</b> (2): 381–383, <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1016%2F0097-3165%2888%2990064-7">10.1016/0097-3165(88)90064-7</a></span>, <a href="/wiki/MR_(identifier)" class="mw-redirect" title="MR (identifier)">MR</a>&#160;<a rel="nofollow" class="external text" href="https://mathscinet.ams.org/mathscinet-getitem?mr=0964396">0964396</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Combinatorial+Theory&amp;rft.atitle=A+simple+way+to+tell+a+simple+polytope+from+its+graph&amp;rft.volume=49&amp;rft.issue=2&amp;rft.pages=381-383&amp;rft.date=1988&amp;rft_id=info%3Adoi%2F10.1016%2F0097-3165%2888%2990064-7&amp;rft_id=https%3A%2F%2Fmathscinet.ams.org%2Fmathscinet-getitem%3Fmr%3D964396%23id-name%3DMR&amp;rft.aulast=Kalai&amp;rft.aufirst=Gil&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFKaibelSchwartz2003" class="citation journal cs1">Kaibel, Volker; Schwartz, Alexander (2003). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20150721175904/http://eprintweb.org/S/authors/All/ka/Kaibel/16">"On the Complexity of Polytope Isomorphism Problems"</a>. <i><a href="/wiki/Graphs_and_Combinatorics" title="Graphs and Combinatorics">Graphs and Combinatorics</a></i>. <b>19</b> (2): 215–230. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/math/0106093">math/0106093</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2Fs00373-002-0503-y">10.1007/s00373-002-0503-y</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:179936">179936</a>. Archived from <a rel="nofollow" class="external text" href="http://eprintweb.org/S/authors/All/ka/Kaibel/16">the original</a> on 2015-07-21.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Graphs+and+Combinatorics&amp;rft.atitle=On+the+Complexity+of+Polytope+Isomorphism+Problems&amp;rft.volume=19&amp;rft.issue=2&amp;rft.pages=215-230&amp;rft.date=2003&amp;rft_id=info%3Aarxiv%2Fmath%2F0106093&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A179936%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2Fs00373-002-0503-y&amp;rft.aulast=Kaibel&amp;rft.aufirst=Volker&amp;rft.au=Schwartz%2C+Alexander&amp;rft_id=http%3A%2F%2Feprintweb.org%2FS%2Fauthors%2FAll%2Fka%2FKaibel%2F16&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span></span>
+</li>
+<li id="cite_note-bredon-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-bredon_10-0">^</a></b></span> <span class="reference-text"><a href="/wiki/Glen_Bredon" title="Glen Bredon">Glen E. Bredon</a>, <i>Topology and Geometry</i>, 1993, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-387-97926-3" title="Special:BookSources/0-387-97926-3">0-387-97926-3</a>, p. 56.</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBüelerEngeFukuda2000" class="citation book cs1">Büeler, B.; Enge, A.; <a href="/wiki/Komei_Fukuda" title="Komei Fukuda">Fukuda, K.</a> (2000). <a rel="nofollow" class="external text" href="https://hal.inria.fr/hal-03029034">"Exact Volume Computation for Polytopes: A Practical Study"</a>. <i>Polytopes — Combinatorics and Computation</i>. pp.&#160;131–154. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F978-3-0348-8438-9_6">10.1007/978-3-0348-8438-9_6</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-7643-6351-2" title="Special:BookSources/978-3-7643-6351-2"><bdi>978-3-7643-6351-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Exact+Volume+Computation+for+Polytopes%3A+A+Practical+Study&amp;rft.btitle=Polytopes+%E2%80%94+Combinatorics+and+Computation&amp;rft.pages=131-154&amp;rft.date=2000&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-0348-8438-9_6&amp;rft.isbn=978-3-7643-6351-2&amp;rft.aulast=B%C3%BCeler&amp;rft.aufirst=B.&amp;rft.au=Enge%2C+A.&amp;rft.au=Fukuda%2C+K.&amp;rft_id=https%3A%2F%2Fhal.inria.fr%2Fhal-03029034&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFCormenLeisersonRivestStein2001" class="citation book cs1"><a href="/wiki/Thomas_H._Cormen" title="Thomas H. Cormen">Cormen, Thomas H.</a>; <a href="/wiki/Charles_E._Leiserson" title="Charles E. Leiserson">Leiserson, Charles E.</a>; <a href="/wiki/Ron_Rivest" title="Ron Rivest">Rivest, Ronald L.</a>; <a href="/wiki/Clifford_Stein" title="Clifford Stein">Stein, Clifford</a> (2001) [1990]. "33.3 Finding the convex hull". <a href="/wiki/Introduction_to_Algorithms" title="Introduction to Algorithms"><i>Introduction to Algorithms</i></a> (2nd&#160;ed.). MIT Press and McGraw-Hill. pp.&#160;947–957. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-262-03293-7" title="Special:BookSources/0-262-03293-7"><bdi>0-262-03293-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=33.3+Finding+the+convex+hull&amp;rft.btitle=Introduction+to+Algorithms&amp;rft.pages=947-957&amp;rft.edition=2nd&amp;rft.pub=MIT+Press+and+McGraw-Hill&amp;rft.date=2001&amp;rft.isbn=0-262-03293-7&amp;rft.aulast=Cormen&amp;rft.aufirst=Thomas+H.&amp;rft.au=Leiserson%2C+Charles+E.&amp;rft.au=Rivest%2C+Ronald+L.&amp;rft.au=Stein%2C+Clifford&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFYao1981" class="citation cs2"><a href="/wiki/Andrew_Yao" title="Andrew Yao">Yao, Andrew Chi Chih</a> (1981), "A lower bound to finding convex hulls", <i><a href="/wiki/Journal_of_the_ACM" title="Journal of the ACM">Journal of the ACM</a></i>, <b>28</b> (4): 780–787, <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F322276.322289">10.1145/322276.322289</a>, <a href="/wiki/MR_(identifier)" class="mw-redirect" title="MR (identifier)">MR</a>&#160;<a rel="nofollow" class="external text" href="https://mathscinet.ams.org/mathscinet-getitem?mr=0677089">0677089</a>, <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:13846330">13846330</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.atitle=A+lower+bound+to+finding+convex+hulls&amp;rft.volume=28&amp;rft.issue=4&amp;rft.pages=780-787&amp;rft.date=1981&amp;rft_id=https%3A%2F%2Fmathscinet.ams.org%2Fmathscinet-getitem%3Fmr%3D677089%23id-name%3DMR&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A13846330%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F322276.322289&amp;rft.aulast=Yao&amp;rft.aufirst=Andrew+Chi+Chih&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span>; <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFBen-Or1983" class="citation cs2">Ben-Or, Michael (1983), "Lower Bounds for Algebraic Computation Trees", <i>Proceedings of the Fifteenth Annual ACM Symposium on Theory of Computing (STOC '83)</i>, pp.&#160;80–86, <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F800061.808735">10.1145/800061.808735</a></span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Lower+Bounds+for+Algebraic+Computation+Trees&amp;rft.btitle=Proceedings+of+the+Fifteenth+Annual+ACM+Symposium+on+Theory+of+Computing+%28STOC+%2783%29&amp;rft.pages=80-86&amp;rft.date=1983&amp;rft_id=info%3Adoi%2F10.1145%2F800061.808735&amp;rft.aulast=Ben-Or&amp;rft.aufirst=Michael&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite id="CITEREFLawrence1991" class="citation journal cs1">Lawrence, Jim (1991). <a rel="nofollow" class="external text" href="https://www.ams.org/mcom/1991-57-195/S0025-5718-1991-1079024-2/">"Polytope volume computation"</a>. <i>Mathematics of Computation</i>. <b>57</b> (195): 259–271. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1991MaCom..57..259L">1991MaCom..57..259L</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1090%2FS0025-5718-1991-1079024-2">10.1090/S0025-5718-1991-1079024-2</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0025-5718">0025-5718</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Mathematics+of+Computation&amp;rft.atitle=Polytope+volume+computation&amp;rft.volume=57&amp;rft.issue=195&amp;rft.pages=259-271&amp;rft.date=1991&amp;rft.issn=0025-5718&amp;rft_id=info%3Adoi%2F10.1090%2FS0025-5718-1991-1079024-2&amp;rft_id=info%3Abibcode%2F1991MaCom..57..259L&amp;rft.aulast=Lawrence&amp;rft.aufirst=Jim&amp;rft_id=https%3A%2F%2Fwww.ams.org%2Fmcom%2F1991-57-195%2FS0025-5718-1991-1079024-2%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convex_polytope&amp;action=edit&amp;section=16" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1134653256">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:#f9f9f9;display:flow-root}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><div class="side-box side-box-right plainlinks sistersitebox"><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style>
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></span></span></div>
+<div class="side-box-text plainlist">Wikimedia Commons has media related to <span style="font-weight: bold; font-style: italic;"><a href="https://commons.wikimedia.org/wiki/Category:Convex_polytopes" class="extiw" title="commons:Category:Convex polytopes">Convex polytopes</a></span>.</div></div>
+</div>
+<ul><li><span class="citation mathworld" id="Reference-Mathworld-Convex_polygon"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="https://mathworld.wolfram.com/ConvexPolygon.html">"Convex polygon"</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft.atitle=Convex+polygon&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft_id=https%3A%2F%2Fmathworld.wolfram.com%2FConvexPolygon.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span></span></li>
+<li><span class="citation mathworld" id="Reference-Mathworld-Convex_polyhedron"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><cite class="citation web cs1"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="https://mathworld.wolfram.com/ConvexPolyhedron.html">"Convex polyhedron"</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft.atitle=Convex+polyhedron&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft_id=https%3A%2F%2Fmathworld.wolfram.com%2FConvexPolyhedron.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvex+polytope" class="Z3988"></span></span></li>
+<li><a href="/wiki/Komei_Fukuda" title="Komei Fukuda">Komei Fukuda</a>, <a rel="nofollow" class="external text" href="https://www.cs.mcgill.ca/~fukuda/soft/polyfaq/polyfaq.html">Polyhedral computation FAQ</a>.</li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1409
+Cached time: 20231031011710
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.329 seconds
+Real time usage: 0.493 seconds
+Preprocessor visited node count: 2824/1000000
+Post‐expand include size: 38740/2097152 bytes
+Template argument size: 1861/2097152 bytes
+Highest expansion depth: 16/100
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 52625/5000000 bytes
+Lua time usage: 0.162/10.000 seconds
+Lua memory usage: 7074564/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  355.229      1 -total
+ 52.01%  184.772      1 Template:Reflist
+ 22.89%   81.306      6 Template:Citation
+ 16.88%   59.974      1 Template:Short_description
+ 12.52%   44.478      4 Template:ISBN
+  9.87%   35.053      1 Template:Commonscat
+  9.06%   32.192      4 Template:Catalog_lookup_link
+  9.00%   31.969      1 Template:Sister_project
+  8.82%   31.329      2 Template:Rp
+  8.56%   30.410      1 Template:Side_box
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1817885-0!canonical and timestamp 20231031011709 and revision id 1176202072. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Convex_polytope&amp;oldid=1176202072">https://en.wikipedia.org/w/index.php?title=Convex_polytope&amp;oldid=1176202072</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Polytopes" title="Category:Polytopes">Polytopes</a></li><li><a href="/wiki/Category:Convex_geometry" title="Category:Convex geometry">Convex geometry</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">CS1 maint: location missing publisher</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li><li><a href="/wiki/Category:Commons_category_link_is_on_Wikidata" title="Category:Commons category link is on Wikidata">Commons category link is on Wikidata</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 20 September 2023, at 05:01<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Convex_polytope&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw1442","wgBackendResponseTime":127,"wgPageParseReport":{"limitreport":{"cputime":"0.329","walltime":"0.493","ppvisitednodes":{"value":2824,"limit":1000000},"postexpandincludesize":{"value":38740,"limit":2097152},"templateargumentsize":{"value":1861,"limit":2097152},"expansiondepth":{"value":16,"limit":100},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":52625,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  355.229      1 -total"," 52.01%  184.772      1 Template:Reflist"," 22.89%   81.306      6 Template:Citation"," 16.88%   59.974      1 Template:Short_description"," 12.52%   44.478      4 Template:ISBN","  9.87%   35.053      1 Template:Commonscat","  9.06%   32.192      4 Template:Catalog_lookup_link","  9.00%   31.969      1 Template:Sister_project","  8.82%   31.329      2 Template:Rp","  8.56%   30.410      1 Template:Side_box"]},"scribunto":{"limitreport-timeusage":{"value":"0.162","limit":"10.000"},"limitreport-memusage":{"value":7074564,"limit":52428800}},"cachereport":{"origin":"mw1409","timestamp":"20231031011710","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Convex polytope","url":"https:\/\/en.wikipedia.org\/wiki\/Convex_polytope","sameAs":"http:\/\/www.wikidata.org\/entity\/Q4129097","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q4129097","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-04-30T00:48:16Z","dateModified":"2023-09-20T05:01:49Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/ef\/3dpoly.svg","headline":"convex hull of a finite set of points in a Euclidean space"}</script>
+</body>
+</html>

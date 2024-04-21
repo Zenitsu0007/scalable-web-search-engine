@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Operator algebra - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"3f81ac1a-d677-445c-8bb9-18bc7bb77867","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Operator_algebra","wgTitle":"Operator algebra","wgCurRevisionId":1157620057,"wgRevisionId":1157620057,"wgArticleId":455987,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Use American English from March 2019","All Wikipedia articles written in American English","Articles with J9U identifiers","Articles with LCCN identifiers","Articles with NKC identifiers","Functional analysis","Operator algebras","Operator theory"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Operator_algebra",
+"wgRelevantArticleId":455987,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":5000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1892554","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,
+"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.scribunto.logs","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar",
+"ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Latex_integers.svg/1200px-Latex_integers.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1351">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Latex_integers.svg/800px-Latex_integers.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="901">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Latex_integers.svg/640px-Latex_integers.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="721">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Operator algebra - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Operator_algebra">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Operator_algebra&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Operator_algebra">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Operator_algebra rootpage-Operator_algebra skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Operator+algebra" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Operator+algebra" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Operator+algebra" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Operator+algebra" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Overview"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Overview">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Overview</div>
+		</a>
+		
+		<ul id="toc-Overview-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Further_reading"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Further_reading">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Further reading</div>
+		</a>
+		
+		<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Operator algebra</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 9 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-9" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">9 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%AC%D8%A8%D8%B1_%D8%A7%D9%84%D9%85%D8%A4%D8%AB%D8%B1%D8%A7%D8%AA" title="جبر المؤثرات – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Operatoralgebra" title="Operatoralgebra – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%AC%D8%A8%D8%B1_%D8%B9%D9%85%D9%84%DA%AF%D8%B1%DB%8C" title="جبر عملگری – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Alg%C3%A8bre_d%27op%C3%A9rateurs" title="Algèbre d&#039;opérateurs – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Operator-algebra" title="Operator-algebra – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E4%BD%9C%E7%94%A8%E7%B4%A0%E7%92%B0%E8%AB%96" title="作用素環論 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Algebra_operator%C3%B3w" title="Algebra operatorów – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0" title="Операторная алгебра – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0_%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0" title="Операторна алгебра – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1892554#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Operator_algebra" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Operator_algebra" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Operator_algebra"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Operator_algebra&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Operator_algebra&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Operator_algebra"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Operator_algebra&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Operator_algebra&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Operator_algebra" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Operator_algebra" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Operator_algebra&amp;oldid=1157620057" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Operator_algebra&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Operator_algebra&amp;id=1157620057&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOperator_algebra"><span>Get shortened URL</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1892554" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Operator_algebra&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Operator_algebra&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Branch of functional analysis</div>
+<p class="mw-empty-elt">
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style><style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar sidebar-collapse nomobile nowraplinks plainlist" style="width: 20.5em;"><tbody><tr><th class="sidebar-title" style="padding-bottom:0.4em;"><span style="font-size: 8pt; font-weight: none"><a href="/wiki/Algebraic_structure" title="Algebraic structure">Algebraic structure</a> → Ring theory</span><br /><a href="/wiki/Ring_theory" title="Ring theory">Ring theory</a></th></tr><tr><td class="sidebar-image"><span typeof="mw:File"><a href="/wiki/File:Latex_integers.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Latex_integers.svg/120px-Latex_integers.svg.png" decoding="async" width="120" height="135" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Latex_integers.svg/180px-Latex_integers.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Latex_integers.svg/240px-Latex_integers.svg.png 2x" data-file-width="420" data-file-height="473" /></a></span></td></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="text-align:center;">Basic concepts</div><div class="sidebar-list-content mw-collapsible-content" style="text-align: left;"><b><a href="/wiki/Ring_(mathematics)" title="Ring (mathematics)">Rings</a></b>
+<dl><dd>• <a href="/wiki/Subring" title="Subring">Subrings</a></dd>
+<dd>• <a href="/wiki/Ideal_(ring_theory)" title="Ideal (ring theory)">Ideal</a></dd>
+<dd>• <a href="/wiki/Quotient_ring" title="Quotient ring">Quotient ring</a>
+<dl><dd>• <a href="/wiki/Fractional_ideal" title="Fractional ideal">Fractional ideal</a></dd>
+<dd>• <a href="/wiki/Total_ring_of_fractions" title="Total ring of fractions">Total ring of fractions</a></dd></dl></dd>
+<dd>• <a href="/wiki/Product_of_rings" title="Product of rings">Product of rings</a></dd>
+<dd>•&#160;<a href="/wiki/Free_product_of_associative_algebras" title="Free product of associative algebras">Free product of associative algebras</a></dd>
+<dd>• <a href="/wiki/Tensor_product_of_algebras" title="Tensor product of algebras">Tensor product of algebras</a></dd></dl>
+<p><b><a href="/wiki/Ring_homomorphism" title="Ring homomorphism">Ring homomorphisms</a></b>
+</p>
+<dl><dd>• <a href="/wiki/Kernel_(algebra)#Ring_homomorphisms" title="Kernel (algebra)">Kernel</a></dd>
+<dd>• <a href="/wiki/Inner_automorphism#Ring_case" title="Inner automorphism">Inner automorphism</a></dd>
+<dd>• <a href="/wiki/Frobenius_endomorphism" title="Frobenius endomorphism">Frobenius endomorphism</a></dd></dl>
+<p><b><a href="/wiki/Algebraic_structure" title="Algebraic structure">Algebraic structures</a></b>
+</p>
+<dl><dd>• <a href="/wiki/Module_(mathematics)" title="Module (mathematics)">Module</a></dd>
+<dd>• <a href="/wiki/Associative_algebra" title="Associative algebra">Associative algebra</a></dd>
+<dd>• <a href="/wiki/Graded_ring" title="Graded ring">Graded ring</a></dd>
+<dd>• <a href="/wiki/Involutive_ring" class="mw-redirect" title="Involutive ring">Involutive ring</a></dd>
+<dd>• <a href="/wiki/Category_of_rings" title="Category of rings">Category of rings</a>
+<dl><dd>• <a href="/wiki/Integer" title="Integer">Initial ring</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span></dd>
+<dd>• <a href="/wiki/Zero_ring" title="Zero ring">Terminal ring</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 0=\mathbb {Z} _{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0</mn>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0=\mathbb {Z} _{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e12bb50acba91a6ec786fee5638ff44b7824e86a" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:6.865ex; height:2.509ex;" alt="{\displaystyle 0=\mathbb {Z} _{1}}"></span></dd></dl></dd></dl>
+<p><b>Related structures</b>
+</p>
+<dl><dd>• <a href="/wiki/Field_(mathematics)" title="Field (mathematics)">Field</a>
+<dl><dd>• <a href="/wiki/Finite_field" title="Finite field">Finite field</a></dd></dl></dd>
+<dd>• <a href="/wiki/Non-associative_ring" class="mw-redirect" title="Non-associative ring">Non-associative ring</a>
+<dl><dd>• <a href="/wiki/Lie_ring" class="mw-redirect" title="Lie ring">Lie ring</a></dd>
+<dd>• <a href="/wiki/Jordan_ring" class="mw-redirect" title="Jordan ring">Jordan ring</a></dd></dl></dd>
+<dd>• <a href="/wiki/Semiring" title="Semiring">Semiring</a>
+<dl><dd>• <a href="/wiki/Semifield" title="Semifield">Semifield</a></dd></dl></dd></dl></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="text-align:center;"><a href="/wiki/Commutative_algebra" title="Commutative algebra">Commutative algebra</a></div><div class="sidebar-list-content mw-collapsible-content" style="text-align: left;"><b><a href="/wiki/Commutative_ring" title="Commutative ring">Commutative rings</a></b>
+<dl><dd>• <a href="/wiki/Integral_domain" title="Integral domain">Integral domain</a>
+<dl><dd>• <a href="/wiki/Integrally_closed_domain" title="Integrally closed domain">Integrally closed domain</a></dd>
+<dd>• <a href="/wiki/GCD_domain" title="GCD domain">GCD domain</a></dd>
+<dd>• <a href="/wiki/Unique_factorization_domain" title="Unique factorization domain">Unique factorization domain</a></dd>
+<dd>• <a href="/wiki/Principal_ideal_domain" title="Principal ideal domain">Principal ideal domain</a></dd>
+<dd>• <a href="/wiki/Euclidean_domain" title="Euclidean domain">Euclidean domain</a></dd>
+<dd>• <a href="/wiki/Field_(mathematics)" title="Field (mathematics)">Field</a>
+<dl><dd>• <a href="/wiki/Finite_field" title="Finite field">Finite field</a></dd></dl></dd></dl></dd>
+<dd>• <a href="/wiki/Composition_ring" title="Composition ring">Composition ring</a>
+<dl><dd>• <a href="/wiki/Polynomial_ring" title="Polynomial ring">Polynomial ring</a></dd>
+<dd>• <a href="/wiki/Formal_power_series_ring" class="mw-redirect" title="Formal power series ring">Formal power series ring</a></dd></dl></dd></dl>
+<p><b><a href="/wiki/Algebraic_number_theory" title="Algebraic number theory">Algebraic number theory</a></b>
+</p>
+<dl><dd>• <a href="/wiki/Algebraic_number_field" title="Algebraic number field">Algebraic number field</a></dd>
+<dd>• <a href="/wiki/Ring_of_integers" title="Ring of integers">Ring of integers</a></dd>
+<dd>• <a href="/wiki/Algebraic_independence" title="Algebraic independence">Algebraic independence</a></dd>
+<dd>• <a href="/wiki/Transcendental_number_theory" title="Transcendental number theory">Transcendental number theory</a></dd>
+<dd>• <a href="/wiki/Transcendence_degree" class="mw-redirect" title="Transcendence degree">Transcendence degree</a></dd></dl>
+<p><b><a href="/wiki/Radix" title="Radix"><i>p</i>-adic</a> number theory and <a href="/wiki/Positional_notation" title="Positional notation">decimals</a></b>
+</p>
+<dl><dd>• <a href="/wiki/Direct_limit" title="Direct limit">Direct limit</a>/<a href="/wiki/Inverse_limit" title="Inverse limit">Inverse limit</a></dd>
+<dd>• <a href="/wiki/Zero_ring" title="Zero ring">Zero ring</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {Z} _{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/22e4eb51c96c79903d07a9536cdc8bca1c8368b3" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.605ex; height:2.509ex;" alt="{\mathbb  {Z}}_{1}"></span></dd>
+<dd>• <a href="/wiki/Integers_modulo_n" class="mw-redirect" title="Integers modulo n">Integers modulo <i>p</i><sup>n</sup></a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {Z} /p^{n}\mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} /p^{n}\mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3f568eec3d80f812c3d02a19a445f088e888c180" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.651ex; height:2.843ex;" alt="{\mathbb  {Z}}/p^{n}{\mathbb  {Z}}"></span></dd>
+<dd>• <a href="/wiki/Pr%C3%BCfer_group#The_Prüfer_group_as_a_ring" title="Prüfer group">Prüfer <i>p</i>-ring</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {Z} (p^{\infty })}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} (p^{\infty })}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/14af623e08c241266c125ad927dd35086ec8ce90" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.404ex; height:2.843ex;" alt="{\mathbb  {Z}}(p^{\infty })"></span></dd>
+<dd>• <a href="/wiki/Radix" title="Radix">Base</a>-<i>p</i> <a href="/wiki/Circle_group#The_circle_group_as_a_ring" title="Circle group">circle ring</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {T} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">T</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {T} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9c039979935c00b3b216cbb065999207872677f6" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {T} "></span></dd>
+<dd>• <a href="/wiki/Radix" title="Radix">Base</a>-<i>p</i> <a href="/wiki/Integers" class="mw-redirect" title="Integers">integers</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span></dd>
+<dd>• <a href="/wiki/Dyadic_rational" title="Dyadic rational"><i>p</i>-adic rationals</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {Z} [1/p]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>p</mi>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [1/p]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab7b4e5c999e46c7614c3264b1d80708f4363433" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.338ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} [1/p]}"></span></dd>
+<dd>• <a href="/wiki/Radix" title="Radix">Base</a>-<i>p</i> <a href="/wiki/Real_number" title="Real number">real numbers</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {R} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {R} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/786849c765da7a84dbc3cce43e96aad58a5868dc" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {R} "></span></dd>
+<dd>• <a href="/wiki/P-adic_integer" class="mw-redirect" title="P-adic integer"><i>p</i>-adic integers</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {Z} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbc1df7227ef11fe88dccd2dae3adc7bbdeae5f4" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:2.609ex; height:2.843ex;" alt="\mathbb {Z} _{p}"></span></dd>
+<dd>• <a href="/wiki/P-adic_number" title="P-adic number"><i>p</i>-adic numbers</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {Q} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/35f44bc6894c682710705f3ea74f33042e0acc3e" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:2.867ex; height:2.843ex;" alt="\mathbb {Q} _{p}"></span></dd>
+<dd>• <a href="/wiki/Solenoid_(mathematics)#p-adic_solenoids" title="Solenoid (mathematics)"><i>p</i>-adic solenoid</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mathbb {T} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">T</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {T} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6ffef9c58fb5d7e73913e28f1438a7d969f4f993" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:2.609ex; height:2.843ex;" alt="{\displaystyle \mathbb {T} _{p}}"></span></dd></dl>
+<p><b><a href="/wiki/Algebraic_geometry" title="Algebraic geometry">Algebraic geometry</a></b>
+</p>
+<dl><dd>• <a href="/wiki/Affine_variety" title="Affine variety">Affine variety</a></dd></dl></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="text-align:center;"><a href="/wiki/Noncommutative_algebra" class="mw-redirect" title="Noncommutative algebra">Noncommutative algebra</a></div><div class="sidebar-list-content mw-collapsible-content" style="text-align: left;"><b><a href="/wiki/Noncommutative_ring" title="Noncommutative ring">Noncommutative rings</a></b>
+<dl><dd>• <a href="/wiki/Division_ring" title="Division ring">Division ring</a></dd>
+<dd>• <a href="/wiki/Semiprimitive_ring" title="Semiprimitive ring">Semiprimitive ring</a></dd>
+<dd>• <a href="/wiki/Simple_ring" title="Simple ring">Simple ring</a></dd>
+<dd>• <a href="/wiki/Commutator_(ring_theory)" class="mw-redirect" title="Commutator (ring theory)">Commutator</a></dd></dl>
+<p><b><a href="/wiki/Noncommutative_algebraic_geometry" title="Noncommutative algebraic geometry">Noncommutative algebraic geometry</a></b>
+</p><p><b><a href="/wiki/Free_algebra" title="Free algebra">Free algebra</a></b>
+</p><p><b><a href="/wiki/Clifford_algebra" title="Clifford algebra">Clifford algebra</a></b>
+</p>
+<dl><dd>• <a href="/wiki/Geometric_algebra" title="Geometric algebra">Geometric algebra</a></dd></dl>
+<b><a class="mw-selflink selflink">Operator algebra</a></b></div></div></td>
+</tr><tr><td class="sidebar-navbar"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Ring_theory_sidebar" title="Template:Ring theory sidebar"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Ring_theory_sidebar" title="Template talk:Ring theory sidebar"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Ring_theory_sidebar" title="Special:EditPage/Template:Ring theory sidebar"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Functional_analysis" title="Functional analysis">functional analysis</a>, a branch of <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, an <b>operator algebra</b> is an <a href="/wiki/Algebra_over_a_field" title="Algebra over a field">algebra</a> of <a href="/wiki/Continuous_function_(topology)" class="mw-redirect" title="Continuous function (topology)">continuous</a> <a href="/wiki/Linear_operator" class="mw-redirect" title="Linear operator">linear operators</a> on a <a href="/wiki/Topological_vector_space" title="Topological vector space">topological vector space</a>, with the multiplication given by the <a href="/wiki/Function_composition" title="Function composition">composition of mappings</a>.
+</p><p>The results obtained in the study of operator algebras are often phrased in <a href="/wiki/Algebra" title="Algebra">algebraic</a> terms, while the techniques used are often highly <a href="/wiki/Mathematical_analysis" title="Mathematical analysis">analytic</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>  Although the study of operator algebras is usually classified as a branch of functional analysis, it has direct applications to <a href="/wiki/Representation_theory" title="Representation theory">representation theory</a>, <a href="/wiki/Differential_geometry" title="Differential geometry">differential geometry</a>, <a href="/wiki/Quantum_statistical_mechanics" title="Quantum statistical mechanics">quantum statistical mechanics</a>, <a href="/wiki/Quantum_information" title="Quantum information">quantum information</a>, and <a href="/wiki/Quantum_field_theory" title="Quantum field theory">quantum field theory</a>.
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Operator_algebra&amp;action=edit&amp;section=1" title="Edit section: Overview"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Operator algebras can be used to study arbitrary sets of operators with little algebraic relation <i>simultaneously</i>. From this point of view, operator algebras can be regarded as a generalization of <a href="/wiki/Spectral_theory" title="Spectral theory">spectral theory</a> of a single operator. In general operator algebras are <a href="/wiki/Noncommutative_ring" title="Noncommutative ring">non-commutative</a> <a href="/wiki/Ring_(mathematics)" title="Ring (mathematics)">rings</a>.
+</p><p>An operator algebra is typically required to be <a href="/wiki/Closure_(mathematics)" title="Closure (mathematics)">closed</a> in a specified operator <a href="/wiki/Topology" title="Topology">topology</a> inside the whole algebra of continuous linear operators. In particular, it is a set of operators with both algebraic and topological closure properties. In some disciplines such properties are <a href="/wiki/Axiom" title="Axiom">axiomized</a> and algebras with certain topological structure become the subject of the research.
+</p><p>Though algebras of operators are studied in various contexts (for example, algebras of <a href="/wiki/Pseudo-differential_operator" title="Pseudo-differential operator">pseudo-differential operators</a> acting on spaces of <a href="/wiki/Distribution_(mathematics)" title="Distribution (mathematics)">distributions</a>), the term <i>operator algebra</i> is usually used in reference to algebras of <a href="/wiki/Bounded_operator" title="Bounded operator">bounded operators</a> on a <a href="/wiki/Banach_space" title="Banach space">Banach space</a> or, even more specially in reference to algebras of operators on a <a href="/wiki/Separable_space" title="Separable space">separable</a> <a href="/wiki/Hilbert_space" title="Hilbert space">Hilbert space</a>, endowed with the <a href="/wiki/Operator_norm" title="Operator norm">operator norm</a> topology.
+</p><p>In the case of operators on a Hilbert space, the <a href="/wiki/Hermitian_adjoint" title="Hermitian adjoint">Hermitian adjoint</a> map on operators gives a natural <a href="/wiki/Involution_(mathematics)" title="Involution (mathematics)">involution</a>, which provides an additional algebraic structure that can be imposed on the algebra. In this context, the best studied examples are <a href="/wiki/Self-adjoint" title="Self-adjoint">self-adjoint</a> operator algebras, meaning that they are closed under taking adjoints. These include <a href="/wiki/C*-algebra" title="C*-algebra">C*-algebras</a>, <a href="/wiki/Von_Neumann_algebra" title="Von Neumann algebra">von Neumann algebras</a>, and <a href="/wiki/AW*-algebra" title="AW*-algebra">AW*-algebra</a>. C*-algebras can be easily characterized abstractly by a condition relating the norm, involution and multiplication. Such abstractly defined C*-algebras can be identified to a certain closed <a href="/wiki/Subalgebra#Subalgebras_for_algebras_over_a_ring_or_field" title="Subalgebra">subalgebra</a> of the algebra of the continuous linear operators on a suitable Hilbert space. A similar result holds for von Neumann algebras.
+</p><p><a href="/wiki/Commutative_algebra" title="Commutative algebra">Commutative</a> self-adjoint operator algebras can be regarded as the algebra of <a href="/wiki/Complex_numbers" class="mw-redirect" title="Complex numbers">complex</a>-valued continuous functions on a <a href="/wiki/Locally_compact_space" title="Locally compact space">locally compact space</a>, or that of <a href="/wiki/Measurable_function" title="Measurable function">measurable functions</a> on a <a href="/wiki/Measurable_space" title="Measurable space">standard measurable space</a>. Thus, general operator algebras are often regarded as a noncommutative generalizations of these algebras, or the structure of the <i>base space</i> on which the functions are defined. This point of view is elaborated as the philosophy of <a href="/wiki/Noncommutative_geometry" title="Noncommutative geometry">noncommutative geometry</a>, which tries to study various non-classical and/or pathological objects by noncommutative operator algebras.
+</p><p>Examples of operator algebras that are not self-adjoint include:
+</p>
+<ul><li><a href="/wiki/Nest_algebra" title="Nest algebra">nest algebras</a>,</li>
+<li>many <a href="/w/index.php?title=Commutative_subspace_lattice_algebra&amp;action=edit&amp;redlink=1" class="new" title="Commutative subspace lattice algebra (page does not exist)">commutative subspace lattice algebras</a>,</li>
+<li>many <a href="/w/index.php?title=Limit_algebra&amp;action=edit&amp;redlink=1" class="new" title="Limit algebra (page does not exist)">limit algebras</a>.</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Operator_algebra&amp;action=edit&amp;section=2" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Banach_algebra" title="Banach algebra">Banach algebra</a>&#160;– Particular kind of algebraic structure</li>
+<li><a href="/wiki/Matrix_mechanics" title="Matrix mechanics">Matrix mechanics</a>&#160;– Formulation of quantum mechanics</li>
+<li><a href="/wiki/Topologies_on_the_set_of_operators_on_a_Hilbert_space" class="mw-redirect" title="Topologies on the set of operators on a Hilbert space">Topologies on the set of operators on a Hilbert space</a></li>
+<li><a href="/wiki/Vertex_operator_algebra" title="Vertex operator algebra">Vertex operator algebra</a>&#160;– Algebra used in 2D conformal field theories and string theory</li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Operator_algebra&amp;action=edit&amp;section=3" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><i>Theory of Operator Algebras I</i> By <a href="/wiki/Masamichi_Takesaki" title="Masamichi Takesaki">Masamichi Takesaki</a>, Springer 2012, p vi</span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Operator_algebra&amp;action=edit&amp;section=4" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFBlackadar2005" class="citation book cs1">Blackadar, Bruce (2005). <i>Operator Algebras: Theory of C*-Algebras and von Neumann Algebras</i>. Encyclopaedia of Mathematical Sciences. <a href="/wiki/Springer-Verlag" class="mw-redirect" title="Springer-Verlag">Springer-Verlag</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/3-540-28486-9" title="Special:BookSources/3-540-28486-9"><bdi>3-540-28486-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Operator+Algebras%3A+Theory+of+C%2A-Algebras+and+von+Neumann+Algebras&amp;rft.series=Encyclopaedia+of+Mathematical+Sciences&amp;rft.pub=Springer-Verlag&amp;rft.date=2005&amp;rft.isbn=3-540-28486-9&amp;rft.aulast=Blackadar&amp;rft.aufirst=Bruce&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOperator+algebra" class="Z3988"></span></li>
+<li>M. Takesaki, <i>Theory of Operator Algebras I</i>, Springer, 2001.</li></ul>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Spectral_theory_and_*-algebras" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Spectral_theory" title="Template:Spectral theory"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Spectral_theory" title="Template talk:Spectral theory"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Spectral_theory" title="Special:EditPage/Template:Spectral theory"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Spectral_theory_and_*-algebras" style="font-size:114%;margin:0 4em"><a href="/wiki/Spectral_theory" title="Spectral theory">Spectral theory</a> and <a href="/wiki/*-algebra" title="*-algebra"><sup>*</sup>-algebras</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Basic concepts</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/*-algebra" title="*-algebra">Involution/*-algebra</a></li>
+<li><a href="/wiki/Banach_algebra" title="Banach algebra">Banach algebra</a></li>
+<li><a href="/wiki/Banach_*-algebra" class="mw-redirect" title="Banach *-algebra">B*-algebra</a></li>
+<li><a href="/wiki/C*-algebra" title="C*-algebra">C*-algebra</a></li>
+<li><a href="/wiki/Noncommutative_topology" title="Noncommutative topology">Noncommutative topology</a></li>
+<li><a href="/wiki/Projection-valued_measure" title="Projection-valued measure">Projection-valued measure</a></li>
+<li><a href="/wiki/Spectrum_(functional_analysis)" title="Spectrum (functional analysis)">Spectrum</a></li>
+<li><a href="/wiki/Spectrum_of_a_C*-algebra" title="Spectrum of a C*-algebra">Spectrum of a C*-algebra</a></li>
+<li><a href="/wiki/Spectral_radius" title="Spectral radius">Spectral radius</a></li>
+<li><a href="/wiki/Operator_space" title="Operator space">Operator space</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Main results</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Gelfand%E2%80%93Mazur_theorem" title="Gelfand–Mazur theorem">Gelfand–Mazur theorem</a></li>
+<li><a href="/wiki/Gelfand%E2%80%93Naimark_theorem" title="Gelfand–Naimark theorem">Gelfand–Naimark theorem</a></li>
+<li><a href="/wiki/Gelfand_representation" title="Gelfand representation">Gelfand representation</a></li>
+<li><a href="/wiki/Polar_decomposition" title="Polar decomposition">Polar decomposition</a></li>
+<li><a href="/wiki/Singular_value_decomposition" title="Singular value decomposition">Singular value decomposition</a></li>
+<li><a href="/wiki/Spectral_theorem" title="Spectral theorem">Spectral theorem</a></li>
+<li><a href="/wiki/Spectral_theory_of_normal_C*-algebras" title="Spectral theory of normal C*-algebras">Spectral theory of normal C*-algebras</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Special Elements/Operators</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Isospectral" title="Isospectral">Isospectral</a></li>
+<li><a href="/wiki/Normal_element" title="Normal element">Normal</a> <a href="/wiki/Normal_operator" title="Normal operator">operator</a></li>
+<li><a href="/wiki/Self-adjoint" title="Self-adjoint">Hermitian/Self-adjoint</a> <a href="/wiki/Self-adjoint_operator" title="Self-adjoint operator">operator</a></li>
+<li><a href="/wiki/Unitary_element" title="Unitary element">Unitary</a> <a href="/wiki/Unitary_operator" title="Unitary operator">operator</a></li>
+<li><a href="/wiki/Unit_(ring_theory)" title="Unit (ring theory)">Unit</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Spectrum_(functional_analysis)" title="Spectrum (functional analysis)">Spectrum</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Krein%E2%80%93Rutman_theorem" title="Krein–Rutman theorem">Krein–Rutman theorem</a></li>
+<li><a href="/wiki/Normal_eigenvalue" title="Normal eigenvalue">Normal eigenvalue</a></li>
+<li><a href="/wiki/Spectrum_of_a_C*-algebra" title="Spectrum of a C*-algebra">Spectrum of a C*-algebra</a></li>
+<li><a href="/wiki/Spectral_radius" title="Spectral radius">Spectral radius</a></li>
+<li><a href="/wiki/Spectral_asymmetry" title="Spectral asymmetry">Spectral asymmetry</a></li>
+<li><a href="/wiki/Spectral_gap" title="Spectral gap">Spectral gap</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Decomposition</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Decomposition_of_spectrum_(functional_analysis)" title="Decomposition of spectrum (functional analysis)">Decomposition of a spectrum</a>
+<ul><li><a href="/wiki/Continuous_spectrum_(functional_analysis)" class="mw-redirect" title="Continuous spectrum (functional analysis)">Continuous</a></li>
+<li><a href="/wiki/Point_spectrum" class="mw-redirect" title="Point spectrum">Point</a></li>
+<li><a href="/wiki/Spectrum_(functional_analysis)#Residual_spectrum" title="Spectrum (functional analysis)">Residual</a></li></ul></li>
+<li><a href="/wiki/Spectrum_(functional_analysis)#Approximate_point_spectrum" title="Spectrum (functional analysis)">Approximate point</a></li>
+<li><a href="/wiki/Spectrum_(functional_analysis)#Compression_spectrum" title="Spectrum (functional analysis)">Compression</a></li>
+<li><a href="/wiki/Direct_integral" title="Direct integral">Direct integral</a></li>
+<li><a href="/wiki/Discrete_spectrum_(mathematics)" title="Discrete spectrum (mathematics)">Discrete</a></li>
+<li><a href="/wiki/Spectral_abscissa" title="Spectral abscissa">Spectral abscissa</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Spectral Theorem</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Borel_functional_calculus" title="Borel functional calculus">Borel functional calculus</a></li>
+<li><a href="/wiki/Min-max_theorem" title="Min-max theorem">Min-max theorem</a></li>
+<li><a href="/wiki/Positive_operator-valued_measure" class="mw-redirect" title="Positive operator-valued measure">Positive operator-valued measure</a></li>
+<li><a href="/wiki/Projection-valued_measure" title="Projection-valued measure">Projection-valued measure</a></li>
+<li><a href="/wiki/Riesz_projector" title="Riesz projector">Riesz projector</a></li>
+<li><a href="/wiki/Rigged_Hilbert_space" title="Rigged Hilbert space">Rigged Hilbert space</a></li>
+<li><a href="/wiki/Spectral_theorem" title="Spectral theorem">Spectral theorem</a></li>
+<li><a href="/wiki/Spectral_theory_of_compact_operators" title="Spectral theory of compact operators">Spectral theory of compact operators</a></li>
+<li><a href="/wiki/Spectral_theory_of_normal_C*-algebras" title="Spectral theory of normal C*-algebras">Spectral theory of normal C*-algebras</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Special algebras</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Amenable_Banach_algebra" title="Amenable Banach algebra">Amenable Banach algebra</a></li>
+<li>With an <a href="/wiki/Approximate_identity" title="Approximate identity">Approximate identity</a></li>
+<li><a href="/wiki/Banach_function_algebra" title="Banach function algebra">Banach function algebra</a></li>
+<li><a href="/wiki/Disk_algebra" title="Disk algebra">Disk algebra</a></li>
+<li><a href="/wiki/Nuclear_C*-algebra" title="Nuclear C*-algebra">Nuclear C*-algebra</a></li>
+<li><a href="/wiki/Uniform_algebra" title="Uniform algebra">Uniform algebra</a></li>
+<li><a href="/wiki/Von_Neumann_algebra" title="Von Neumann algebra">Von Neumann algebra</a>
+<ul><li><a href="/wiki/Tomita%E2%80%93Takesaki_theory" title="Tomita–Takesaki theory">Tomita–Takesaki theory</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Finite-Dimensional</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Alon%E2%80%93Boppana_bound" title="Alon–Boppana bound">Alon–Boppana bound</a></li>
+<li><a href="/wiki/Bauer%E2%80%93Fike_theorem" title="Bauer–Fike theorem">Bauer–Fike theorem</a></li>
+<li><a href="/wiki/Numerical_range" title="Numerical range">Numerical range</a></li>
+<li><a href="/wiki/Schur%E2%80%93Horn_theorem" title="Schur–Horn theorem">Schur–Horn theorem</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Generalizations</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Dirac_spectrum" title="Dirac spectrum">Dirac spectrum</a></li>
+<li><a href="/wiki/Essential_spectrum" title="Essential spectrum">Essential spectrum</a></li>
+<li><a href="/wiki/Pseudospectrum" title="Pseudospectrum">Pseudospectrum</a></li>
+<li><a href="/wiki/Structure_space" class="mw-redirect" title="Structure space">Structure space</a> (<a href="/wiki/Shilov_boundary" title="Shilov boundary">Shilov boundary</a>)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Miscellaneous</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Abstract_index_group" class="mw-redirect" title="Abstract index group">Abstract index group</a></li>
+<li><a href="/wiki/Banach_algebra_cohomology" title="Banach algebra cohomology">Banach algebra cohomology</a></li>
+<li><a href="/wiki/Cohen%E2%80%93Hewitt_factorization_theorem" title="Cohen–Hewitt factorization theorem">Cohen–Hewitt factorization theorem</a></li>
+<li><a href="/wiki/Extensions_of_symmetric_operators" title="Extensions of symmetric operators">Extensions of symmetric operators</a></li>
+<li><a href="/wiki/Fredholm_theory" title="Fredholm theory">Fredholm theory</a></li>
+<li><a href="/wiki/Limiting_absorption_principle" title="Limiting absorption principle">Limiting absorption principle</a></li>
+<li><a href="/wiki/Schr%C3%B6der%E2%80%93Bernstein_theorems_for_operator_algebras" title="Schröder–Bernstein theorems for operator algebras">Schröder–Bernstein theorems for operator algebras</a></li>
+<li><a href="/wiki/Sherman%E2%80%93Takeda_theorem" title="Sherman–Takeda theorem">Sherman–Takeda theorem</a></li>
+<li><a href="/wiki/Unbounded_operator" title="Unbounded operator">Unbounded operator</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Examples</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Wiener_algebra" title="Wiener algebra">Wiener algebra</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Applications</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Almost_Mathieu_operator" title="Almost Mathieu operator">Almost Mathieu operator</a></li>
+<li><a href="/wiki/Corona_theorem" title="Corona theorem">Corona theorem</a></li>
+<li><a href="/wiki/Hearing_the_shape_of_a_drum" title="Hearing the shape of a drum">Hearing the shape of a drum</a> (<a href="/wiki/Dirichlet_eigenvalue" title="Dirichlet eigenvalue">Dirichlet eigenvalue</a>)</li>
+<li><a href="/wiki/Heat_kernel" title="Heat kernel">Heat kernel</a></li>
+<li><a href="/wiki/Kuznetsov_trace_formula" title="Kuznetsov trace formula">Kuznetsov trace formula</a></li>
+<li><a href="/wiki/Lax_pair" title="Lax pair">Lax pair</a></li>
+<li><a href="/wiki/Proto-value_function" title="Proto-value function">Proto-value function</a></li>
+<li><a href="/wiki/Ramanujan_graph" title="Ramanujan graph">Ramanujan graph</a></li>
+<li><a href="/wiki/Rayleigh%E2%80%93Faber%E2%80%93Krahn_inequality" title="Rayleigh–Faber–Krahn inequality">Rayleigh–Faber–Krahn inequality</a></li>
+<li><a href="/wiki/Spectral_geometry" title="Spectral geometry">Spectral geometry</a></li>
+<li><a href="/wiki/Spectral_method" title="Spectral method">Spectral method</a></li>
+<li><a href="/wiki/Spectral_theory_of_ordinary_differential_equations" title="Spectral theory of ordinary differential equations">Spectral theory of ordinary differential equations</a></li>
+<li><a href="/wiki/Sturm%E2%80%93Liouville_theory" title="Sturm–Liouville theory">Sturm–Liouville theory</a></li>
+<li><a href="/wiki/Superstrong_approximation" title="Superstrong approximation">Superstrong approximation</a></li>
+<li><a href="/wiki/Transfer_operator" title="Transfer operator">Transfer operator</a></li>
+<li><a href="/wiki/Transform_theory" title="Transform theory">Transform theory</a></li>
+<li><a href="/wiki/Weyl_law" title="Weyl law">Weyl law</a></li>
+<li><a href="/wiki/Wiener%E2%80%93Khinchin_theorem" title="Wiener–Khinchin theorem">Wiener–Khinchin theorem</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"></div><div role="navigation" class="navbox" aria-labelledby="Functional_analysis_(topics_–_glossary)" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Functional_analysis" title="Template:Functional analysis"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Functional_analysis" title="Template talk:Functional analysis"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Functional_analysis" title="Special:EditPage/Template:Functional analysis"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Functional_analysis_(topics_–_glossary)" style="font-size:114%;margin:0 4em"><a href="/wiki/Functional_analysis" title="Functional analysis">Functional analysis</a>&#160;(<a href="/wiki/List_of_functional_analysis_topics" title="List of functional analysis topics">topics</a> – <a href="/wiki/Glossary_of_functional_analysis" title="Glossary of functional analysis">glossary</a>)</div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Spaces</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Banach_space" title="Banach space">Banach</a></li>
+<li><a href="/wiki/Besov_space" title="Besov space">Besov</a></li>
+<li><a href="/wiki/Fr%C3%A9chet_space" title="Fréchet space">Fréchet</a></li>
+<li><a href="/wiki/Hilbert_space" title="Hilbert space">Hilbert</a></li>
+<li><a href="/wiki/H%C3%B6lder_space" class="mw-redirect" title="Hölder space">Hölder</a></li>
+<li><a href="/wiki/Nuclear_space" title="Nuclear space">Nuclear</a></li>
+<li><a href="/wiki/Orlicz_space" title="Orlicz space">Orlicz</a></li>
+<li><a href="/wiki/Schwartz_space" title="Schwartz space">Schwartz</a></li>
+<li><a href="/wiki/Sobolev_space" title="Sobolev space">Sobolev</a></li>
+<li><a href="/wiki/Topological_vector_space" title="Topological vector space">Topological vector</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Properties</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Barrelled_space" title="Barrelled space">Barrelled</a></li>
+<li><a href="/wiki/Complete_topological_vector_space" title="Complete topological vector space">Complete</a></li>
+<li><a href="/wiki/Dual_space" title="Dual space">Dual</a> (<a href="/wiki/Dual_space#Algebraic_dual_space" title="Dual space">Algebraic</a>/<a href="/wiki/Dual_space#Continuous_dual_space" title="Dual space">Topological</a>)</li>
+<li><a href="/wiki/Locally_convex_topological_vector_space" title="Locally convex topological vector space">Locally convex</a></li>
+<li><a href="/wiki/Reflexive_space" title="Reflexive space">Reflexive</a></li>
+<li><a href="/wiki/Separable_space" title="Separable space">Separable</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Category:Theorems_in_functional_analysis" title="Category:Theorems in functional analysis">Theorems</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Hahn%E2%80%93Banach_theorem" title="Hahn–Banach theorem">Hahn–Banach</a></li>
+<li><a href="/wiki/Riesz_representation_theorem" title="Riesz representation theorem">Riesz representation</a></li>
+<li><a href="/wiki/Closed_graph_theorem_(functional_analysis)" title="Closed graph theorem (functional analysis)">Closed graph</a></li>
+<li><a href="/wiki/Uniform_boundedness_principle" title="Uniform boundedness principle">Uniform boundedness principle</a></li>
+<li><a href="/wiki/Kakutani_fixed-point_theorem#Infinite-dimensional_generalizations" title="Kakutani fixed-point theorem">Kakutani fixed-point</a></li>
+<li><a href="/wiki/Krein%E2%80%93Milman_theorem" title="Krein–Milman theorem">Krein–Milman</a></li>
+<li><a href="/wiki/Min-max_theorem" title="Min-max theorem">Min–max</a></li>
+<li><a href="/wiki/Gelfand%E2%80%93Naimark_theorem" title="Gelfand–Naimark theorem">Gelfand–Naimark</a></li>
+<li><a href="/wiki/Banach%E2%80%93Alaoglu_theorem" title="Banach–Alaoglu theorem">Banach–Alaoglu</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Operators</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Adjoint_operator" class="mw-redirect" title="Adjoint operator">Adjoint</a></li>
+<li><a href="/wiki/Bounded_operator" title="Bounded operator">Bounded</a></li>
+<li><a href="/wiki/Compact_operator" title="Compact operator">Compact</a></li>
+<li><a href="/wiki/Hilbert%E2%80%93Schmidt_operator" title="Hilbert–Schmidt operator">Hilbert–Schmidt</a></li>
+<li><a href="/wiki/Normal_operator" title="Normal operator">Normal</a></li>
+<li><a href="/wiki/Nuclear_operator" title="Nuclear operator">Nuclear</a></li>
+<li><a href="/wiki/Trace_class" title="Trace class">Trace class</a></li>
+<li><a href="/wiki/Transpose_of_a_linear_map" title="Transpose of a linear map">Transpose</a></li>
+<li><a href="/wiki/Unbounded_operator" title="Unbounded operator">Unbounded</a></li>
+<li><a href="/wiki/Unitary_operator" title="Unitary operator">Unitary</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Algebras</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Banach_algebra" title="Banach algebra">Banach algebra</a></li>
+<li><a href="/wiki/C*-algebra" title="C*-algebra">C*-algebra</a></li>
+<li><a href="/wiki/Spectrum_of_a_C*-algebra" title="Spectrum of a C*-algebra">Spectrum of a C*-algebra</a></li>
+<li><a class="mw-selflink selflink">Operator algebra</a></li>
+<li><a href="/wiki/Group_algebra_of_a_locally_compact_group" title="Group algebra of a locally compact group">Group algebra of a locally compact group</a></li>
+<li><a href="/wiki/Von_Neumann_algebra" title="Von Neumann algebra">Von Neumann algebra</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Open problems</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Invariant_subspace_problem" title="Invariant subspace problem">Invariant subspace problem</a></li>
+<li><a href="/wiki/Mahler%27s_conjecture" class="mw-redirect" title="Mahler&#39;s conjecture">Mahler's conjecture</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Applications</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Hardy_space" title="Hardy space">Hardy space</a></li>
+<li><a href="/wiki/Spectral_theory_of_ordinary_differential_equations" title="Spectral theory of ordinary differential equations">Spectral theory of ordinary differential equations</a></li>
+<li><a href="/wiki/Heat_kernel" title="Heat kernel">Heat kernel</a></li>
+<li><a href="/wiki/Index_theorem" class="mw-redirect" title="Index theorem">Index theorem</a></li>
+<li><a href="/wiki/Calculus_of_variations" title="Calculus of variations">Calculus of variations</a></li>
+<li><a href="/wiki/Functional_calculus" title="Functional calculus">Functional calculus</a></li>
+<li><a href="/wiki/Integral_operator" title="Integral operator">Integral operator</a></li>
+<li><a href="/wiki/Jones_polynomial" title="Jones polynomial">Jones polynomial</a></li>
+<li><a href="/wiki/Topological_quantum_field_theory" title="Topological quantum field theory">Topological quantum field theory</a></li>
+<li><a href="/wiki/Noncommutative_geometry" title="Noncommutative geometry">Noncommutative geometry</a></li>
+<li><a href="/wiki/Riemann_hypothesis" title="Riemann hypothesis">Riemann hypothesis</a></li>
+<li><a href="/wiki/Distribution_(mathematics)" title="Distribution (mathematics)">Distribution</a> (or <a href="/wiki/Generalized_function" title="Generalized function">Generalized functions</a>)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Advanced topics</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Approximation_property" title="Approximation property">Approximation property</a></li>
+<li><a href="/wiki/Balanced_set" title="Balanced set">Balanced set</a></li>
+<li><a href="/wiki/Choquet_theory" title="Choquet theory">Choquet theory</a></li>
+<li><a href="/wiki/Weak_topology" title="Weak topology">Weak topology</a></li>
+<li><a href="/wiki/Banach%E2%80%93Mazur_distance" class="mw-redirect" title="Banach–Mazur distance">Banach–Mazur distance</a></li>
+<li><a href="/wiki/Tomita%E2%80%93Takesaki_theory" title="Tomita–Takesaki theory">Tomita–Takesaki theory</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><b><span class="noviewer" typeof="mw:File"><a href="/wiki/File:Nuvola_apps_edu_mathematics_blue-p.svg" class="mw-file-description"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/16px-Nuvola_apps_edu_mathematics_blue-p.svg.png" decoding="async" width="16" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/24px-Nuvola_apps_edu_mathematics_blue-p.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/32px-Nuvola_apps_edu_mathematics_blue-p.svg.png 2x" data-file-width="128" data-file-height="128" /></a></span>&#160;<a href="/wiki/Portal:Mathematics" title="Portal:Mathematics">Mathematics&#32;portal</a></b></li>
+<li><span class="noviewer" typeof="mw:File"><span title="Category"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" decoding="async" width="16" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" data-file-width="180" data-file-height="185" /></span></span> <b><a href="/wiki/Category:Functional_analysis" title="Category:Functional analysis">Category</a></b></li>
+<li><span class="noviewer" typeof="mw:File"><span title="Commons page"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" decoding="async" width="12" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></span></span><b><a href="https://commons.wikimedia.org/wiki/Category:Functional_analysis" class="extiw" title="commons:Category:Functional analysis">Commons</a></b></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"></div><div role="navigation" class="navbox" aria-labelledby="Banach_space_topics" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Banach_spaces" title="Template:Banach spaces"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Banach_spaces" title="Template talk:Banach spaces"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Banach_spaces" title="Special:EditPage/Template:Banach spaces"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Banach_space_topics" style="font-size:114%;margin:0 4em"><a href="/wiki/Banach_space" title="Banach space">Banach space</a> topics</div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Types of Banach spaces</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Asplund_space" title="Asplund space">Asplund</a></li>
+<li><a href="/wiki/Banach_space" title="Banach space">Banach</a>
+<ul><li><a href="/wiki/List_of_Banach_spaces" title="List of Banach spaces">list</a></li></ul></li>
+<li><a href="/wiki/Banach_lattice" title="Banach lattice">Banach lattice</a></li>
+<li><a href="/wiki/Grothendieck_space" title="Grothendieck space">Grothendieck </a></li>
+<li><a href="/wiki/Hilbert_space" title="Hilbert space">Hilbert</a>
+<ul><li><a href="/wiki/Inner_product_space" title="Inner product space">Inner product space</a></li>
+<li><a href="/wiki/Polarization_identity" title="Polarization identity">Polarization identity</a></li></ul></li>
+<li>(<a href="/wiki/Polynomially_reflexive_space" title="Polynomially reflexive space">Polynomially</a>)&#160;<a href="/wiki/Reflexive_space" title="Reflexive space">Reflexive</a></li>
+<li><a href="/wiki/Riesz_space" title="Riesz space">Riesz</a></li>
+<li><a href="/wiki/L-semi-inner_product" title="L-semi-inner product">L-semi-inner product</a></li>
+<li>(<a href="/wiki/B-convex_space" title="B-convex space">B</a></li>
+<li><a href="/wiki/Strictly_convex_space" title="Strictly convex space">Strictly</a></li>
+<li><a href="/wiki/Uniformly_convex_space" title="Uniformly convex space">Uniformly</a>)&#160;convex</li>
+<li><a href="/wiki/Uniformly_smooth_space" title="Uniformly smooth space">Uniformly smooth</a></li>
+<li>(<a href="/wiki/Injective_tensor_product" title="Injective tensor product">Injective</a></li>
+<li><a href="/wiki/Projective_tensor_product" title="Projective tensor product">Projective</a>)&#160;<a href="/wiki/Topological_tensor_product" title="Topological tensor product">Tensor product</a>&#160;(<a href="/wiki/Tensor_product_of_Hilbert_spaces" title="Tensor product of Hilbert spaces">of Hilbert spaces</a>)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Banach spaces are:</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Barrelled_space" title="Barrelled space">Barrelled</a></li>
+<li><a href="/wiki/Complete_topological_vector_space" title="Complete topological vector space">Complete</a></li>
+<li><a href="/wiki/F-space" title="F-space">F-space</a></li>
+<li><a href="/wiki/Fr%C3%A9chet_space" title="Fréchet space">Fréchet</a>
+<ul><li><a href="/wiki/Differentiation_in_Fr%C3%A9chet_spaces#Tame_Fréchet_spaces" title="Differentiation in Fréchet spaces">tame</a></li></ul></li>
+<li><a href="/wiki/Locally_convex_topological_vector_space" title="Locally convex topological vector space">Locally convex</a>
+<ul><li><a href="/wiki/Locally_convex_topological_vector_space#Definition_via_seminorms" title="Locally convex topological vector space">Seminorms</a>/<a href="/wiki/Minkowski_functional" title="Minkowski functional">Minkowski functionals</a></li></ul></li>
+<li><a href="/wiki/Mackey_space" title="Mackey space">Mackey</a></li>
+<li><a href="/wiki/Metrizable_topological_vector_space" title="Metrizable topological vector space">Metrizable</a></li>
+<li><a href="/wiki/Normed_space" class="mw-redirect" title="Normed space">Normed</a>
+<ul><li><a href="/wiki/Norm_(mathematics)" title="Norm (mathematics)">norm</a></li></ul></li>
+<li><a href="/wiki/Quasinorm" title="Quasinorm">Quasinormed</a></li>
+<li><a href="/wiki/Stereotype_space" class="mw-redirect" title="Stereotype space">Stereotype</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Function space Topologies</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Banach%E2%80%93Mazur_compactum" title="Banach–Mazur compactum">Banach–Mazur compactum</a></li>
+<li><a href="/wiki/Dual_topology" title="Dual topology">Dual</a></li>
+<li><a href="/wiki/Dual_space" title="Dual space">Dual space</a>
+<ul><li><a href="/wiki/Dual_norm" title="Dual norm">Dual norm</a></li></ul></li>
+<li><a href="/wiki/Operator_topologies" title="Operator topologies">Operator</a></li>
+<li><a href="/wiki/Ultraweak_topology" title="Ultraweak topology">Ultraweak</a></li>
+<li><a href="/wiki/Weak_topology" title="Weak topology">Weak</a>
+<ul><li><a href="/wiki/Weak_topology_(polar_topology)" class="mw-redirect" title="Weak topology (polar topology)">polar</a></li>
+<li><a href="/wiki/Weak_operator_topology" title="Weak operator topology">operator</a></li></ul></li>
+<li><a href="/wiki/Strong_topology" title="Strong topology">Strong</a>
+<ul><li><a href="/wiki/Strong_topology_(polar_topology)" class="mw-redirect" title="Strong topology (polar topology)">polar</a></li>
+<li><a href="/wiki/Strong_operator_topology" title="Strong operator topology">operator</a></li></ul></li>
+<li><a href="/wiki/Ultrastrong_topology" title="Ultrastrong topology">Ultrastrong</a></li>
+<li><a href="/wiki/Topology_of_uniform_convergence" class="mw-redirect" title="Topology of uniform convergence">Uniform convergence</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Linear_operator" class="mw-redirect" title="Linear operator">Linear operators</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Hermitian_adjoint" title="Hermitian adjoint">Adjoint</a></li>
+<li><a href="/wiki/Bilinear_map" title="Bilinear map">Bilinear</a>
+<ul><li><a href="/wiki/Bilinear_form" title="Bilinear form">form</a></li>
+<li><a href="/wiki/Bilinear_map" title="Bilinear map">operator</a></li>
+<li><a href="/wiki/Sesquilinear_form" title="Sesquilinear form">sesquilinear</a></li></ul></li>
+<li>(<a href="/wiki/Unbounded_operator" title="Unbounded operator">Un</a>)<a href="/wiki/Bounded_operator" title="Bounded operator">Bounded</a></li>
+<li><a href="/wiki/Closed_linear_operator" class="mw-redirect" title="Closed linear operator">Closed</a></li>
+<li><a href="/wiki/Compact_operator" title="Compact operator">Compact</a>
+<ul><li><a href="/wiki/Compact_operator_on_Hilbert_space" title="Compact operator on Hilbert space">on Hilbert spaces</a></li></ul></li>
+<li>(<a href="/wiki/Discontinuous_linear_map" title="Discontinuous linear map">Dis</a>)<a href="/wiki/Continuous_linear_operator" title="Continuous linear operator">Continuous</a></li>
+<li><a href="/wiki/Densely_defined" class="mw-redirect" title="Densely defined">Densely defined</a></li>
+<li>Fredholm
+<ul><li><a href="/wiki/Fredholm_kernel" title="Fredholm kernel">kernel</a></li>
+<li><a href="/wiki/Fredholm_operator" title="Fredholm operator">operator</a></li></ul></li>
+<li><a href="/wiki/Hilbert%E2%80%93Schmidt_operator" title="Hilbert–Schmidt operator">Hilbert–Schmidt</a></li>
+<li><a href="/wiki/Linear_form" title="Linear form">Functionals</a>
+<ul><li><a href="/wiki/Positive_linear_functional" title="Positive linear functional">positive</a></li></ul></li>
+<li><a href="/wiki/Pseudo-monotone_operator" title="Pseudo-monotone operator">Pseudo-monotone</a></li>
+<li><a href="/wiki/Normal_operator" title="Normal operator">Normal</a></li>
+<li><a href="/wiki/Nuclear_operator" title="Nuclear operator">Nuclear</a></li>
+<li><a href="/wiki/Self-adjoint_operator" title="Self-adjoint operator">Self-adjoint</a></li>
+<li><a href="/wiki/Strictly_singular_operator" title="Strictly singular operator">Strictly singular</a></li>
+<li><a href="/wiki/Trace_class" title="Trace class">Trace class</a></li>
+<li><a href="/wiki/Transpose_of_a_linear_map" title="Transpose of a linear map">Transpose</a></li>
+<li><a href="/wiki/Unitary_operator" title="Unitary operator">Unitary</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Operator_theory" title="Operator theory">Operator theory</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Banach_algebra" title="Banach algebra">Banach algebras</a></li>
+<li><a href="/wiki/C*-algebra" title="C*-algebra">C*-algebras</a></li>
+<li><a href="/wiki/Operator_space" title="Operator space">Operator space</a></li>
+<li><a href="/wiki/Spectrum_(functional_analysis)" title="Spectrum (functional analysis)">Spectrum</a>
+<ul><li><a href="/wiki/Spectrum_of_a_C*-algebra" title="Spectrum of a C*-algebra">C*-algebra</a></li>
+<li><a href="/wiki/Spectral_radius" title="Spectral radius">radius</a></li></ul></li>
+<li><a href="/wiki/Spectral_theory" title="Spectral theory">Spectral theory</a>
+<ul><li><a href="/wiki/Spectral_theory_of_ordinary_differential_equations" title="Spectral theory of ordinary differential equations">of ODEs</a></li>
+<li><a href="/wiki/Spectral_theorem" title="Spectral theorem">Spectral theorem</a></li></ul></li>
+<li><a href="/wiki/Polar_decomposition" title="Polar decomposition">Polar decomposition</a></li>
+<li><a href="/wiki/Singular_value_decomposition" title="Singular value decomposition">Singular value decomposition</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Category:Theorems_in_functional_analysis" title="Category:Theorems in functional analysis">Theorems</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Anderson%E2%80%93Kadec_theorem" title="Anderson–Kadec theorem">Anderson–Kadec</a></li>
+<li><a href="/wiki/Banach%E2%80%93Alaoglu_theorem" title="Banach–Alaoglu theorem">Banach–Alaoglu</a></li>
+<li><a href="/wiki/Banach%E2%80%93Mazur_theorem" title="Banach–Mazur theorem">Banach–Mazur</a></li>
+<li><a href="/wiki/Banach%E2%80%93Saks_theorem" class="mw-redirect" title="Banach–Saks theorem">Banach–Saks</a></li>
+<li><a href="/wiki/Open_mapping_theorem_(functional_analysis)" title="Open mapping theorem (functional analysis)">Banach–Schauder (open mapping)</a></li>
+<li><a href="/wiki/Uniform_boundedness_principle" title="Uniform boundedness principle">Banach–Steinhaus (Uniform boundedness)</a></li>
+<li><a href="/wiki/Bessel%27s_inequality" title="Bessel&#39;s inequality">Bessel's inequality</a></li>
+<li><a href="/wiki/Cauchy%E2%80%93Schwarz_inequality" title="Cauchy–Schwarz inequality">Cauchy–Schwarz inequality</a></li>
+<li><a href="/wiki/Closed_graph_theorem" title="Closed graph theorem">Closed graph</a></li>
+<li><a href="/wiki/Closed_range_theorem" title="Closed range theorem">Closed range</a></li>
+<li><a href="/wiki/Eberlein%E2%80%93%C5%A0mulian_theorem" title="Eberlein–Šmulian theorem">Eberlein–Šmulian</a></li>
+<li><a href="/wiki/Freudenthal_spectral_theorem" title="Freudenthal spectral theorem">Freudenthal spectral</a></li>
+<li><a href="/wiki/Gelfand%E2%80%93Mazur_theorem" title="Gelfand–Mazur theorem">Gelfand–Mazur</a></li>
+<li><a href="/wiki/Gelfand%E2%80%93Naimark_theorem" title="Gelfand–Naimark theorem">Gelfand–Naimark</a></li>
+<li><a href="/wiki/Goldstine_theorem" title="Goldstine theorem">Goldstine</a></li>
+<li><a href="/wiki/Hahn%E2%80%93Banach_theorem" title="Hahn–Banach theorem">Hahn–Banach</a>
+<ul><li><a href="/wiki/Hyperplane_separation_theorem" title="Hyperplane separation theorem">hyperplane separation</a></li></ul></li>
+<li><a href="/wiki/Kakutani_fixed-point_theorem#Infinite-dimensional_generalizations" title="Kakutani fixed-point theorem">Kakutani fixed-point</a></li>
+<li><a href="/wiki/Krein%E2%80%93Milman_theorem" title="Krein–Milman theorem">Krein–Milman</a></li>
+<li><a href="/wiki/Invariant_subspace_problem#Known_special_cases" title="Invariant subspace problem">Lomonosov's invariant subspace</a></li>
+<li><a href="/wiki/Mackey%E2%80%93Arens_theorem" title="Mackey–Arens theorem">Mackey–Arens</a></li>
+<li><a href="/wiki/Mazur%27s_lemma" title="Mazur&#39;s lemma">Mazur's lemma</a></li>
+<li><a href="/wiki/M._Riesz_extension_theorem" title="M. Riesz extension theorem">M. Riesz extension</a></li>
+<li><a href="/wiki/Parseval%27s_identity" title="Parseval&#39;s identity">Parseval's identity</a></li>
+<li><a href="/wiki/Riesz%27s_lemma" title="Riesz&#39;s lemma">Riesz's lemma</a></li>
+<li><a href="/wiki/Riesz_representation_theorem" title="Riesz representation theorem">Riesz representation</a></li>
+<li><a href="/wiki/Ursescu_theorem#Robinson–Ursescu_theorem" title="Ursescu theorem">Robinson-Ursescu</a></li>
+<li><a href="/wiki/Schauder_fixed-point_theorem" title="Schauder fixed-point theorem">Schauder fixed-point</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Analysis</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Abstract_Wiener_space" title="Abstract Wiener space">Abstract Wiener space</a></li>
+<li><a href="/wiki/Banach_manifold" title="Banach manifold">Banach manifold</a>
+<ul><li><a href="/wiki/Banach_bundle" title="Banach bundle">bundle</a></li></ul></li>
+<li><a href="/wiki/Bochner_space" title="Bochner space">Bochner space</a></li>
+<li><a href="/wiki/Convex_series" title="Convex series">Convex series</a></li>
+<li><a href="/wiki/Differentiation_in_Fr%C3%A9chet_spaces" title="Differentiation in Fréchet spaces">Differentiation in Fréchet spaces</a></li>
+<li><a href="/wiki/Derivative" title="Derivative">Derivatives</a>
+<ul><li><a href="/wiki/Fr%C3%A9chet_derivative" title="Fréchet derivative">Fréchet</a></li>
+<li><a href="/wiki/Gateaux_derivative" title="Gateaux derivative">Gateaux</a></li>
+<li><a href="/wiki/Functional_derivative" title="Functional derivative">functional</a></li>
+<li><a href="/wiki/Infinite-dimensional_holomorphy" title="Infinite-dimensional holomorphy">holomorphic</a></li>
+<li><a href="/wiki/Quasi-derivative" title="Quasi-derivative">quasi</a></li></ul></li>
+<li><a href="/wiki/Integral" title="Integral">Integrals</a>
+<ul><li><a href="/wiki/Bochner_integral" title="Bochner integral">Bochner</a></li>
+<li><a href="/wiki/Dunford_integral" class="mw-redirect" title="Dunford integral">Dunford</a></li>
+<li><a href="/wiki/Pettis_integral" title="Pettis integral">Gelfand–Pettis</a></li>
+<li><a href="/wiki/Regulated_integral" title="Regulated integral">regulated</a></li>
+<li><a href="/wiki/Paley%E2%80%93Wiener_integral" title="Paley–Wiener integral">Paley–Wiener</a></li>
+<li><a href="/wiki/Pettis_integral" title="Pettis integral">weak</a></li></ul></li>
+<li><a href="/wiki/Functional_calculus" title="Functional calculus">Functional calculus</a>
+<ul><li><a href="/wiki/Borel_functional_calculus" title="Borel functional calculus">Borel</a></li>
+<li><a href="/wiki/Continuous_functional_calculus" title="Continuous functional calculus">continuous</a></li>
+<li><a href="/wiki/Holomorphic_functional_calculus" title="Holomorphic functional calculus">holomorphic</a></li></ul></li>
+<li><a href="/wiki/Measure_(mathematics)" title="Measure (mathematics)">Measures</a>
+<ul><li><a href="/wiki/Infinite-dimensional_Lebesgue_measure" title="Infinite-dimensional Lebesgue measure">Lebesgue</a></li>
+<li><a href="/wiki/Projection-valued_measure" title="Projection-valued measure">Projection-valued</a></li>
+<li><a href="/wiki/Vector_measure" title="Vector measure">Vector</a></li></ul></li>
+<li><a href="/wiki/Weakly_measurable_function" title="Weakly measurable function">Weakly</a> / <a href="/wiki/Strongly_measurable_functions" class="mw-redirect" title="Strongly measurable functions">Strongly</a> measurable function</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Types of sets</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Absolutely_convex_set" title="Absolutely convex set">Absolutely convex</a></li>
+<li><a href="/wiki/Absorbing_set" title="Absorbing set">Absorbing</a></li>
+<li><a href="/wiki/Affine_space" title="Affine space">Affine</a></li>
+<li><a href="/wiki/Balanced_set" title="Balanced set">Balanced/Circled</a></li>
+<li><a href="/wiki/Bounded_set_(topological_vector_space)" title="Bounded set (topological vector space)">Bounded</a></li>
+<li><a href="/wiki/Convex_set" title="Convex set">Convex</a></li>
+<li><a href="/wiki/Convex_cone" title="Convex cone">Convex cone <span style="font-size:85%;">(subset)</span></a></li>
+<li><a href="/wiki/Convex_series#Types_of_subsets" title="Convex series">Convex series related</a>&#160;((cs, lcs)-closed, (cs, bcs)-complete, (lower) ideally convex, (H<i>x</i>), and (Hw<i>x</i>))</li>
+<li><a href="/wiki/Cone_(linear_algebra)" class="mw-redirect" title="Cone (linear algebra)">Linear cone <span style="font-size:85%;">(subset)</span></a></li>
+<li><a href="/wiki/Radial_set" title="Radial set">Radial</a></li>
+<li><a href="/wiki/Star_domain" title="Star domain">Radially convex/Star-shaped</a></li>
+<li><a href="/wiki/Symmetric_set" title="Symmetric set">Symmetric</a></li>
+<li><a href="/wiki/Zonotope" class="mw-redirect" title="Zonotope">Zonotope</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Subsets&#160;/&#32;set operations</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Affine_hull" title="Affine hull">Affine hull</a></li>
+<li>(<a href="/wiki/Algebraic_interior#Relative_algebraic_interior" title="Algebraic interior">Relative</a>)&#160;<a href="/wiki/Algebraic_interior" title="Algebraic interior">Algebraic interior (core)</a></li>
+<li><a href="/wiki/Bounding_point" title="Bounding point">Bounding points</a></li>
+<li><a href="/wiki/Convex_hull" title="Convex hull">Convex hull</a></li>
+<li><a href="/wiki/Extreme_point" title="Extreme point">Extreme point</a></li>
+<li><a href="/wiki/Interior_(topology)" title="Interior (topology)">Interior</a></li>
+<li><a href="/wiki/Linear_span" title="Linear span">Linear span</a></li>
+<li><a href="/wiki/Minkowski_addition" title="Minkowski addition">Minkowski addition</a></li>
+<li><a href="/wiki/Polar_set" title="Polar set">Polar</a></li>
+<li>(<a href="/wiki/Algebraic_interior#Quasi_relative_interior" title="Algebraic interior">Quasi</a>)&#160;<a href="/wiki/Algebraic_interior#Relative_interior" title="Algebraic interior">Relative interior</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Template:ListOfBanachSpaces" class="mw-redirect" title="Template:ListOfBanachSpaces">Examples</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Absolute_continuity" title="Absolute continuity">Absolute continuity <i>AC</i></a></li>
+<li><a href="/wiki/Ba_space" title="Ba space"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle ba(\Sigma )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+        <mi>a</mi>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">&#x03A3;<!-- Σ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ba(\Sigma )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58fe61351e3531b14043fa2d09e98c2437bd1a6a" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.715ex; height:2.843ex;" alt="ba(\Sigma)"></span></a></li>
+<li><a href="/wiki/C_space" title="C space">c space</a></li>
+<li><a href="/wiki/BK-space" title="BK-space">Banach coordinate <i>BK</i></a></li>
+<li><a href="/wiki/Besov_space" title="Besov space">Besov <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle B_{p,q}^{s}(\mathbb {R} )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>,</mo>
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>s</mi>
+          </mrow>
+        </msubsup>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{p,q}^{s}(\mathbb {R} )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9919cf78ad095c237169772d2b27a37bfbef1b75" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:7.524ex; height:3.009ex;" alt="{\displaystyle B_{p,q}^{s}(\mathbb {R} )}"></span></a></li>
+<li><a href="/wiki/Birnbaum%E2%80%93Orlicz_space" class="mw-redirect" title="Birnbaum–Orlicz space">Birnbaum–Orlicz</a></li>
+<li><a href="/wiki/Bounded_variation" title="Bounded variation">Bounded variation <i>BV</i></a></li>
+<li><a href="/wiki/Bs_space" title="Bs space">Bs space</a></li>
+<li><a href="/wiki/Continuous_functions_on_a_compact_Hausdorff_space" title="Continuous functions on a compact Hausdorff space">Continuous <i>C(K)</i> with <i>K</i> compact Hausdorff</a></li>
+<li><a href="/wiki/Hardy_space" title="Hardy space">Hardy H<sup><i>p</i></sup></a></li>
+<li><a href="/wiki/Hilbert_space#Definition" title="Hilbert space">Hilbert <i>H</i></a></li>
+<li><a href="/wiki/Morrey%E2%80%93Campanato_space" title="Morrey–Campanato space">Morrey–Campanato <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L^{\lambda ,p}(\Omega )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03BB;<!-- λ --></mi>
+            <mo>,</mo>
+            <mi>p</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">&#x03A9;<!-- Ω --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L^{\lambda ,p}(\Omega )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8b8af58fa038369c3ec6386c6656aab82825e372" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:7.545ex; height:3.176ex;" alt="{\displaystyle L^{\lambda ,p}(\Omega )}"></span></a></li>
+<li><a href="/wiki/Sequence_space#ℓp_spaces" title="Sequence space"><i>ℓ<sup>p</sup></i></a>
+<ul><li><a href="/wiki/L-infinity#Sequence_space" title="L-infinity"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \ell ^{\infty }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>&#x2113;<!-- ℓ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ell ^{\infty }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8348195cf09473662c6f59e6717722a6fc01d0f4" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.845ex; height:2.343ex;" alt="{\displaystyle \ell ^{\infty }}"></span></a></li></ul></li>
+<li><a href="/wiki/Lp_space" title="Lp space"><i>L<sup>p</sup></i></a>
+<ul><li><a href="/wiki/L-infinity#Function_space" title="L-infinity"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L^{\infty }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L^{\infty }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b9ab400cc4dfd865180cd84c72dc894ca457671f" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:3.458ex; height:2.343ex;" alt="L^{\infty }"></span></a></li>
+<li><a href="/wiki/Lp_space#Weighted_Lp_spaces" title="Lp space">weighted</a></li></ul></li>
+<li><a href="/wiki/Schwartz_space" title="Schwartz space">Schwartz <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S\left(\mathbb {R} ^{n}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mrow>
+          <mo>(</mo>
+          <msup>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="double-struck">R</mi>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msup>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S\left(\mathbb {R} ^{n}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0465acd58a0f31e32b095aed742d9ccc6331369c" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.592ex; height:2.843ex;" alt="{\displaystyle S\left(\mathbb {R} ^{n}\right)}"></span></a></li>
+<li><a href="/wiki/Segal%E2%80%93Bargmann_space" title="Segal–Bargmann space">Segal–Bargmann <i>F</i></a></li>
+<li><a href="/wiki/Sequence_space" title="Sequence space">Sequence space</a></li>
+<li><a href="/wiki/Sobolev_space" title="Sobolev space">Sobolev W<sup><i>k,p</i></sup></a>
+<ul><li><a href="/wiki/Sobolev_inequality" title="Sobolev inequality">Sobolev inequality</a></li></ul></li>
+<li><a href="/wiki/Triebel%E2%80%93Lizorkin_space" title="Triebel–Lizorkin space">Triebel–Lizorkin</a></li>
+<li><a href="/wiki/Wiener_amalgam_space" title="Wiener amalgam space">Wiener amalgam <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W(X,L^{p})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>W</mi>
+        <mo stretchy="false">(</mo>
+        <mi>X</mi>
+        <mo>,</mo>
+        <msup>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W(X,L^{p})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b37b1dc9714960c525cb561a4828f41feb5844ec" class="mwe-math-fallback-image-inline mw-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:9.9ex; height:2.843ex;" alt="{\displaystyle W(X,L^{p})}"></span></a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Applications</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Differential_operator" title="Differential operator">Differential operator</a></li>
+<li><a href="/wiki/Finite_element_method" title="Finite element method">Finite element method</a></li>
+<li><a href="/wiki/Mathematical_formulation_of_quantum_mechanics" title="Mathematical formulation of quantum mechanics">Mathematical formulation of quantum mechanics</a></li>
+<li><a href="/wiki/Spectral_theory_of_ordinary_differential_equations" title="Spectral theory of ordinary differential equations">Ordinary Differential Equations (ODEs)</a></li>
+<li><a href="/wiki/Validated_numerics" title="Validated numerics">Validated numerics</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"></div><div role="navigation" class="navbox" aria-labelledby="Industrial_and_applied_mathematics" style="padding:3px"><table class="nowraplinks hlist mw-collapsible mw-collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Industrial_and_applied_mathematics" title="Template:Industrial and applied mathematics"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Industrial_and_applied_mathematics" title="Template talk:Industrial and applied mathematics"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Industrial_and_applied_mathematics" title="Special:EditPage/Template:Industrial and applied mathematics"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Industrial_and_applied_mathematics" style="font-size:114%;margin:0 4em"><a href="/wiki/Applied_mathematics" title="Applied mathematics">Industrial and applied mathematics</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Computational_mathematics" title="Computational mathematics">Computational</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Algorithm" title="Algorithm">Algorithms</a>
+<ul><li><a href="/wiki/Algorithm_design" class="mw-redirect" title="Algorithm design">design</a></li>
+<li><a href="/wiki/Analysis_of_algorithms" title="Analysis of algorithms">analysis</a></li></ul></li>
+<li><a href="/wiki/Automata_theory" title="Automata theory">Automata theory</a></li>
+<li><a href="/wiki/Automated_theorem_proving" title="Automated theorem proving">Automated theorem proving</a></li>
+<li><a href="/wiki/Coding_theory" title="Coding theory">Coding theory</a></li>
+<li><a href="/wiki/Computational_geometry" title="Computational geometry">Computational geometry</a></li>
+<li><a href="/wiki/Constraint_satisfaction_problem" title="Constraint satisfaction problem">Constraint satisfaction</a>
+<ul><li><a href="/wiki/Constraint_programming" title="Constraint programming">Constraint programming</a></li></ul></li>
+<li><a href="/wiki/Logic_in_computer_science" title="Logic in computer science">Computational logic</a></li>
+<li><a href="/wiki/Cryptography" title="Cryptography">Cryptography</a></li>
+<li><a href="/wiki/Information_theory" title="Information theory">Information theory</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Discrete_mathematics" title="Discrete mathematics">Discrete</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Computer_algebra" title="Computer algebra">Computer algebra</a></li>
+<li><a href="/wiki/Computational_number_theory" title="Computational number theory">Computational number theory</a></li>
+<li><a href="/wiki/Combinatorics" title="Combinatorics">Combinatorics</a></li>
+<li><a href="/wiki/Graph_theory" title="Graph theory">Graph theory</a></li>
+<li><a href="/wiki/Discrete_geometry" title="Discrete geometry">Discrete geometry</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Mathematical_analysis" title="Mathematical analysis">Analysis</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Approximation_theory" title="Approximation theory">Approximation theory</a></li>
+<li><a href="/wiki/Clifford_analysis" title="Clifford analysis">Clifford analysis</a>
+<ul><li><a href="/wiki/Clifford_algebra" title="Clifford algebra">Clifford algebra</a></li></ul></li>
+<li><a href="/wiki/Differential_equation" title="Differential equation">Differential equations</a>
+<ul><li><a href="/wiki/Ordinary_differential_equation" title="Ordinary differential equation">Ordinary differential equations</a></li>
+<li><a href="/wiki/Partial_differential_equation" title="Partial differential equation">Partial differential equations</a></li>
+<li><a href="/wiki/Stochastic_differential_equation" title="Stochastic differential equation">Stochastic differential equations</a></li></ul></li>
+<li><a href="/wiki/Differential_geometry" title="Differential geometry">Differential geometry</a>
+<ul><li><a href="/wiki/Differential_form" title="Differential form">Differential forms</a></li>
+<li><a href="/wiki/Gauge_theory_(mathematics)" title="Gauge theory (mathematics)">Gauge theory</a></li>
+<li><a href="/wiki/Geometric_analysis" title="Geometric analysis">Geometric analysis</a></li></ul></li>
+<li><a href="/wiki/Dynamical_system" title="Dynamical system">Dynamical systems</a>
+<ul><li><a href="/wiki/Chaos_theory" title="Chaos theory">Chaos theory</a></li>
+<li><a href="/wiki/Control_theory" title="Control theory">Control theory</a></li></ul></li>
+<li><a href="/wiki/Functional_analysis" title="Functional analysis">Functional analysis</a>
+<ul><li><a class="mw-selflink selflink">Operator algebra</a></li>
+<li><a href="/wiki/Operator_theory" title="Operator theory">Operator theory</a></li></ul></li>
+<li><a href="/wiki/Harmonic_analysis_(mathematics)" class="mw-redirect" title="Harmonic analysis (mathematics)">Harmonic analysis</a>
+<ul><li><a href="/wiki/Fourier_analysis" title="Fourier analysis">Fourier analysis</a></li></ul></li>
+<li><a href="/wiki/Multilinear_algebra" title="Multilinear algebra">Multilinear algebra</a>
+<ul><li><a href="/wiki/Exterior_algebra" title="Exterior algebra">Exterior</a></li>
+<li><a href="/wiki/Geometric_algebra" title="Geometric algebra">Geometric</a></li>
+<li><a href="/wiki/Tensor" title="Tensor">Tensor</a></li>
+<li><a href="/wiki/Vector_calculus#Vector_algebra" title="Vector calculus">Vector</a></li></ul></li>
+<li><a href="/wiki/Multivariable_calculus" title="Multivariable calculus">Multivariable calculus</a>
+<ul><li><a href="/wiki/Exterior_calculus" class="mw-redirect" title="Exterior calculus">Exterior</a></li>
+<li><a href="/wiki/Geometric_calculus" title="Geometric calculus">Geometric</a></li>
+<li><a href="/wiki/Tensor_calculus" title="Tensor calculus">Tensor</a></li>
+<li><a href="/wiki/Vector_calculus" title="Vector calculus">Vector</a></li></ul></li>
+<li><a href="/wiki/Numerical_analysis" title="Numerical analysis">Numerical analysis</a>
+<ul><li><a href="/wiki/Numerical_linear_algebra" title="Numerical linear algebra">Numerical linear algebra</a></li>
+<li><a href="/wiki/Numerical_methods_for_ordinary_differential_equations" title="Numerical methods for ordinary differential equations">Numerical methods for ordinary differential equations</a></li>
+<li><a href="/wiki/Numerical_methods_for_partial_differential_equations" title="Numerical methods for partial differential equations">Numerical methods for partial differential equations</a></li>
+<li><a href="/wiki/Validated_numerics" title="Validated numerics">Validated numerics</a></li></ul></li>
+<li><a href="/wiki/Calculus_of_variations" title="Calculus of variations">Variational calculus</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Probability_theory" title="Probability theory">Probability theory</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Probability_distribution" title="Probability distribution">Distributions</a>&#160;(<a href="/wiki/Random_variable" title="Random variable">random variables</a>)</li>
+<li><a href="/wiki/Stochastic_process" title="Stochastic process">Stochastic processes</a>&#160;/&#32;<a href="/wiki/Stochastic_calculus" title="Stochastic calculus">analysis</a></li>
+<li><a href="/wiki/Functional_integration" title="Functional integration">Path integral</a></li>
+<li><a href="/wiki/Malliavin_calculus" title="Malliavin calculus">Stochastic variational calculus</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Mathematical_physics" title="Mathematical physics">Mathematical<br />physics</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Analytical_mechanics" title="Analytical mechanics">Analytical mechanics</a>
+<ul><li><a href="/wiki/Lagrangian_mechanics" title="Lagrangian mechanics">Lagrangian</a></li>
+<li><a href="/wiki/Hamiltonian_mechanics" title="Hamiltonian mechanics">Hamiltonian</a></li></ul></li>
+<li><a href="/wiki/Field_theory_(physics)" class="mw-redirect" title="Field theory (physics)">Field theory</a>
+<ul><li><a href="/wiki/Classical_field_theory" title="Classical field theory">Classical</a></li>
+<li><a href="/wiki/Conformal_field_theory" title="Conformal field theory">Conformal</a></li>
+<li><a href="/wiki/Effective_field_theory" title="Effective field theory">Effective</a></li>
+<li><a href="/wiki/Gauge_theory" title="Gauge theory">Gauge</a></li>
+<li><a href="/wiki/Quantum_field_theory" title="Quantum field theory">Quantum</a></li>
+<li><a href="/wiki/Statistical_field_theory" title="Statistical field theory">Statistical</a></li>
+<li><a href="/wiki/Topological_field_theory" class="mw-redirect" title="Topological field theory">Topological</a></li></ul></li>
+<li><a href="/wiki/Perturbation_theory" title="Perturbation theory">Perturbation theory</a>
+<ul><li><a href="/wiki/Perturbation_theory_(quantum_mechanics)" title="Perturbation theory (quantum mechanics)">in quantum mechanics</a></li></ul></li>
+<li><a href="/wiki/Potential_theory" title="Potential theory">Potential theory</a></li>
+<li><a href="/wiki/String_theory" title="String theory">String theory</a>
+<ul><li><a href="/wiki/Bosonic_string_theory" title="Bosonic string theory">Bosonic</a></li>
+<li><a href="/wiki/Topological_string_theory" title="Topological string theory">Topological</a></li></ul></li>
+<li><a href="/wiki/Supersymmetry" title="Supersymmetry">Supersymmetry</a>
+<ul><li><a href="/wiki/Supersymmetric_quantum_mechanics" title="Supersymmetric quantum mechanics">Supersymmetric quantum mechanics</a></li>
+<li><a href="/wiki/Supersymmetric_theory_of_stochastic_dynamics" title="Supersymmetric theory of stochastic dynamics">Supersymmetric theory of stochastic dynamics</a></li></ul></li></ul>
+ </div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th id="Algebraic_structures" scope="row" class="navbox-group" style="width:1%;font-weight:normal;"><a href="/wiki/Algebraic_structures" class="mw-redirect" title="Algebraic structures">Algebraic structures</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Algebra_of_physical_space" title="Algebra of physical space">Algebra of physical space</a></li>
+<li><a href="/wiki/Path_integral_formulation" title="Path integral formulation">Feynman integral</a></li>
+<li><a href="/wiki/Poisson_algebra" title="Poisson algebra">Poisson algebra</a></li>
+<li><a href="/wiki/Quantum_group" title="Quantum group">Quantum group</a></li>
+<li><a href="/wiki/Renormalization_group" title="Renormalization group">Renormalization group</a></li>
+<li><a href="/wiki/Particle_physics_and_representation_theory" title="Particle physics and representation theory">Representation theory</a></li>
+<li><a href="/wiki/Spacetime_algebra" title="Spacetime algebra">Spacetime algebra</a></li>
+<li><a href="/wiki/Superalgebra" title="Superalgebra">Superalgebra</a></li>
+<li><a href="/wiki/Supersymmetry_algebra" title="Supersymmetry algebra">Supersymmetry algebra</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Decision_theory" title="Decision theory">Decision sciences</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Game_theory" title="Game theory">Game theory</a></li>
+<li><a href="/wiki/Operations_research" title="Operations research">Operations research</a></li>
+<li><a href="/wiki/Mathematical_optimization" title="Mathematical optimization">Optimization</a></li>
+<li><a href="/wiki/Social_choice_theory" title="Social choice theory">Social choice theory</a></li>
+<li><a href="/wiki/Statistics" title="Statistics">Statistics</a></li>
+<li><a href="/wiki/Mathematical_economics" title="Mathematical economics">Mathematical economics</a></li>
+<li><a href="/wiki/Mathematical_finance" title="Mathematical finance">Mathematical finance</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other applications</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Mathematical_and_theoretical_biology" title="Mathematical and theoretical biology">Biology</a></li>
+<li><a href="/wiki/Mathematical_chemistry" title="Mathematical chemistry">Chemistry</a></li>
+<li><a href="/wiki/Mathematical_psychology" title="Mathematical psychology">Psychology</a></li>
+<li><a href="/wiki/Mathematical_sociology" title="Mathematical sociology">Sociology</a></li>
+<li>"<a href="/wiki/The_Unreasonable_Effectiveness_of_Mathematics_in_the_Natural_Sciences" title="The Unreasonable Effectiveness of Mathematics in the Natural Sciences">The Unreasonable Effectiveness of Mathematics in the Natural Sciences</a>"</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Mathematics" title="Mathematics">Mathematics</a></li>
+<li><a href="/wiki/Mathematical_software" title="Mathematical software">Mathematical software</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Organizations</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Society_for_Industrial_and_Applied_Mathematics" title="Society for Industrial and Applied Mathematics">Society for Industrial and Applied Mathematics</a>
+<ul><li><a href="/wiki/Japan_Society_for_Industrial_and_Applied_Mathematics" title="Japan Society for Industrial and Applied Mathematics">Japan Society for Industrial and Applied Mathematics</a></li></ul></li>
+<li><a href="/wiki/Soci%C3%A9t%C3%A9_de_Math%C3%A9matiques_Appliqu%C3%A9es_et_Industrielles" title="Société de Mathématiques Appliquées et Industrielles">Société de Mathématiques Appliquées et Industrielles</a></li>
+<li><a href="/wiki/International_Council_for_Industrial_and_Applied_Mathematics" title="International Council for Industrial and Applied Mathematics">International Council for Industrial and Applied Mathematics</a></li>
+<li><a href="/w/index.php?title=European_Community_on_Computational_Methods_in_Applied_Sciences&amp;action=edit&amp;redlink=1" class="new" title="European Community on Computational Methods in Applied Sciences (page does not exist)">European Community on Computational Methods in Applied Sciences</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><b><a href="/wiki/Category:Mathematics" title="Category:Mathematics">Category</a></b></li>
+<li><a href="/wiki/Portal:Mathematics" title="Portal:Mathematics">Mathematics portal</a>&#160;/&#32;<a href="/wiki/Topic_outline_of_mathematics" class="mw-redirect" title="Topic outline of mathematics">outline</a>&#160;/&#32;<a href="/wiki/List_of_mathematics_topics" class="mw-redirect" title="List of mathematics topics">topics list</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"><style data-mw-deduplicate="TemplateStyles:r1038841319">.mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}</style></div><div role="navigation" class="navbox authority-control" aria-label="Navbox" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control databases</a>: National <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless"><a href="https://www.wikidata.org/wiki/Q1892554#identifiers" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></span></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><span class="uid"><a rel="nofollow" class="external text" href="http://uli.nli.org.il/F/?func=find-b&amp;local_base=NLX10&amp;find_code=UID&amp;request=987007548425205171">Israel</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://id.loc.gov/authorities/sh85095022">United States</a></span></li>
+<li><span class="uid"><span class="rt-commentedText tooltip tooltip-dotted" title="operátorové algebry"><a rel="nofollow" class="external text" href="https://aleph.nkp.cz/F/?func=find-c&amp;local_base=aut&amp;ccl_term=ica=ph534678&amp;CON_LNG=ENG">Czech Republic</a></span></span></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1473
+Cached time: 20231031011701
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.481 seconds
+Real time usage: 0.692 seconds
+Preprocessor visited node count: 1788/1000000
+Post‐expand include size: 123129/2097152 bytes
+Template argument size: 1155/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 5/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 47778/5000000 bytes
+Lua time usage: 0.290/10.000 seconds
+Lua memory usage: 18820069/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  490.275      1 -total
+ 30.33%  148.705      4 Template:Annotated_link
+ 15.38%   75.380      1 Template:Cite_book
+ 14.85%   72.818      1 Template:Ring_theory_sidebar
+ 14.45%   70.856      6 Template:Navbox
+ 14.42%   70.674      1 Template:Sidebar_with_collapsible_lists
+ 10.88%   53.343      1 Template:Short_description
+  7.84%   38.456      1 Template:Authority_control
+  6.36%   31.183      2 Template:Pagetype
+  6.12%   29.987      1 Template:Spectral_theory
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:455987-0!canonical and timestamp 20231031011700 and revision id 1157620057. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Operator_algebra&amp;oldid=1157620057">https://en.wikipedia.org/w/index.php?title=Operator_algebra&amp;oldid=1157620057</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Functional_analysis" title="Category:Functional analysis">Functional analysis</a></li><li><a href="/wiki/Category:Operator_algebras" title="Category:Operator algebras">Operator algebras</a></li><li><a href="/wiki/Category:Operator_theory" title="Category:Operator theory">Operator theory</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li><li><a href="/wiki/Category:Use_American_English_from_March_2019" title="Category:Use American English from March 2019">Use American English from March 2019</a></li><li><a href="/wiki/Category:All_Wikipedia_articles_written_in_American_English" title="Category:All Wikipedia articles written in American English">All Wikipedia articles written in American English</a></li><li><a href="/wiki/Category:Articles_with_J9U_identifiers" title="Category:Articles with J9U identifiers">Articles with J9U identifiers</a></li><li><a href="/wiki/Category:Articles_with_LCCN_identifiers" title="Category:Articles with LCCN identifiers">Articles with LCCN identifiers</a></li><li><a href="/wiki/Category:Articles_with_NKC_identifiers" title="Category:Articles with NKC identifiers">Articles with NKC identifiers</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 29 May 2023, at 21:12<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Operator_algebra&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-58c4d8dc86-6h6pz","wgBackendResponseTime":134,"wgPageParseReport":{"limitreport":{"cputime":"0.481","walltime":"0.692","ppvisitednodes":{"value":1788,"limit":1000000},"postexpandincludesize":{"value":123129,"limit":2097152},"templateargumentsize":{"value":1155,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":5,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":47778,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  490.275      1 -total"," 30.33%  148.705      4 Template:Annotated_link"," 15.38%   75.380      1 Template:Cite_book"," 14.85%   72.818      1 Template:Ring_theory_sidebar"," 14.45%   70.856      6 Template:Navbox"," 14.42%   70.674      1 Template:Sidebar_with_collapsible_lists"," 10.88%   53.343      1 Template:Short_description","  7.84%   38.456      1 Template:Authority_control","  6.36%   31.183      2 Template:Pagetype","  6.12%   29.987      1 Template:Spectral_theory"]},"scribunto":{"limitreport-timeusage":{"value":"0.290","limit":"10.000"},"limitreport-memusage":{"value":18820069,"limit":52428800},"limitreport-logs":"table#1 {\n    [\"size\"] = \"tiny\",\n}\n"},"cachereport":{"origin":"mw1473","timestamp":"20231031011701","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Operator algebra","url":"https:\/\/en.wikipedia.org\/wiki\/Operator_algebra","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1892554","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1892554","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-02-05T15:05:40Z","dateModified":"2023-05-29T21:12:18Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/c1\/Latex_integers.svg","headline":"branch of functional analysis"}</script>
+</body>
+</html>
