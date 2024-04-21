@@ -3,10 +3,12 @@
     <head>
         <title>Search</title>
         <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
     <body>
         <div class="feed"></div>
-            <div class="ask485">ask485</div>
+            <div class="ask485">ask485?</div>
             <div class="search_bar">
                 <!-- DO NOT CHANGE THIS (aside from where we say 'FIXME') -->
                 <form action="/" method="GET">
@@ -16,6 +18,7 @@
                         placeholder="Search"
                         value="{{ query }}"/>
                     </div>
+                    <div class="pagerank_weight">Pagerank Weight</div>
                     <div>
                     <input type="range" 
                         name="w" 
@@ -27,7 +30,7 @@
                 <input type="submit" value="Search"/>
                 </form>
             </div>
-            <div class="pagerank_weight">Pagerank Weight</div>
+            
 
             {% if docs %}
                 <div class="docs">

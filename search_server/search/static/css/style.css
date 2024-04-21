@@ -16,6 +16,7 @@
 }
 
 .feed {
+  position: relative;
   padding: 40px 70px;
   background: #FFFFFF;
   display: flex;
@@ -33,7 +34,14 @@
   gap: 15px;
 }
 
+.search_bar form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .ask485 {
+  text-align: center;
   font-family: Montserrat;
   font-size: 40px;
   color: var(--base-color);
@@ -41,10 +49,13 @@
 
 .pagerank_weight {
   font-size: 18px;
+  text-align: center;
 }
 
 .docs {
   max-width: 1000px;
+  margin: 10px 0 50px 0;
+  padding: 0 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
