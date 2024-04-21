@@ -15,7 +15,7 @@
 set -Eeuo pipefail
 
 # Optional input directory argument
-PIPELINE_INPUT=example_crawl
+PIPELINE_INPUT=crawl
 if [ -n "${1-}" ]; then
   PIPELINE_INPUT="$1"
 fi

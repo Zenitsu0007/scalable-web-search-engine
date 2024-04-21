@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Map 0: <"doc", 1>"""
+"""Map 0: <"doc", 1>."""
 
 import sys
 import re

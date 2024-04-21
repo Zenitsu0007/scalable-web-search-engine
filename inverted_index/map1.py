@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Map 1: <di, content>"""
+"""Map 1: <di, content>."""
 
 import sys
 import hashlib
@@ -8,6 +8,7 @@ import bs4
 
 
 ALGORITHM = 'sha512'
+
 
 def clean_text(text, stopwords):
     """Clean text and remove stop words."""
@@ -20,6 +21,7 @@ def clean_text(text, stopwords):
     # Remove stopwords
     words = [word for word in words if word not in stopwords]
     return ' '.join(words)
+
 
 stops = set()
 with open("stopwords.txt", "r", encoding="utf-8") as stopwords_file:
@@ -61,7 +63,7 @@ for line in sys.stdin:
     # Mod by 10^7 to limit the length of the doc_id
     doc_id = int(doc_id, 16) % (10**7)
 
-    # Emit one line for each document, including the doc ID and document content
+    # Emit one line for each document, including doc ID and document content
     print(f"{doc_id}\t{clean_text(content, stops)}")
 
     # Reset HTML for the next document

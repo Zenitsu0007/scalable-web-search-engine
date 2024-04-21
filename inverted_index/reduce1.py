@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reduce 1: <di, content>"""
+"""Reduce 1: <di, content>."""
 
 import sys
 

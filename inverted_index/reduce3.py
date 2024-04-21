@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reduce 3: <tk, idfk, di, tfik>"""
+"""Reduce 3: <tk, idfk, di, tfik>."""
 import sys
 import itertools
 import math

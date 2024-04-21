@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Map 5: <di % 3, (tk, idfk, di, tfik, normal)>"""
+"""Map 5: <di % 3, (tk, idfk, di, tfik, normal)>."""
 
 import sys
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reduce 0: total_docs"""
+"""Reduce 0: total_docs."""
 
 import sys
 
@@ -16,6 +16,7 @@ def main():
 
     # Output the total number of documents
     print(total_docs)
+
 
 if __name__ == "__main__":
     main()

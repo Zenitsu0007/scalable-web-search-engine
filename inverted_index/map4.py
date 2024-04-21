@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Map 4: <di, (tk, idfk, tfik)>"""
+"""Map 4: <di, (tk, idfk, tfik)>."""
 
 import sys
 

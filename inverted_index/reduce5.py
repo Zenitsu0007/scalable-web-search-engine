@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reduce 5: <(tk, idfk), (di, tfik, normali), (dj, tfjk, normalj)...> """
+"""Reduce 5: <(tk, idfk), (di, tfik, normali), (dj, tfjk, normalj)...>."""
 import sys
 import itertools
 from collections import defaultdict
@@ -9,6 +9,7 @@ def reduce_one_group(key, group):
     """Reduce one group."""
     group = list(group)
 
+    output = key
     output = defaultdict(list)
     for line in group:
         line = line.strip()
